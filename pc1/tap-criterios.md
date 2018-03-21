@@ -13,3 +13,12 @@ O módulo de _software_ da aplicação será dividido em 4 subsistemas: Subsiste
 1. o subsistema deve ser capaz de receber e interpretar as informações transmitidas pelo Subsistema de Processamento de Dados para construir os modelos 3D a serem mostrados;
 2. o subsistema deve ser capaz de mostrar, em _real time_, um modelo 3D do corpo humano representando os movimentos sendo executados pelo atleta e um modelo 3D do corpo humano representando a movimentação ideal, para que comparações e, consequentemente, otimizações possam ser feitas no treinamento.
 
+### Critério de aceitação de energia
+
+Os Stakeholders da disciplina em comum acordo com o subsistema de energia definaram que alguns parâmetros serão aferidos e dimensionados após o Ponto de Controle 1, devido as dificuldades de medir ou encontrar em bibliografias essas variáveis.
+
+1. O gerador irá receber a potência mecânica da remada do atleta e gerar uma corrente elétrica que irá variar de acordo com a carga alimentada pelo gerador.
+
+2. A variação dessa corrente irá gerar um conjugado elétrico nas bobinas do estator que se oporá ao conjugado mecânico da remada aplicado no rotor.
+
+3. A energia excedente gerada será armazenada em uma bateria, que por sua vez irá alimentar o sistema eletrônico. A potência necessária para manter o sistema funcionando ainda será dimensionado.
