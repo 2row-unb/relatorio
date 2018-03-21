@@ -5,6 +5,7 @@ As restrições são fatores internos e externos associados ao escopo do projeto
 De acordo com o contexto deste projeto, as restrições são:
 
 1. O projeto deverá ser concluído até o dia 22/06/2018;
+1. O time do projeto deve ser composto por até 14 integrantes;
 
 > TODO: Unificar as restrições de cada frente
 
