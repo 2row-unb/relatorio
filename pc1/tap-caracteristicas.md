@@ -11,7 +11,7 @@
 5. utilização de arquitetura de transmissão, compactação e tratamento inteligente de dados para possibilitar disponibilização dos modelos 3D em _real time_;
 6. disponibilização de dois modelos 3D do corpo humano (um representando a movimentação ideal do treinamento e outro representando a movimentação atual do atleta) em um monitor acoplado ao Raspberry PI, utilizando o _software_ _open source_ **TODO: nome do software**.
 
-### Características
+### Características de _Energia_
 
  1. Dimensionamento do gerador para ser capaz de produzir tensão e, em consequência, gerar e manter uma corrente elétrica;
  2. Construção do driver para o controle do nível de dificuldade que o atleta vai enfrentar;
