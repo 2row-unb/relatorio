@@ -11,3 +11,11 @@ A frente de _software_ tem como objetivo construir um sistema capaz de:
 2. interpretar os sinais e mapeá-los para várias propriedades de treinamento, como: posição dos membros do atleta, angulação dos membros do atleta e intensidade das forças aplicadas pelo atleta;
 3. comparar as informações do desempenho do atleta, construídas a partir dos dados coletados, com modelos matemáticos de treinamentos ideais;
 4. disponibilizar visualmente as informações e as comparações feitas para o atleta em _real time_, para que o mesmo possa otimizar suas ações e, consequentemente, a qualidade do seu treinamento.
+
+### Objetivos de Energia
+
+A frente de energia tem como objetivo:
+1. definir os parâmetros do gerador elétrico;
+2. dimensionar o banco de resistências para o controle de carga;
+3. dimensionar a bateria;
+4. definir o mecanismo para a integração desse sistema com a estrutura.
