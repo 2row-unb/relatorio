@@ -28,3 +28,21 @@ Considerando esses critério, dois sistemas foram selecionados como soluções p
 
 ![Alternador de Carro](imagens/alternador.png){#fig:alter}
 ![Motor de Esteira Ergométrica](imagens/motoresteira.jpg){#fig:motorest}
+O motor de esteira pode ser usado no modo gerador, e dentre os critérios de seleção ele foi o mais viável economicamente e tecnicamente. Dessa forma ele é o mais indicado para confecção do sistema.
+
+### Banco de resistores
+
+Sabendo a potência máxima possível que pode ser obtida com a remada do atleta, poderemos dimensionar a potência que os resistores e os relés iram ter que suportar.
+
+O sistema será composto por:
+
+* 3 relés que irão controlar os níveis de resistência
+* 3 resistores que irão controlar a corrente do gerador
+
+Usaremos relés de caminhão (80A) ou de carro (40A). Estamos considerando usar resistores de chuveiro elétrico ou de fornos elétricos. A determinação da corrente suportada pelos relés e da potência suportada pelos resistores dependerá da determinação da potência da remada do atleta.
+
+Usaremos uma margem de erro de 100% para dimensionar os resistores e relés.
+
+Os níveis do exercício será acionado pelo sub grupo de eletrônica de acordo com a figura [@fig:circuitobr].
+
+![Circuito do Banco de resistores](imagens/circuito.png){#fig:circuitobr}
