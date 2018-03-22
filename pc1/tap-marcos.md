@@ -41,3 +41,16 @@ De acordo com o contexto deste projeto, os marcos são:
 1. (22) **Fim da _Sprint_ 6**
 1. (22) **Fim da Fase de Integração de Subsistemas e Finalização do Produto**
 1. (22) **Fim do Projeto**
+
+
+## Marcos de Energia
+
+### Marcos de Março
+1. (28) **Dimensionar Gerador Elétrico** 
+### Marcos de Abril
+1. (11) **Testar e Validar a Solução Proposta**
+2. (18) **Dimensionar Banco de Resistências**
+3. (25) **Testar o Controle de Carga**
+### Marcos de Maio
+1. (02) **Dimensionar bateria**
+
