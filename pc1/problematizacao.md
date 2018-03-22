@@ -23,6 +23,12 @@ Dessa forma, a complexidade se encontra em gerar níveis de dificuldade para o a
 
 ## Estrutura
 
+Um dos maiores problemas existentes na atualidade no treinamneto de atletas iniciantes de remo é conseguir um aparelho de treinamento que possua uma estrutura capaz de comportar novas tecnologias, que ofereça dados que informem ao atleta como deixar o seu treinamento mais eficiente, e assim, ajuda-lo a melhorar o seu desempenho. Atrelado a essa dificuldade também se tem o fato de que os aparelhos mais tecnológicos existentes no mercado possuem preços elevados, e isso torna a aquisição de um aparelho como esse inviável para um grande grupo de atletas.
+
+Outra dificuldade é que os aparelhos encontrados no mercado não possuem a sua resistência mecânica ocasionado por um gerador. Nesse projeto tem-se por objetivo conseguir de uma maneira eficiente e satisfatória realizar a integração do sistema estrutural com o sistema energético e de alto potencial de um gerador.
+
+Estruturalmente existe o desafio de construir um aparelho que seja resistente, seguro e que atenda as necessidades de um atleta de remo. Podendo competir no mercado não apenas no quisito de preço mas também ser um produto que tenha um _design_ competitivo. Outro ponto importante a ser analisado é que os materiais utilizados, na construção do aparelho, seja de fácil acesso no mercado, e uma montagem simplificada, tudo isso levando em consideração características estruturais satisfatórias. Tudo isso com o objetivo de que o próprio clioente consiga substiuir peças estruturais danificadas por outras novas sem a necessidade de ter que adquirir um novo aparelho completo. 
+
 ## Software
 
 Há uma dificuldade teórica a nível dos algoritmos para aferição da qualidade de performance através da comparação de modelos simulados em _software_. Essa dificuldade se dá principalmente sobre o grande conjunto de variáveis que influenciam modelos extraídos de situações reais. Estes são extremamente dependentes do contexto, do equipamento, do ambiente, do atleta, etc. É necessário um grande esforço de desenvolvimento para garantir uma comparação a nível de _software_ que leve em consideração várias das intempéries que podem afetar um treinamento assistido por computador.
