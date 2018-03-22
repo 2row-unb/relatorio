@@ -46,13 +46,13 @@ De acordo com o contexto deste projeto, os marcos são:
 ## Marcos de Energia
 
 ### Marcos de Março
-1. (28) **Dimensionar Gerador Elétrico** 
+1. (28) **Dimensionar Gerador Elétrico**: O gerador está dimensionado para fornecer resistência mecânica ao atleta.
 ### Marcos de Abril
-1. (11) **Testar e Validar a Solução Proposta**
+1. (11) **Testar e Validar a Solução Proposta**: O gerador foi testado e está pronto para ser conectado ao banco de resistências;
 2. (18) **Dimensionar Banco de Resistências**
-3. (25) **Testar o Controle de Carga**
+3. (25) **Testar o Controle de Carga**: O sistema é capaz de fornecer níveis de dificuldades para o atleta.
 ### Marcos de Maio
-1. (02) **Dimensionar bateria**
+1. (02) **Dimensionar bateria**: O sistema é capaz de carregar a bateria e alimentar o sistema eletrônico.
 
 ## Marcos de Estrutura
 
