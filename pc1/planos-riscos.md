@@ -19,11 +19,11 @@ Durante a fase de concepção/design do projeto os princiais pontos que devem se
 
 ### **Tópicos de Análise Utilizados para a Construção do _FMEA_**
 
-* **Potêncial Causa de Falha**
-* **Efeitos da Falha**
-* **Severidade**
-* **Ocorrência**
-* **Detecção**
-* **_Risk Priority Number_**
-* **Ação Recomendada**
+* **Potêncial Causa de Falha:** Lista dos potenciais modos de falha de componentes, subsistemas, sistemas, áreas e processos.  
+* **Efeitos da Falha:** O impacto ou consequência que a falha provocaria na área afetada.
+* **Severidade (S):** Severidade é a avaliação de quão relevante seria a consequência da falha no desenvolvimento ou funcionamento do projeto.
+* **Ocorrência (O):** Ocorrência é a avaliação de quão provável é de que a falha ocorra.
+* **Detecção (D):** Detecção é a avaliação da capacidade do design atual de identificar potênciais causas de falha.
+* **_Risk Priority Number_:** Esse critério representa os multi-efeitos da severidade, ocorrência e detecção. O valor é calculado através do Produto da severidade, ocorrência e detecção: **PRN = S x O x D**. 
+* **Ação Recomendada:** Ação preventiva ou remediativa que deve ser realizada para contenção da falha. 
 
