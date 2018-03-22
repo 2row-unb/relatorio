@@ -16,3 +16,13 @@
 1.  disponibilização de resistência mecânica para o atleta, por meio da utilização de um gerador elétrico conectado a um banco de resistências elétricas;
 2. fornecimento de diferentes níveis de dificuldade para o atleta durante o treinamento, através do controle de carga;
 3. geração e armazenamento de energia elétrica.
+
+### Características da Estrutura
+
+A estrutura é caracterizada por ser um aparelho de remo indoor para auxiliar atletas iniciantes no esporte de remo. A estruturalmente o remo indoor é composto basicamente por:
+1. Suporte para os pés;
+2. Transmissão de esforços através cabos;
+3. Ajuste eletrônico da resistência;
+4. Assento móvel deslisante; 
+5. Trilho guia para o assento;
+6. Sistema de restituição da polia;
