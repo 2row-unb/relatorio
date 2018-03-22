@@ -24,6 +24,40 @@ Durante a fase de concepção/design do projeto os princiais pontos que devem se
 * **Severidade (S):** Severidade é a avaliação de quão relevante seria a consequência da falha no desenvolvimento ou funcionamento do projeto.
 * **Ocorrência (O):** Ocorrência é a avaliação de quão provável é de que a falha ocorra.
 * **Detecção (D):** Detecção é a avaliação da capacidade do design atual de identificar potênciais causas de falha.
-* **_Risk Priority Number_:** Esse critério representa os multi-efeitos da severidade, ocorrência e detecção. O valor é calculado através do Produto da severidade, ocorrência e detecção: **PRN = S x O x D**. 
+* **_Risk Priority Number_:** Esse critério representa os multi-efeitos da severidade, ocorrência e detecção. O valor é calculado através do Produto da severidade, ocorrência e detecção: **RPN = S x O x D**. 
 * **Ação Recomendada:** Ação preventiva ou remediativa que deve ser realizada para contenção da falha. 
 
+Os critérios de Severidade, Ocorrência e Detecção são classificados em níveis de 1 a 5. As linhas de direção para a escolha dos níveis de cada critério são discriminadas nas tabelas abaixo:
+
+### **Severidade(S)**
+| Nível | Efeito           | Critério                                                                      |
+|-------|------------------|-------------------------------------------------------------------------------|
+|   1   | Baixa            | A ocorrência de falha tem consequências negligenciadas para o projeto.         |
+|   2   | Moderada         | Performace do aparelho prejudicada de forma baixa. Usuário não afetado.        |
+|   3   | Alta             | Integridade do aparelho comprometida ao longo do tempo. Usuário nçao afetado.  |
+|   4   | Extremamente Alta| Aparelho inoperante, porém a falha não gera risco ao usuário.                  |
+|   5   | Máxima           | Aperelho inoperante, falha pode colocar em risco usuário.                      |
+
+### **Ocorrência(O)**
+| Nível | Efeito                 | Critério                                                                      |
+|-------|------------------------|-------------------------------------------------------------------------------|
+|   1   | Nula                   | A probabilidade de que  a falha ocorrá é praticamente inexistente             |
+|   2   | Pouco Provável         | Pouco provável que a falha venha a ocorrer, porém, a chance existe.           |
+|   3   | Probabilidade Moderada | A falha deve vir a ocorrer ocasionalmente.                                    |
+|   4   | Probabilidade Alta     | A falha deve ocorrer com frequência consideravél caso não sejam tomadas medidas corretivas |
+|   5   | Certa                  | Probabilidade de falha certa caso contramedidas não sejam efetuadas           |
+
+### **Detecção(D)**
+| Nível | Efeito                        | Critério                                                                     |
+|-------|-------------------------------|------------------------------------------------------------------------------|
+|   1   | Detecção Extremamente Fácil   |Detecção óbvia. Defeito deve ser conrrigido ainda na fase de concepção.       |
+|   2   | Detecção Fácil                |Defeito pode ser detectado e corrigido ainda na fase de concepção.            |
+|   3   | Detecção Moderada             |Análises preliminares já devem detectar o defeito com certa facilidade e correção efetuada.  |
+|   4   | Detecção Difícil              |Análise do projeto devem ser efetuada e estudada criteriosamente para detectar falha. |
+|   5   | Detecção Extremamente Difícil |Detecção pode não acontecer e o protótipo pode ser constroído sem a devida medida de correção.|
+
+## **_FMEA WorkSheet_ da Fase Incial do Projeto**
+
+|Potencial Causa de Falha|Efeitos da Falha|Severidade(S)|Ocorrência(O)|Detecção(D)|_RPN_|Ação Recomendada|
+|:----------------------:|:--------------:|:-----------:|:-----------:|:---------:|:---:|:--------------:|
+| Mudança de Escopo      |Atraso do Projeto| 2 | 3  | 1 |  6 | |
