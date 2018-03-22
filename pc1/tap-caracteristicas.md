@@ -19,7 +19,7 @@
 
 ### Características da Estrutura
 
-A estrutura é caracterizada por ser um aparelho de remo indoor que visa auxiliar atletas iniciantes no esporte de remo. Estruturalmente o remo indoor é composto basicamente por:
+A estrutura é caracterizada por ser um aparelho de remo _in_ _door_ que visa auxiliar atletas iniciantes no esporte de remo. Estruturalmente o remo indoor é composto basicamente por:
 1. Suporte para os pés;
 2. Transmissão de esforços através cabos;
 3. Ajuste eletrônico da resistência;
