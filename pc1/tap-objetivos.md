@@ -19,3 +19,13 @@ A frente de energia tem como objetivo:
 2. dimensionar o banco de resistências para o controle de carga;
 3. dimensionar a bateria;
 4. definir o mecanismo para a integração desse sistema com a estrutura.
+
+### Objetivos de Estrutura
+
+Estruturalmente tem-se por finalidade a construção de uma aparelho de remo _in_ _door_ que seja capaz de integrar as cinco engenharias do curso da Faculdade Gama e através de análises estruturais realizar a validação estrutural. Tudo isso com o objetivo de proporcionar ao usuário:
+
+1. Um aparelho de alta qualidade e durabilidade
+2. Um aparelho seguro e confortalvel na hora do treinamento,
+
+E assim, garantir um treino muito mais eficaz para que o atleta alcance melhores resultados durante o exercício. 
+
