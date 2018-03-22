@@ -23,6 +23,13 @@ A estrutura é caracterizada por ser um aparelho de remo _in_ _door_ que visa au
 1. Suporte para os pés;
 2. Transmissão de esforços através cabos;
 3. Ajuste eletrônico da resistência;
-4. Assento móvel deslisante; 
+4. Assento móvel deslizante; 
 5. Trilho guia para o assento;
 6. Sistema de restituição da polia;
+
+### Características da _Eletrônica_
+1. Utilização de sensores IMU para extração de parâmetros relativos à posição das pernas durante os movimentos;
+2. Utilização de encoder e torquímetro para medição de potência no eixo rotatório; ***Confirmar***
+3. Utilização de sensor para caracterização dos batimentos cardíacos do indivíduo que utiliza o remo;
+4. Aquisição dos sinais advindos dos sensores utilizando os microcontroladores ESP e MSP-430;
+5. Sinais ruidosos necessitam de um circuito de condicionamento de sinal;
