@@ -59,11 +59,11 @@ Os gastos com relação a aplicação da Engenharia de Energia diz respeito, em 
 
 | Requisitos de Energia|Quantidade|Valor Unitário (R$)|Fornecedor|
 |:---:|:---:|:---:|:---:|:---:|
-|Relé Auxiliar 4 Terminais 12V 80A|3|20,83|Mercado Livre|
-|Motor de esteira|1|200|Mercado Livre|
-|Resistores 1000W|3|20|Mercado Livre|
-|Equipamentos para construção do controlador de carga|1|100|Mercado Livre|
-|Bateria|1|54|Mercado Livre|
+|Relé Auxiliar 4 Terminais 12V 80A|3|20,83|Mercado Livre
+|Motor de esteira|1|200|Mercado Livre
+|Resistores 1000W|3|20|Mercado Livre
+|Equipamentos para construção do controlador de carga|1|100|Mercado Livre
+|Bateria|1|54|Mercado Livre
 
 
 ### Custos Totais
