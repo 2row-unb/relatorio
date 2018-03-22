@@ -45,4 +45,8 @@ Usaremos uma margem de erro de 100% para dimensionar os resistores e relés.
 
 Os níveis do exercício será acionado pelo sub grupo de eletrônica de acordo com a figura [@fig:circuitobr].
 
-![Circuito do Banco de resistores](imagens/circuito.png){#fig:circuitobr}
+![Circuito do Banco de resistores](imagens/circuitobr.png){#fig:circuitobr}
+
+### Carregador da bateria
+
+O carregamento da bateria será feito por uma controlador de carga que será acoplado em paralelo com o módulo de resistores.
