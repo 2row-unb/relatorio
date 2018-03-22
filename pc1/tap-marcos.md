@@ -54,3 +54,29 @@ De acordo com o contexto deste projeto, os marcos são:
 ### Marcos de Maio
 1. (02) **Dimensionar bateria**
 
+## Marcos de Estrutura
+
+O diagramas de fluxos abaixo representam as atividades macros do projeto estrutural e as atividades micros que envolvem o _design_ da estrutura.  
+
+![Fluxo dos marcos de Estrutura](./imagens/Fluxo_Estr.JPG)
+
+![Fluxo dos micro das Simulações](./imagens/Fluxo_SimEstr.JPG)
+
+### Marcos de Março
+1. (23) **Definir requisitos estruturais** 
+2. (24) **Levantamento de riscos**
+3. (28) **Entrega do PC1**
+### Marcos de Abril
+1. (04) **Entrega do CAD**
+2. (18) **Entrega da Análise Estrutural**
+3. (18) **Aquisição de Material**
+### Marcos de Maio
+1. (10) **Finalização da construção**
+2. (16) **Entrega da Estrutura**
+3. (16) **Entrega do PC2**
+4. (17) **Início da Integração**
+5. (29) **Fim da Primeira fase de Projeto e Construção de Subsistemas**
+### Marcos de Junho 
+1. (22) **Fim da Fase de Integração de Subsistemas e Finalização do Produto**
+2. (22) **Fim do Projeto**
+3. (22) **Entrega do PC3**
