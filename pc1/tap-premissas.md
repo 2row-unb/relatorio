@@ -13,3 +13,7 @@ De acordo com o contexto deste projeto, as premissas são:
 1. Parte-se do princípio que todos os recursos necessários para o desenvolvimento de _software_ estarão satisfeitos. Tais como: computadores, ferramentas, internet, servidor, etc.
 1. Parte-se do princípio que toda ferramenta, módulo ou sistema utilizado para desenvolver as aplicações do projeto será _Open Source_;
 1. Parte-se do princípio que três estudantes de engenharia de _software_ serão disponibilizados para desenvolvimento das aplicações;
+
+### Premissas de Estrutura
+
+Parte do presusposto que o atleta tenha o conhecimneto básico de como funciona a estrutura e a maneira correta de manusea-la e que não não possua impedimentos físicos à atividade física, na qual se destina o aparelho.
