@@ -25,5 +25,6 @@ Os critérios considerados para escolher os geradores foram:
 * Geração de energia em baixas rotações.
 
 Considerando esses critério, dois sistemas foram selecionados como soluções para a geração de energia: o alternador automotivo [@fig:alter] e um motor de esteira ergométrica [@fig:motorest].
-![Alternador de Carro](alternador.jpg) {#fig:alter}
-![Motor de Esteira Ergométrica](alternador.jpg) {#fig:motorest}
+
+![Alternador de Carro](imagens/alternador.png){#fig:alter}
+![Motor de Esteira Ergométrica](imagens/motoresteira.jpg){#fig:motorest}
