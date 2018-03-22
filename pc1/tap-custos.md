@@ -57,13 +57,13 @@ Quanto a parte de software há gastos para se manter um dispositivo para receber
 
 Os gastos com relação a aplicação da Engenharia de Energia diz respeito, em sua maioria, ao gerador elétrico. Todavia esse componente está com suas especificações váriaveis devido à sua aplicação no projeto. Os gastos com relé de acionamento para as resistências está decidido para economia, tendo em vista que transistors para potências mais altas aumentariam os valores.
 
-| Requisitos de Energia|Quantidade|Valor Unitário (R$)|Fornecedor|
-|:---------------------:|:--------:|:------:|:--------:|:---------:|
-|Relé Auxiliar 4 Terminais 12V 80A|3|20,83|Mercado Livre|
-|Motor de esteira|1|200|Mercado Livre|
-|Resistores 1000W|3|20|Mercado Livre|
-|Equipamentos para construção do controlador de carga|1|100|Mercado Livre|
-|Bateria|1|54|Mercado Livre|
+| Requisitos de Energia | Quantidade | Valor Unitário (R$) | Fornecedor |
+|:---------------------:|:--------|------:|:--------:|:---------:|
+| Relé Auxiliar 4 Terminais 12V 80A | 3 | 20,83 | Mercado Livre |
+| Motor de esteira | 1 | 200 | Mercado Livre |
+| Resistores 1000W | 3 | 20 | Mercado Livre |
+| Equipamentos para construção do controlador de carga | 1 | 100 | Mercado Livre |
+| Bateria | 1 | 54 | Mercado Livre |
 
 
 ### Custos Totais
