@@ -25,3 +25,9 @@ Parte do presusposto que o atleta tenha o conhecimneto básico de como funciona 
 3. Será possível gerar uma potência para ser dissipada no banco de resistores e assim, regular a corrente e consequentemente a força necessária para que o atleta realize o exercício;
 4. Será possível carregar a bateria e alimentar o sistema acoplado em paralelo com o módulo de resistores.
 
+### Premissas de _Eletrônica_
+
+1. Parte-se do princípio que três estudantes de engenharia _Eletrônica_ estarão designados no grupo ao longo de todo o projeto;
+2. Parte-se do princípio de que será possível obter todos os sinais propostos com os recursos que o grupo possui, tanto de instrumentação como a medida de potência no eixo;
+3. Parte-se do princípio que os materiais descritos como requisitos são suficientes para a montagem de todos os subsistemas de eletrônica;
+4. Parte-se do princípio que os integrantes do grupo possuem ao menos 8 horas semanais para trabalhar especificamente para o projeto.
