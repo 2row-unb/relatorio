@@ -33,3 +33,4 @@ A estrutura é caracterizada por ser um aparelho de remo _in_ _door_ que visa au
 3. Utilização de sensor para caracterização dos batimentos cardíacos do indivíduo que utiliza o remo;
 4. Aquisição dos sinais advindos dos sensores utilizando os microcontroladores ESP e MSP-430;
 5. Sinais ruidosos necessitam de um circuito de condicionamento de sinal;
+6. Calibração dos sensores IMU e cardíaco para a obtenção correta de daos;
