@@ -4,6 +4,7 @@
 
 ### Características de _Software_
 A arquitetura do submódulo de _software_ do projeto será baseada em uma divisão de subsistemas encapsulados, de tal forma que cada um realize suas tarefas específicas e, quando necessário, troquem dados e informações entre si.
+
 Levando a arquitetura em conta, foram projetados 4 subsistemas: **Subsistema de Aquisição de Dados**, **Subsistema de Processamento de Dados**, **Subsistema de Controle** e **Subsistema de Visualização de Performance**. A interação entre eles pode ser visualizada na diagramação a seguir:
 ![Arquitetura de Software]^[Arquitetura de Software]](./imagens/arquitetura_software.png){#fig:arquiteturasoftware}
 
