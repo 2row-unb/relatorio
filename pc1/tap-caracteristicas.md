@@ -23,7 +23,7 @@ Este subsistema é responsável por processar e calcular dados transmitidos pelo
 Este subsistema é responsável por tornar visível as informações de interesse do atleta, as quais são providas pelo **Subsistema de Controle**. A renderização dos modelos do corpo humano, a disposição de elementos da interface gráfica e disponibilização visual de estatísticas são exemplos de tarefas delegadas a este subsistema.
 
 #### 5. Subsistema Atuador
-Este subsistema é responsável por mandar sinais para os microcontroladores eletrônicos, para que a ação de mudança de carga da estrutura requerida pelo atleta seja feita. Os pedidos de mudança (i.e., o aperto de botões na interface) são, primeiramente, recebidos pelo **Subsistema de Aquisição de Dados**, passados para o **Subsistema de Controle** e, então, delegados para o próprio **Subsistema Atuador**.
+Este subsistema é responsável por mandar sinais para os microcontroladores eletrônicos, para que a ação de mudança de carga da estrutura, requerida pelo atleta, seja feita. Os pedidos de mudança (i.e., o aperto de botões na interface) são, primeiramente, recebidos pelo **Subsistema de Aquisição de Dados**, passados para o **Subsistema de Controle** e, então, delegados para o próprio **Subsistema Atuador**.
 
 ### Características de Energia
 
