@@ -5,17 +5,25 @@
 ### Características de _Software_
 A arquitetura do submódulo de _software_ do projeto será baseada em uma divisão de subsistemas encapsulados, de tal forma que cada um realize suas tarefas específicas e, quando necessário, troquem dados e informações entre si.
 
-Levando a arquitetura em conta, foram projetados 4 subsistemas: **Subsistema de Aquisição de Dados**, **Subsistema de Processamento de Dados**, **Subsistema de Controle** e **Subsistema de Visualização de Performance**. A interação entre eles pode ser visualizada na diagramação a seguir:
+Levando a arquitetura em conta, foram projetados 5 subsistemas: **Subsistema de Controle**, **Subsistema de Aquisição de Dados**, **Subsistema de Processamento**, **Subsistema de Visualização de Performance** e **Subsistema Atuador**. A interação entre eles pode ser visualizada na diagramação a seguir:
 
 ![Arquitetura de Software^[Arquitetura de Software]](./imagens/arquitetura_software.png){#fig:arquiteturasoftware}
 
-A listagem a seguir especifica sucintamente as atividades - presentes nos subsistemas citados acima - a serem realizadas pelo submódulo de _software_:
-1. processamento de todos os dados feito por um Raspberry PI;
-2. transmissão dos dados das ações do atleta coletados pelos sensores IMU, acoplados ao Raspberry PI;
-3. utilização de algoritmos sofisticados para criação do modelo do corpo humano utilizando os dados coletados pelos sensores;
-4. utilização de algoritmos sofisticados para comparação dos modelos matemáticos ideais de treinamento com o modelo gerado a partir das ações do atleta;
-5. utilização de arquitetura de transmissão, compactação e tratamento inteligente de dados para possibilitar disponibilização dos modelos 3D em _real time_;
-6. disponibilização de dois modelos 3D do corpo humano (um representando a movimentação ideal do treinamento e outro representando a movimentação atual do atleta) em um monitor acoplado ao Raspberry PI.
+Uma descrição sucinta de cada um dos subsistemas pode ser conferida nos tópicos seguintes:
+#### 1. Subsistema de Controle
+Este subsistema é responsável por intercambiar dados, informações e tarefas entre os outros subsistemas; ele pode ser visto como um delegador de tarefas que tem ciência de todas as operações que estão acontecendo no momento.
+
+#### 2. Subsistema de Aquisição de Dados
+Este subsistema é responsável por receber e preprocessar, se necessário, os dados oriundos dos sensores cinemáticos e cinéticos e dos botões de ação presentes na interface da estrutura. Após essas etapas, os dados são, então, repassados para o **Subsistema de Controle**, o qual dá sequência às próximas tarefas do submódulo de _software_.
+
+#### 3. Subsistema de Processamento
+Este subsistema é responsável por processar e calcular dados transmitidos pelo **Subsistema de Controle**, como por exemplo: comparar modelos de performance ideais e do atleta, fazer os cálculos necessários para a renderização dos modelos do corpo humano e geração de estatísticas. Os dados processados são devolvidos para o **Subsistema de Controle** subsequentemente.
+
+#### 4. Subsistema de Visualização de Performance
+Este subsistema é responsável por tornar visível as informações de interesse do atleta, as quais são providas pelo **Subsistema de Controle**. A renderização dos modelos do corpo humano, a disposição de elementos da interface gráfica e disponibilização visual de estatísticas são exemplos de tarefas delegadas a este subsistema.
+
+#### 5. Subsistema Atuador
+Este subsistema é responsável por mandar sinais para os microcontroladores eletrônicos, para que a ação de mudança de carga da estrutura requerida pelo atleta seja feita. Os pedidos de mudança (i.e., o aperto de botões na interface) são, primeiramente, recebidos pelo **Subsistema de Aquisição de Dados**, passados para o **Subsistema de Controle** e, então, delegados para o próprio **Subsistema Atuador**.
 
 ### Características de Energia
 
