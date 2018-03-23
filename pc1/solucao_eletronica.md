@@ -25,7 +25,11 @@ O acelerômetro é regido pela Segunda Lei de Newton, ou seja, pode-se obter a p
 
 O módulo de frequência cardíaca possibilita obter informações acerca de como o atleta iniciante está se portando fisiologicamente, dados como fadiga rápida e excessiva podem ser vistas como indicativos de um exercício não tão bem realizado. Para ter esse acompanhamento será utilizado o sensor de frequência cardíaca 4MD69, com tamanho 16 x 2,7mm, baixo consumo de energia (cerca de 4 mA) e tensão de operação de 3 a 5 V.
 
-### Wattímetro de eixo
+ ### Wattímetro
+
+Um dos principais parâmetros relacionados à remada é a potência do movimento realizado durante o exercício. Para fazer a medida se faz necessário construir um curcuito conversor analógico-digital, dessa forma, com divisões significativas, será possível saber a tensão instantânea coptada no gerador. Sabendo qual o valor de resistências chaveada para uso em dado momento sabe-se a potência elétrica instantânea. Por meio de software, será obtido um modelo de conversão de potência elétrica para mecânica, sendo esta a esperada e importante para o projeto.
+
+Outro artifício para completo para saber a potência do movimento é a instalação de um sensor óptico de fim de curso, que será adaptado abaixo do banco em que o remador se senta, e que ao passar sabe-se que o movimento terminou e começou um novo. Assim obtém-se os tempos de cada movimento. Ao se integrar a potência mecânica por períodos de cada movimento encontra-se a potência da remada.
 
 
 ## Sistema de aquisição e condicionamento
