@@ -1,11 +1,13 @@
 ## Restrições do Projeto
 
-As restrições são fatores internos e externos associados ao escopo do projeto que limitam as opções de gerenciamento.
+As restrições são ações que podem delimitar a execução do projeto, fatores internos e externos associados ao escopo que limitam as opções de gerenciamento, sendo conhecidas como inibidores de atuação dos principais stakeholders de um projeto, sejam eles a equipe, fornecedores ou clientes, por exemplo.
 
 De acordo com o contexto deste projeto, as restrições são:
 
 1. O projeto deverá ser concluído até o dia 22/06/2018;
 1. O time do projeto deve ser composto por até 14 integrantes;
+3. O orçamento do projeto referente ao total que a equipe esta disposta a colaborar;
+4. As datas impostas para conclusão de fases do projeto.
 
 > TODO: Unificar as restrições de cada frente
 
@@ -26,4 +28,11 @@ De acordo com o contexto deste projeto, as restrições são:
 
 Exitem grandes restrições de projeto para a construção da estrutura as duas principais são: prazo curto para realização do projeto e a restrição orçamentária para a compra de materiais e construção. Com isso a equipe de estrutura tem que fazer  suas escolhas de projeto  limitadas por esses dois limites. Apresentando soluções viavies para integrar e receber todas a demandas das outras áreas do projeto.
 
-Agora se tratando do usuário parte-se do presusposto que o aperelho será utilizado por atletas de remo iniciantes ou atetlas que buscam melhorar o seu rendimento. E dependendo da necessidade será necessário o acompanhamneto de um treinador para uma melhor eficiência nos treinos. Ou seja, o aprelho de remo _in_ _door_ não substitui por definitivo a necessidade de um treinador, mas é um aparelho que tem por função auxíliar o treino e à avaliação de dados.  
+Agora se tratando do usuário parte-se do presusposto que o aperelho será utilizado por atletas de remo iniciantes ou atetlas que buscam melhorar o seu rendimento. E dependendo da necessidade será necessário o acompanhamneto de um treinador para uma melhor eficiência nos treinos. Ou seja, o aprelho de remo _in_ _door_ não substitui por definitivo a necessidade de um treinador, mas é um aparelho que tem por função auxíliar o treino e à avaliação de dados.
+
+### Restrições de Energia
+
+1. O gerador deve gerar energia suficiente para alimentar a carga;
+2. A potência que será dissipada no banco de resistores tem que ser suficiente para regular a corrente e consequentemente a força;
+3. O controlador de carga deve carregar a bateria e alimentar o sistema acoplado em paralelo com o módulo de resistores;
+4. Os resistores e os relés deverão suportar a potência dimensionada.
