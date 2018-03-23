@@ -1,10 +1,33 @@
 # Termo de Abertura do Projeto
 
+<!--
+Está na estrutura do pandoc?
+- [NÃO]
+
+Validações:
+
+[OK]: Tudo certo!
+[TODO]: Falta alguma coisa! Nesse caso, informe o que está faltando
+
+- Software []
+
+---------------
+- Eletrônica []
+
+---------------
+- Energia []
+
+---------------
+- Estrutura []
+
+---------------
+-->
+
 O presente termo define os principais requisitos que satisfazem as expectativas para o projeto e seu respectivo contexto. A aceitação de tais definições formaliza o início do projeto.
 
 O termo é composto pelas seguintes seções:
 
-1. **Objetivos**: Descreve os objetivos do projeto e os produtos que serão desenvolvidos para satisfazer tais objetivos;
+1. **Objetivos**: Descreve o objetivo do projeto e o produto que será desenvolvido para satisfazer tal objetivo;
 1. **Características**: Descreve as principais características de cada produto;
 1. **Critérios de Aceitação**: Descreve os principais requisitos que cada produto deve satisfazer de modo a garantir a concordância com os resultados esperados durante sua validação;
 1. **_Stakeholders_**: Descreve os principais envolvidos no projeto;

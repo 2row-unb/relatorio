@@ -1,9 +1,29 @@
-## Objetivos do Projeto
+## Objetivo do Projeto
 
-O objetivo do projeto é desenvolver um aparelho treinador para atletas do remo, focando naqueles que estão iniciando no esporte. O aparelho é composto por uma estrutura _in door_, que tem por finalidade proporcionar a simulação dos movimentos feitos pelos atletas na prática, e um treinador virtual, cujo papel é disponibilizar o progresso do usuário e compará-lo com modelos ideais, proporcionando, assim, possibilidade de otimização do treinamento.
+O objetivo do projeto é desenvolver um sistema integrado de treinamento para o esporte do remo, focado para atletas iniciantes do esporte. O sistema é composto por um aparelho de remo _indoor_, uma vestimenta de sensores cinemáticos e de um simulador virtual cujo papel é disponibilizar o progresso do usuário e compará-lo com modelos ideais, proporcionando, assim, a possibilidade de otimização do treinamento.
 
-	TODO: Unificar os objetivos de todas as frentes
-	
+### Definição do Produto
+
+O aparelho de remo _indoor_, de nome **2Row** (pronuncia-se "_to row_", do inglês: para remar) é um `(DESCRIÇÃO DA ESTRUTURA)` com os seguintes subsistemas acoplados:
+
+* `(Definição de subsistema #1 de energia)`;
+* `(Definição de subsistema #n de energia)`;
+* `(Definição de subsistema #1 de eletrônica)`;
+* `(Definição de subsistema #n de eletrônica)`.
+
+A vestimenta de sensores cinemáticos, de nome **2RSuit**, é um `(DESCRIÇÃO DA VESTIMENTA [Eletrônica])`.
+
+Adicionalmente, um sistema de _software_ de nome **2RSystem** é um sub-produto integrado ao **2Row** responsável pela inovação do simulador virtual e pelo controle do sistema de carga. Seus subsistemas são:
+
+1. **2RSDR** (2RSystem _Data Receiver_): Desserializa as informações dos sensores eletrônicos, as converte em modelo de dados do sistema e as transmite para a controladora (2RSC);
+1. **2RSC** (2RSystem _Controller_): Recebe informações e as direciona para o subsistema responsável por lidar com aquele tipo de informação;
+1. **2RSP** (2RSystem _Processer_): Recebe os dados dos sensores cinéticos e aplica algoritmos matemáticos para definição da performance do atleta, retornando tais resultados para a controladora (2RSC);
+1. **2RSDT** (2RSystem _Data Transmitter_): Recebe o fator de mudança de carga de dificuldade, serializa-o e transmite para os componentes eletrônicos responsáveis pelo controle de carga;
+1. **2RSV** (2RSystem _View_): Renderiza as informações de performance do atleta, o simulador de atividade ideal e o estado da carga de dificuldade, transmitindo a renderização para a interface de visualização.
+
+<!--
+
+### Objetivos E
 ### Objetivos de _Software_
 
 A frente de _software_ tem como objetivo construir um sistema capaz de:
@@ -27,7 +47,7 @@ Estruturalmente tem-se por finalidade a construção de uma aparelho de remo _in
 1. Um aparelho de alta qualidade e durabilidade
 2. Um aparelho seguro e confortalvel na hora do treinamento,
 
-E assim, garantir um treino muito mais eficaz para que o atleta alcance melhores resultados durante o exercício. 
+E assim, garantir um treino muito mais eficaz para que o atleta alcance melhores resultados durante o exercício.
 
 ### Objetivos de Eletrônica
 
@@ -39,3 +59,4 @@ O subsistema de eletrônica tem por finalidade projetar e construir um sistema d
 4. Definir mecanismo de integração desse sistema com software;
 5. Definir mecanismo de integração desse sistema com energia e estrutura;
 
+-->
