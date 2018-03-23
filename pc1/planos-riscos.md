@@ -16,4 +16,4 @@ O uso de ferramentas de gerenciamento de riscos ao longo das diversas fases do p
 
 Durante o plano de riscos do projeto/produto/processos os passos a se seguir para cada item do produto final seguirão o fluxograma abaixo para avaliação das medidas tomadas:
 
-![Fluxograma_riscos](imagens/fluxo_riscos.jpg)
+![Fluxograma de Avaliação de Medidas Corretivas](imagens/fluxo_riscos.JPG){Fluxograma de Avaliação de Medidas Corretivas}
