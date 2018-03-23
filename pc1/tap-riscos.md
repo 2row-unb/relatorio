@@ -49,3 +49,15 @@ Uma análise dos possíveis riscos que podem afetar o sucesso do projeto foi rea
 |Dimensionamento incorreto do banco de resistências|Queima de equipamentos e níveis de dificuldade esperados não atingidos|Média|Alto|Fazer cálculos e simulações antes da montagem e verificar sistema antes da ligação|
 |Controle de carga |Não conseguir controlar a intensidade da corrente e consequentemente não conseguir ajustar a carga|Média|Alto| Verificação de todo o sistema 
 |Sistema de armazenamento |Escolha de uma bateria que não atende as especificações e exigir mais dela encurtando sua vida útil|Média|Média|Realizar corretamente o dimensionamento
+
+
+### Riscos de Eletrônica
+
+Para especificar os riscos, consequências, probabilidade, impacto e a ação estratégica foi montada uma tabela SWOT com as principais execuções a serem feitas na parte de eletrônica, como a seguir:
+
+|Risco|Consequência   |Probabilidade| Impacto | Ação estratégica                  |
+|:-----:|:----------:|:--------------:|:-----------:|:---------:|
+|Falha na leitura de algum sensor|Leitura incorreta do sinal adquirido|Baixa|Alto|Troca do sensor após testes 
+|Calibração incorreta do IMU|Distorção do sinal e impossibilidade de gerar o movimento visual 3D|Média|Alto|Recalibração|
+|Integração do wattímetro com a estrutura |Deixar de ter a medida de potência|Média|Alto| Medir a potência a partir das cargas no gerador 
+
