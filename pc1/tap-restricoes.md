@@ -35,4 +35,5 @@ Agora se tratando do usuário parte-se do presusposto que o aperelho será utili
 1. O gerador deve gerar energia suficiente para alimentar a carga;
 2. A potência que será dissipada no banco de resistores tem que ser suficiente para regular a corrente e consequentemente a força;
 3. O controlador de carga deve carregar a bateria e alimentar o sistema acoplado em paralelo com o módulo de resistores;
-4. Os resistores e os relés deverão suportar a potência dimensionada.
+4. Os resistores e os relés deverão suportar a potência dimensionada;
+5. Integração com a parte de estrutura e eletrônica para acoplar o sistema de energia na estrtura do remo e elaborar a parte de controle e alimentação uma fonte estável, consequentemente.
