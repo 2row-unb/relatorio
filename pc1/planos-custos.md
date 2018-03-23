@@ -1,16 +1,14 @@
 ## Plano de Gerenciamento de Custo
 
-> [TODO: Eletrônica]
 
-> 1. Definição do gerenciamento de custo do projeto.
+> Definição do gerenciamento de custo do projeto.
 
-> 1. Qual o processo e quais os procedimentos?
+### Frequência e responsável pelo gereciamento de custos
 
-> 1. Quem é o responsável para executar o processo/procedimento?
+Os custos do projeto serão controlados em cada _sprint_, de acordo com a necessidade do projeto. O integrante do grupo responsável por receber e controlar todos os recursos será o _Project_ _Tracker_. 
 
-> 1. Com que frequência o processo será executado?
+### Procedimentos de gerenciamento de custos
 
+O procedimento foi definido da seguinte forma, o _Project_ _Tracker_ receberá uma quantia pré determinada nos sistemas formais de comunicação. Esse recurso será destinado para a compra de materiais e componentes, desse modo, o resposável tem de ser capaz de responder a cerca desses recursos. Os gastos detalhados e a quantia restante deve ser apresentada para os integrantes em cada _sprint_. Todos os valores estão estimados segundo as tabelas de custos para cada subsistema. Eventualmete podem ocorrer alterações durante o deselvolvimento do projeto.
 
-Os custos do projeto serão controlados semanalmente, de acordo com a necessidade do projeto. Assim, uma integrante do grupo ficará com a função de captar os recursos do projeto e controlar a quantia no início da semana, os gastos detalhados e a quantia restante para o fim da semana. Todos os valores estão estimados segundo discussão em grupo para o início do projeto e eventualmete podem ocorrer alterações durante o deselvolvimento.
-
-Quanto a base dos valores, está sendo considerado o valor médio de fontes variads. Os valores relativos ao transporte e frete de peças está vínculado ao valor, além disso não está sendo considerado o envio de nenhuma peça que envolva custo do exterior, até o momento.
+Quanto a base dos valores dos planejamento dos custos, foi considerado o valor médio de fontes de compras variadas. Os valores relativos ao transporte e frete de peças está vínculado ao valor, além disso não foi considerado o envio de nenhuma peça que envolva custo do exterior, até o momento.
