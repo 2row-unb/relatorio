@@ -58,25 +58,28 @@ De acordo com o contexto deste projeto, os marcos são:
 
 O diagramas de fluxos abaixo representam as atividades macros do projeto estrutural e as atividades micros que envolvem o _design_ da estrutura.  
 
-![Fluxo dos marcos de Estrutura](./imagens/Fluxo_Estr.JPG)
-
-![Fluxo dos micro das Simulações](./imagens/Fluxo_SimEstr.JPG)
-
 ### Marcos de Março
 1. (23) **Definir requisitos estruturais** 
 2. (24) **Levantamento de riscos**
 3. (28) **Entrega do PC1**
 ### Marcos de Abril
 1. (04) **Entrega do CAD**
+2. (13) **Fim da _Sprint_ 1**
 2. (18) **Entrega da Análise Estrutural**
 3. (18) **Aquisição de Material**
+4. (27) **Fim da _Sprint_ 2**
 ### Marcos de Maio
 1. (10) **Finalização da construção**
-2. (16) **Entrega da Estrutura**
-3. (16) **Entrega do PC2**
-4. (17) **Início da Integração**
-5. (29) **Fim da Primeira fase de Projeto e Construção de Subsistemas**
+2. (11) **Fim da _Sprint_ 3**
+3. (16) **Entrega da Estrutura**
+4. (16) **Entrega do PC2**
+5. (17) **Início da Integração**
+6. (29) **Fim da Primeira fase de Projeto e Construção de Subsistemas**
+7. (30) **Fim da _Sprint_ 4**
 ### Marcos de Junho 
-1. (22) **Fim da Fase de Integração de Subsistemas e Finalização do Produto**
-2. (22) **Fim do Projeto**
-3. (22) **Entrega do PC3**
+1. (08) **Fim da _Sprint_ 5**
+2. (22) **Fim da Fase de Integração de Subsistemas e Finalização do Produto**
+3. (22) **Fim da _Sprint_ 6**
+4. (22) **Fim do Projeto**
+5. (22) **Entrega do PC3**
+6. (22) **Fim do Projeto**
