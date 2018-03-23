@@ -18,7 +18,7 @@ De acordo com o contexto deste projeto, as premissas são:
 
 Parte do presusposto que o atleta tenha o conhecimneto básico de como funciona a estrutura e a maneira correta de manusea-la e que não não possua impedimentos físicos à atividade física, na qual se destina o aparelho.
 
-### Premissas de Energia
+### Premissas de _Energia_
 
 1. Parte-se do principio que para treinamento no remo o atleta deve entender que o “remarema” é um produto desenvolvido para simular a força necessária que ele deve realizar, mas não substitui o treinamento convencional;
 2.  Todos os recursos necessários para o desenvolvimento da área de energia estarão satisfeitos. Tais como: ferramentas para elaboração e manutenção do banco de resistores, gerador, bateria, controle de carga, entre outros;
