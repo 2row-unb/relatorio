@@ -6,7 +6,7 @@ Um levantamento foi feito dos possiveis riscos estruturais, a tabela abaixo ilus
 
 |Risco|Consequência   |Probabilidade| Impacto | Ação estratégica                  |
 |:-----:|:----------:|:--------------:|:-----------:|:---------:|
-|Falha mecânica do equipamento;|O eixo de transmissão não funcionar|Média|Alto|Fazer cálculos e simulações corretos 
+|Falha mecânica do equipamento|O eixo de transmissão não funcionar|Média|Alto|Fazer cálculos e simulações corretos 
 |Atraso na fabricação da estrutura|Entrega atrasada do projeto|Média|Alto|Seguir o cronograma corretamente|
 |Não comportar outros subsistemas|A integração não funcionar|Baixa|Médio|Ter uma boa comunicação com as outras áreas|
 |Estrutura dimensionada incorretamente|O aparelho não funcinar|Baixa|Alto|Realização de dimensionamento detalhado
