@@ -47,16 +47,27 @@ Para a atuação de captação e processamento de sinais a Raspberry será funda
 ![Raspberry Pi 3^[Fonte: ]](./imagens/Raspberry.jpg){#fig:Raspberry_Pi_3}
 
 Características:
+
 Quad Core 1.2GHz Broadcom BCM2837 64bit CPU
+
 1GB RAM
+
 BCM43438 wireless LAN e Bluetooth de baixo consumo (BLE)
+
 40-pin físicos GPIO
+
 4 USB 2 portas
+
 4 Polos stereo output and composite video port
+
 Full HDMI
+
 Porta CSI para câmera para conexão com a câmera de Raspberry
+
 Porta DSI display para conexão ao display Raspberry Pi touchscreen
+
 Entrada Micro SD para adição do sistema operacional
+
 
 
 
@@ -72,15 +83,23 @@ Entrada Micro SD para adição do sistema operacional
 
 O ESP8266 é um microcontrolador com um processamento considerável para a aplicação em questão e possui um excelente diferencial, o módulo WI-FI acoplado. Além disso já traz consigo, conversor analógico-digital(ADC) e vários protocolos de comunicações, isso traria ao sistema versatilidade para aquisição e trato de sinais.
 
+![ESP8266^[Fonte: ]](./imagens/esp8266.jpg){#fig:ESP_8266}
+
 Características
 
-CPU 32-bit RISC: Tensilica Xtensa LX106 rodando a 80 MHz
-64 KB de memória RAM de instruções, 96 KB de dados
-Flash QSPI Externo - de 512 KB a 4 MB
-IEEE 802.11 b / g / n Wi-Fi
-16 pinos de GPIO
-SPI, I²C, UART
-Tensão de operação ->3.3V
+CPU 32-bit RISC: Tensilica Xtensa LX106 rodando a 80 MHz;
+
+64 KB de memória RAM de instruções, 96 KB de dados;
+
+Flash QSPI Externo - de 512 KB a 4 MB;
+
+IEEE 802.11 b / g / n Wi-Fi;
+
+16 pinos de GPIO;
+
+SPI, I²C, UART;
+
+Tensão de operação ->3.3V.
 
 
 
