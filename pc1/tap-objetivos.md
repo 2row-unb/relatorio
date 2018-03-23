@@ -29,3 +29,13 @@ Estruturalmente tem-se por finalidade a construção de uma aparelho de remo _in
 
 E assim, garantir um treino muito mais eficaz para que o atleta alcance melhores resultados durante o exercício. 
 
+### Objetivos de Eletrônica
+
+O subsistema de eletrônica tem por finalidade projetar e construir um sistema de sensoriamento para o remo ergométrico para analisar parâmetros biomecânicos e biomédico. Como objetivos especifícos tem-se:
+
+1. Adquirir sinais de frequência cardíaca;
+2. Adquirir e condicionar sinais de movimento;
+3. Construir o wattímetro de eixo;
+4. Definir mecanismo de integração desse sistema com software;
+5. Definir mecanismo de integração desse sistema com energia e estrutura;
+
