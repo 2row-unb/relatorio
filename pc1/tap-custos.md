@@ -13,12 +13,18 @@ A descrição mais detalhada dos materiais está conforme tabela subsequente.
 
 | Requisitos de Estrutura | Quantidade | Preço (R$) | Fornecedor |
 |--------------------------|------------|-------|------------|
-| Ferros                   |        x   |    ???   |      Gravia      |
-| Madeira                   |        x  |   70,00  |     Madefort Livre       |
-| Cabo de aço         |        1   |    ???   |    AC Coelho      |
-|     Rolamentos |        1   |    ???  |    Emprestado        |
-| Parafuso, aruela, porca, etc    |        x   |  60,00    |  AC Coelho          |
-| Polia|       2   |   ???    |       AC Coelho    |
+| Tubo aço 1020  6m            |        1   |    55   |      Gravia      |
+| Barra perfil retangular 20x20 #14                  |        2  |   35  |     Ferro e Aço       |
+| Barra  perfil Cartola        |        1   |    40   |    Ferro e Aço      |
+|     Barra perfil  U|        1   |    ???  |    Ferro e Aço        |
+| Kit de redução de moto | 1  | 90 / 500 | Riffel |
+| Parafusos, Porcas e Arruelas     |        x   |  50,00    |  POPA, porcas e parafusos          |
+| Polia|       3   |   ???    |       AC Coelho    |
+| Correia  | 1  |???  | AC Coelho |
+| Corda Elástica 10m | 1  | 15 | Japão da Construção |
+| Banco Estofado | 1  |???  | ??? |
+| Pedal Bicicleta | 2  |60  | Mercado Livre  |
+| Chapa de Aço Zincado | 3m |35 | Ferro e Aço|
 
 ### Custos Eletrônica
 
