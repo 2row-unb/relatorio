@@ -22,3 +22,11 @@ Os Stakeholders da disciplina em comum acordo com o subsistema de energia defina
 2. A variação dessa corrente irá gerar um conjugado elétrico nas bobinas do estator que se oporá ao conjugado mecânico da remada aplicado no rotor.
 
 3. A energia excedente gerada será armazenada em uma bateria, que por sua vez irá alimentar o sistema eletrônico. A potência necessária para manter o sistema funcionando ainda será dimensionado.
+
+### Critérios de Aceitação da _Estrutura_
+
+A estrutura será dimensionada para que seja capaz de antender uma vasta gama de pessoas. Foi escolhido como parâmetro um homem americano do percentil 95, que possui 1.86 m de altura e pesa 102 KG. Assim, buscando uma margem de segurança, decidiu-se dimensionar a estrutura para que suporte o uso de um homem de até 2 metros de altura e de até 150 KG. Não há limite mínimo de estatura e de peso para o uso do aparelho. Com isso, foram definidos os critérios de aceitação da estrutura:
+
+1. A estrutura não deve falhar (quebrar ou deformar plasticamente) ao ser utilizada dentro da faixa de operação definida.
+
+2. A estrutura deve acomodar todos os outros subsistemas propostos.
