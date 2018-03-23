@@ -80,6 +80,14 @@ Entrada Micro SD para adição do sistema operacional
 
 
 ### MSP 430
+O MSP apresenta um sistema de clock, sendo o Timer_A o mais completo. Esse sistema possui um registrador de 16 bits e este é incrementado de acordo com o sinal de clock utilizado. O Timer_A pode-se trabalhar com os canais de captura ou de comparação. Nos canais de captura pode-se armazenar nos registradores TACCRx o valor contido no registrador TAR no instante em que o sinal escolhido foi mudado. Já nos canais de comparação a saída de escolha é mudada quando TAR = TACCRx. Ambos canais permitem gerar uma interrupção. O número de canais varia de acordo com a família do microcontrolador, no caso no Timer_A, o canal 0 é meramente importante, pois ele possui um endereço de interrupção de maior prioridade e o mesmo controla todo o funcionamento do Timer estudado. 
+
+Os microprocessadores são componentes aritméticos e lógicos, em que não utilizam sistemas operacionais, mas sim um software específico. Aprensentam em sua estrutura interna memórias para armazenamento de dados de escrita e leitura, interfaces com o usuário de entrada e saída, elementos de converão analógio/digital de até 16 bits, conversor digital/analógico, timers que possuem diversos modos de funcionamento. 
+
+Os MSP430 podem ser chamados de chips, os quais possuem baixo consumo de corrente causado devido a forma de trabalho da CPU, da ordem de 0,1µA. A tensão de operação é baixa, em que permite que operem de 1,8V a 3,6V. Esses microprocessadores são utilizados para desenvolver atividades complexas tendo em vista as instruções objetivas em um período de tempo relativamente pequeno. Ele utiliza um barramento de 16  bits, o endereçamento é permito para qualquer operação o que facilita o processo de compilação. Os resgistrados usados para diversas atividades são de R4 a R15.
+ 
+Os seis modos de operação do MSP430 exitentes- do LPM0 a LPM4- auxiliam no controle do consumo de corrente, ou seja, faz com que não haja disperdício de energia quando o mesmo não estiver sendo utilizado. A mudança do funcionamento normal para um de baixo consumo pode ser feita, como foi o caso desse experimento, a partir da habilitação de uma interrupção, em que depois de executada retorna novamente ao baixo consumo. O modo de baixo consumo trabalhado no programa foi o LPM4, em que a CPU e todos os sinais de clock são desativados.
+
 
 ![MSP430^[Fonte: ]](./imagens/msp430.jpg){#fig:MSP_430}
 
