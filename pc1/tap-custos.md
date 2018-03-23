@@ -4,7 +4,7 @@
 
 A mão-de-obra é exclusiva dos membros do grupo, considerando o rendimento responsável de cada um, então não haverá investimento em pessoal a não ser físico e nunca financeiro. Caso os serviços prestados pelos estudantes do grupo na disciplana fossem contabilizados para caráter de informação, cada um poderia ser considerado como aluno de projeto da UnB com custo de R$ 400,00, para 13 membros por 4 meses, totalizando um gasto total de R$ 20800,00, segundo equação abaixo:
 
-Gasto total com mão-de-obra => $650,00*13*4 = 20800,00$
+Gasto total com mão-de-obra: $650,00 \times 3 \times 4 = 20800,00$
 
 ### Custos Estrutura
 
@@ -67,4 +67,3 @@ Os gastos com relação a aplicação da Engenharia de Energia diz respeito, em 
 ### Custos Totais
 
 Os custos gerais de todas as partes do projetos ficam em R$ ?????. Como o grupo possui 13 integrantes o valor gasto esperado, por pessoa é de R$ ??????.
-
