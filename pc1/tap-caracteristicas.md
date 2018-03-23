@@ -7,7 +7,7 @@ A arquitetura do submódulo de _software_ do projeto será baseada em uma divis�
 
 Levando a arquitetura em conta, foram projetados 5 subsistemas: **Subsistema de Controle**, **Subsistema de Aquisição de Dados**, **Subsistema de Processamento**, **Subsistema de Visualização de Performance** e **Subsistema Atuador**. A interação entre eles pode ser visualizada na diagramação a seguir:
 
-![Arquitetura de Software^[Arquitetura de Software]](./imagens/arquitetura_software.png){#fig:arquiteturasoftware}
+![Arquitetura de Software^[Arquitetura de Software]](./imagens/arquitetura_software2.png){#fig:arquiteturasoftware}
 
 Uma descrição sucinta de cada um dos subsistemas pode ser conferida nos tópicos seguintes:
 #### 1. Subsistema de Controle
