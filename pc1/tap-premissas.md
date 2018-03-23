@@ -14,18 +14,18 @@ De acordo com o contexto deste projeto, as premissas são:
 1. Parte-se do princípio que toda ferramenta, módulo ou sistema utilizado para desenvolver as aplicações do projeto será _Open Source_;
 1. Parte-se do princípio que três estudantes de engenharia de _software_ serão disponibilizados para desenvolvimento das aplicações;
 
-### Premissas de _Estrutura_
+### Premissas de Estrutura
 
 Parte do presusposto que o atleta tenha o conhecimneto básico de como funciona a estrutura e a maneira correta de manusea-la e que não não possua impedimentos físicos à atividade física, na qual se destina o aparelho.
 
-### Premissas de _Energia_
+### Premissas de Energia
 
 1. Parte-se do principio que para treinamento no remo o atleta deve entender que o “remarema” é um produto desenvolvido para simular a força necessária que ele deve realizar, mas não substitui o treinamento convencional;
 2.  Todos os recursos necessários para o desenvolvimento da área de energia estarão satisfeitos. Tais como: ferramentas para elaboração e manutenção do banco de resistores, gerador, bateria, controle de carga, entre outros;
 3. Será possível gerar uma potência para ser dissipada no banco de resistores e assim, regular a corrente e consequentemente a força necessária para que o atleta realize o exercício;
 4. Será possível carregar a bateria e alimentar o sistema acoplado em paralelo com o módulo de resistores.
 
-### Premissas de _Eletrônica_
+### Premissas de Eletrônica
 
 1. Parte-se do princípio que três estudantes de engenharia _Eletrônica_ estarão designados no grupo ao longo de todo o projeto;
 2. Parte-se do princípio de que será possível obter todos os sinais propostos com os recursos que o grupo possui, tanto de instrumentação como a medida de potência no eixo;
