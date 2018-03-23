@@ -21,7 +21,7 @@ Os IMUs são capazes de realizar o monitoramento da velocidade e aceleração, t
 
 O acelerômetro é regido pela Segunda Lei de Newton, ou seja, pode-se obter a partir dele medições de aceleração, linear ou angular e possíveis inclinações. Dessa forma, esses dados serão utilizados  para a obtenção dos ângulos do membro inferior direito. Será realizado esse estudo em apenas um membro inferior, pois no esporte os ciclos da remada são bem síncronos. 
 
-###Sensor de batimento cardíaco
+### Sensor de batimento cardíaco
 
 O módulo de frequência cardíaca possibilita obter informações acerca de como o atleta iniciante está se portando fisiologicamente, dados como fadiga rápida e excessiva podem ser vistas como indicativos de um exercício não tão bem realizado. Para ter esse acompanhamento será utilizado o sensor de frequência cardíaca 4MD69, com tamanho 16 x 2,7mm, baixo consumo de energia (cerca de 4 mA) e tensão de operação de 3 a 5 V.
 
@@ -38,6 +38,14 @@ O sistema eletrônico será integrado juntamente com o de software pelo microcom
 Para a atuação de captação e processamento de sinais a Raspberry será fundamental, integrada com outros dispositivos como MSP430 e display próprio para Raspberry será possível adquirir sinais inclusive analógicos, visto que a Raspberry não possui conversor A/D utilizando o conversor do MSP430, transmitir os sinais para a Raspberry processar e fazer as tomadas de decisão e ao final mostrar através da interface do display touchscreen.
 
 
+### Raspberry Pi 3
+
+A Raspberry Pi 3 Modelo B foi lançada em fevereiro de 2016. Ela tem se mostrado muito útil para o desenvolvimento de sistemas embarcados relacionados à aquisição e processamento de sinais para aplicações diversas, como no controle de drones, robótica, processamento de imagens, entre outros. 
+
+Para a atuação de captação e processamento de sinais a Raspberry será fundamental, integrada com outros dispositivos como MSP430 e display próprio para Raspberry será possível adquirir sinais inclusive analógicos, visto que a Raspberry não possui conversor A/D utilizando o conversor do MSP430, transmitir os sinais para a Raspberry processar e fazer as tomadas de decisão e ao final mostrar através da interface do display touchscreen.
+
+![Raspberry Pi 3^[Fonte: ]](./imagens/Raspberry.jpg){#fig:Raspberry_Pi_3}
+
 Características:
 Quad Core 1.2GHz Broadcom BCM2837 64bit CPU
 1GB RAM
@@ -53,8 +61,26 @@ Entrada Micro SD para adição do sistema operacional
 
 
 
+
+
+
 ### MSP 430
 
+![MSP430^[Fonte: ]](./imagens/msp430.jpg){#fig:MSP_430}
 
-O MSP430 é da família dos microcontroladores de 16 BITS e foi desenvolvido pela Texas Instruments em 1993 para aplicações de baixo consumo de energia. 
+### ESP 8266
+
+O ESP8266 é um microcontrolador com um processamento considerável para a aplicação em questão e possui um excelente diferencial, o módulo WI-FI acoplado. Além disso já traz consigo, conversor analógico-digital(ADC) e vários protocolos de comunicações, isso traria ao sistema versatilidade para aquisição e trato de sinais.
+
+Características
+
+CPU 32-bit RISC: Tensilica Xtensa LX106 rodando a 80 MHz
+64 KB de memória RAM de instruções, 96 KB de dados
+Flash QSPI Externo - de 512 KB a 4 MB
+IEEE 802.11 b / g / n Wi-Fi
+16 pinos de GPIO
+SPI, I²C, UART
+Tensão de operação ->3.3V
+
+
 
