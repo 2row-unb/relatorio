@@ -42,7 +42,22 @@ De acordo com o contexto deste projeto, os marcos são:
 1. (22) **Fim da Fase de Integração de Subsistemas e Finalização do Produto**
 1. (22) **Fim do Projeto**
 
+## Marcos de Eletrônica
 
+### Marcos de Março
+1.(28) **Definir todos os componentes e formas de aplicações**: Cada componente terá sua escolha visando maior viabilidade.
+
+### Marcos de Abril
+1.(12) **Testar o funcionamento de sistemas eletrônicos isolados 1**: Testar o funcionamento do medidor de frequência cardiáca e calibrar e testar o sensor de unidade me medida inercial (IMU);
+2.(22) **Testar o funcionamento de sistemas eletrônicos isolados 2**: Garantir o funcionamento do sensor de unidade de medida inercial(IMU) e construção da lógica de movimento;
+3.(29) **Apurar medidas**: Conferir se os sinais gerados pelo usário esão de acordo com os filtros planejados e se toda a eletrônica embarcada relacionada ao sensoriamento estão de acordo;
+### Marcos de Maio
+1.(03) **Acionamento das resistências** Construção da placa para acionamento das resistências com o gerador;
+2.(09) **Teste em conjunto com a base de estrutura**: Acoplar o funcionamento da lógica de sensores e eletrônica embarcada ao funcionamento da estrutura.
+3.(15) **Unir o sistema de gerador ao embarcado**: Projetar e configurar o funcionamento da eletrônica embarcada para reconhecimento da parte de geração(energia), já acoplada ao sistema;
+4.(19) **Junção ao software**: Unir o código construído para trabalhar junto a interface gráfica feita por software.
+### Marcos de Junho
+1.(02) **Funcionamento do sistema**: Toda eletrônica já instalada na estrutura e interligada com software e energia.
 ## Marcos de Energia
 
 ### Marcos de Março
