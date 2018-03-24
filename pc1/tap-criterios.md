@@ -27,7 +27,7 @@
 
 ### Critério de aceitação de Eletrônica
 
-O sistema de eletrônica está bem distribuido para ação dos componentes para aquisição dos resultados esperados. Todo o sistema será projetado com boas vistas ao acoplamento dos sistemas de energia e de software.
+O sistema de eletrônica está bem distribuido para ação dos componentes e para aquisição dos resultados esperados. Todo o sistema será projetado com boas vistas ao acoplamento dos sistemas de energia e de software.
 
 1. A aquisição e tratamento dos sinais recebidos do sensor de frequência cardiáca e da unidade de medida inercial(IMU).
 
