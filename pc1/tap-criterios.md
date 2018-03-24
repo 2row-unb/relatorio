@@ -33,7 +33,7 @@ O sistema de eletrônica está bem distribuido para ação dos componentes para 
 
 2. A ligação entre o reconhecimento da posição do usuário em conjunto com o funcionamento e acionamento das resistências.
 
-3. Aferir a potencia do sistema através de wattímetro ligado à eletrônica embarcadade informações de sinais e controle de acionamento.
+3. Aferir a potência do sistema através de wattímetro ligado à eletrônica embarcadade informações de sinais e controle de acionamento.
 
 
 ### Critério de aceitação de energia
