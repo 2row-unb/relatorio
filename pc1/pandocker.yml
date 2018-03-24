@@ -1,0 +1,33 @@
+# test.yml
+sections:
+  - config.md
+  - introducao.md
+  - problematizacao.md
+  - tap.md
+  - tap-objetivos.md
+  - tap-caracteristicas.md
+  - tap-criterios.md
+  - tap-stakeholders.md
+  - tap-premissas.md
+  - tap-restricoes.md
+  - tap-riscos.md
+  - tap-marcos.md
+  - tap-custos.md
+  - eap.md
+  - planos.md
+  - planos-tempo.md
+  - planos-custos.md
+  - planos-rh.md
+  - planos-riscos.md
+  - bibliografia.md
+
+pandoc:
+  template_path: ""
+  source_path:   "pc1/"
+  output:        "pc1.pdf"
+  tof:           true
+  toc:           true
+  tot:           true
+  filters:
+    - pandoc-crossref
+    - pandoc-citeproc
