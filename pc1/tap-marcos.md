@@ -54,7 +54,7 @@ De acordo com o contexto deste projeto, os marcos são:
 ### Marcos de Maio
 1.(03) **Acionamento das resistências** Construção da placa para acionamento das resistências com o gerador;
 2.(09) **Teste em conjunto com a base de estrutura**: Acoplar o funcionamento da lógica de sensores e eletrônica embarcada ao funcionamento da estrutura.
-3.(15) **Unir o sistema de gerador ao embarcado**: Projetar e configurar o funcionamento da eletrônica embarcada para reconhecimento da parte de geração(energia), já acoplada ao sistema;
+3.(15) **Unir o sistema de gerador e wattímetro ao embarcado**: Projetar e configurar o funcionamento da eletrônica embarcada para reconhecimento da parte de geração(energia), já acoplada ao sistema, assim como o wattímetro;
 4.(19) **Junção ao software**: Unir o código construído para trabalhar junto a interface gráfica feita por software.
 ### Marcos de Junho
 1.(02) **Funcionamento do sistema**: Toda eletrônica já instalada na estrutura e interligada com software e energia.
