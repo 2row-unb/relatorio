@@ -25,6 +25,16 @@
 1. o subsistema deve ser capaz de receber as demandas de alteração de carga do **Subsistema de Controle** sem qualquer tipo de informação;
 2. o subsistema deve ser capaz de mandar sinais, sem qualquer perda de informação, para os microcontroladores eletrônicos, para que os mesmos possam alterar a carga da estrutura conforme especificado pelo atleta.
 
+### Critério de aceitação de Eletrônica
+
+O sistema de eletrônica está bem distribuido para ação dos componentes para aquisição dos resultados esperados. Todo o sistema será projetado com boas vistas ao acoplamento dos sistemas de energia e de software.
+
+1. A aquisição e tratamento dos sinais recebidos do sensor de frequência cardiáca e da unidade de medida inercial(IMU).
+
+2. A ligação entre o reconhecimento da posição do usuário em conjunto com o funcionamento e acionamento das resistências.
+
+3. Aferir a potencia do sistema através de wattímetro ligado à eletrônica embarcadade informações de sinais e controle de acionamento.
+
 
 ### Critério de aceitação de energia
 
