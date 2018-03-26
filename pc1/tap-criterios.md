@@ -52,7 +52,7 @@ Validações:
 #### Critérios de Aceitação do 2RSP
 
 * **CA 2RSP-1**: O subsistema deve ser capaz de ser integrado com o subsistema **2RSC**, fornecendo um aviso de sucesso ou erro em sua tentativa de conexão;
-* **CA 2RSP-2**: O subsistema deve ser capaz <!-- TODO -->
+* **CA 2RSP-2**: O subsistema deve ser capaz processar os dados dos sensores fornecidos por X, <!-- TODO -->
 
 #### Critérios de Aceitação do 2RSV
 
