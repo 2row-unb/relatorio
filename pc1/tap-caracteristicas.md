@@ -90,14 +90,14 @@ Suas principais características são:
 
 Suas principais funcionalidades são:
 
-* **_Feature_ 2RSDR-1**: Receber dados dos botões de ação do **2Row**, convertê-lo em modelo e transmitir a informação para o **2RSC**;
-* **_Feature_ 2RSDR-2**: Receber dados do sensor de potência do **2Row**, convertê-lo em modelo e transmitir a informação para o **2RSC**;
-* **_Feature_ 2RSDR-3**: Receber dados do **2RSuit**, convertê-lo em modelo e transmitir a informação para o **2RSC**;
-* **_Feature_ 2RSDR-4**: Receber dados do microcotrolador do controle de carga, convertê-lo em modelo e transmitir a informação para o **2RSC**;
+* **_Feature_ 2RSDR-1**: Receber dados dos botões de ação do **2Row**, convertê-los em modelo e transmitir a informação para o **2RSC**;
+* **_Feature_ 2RSDR-2**: Receber dados do sensor de potência do **2Row**, convertê-los em modelo e transmitir a informação para o **2RSC**;
+* **_Feature_ 2RSDR-3**: Receber dados do **2RSuit**, convertê-los em modelo e transmitir a informação para o **2RSC**;
+* **_Feature_ 2RSDR-4**: Receber dados do microcotrolador do controle de carga, convertê-los em modelo e transmitir a informação para o **2RSC**;
 
 #### 2RSP - Subsistema de Processamento
 
-Este subsistema é responsável por processar e calcular dados transmitidos pelo **Subsistema de Controle (2RSC)**, principalmente sobre o desempenho do atleta. Os dados processados são devolvidos para o **Subsistema de Controle (2RSC)**, este que direciona para o subsistema do **2RSystem** responsável pelo uso dos dados processados.
+Este subsistema é responsável por processar e calcular dados transmitidos pelo **Subsistema de Controle (2RSC)**, principalmente sobre o desempenho do atleta. Os dados processados são devolvidos para o **Subsistema de Controle (2RSC)**, este que direciona para o subsistema do **2RSystem**, responsável pelo uso dos dados processados.
 
 Suas principais características são:
 
@@ -112,7 +112,7 @@ Suas principais funcionalidades são:
 * **_Feature_ 2RSP-2**: Definir o modelo de performance ideal;
 * **_Feature_ 2RSP-3**: Comparar a performance do atleta com o modelo de performance ideal;
 * **_Feature_ 2RSP-4**: Realizar cálculos de renderização e conversões lineares da performance do atleta e da performance ideal para um modelo de animação do corpo humano;
-* **_Feature_ 2RSP-5**: Gerar estatísticas relevantes para o contexto do projeto.
+* **_Feature_ 2RSP-5**: Gerar estatísticas relevantes para o contexto do projeto;
 * **_Feature_ 2RSP-6**: Transmitir as informações processadas para o **2RSC**.
 
 #### 2RSV Subsistema de Visualização de Performance
