@@ -30,5 +30,5 @@ Para especificar os riscos, consequências, probabilidade, impacto e a ação es
 |:-----:|:----------:|:--------------:|:-----------:|:---------:|
 |Falha na leitura de algum sensor|Leitura incorreta do sinal adquirido|Baixa|Alto|Troca do sensor após testes 
 |Calibração incorreta do IMU|Distorção do sinal e impossibilidade de gerar o movimento visual 3D|Média|Alto|Recalibração|
-|Integração do wattímetro com a estrutura |Deixar de ter a medida de potência|Média|Alto| Medir a potência a partir das cargas no gerador 
-
+|Integração do wattímetro com a estrutura |Deixar de ter a medida de potência|Média|Alto| Medir a rotação do eixo com um potenciômetro multigiro
+|Queima de componentes |Aumento no tempo de entrega dos resultados |Média |Alto | Repor componente e refazer o circuito necessário
