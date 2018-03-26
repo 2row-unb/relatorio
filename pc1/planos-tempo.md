@@ -27,10 +27,10 @@ O cronograma foi dividido de acordo com as frentes de atuação: Eletrônica, En
 |              | Dimensionar Banco de Resistências              | Energia         | 18/04/18 | 25/04/18 |
 |              | Testar o Controle de Carga                     | Energia         | 25/04/18 | 02/05/18 |
 |              | Dimensionar bateria                            | Energia         | 02/05/18 | 09/05/18 |
-|              | Realizar comunicação com sensores              | Eletrônica      |          |          |
-|              | Realizar controle utilizando Raspberry e micro | Eletrônica      |          |          |
-|              | Testar interfaceamento com software            | Eletrônica      |          |          |
-|              | Análise de sinal em controle do wattimetro     | Eletrônica      |          |          |
+|              | Realizar comunicação com sensores              | Eletrônica      | 02/04/18 | 13/04/18 |
+|              | Realizar controle utilizando Raspberry e micro | Eletrônica      | 09/04/18 | 20/04/18 |
+|              | Testar interfaceamento com software            | Eletrônica      | 23/04/18 | 05/05/18 |
+|              | Análise de sinal e controle do wattimetro      | Eletrônica      | 07/05/18 | 25/05/18 |
 |              | Realização do CAD                              | Estrutura       | 28/03/18 | 04/04/18 |
 |              | Análise estrutural (Ansys, Catia, Adams)       | Estrutura       | 04/04/18 | 18/04/18 |
 |              | Criação de desenhos técnicos para a construção | Estrutura       | 11/04/18 | 18/04/18 |
@@ -42,10 +42,10 @@ O cronograma foi dividido de acordo com as frentes de atuação: Eletrônica, En
 |              |                                                | Software        |          |          |
 |              |                                                | Software        |          |          |
 |              |                                                |                 |          |          |
-| Integração   | Integrar subsistemas                           |                 |          |          |
-|              | Testar o sistema integrado                     |                 |          |          |
-|              | Identificar possíveis falhas                   |                 |          |          |
-|              | Aplicar ações corretivas                       |                 |          |          |
+| Integração   | Integrar subsistemas                           | Todas           |          |          |
+|              | Testar o sistema integrado                     | Todas           |          |          |
+|              | Identificar possíveis falhas                   | Todas           |          |          |
+|              | Aplicar ações corretivas                       | Todas           |          |          |
 | Encerramento | Apresentação e entrega do produto              | Todas           | 25/06/18 | 06/07/18 |
 
 
