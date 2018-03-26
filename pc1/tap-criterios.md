@@ -1,10 +1,71 @@
-
 ## Critérios de Aceitação do Projeto
 
-	TODO: Sintetizar as os critérios de aceitação de todas as frentes para usar como introdução desta seção
+<!--
+Está na estrutura do pandoc?
+- [NÃO]
 
-### Critérios de Aceitação de _Software_
- Serão definidos critérios de aceitação para cada um dos subsistemas do submódulo de _software, os quais estão listados a seguir em tópicos:
+Validações:
+
+[OK]: Tudo certo!
+[TODO]: Falta alguma coisa! Nesse caso, informe o que está faltando
+
+- Software []
+> Jonathan [TODO]
+>> Sintetizar as os critérios de aceitação de todas as frentes
+>> Definir uma introdução
+
+---------------
+- Eletrônica []
+
+---------------
+- Energia []
+
+---------------
+- Estrutura []
+
+---------------
+-->
+
+### Critérios de Aceitação do 2RSystem
+
+* **CA 2RSystem-1**: O sistema deve possuir uma função _failsafe_ onde requisita a anulação da carga de dificuldade em caso de erro;
+* **CA 2RSystem-2**: O sistema deve ser capaz de fornecer as informações de performance do atleta com atraso máximo de $ 600 ms $ (_milliseconds_);
+* **CA 2RSystem-3**: O sistema deve ser capaz de realizar o _pipeline_ de início de treino, conforme `{figura}`, na íntegra;
+* **CA 2RSystem-4**: O sistema deve ser capaz de realizar o _pipeline_ de fim de treino, conforme `{figura}`, na íntegra;
+* **CA 2RSystem-5**: O sistema deve ser capaz de realizar o _pipeline_ de processamento de dados da **2RSuit**, conforme `{figura}`, na íntegra;
+* **CA 2RSystem-6**: O sistema deve ser capaz de realizar o _pipeline_ de processamento de potência do atleta, conforme `{figura}`, na íntegra;
+* **CA 2RSystem-7**: O sistema deve ser capaz de realizar o _pipeline_ de controle de dificuldade, conforme `{figura}`, na íntegra;
+
+#### Critérios de Aceitação do 2RSC
+
+* **CA 2RSC-1**: O subsistema deve ser capaz de ser integrado com todos os outros subsistemas do **2RSystem**, fornecendo um aviso de sucesso ou erro em sua tentativa de conexão;
+* **CA 2RSC-2**: O subsistema não deve, em hipótese alguma, modificar as informações recebidas pelos outros subsistemas;
+
+#### Critérios de Aceitação do 2RSDR
+
+* **CA 2RSDR-1**: O subsistema deve ser capaz de ser integrado com o **2RSuit**, fornecendo um aviso de sucesso ou erro em sua tentativa de conexão;
+* **CA 2RSDR-2**: O subsistema deve ser capaz de ser integrado com o microcontrolador de controle de dificuldade do **2Row**, fornecendo um aviso de sucesso ou erro em sua tentativa de conexão;
+* **CA 2RSDR-3**: O subsistema deve ser capaz de ser integrado com os botões da interface de usuário do **2Row**, fornecendo um aviso de sucesso ou erro em sua tentativa de conexão;
+* **CA 2RSDR-4**: O subsistema deve ser capaz de ser integrado com o subsistema **2RSC**, fornecendo um aviso de sucesso ou erro em sua tentativa de conexão;
+* **CA 2RSDR-5**: O subsistema deve ser capaz de desserializar os dados e convertê-las em variáveis/objetos modelos;
+
+#### Critérios de Aceitação do 2RSP
+
+* **CA 2RSP-1**: O subsistema deve ser capaz de ser integrado com o subsistema **2RSC**, fornecendo um aviso de sucesso ou erro em sua tentativa de conexão;
+* **CA 2RSP-2**: O subsistema deve ser capaz <!-- TODO -->
+
+#### Critérios de Aceitação do 2RSV
+
+* **CA 2RSV-1**: O subsistema deve ser capaz de ser integrado com o subsistema **2RSC**, fornecendo um aviso de sucesso ou erro em sua tentativa de conexão;
+* **CA 2RSV-2**: O subsistema deve ser capaz de fornecer as animações do atleta e do modelo ideal com taxa média de $ 20 fps $ (_frames per second_);
+
+#### Critérios de Aceitação do 2RSDT
+
+* **CA 2RSDT-1**: <!-- TODO -->
+
+<!--
+
+Serão definidos critérios de aceitação para cada um dos subsistemas do submódulo de _software_, os quais estão listados a seguir em tópicos:
 
 #### Critérios de Aceitação do Subsistema de Controle
 1. o subsistema deve ser capaz de receber e transmitir dados para qualquer outro subsistema sem qualquer tipo de informação.
@@ -53,3 +114,4 @@ A estrutura será dimensionada para que seja capaz de antender uma vasta gama de
 1. A estrutura não deve falhar (quebrar ou deformar plasticamente) ao ser utilizada dentro da faixa de operação definida.
 
 2. A estrutura deve acomodar todos os outros subsistemas propostos.
+-->

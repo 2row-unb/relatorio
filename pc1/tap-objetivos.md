@@ -1,5 +1,29 @@
 ## Objetivo do Projeto
 
+<!--
+Está na estrutura do pandoc?
+- [NÃO]
+
+Validações:
+
+[OK]: Tudo certo!
+[TODO]: Falta alguma coisa! Nesse caso, informe o que está faltando
+
+- Software []
+> Jonathan [TODO]
+>> Cada engenharia definir os produtos e seus componentes;
+---------------
+- Eletrônica []
+
+---------------
+- Energia []
+
+---------------
+- Estrutura []
+
+---------------
+-->
+
 O objetivo do projeto é desenvolver um sistema integrado de treinamento para o esporte do remo, focado para atletas iniciantes do esporte. O sistema é composto por um aparelho de remo _indoor_, uma vestimenta de sensores cinemáticos e de um simulador virtual cujo papel é disponibilizar o progresso do usuário e compará-lo com modelos ideais, proporcionando, assim, a possibilidade de otimização do treinamento.
 
 ### Definição do Produto
@@ -13,7 +37,7 @@ O aparelho de remo _indoor_, de nome **2Row** (pronuncia-se "_to row_", do ingl�
 
 A vestimenta de sensores cinemáticos, de nome **2RSuit**, é um `(DESCRIÇÃO DA VESTIMENTA [Eletrônica])`.
 
-Adicionalmente, um sistema de _software_ de nome **2RSystem** é um sub-produto integrado ao **2Row** responsável pela inovação do simulador virtual e pelo controle do sistema de carga. Seus subsistemas são:
+Adicionalmente, um sistema de _software_ de nome **2RSystem** é um subproduto integrado ao **2Row** responsável pela inovação do simulador virtual e pelo controle do sistema de carga. Seus subsistemas são:
 
 1. **2RSDR** (2RSystem _Data Receiver_): Desserializa as informações dos sensores eletrônicos, as converte em modelo de dados do sistema e as transmite para a controladora (2RSC);
 1. **2RSC** (2RSystem _Controller_): Recebe informações e as direciona para o subsistema responsável por lidar com aquele tipo de informação;
