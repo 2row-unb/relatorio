@@ -281,7 +281,7 @@ Suas principais funcionalidades são:
 * **_Feature_ 2RSP-5**: Gerar estatísticas relevantes para o contexto do projeto;
 * **_Feature_ 2RSP-6**: Transmitir as informações processadas para o **2RSC**.
 
-#### 2RSV Subsistema de Visualização de Performance
+#### 2RSV - Subsistema de Visualização de Performance
 
 Este subsistema é responsável por tornar visível as informações de interesse do atleta, as quais são providas pelo **Subsistema de Controle (2RSC)**.
 
