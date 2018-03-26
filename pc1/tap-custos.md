@@ -15,14 +15,16 @@ A descrição mais detalhada dos materiais está conforme tabela subsequente.
 |--------------------------|------------|-------|------------|
 | Tubo aço 1020  6m            |        1   |    55   |      Gravia      |
 | Barra perfil retangular 20x20 #14                  |        2  |   35  |     Ferro e Aço       |
-| Barra  perfil Cartola        |        1   |    40   |    Ferro e Aço      |
-|     Barra perfil  U|        1   |    ???  |    Ferro e Aço        |
+| Barra  perfil retangular 30x90     |        1   |    60   |    Gravia      |
+| Barra perfil retangular 30x50      |       1    |    45   |    Gravia |
+|     Barra perfil  U|        1   |    55  |    Ferro e Aço        |
 | Kit de redução de moto | 1  | 90 / 500 | Riffel |
 | Parafusos, Porcas e Arruelas     |        x   |  50,00    |  POPA, porcas e parafusos          |
-| Polia|       3   |   ???    |       AC Coelho    |
-| Correia  | 1  |???  | AC Coelho |
+| Polia Aluminio |       1   |  20    |       Leroy Merlin    |
+| Roldana com Parafuso | 4 | 19 | Leroy Merlin |
+| Correia V | 1  | 15  | Leroy Merlin |
 | Corda Elástica 10m | 1  | 15 | Japão da Construção |
-| Banco Estofado | 1  |???  | ??? |
+| Banco Estofado | 1  | 45 | Breno Estofamentos |
 | Pedal Bicicleta | 2  |60  | Mercado Livre  |
 | Chapa de Aço Zincado | 3m |35 | Ferro e Aço|
 
