@@ -39,11 +39,11 @@ A vestimenta de sensores cinemáticos, de nome **2RSuit**, é um `(DESCRIÇÃO D
 
 Adicionalmente, um sistema de _software_ de nome **2RSystem** é um subproduto integrado ao **2Row** responsável pela inovação do simulador virtual e pelo controle do sistema de carga. Seus subsistemas são:
 
-1. **2RSDR** (2RSystem _Data Receiver_): Desserializa as informações dos sensores eletrônicos, as converte em modelo de dados do sistema e as transmite para a controladora (2RSC);
-1. **2RSC** (2RSystem _Controller_): Recebe informações e as direciona para o subsistema responsável por lidar com aquele tipo de informação;
-1. **2RSP** (2RSystem _Processer_): Recebe os dados dos sensores cinéticos e aplica algoritmos matemáticos para definição da performance do atleta, retornando tais resultados para a controladora (2RSC);
-1. **2RSDT** (2RSystem _Data Transmitter_): Recebe o fator de mudança de carga de dificuldade, serializa-o e transmite para os componentes eletrônicos responsáveis pelo controle de carga;
-1. **2RSV** (2RSystem _View_): Renderiza as informações de performance do atleta, o simulador de atividade ideal e o estado da carga de dificuldade, transmitindo a renderização para a interface de visualização.
+1. **2RS-Receiver** (2RSystem _Data Receiver_): Desserializa as informações dos sensores eletrônicos, as converte em modelo de dados do sistema e as transmite para a controladora (2RS-Controller);
+1. **2RS-Controller** (2RSystem _Controller_): Recebe informações e as direciona para o subsistema responsável por lidar com aquele tipo de informação;
+1. **2RS-Processer** (2RSystem _Processer_): Recebe os dados dos sensores cinéticos e aplica algoritmos matemáticos para definição da performance do atleta, retornando tais resultados para a controladora (2RS-Controller);
+1. **2RS-Transmitter** (2RSystem _Data Transmitter_): Recebe o fator de mudança de carga de dificuldade, serializa-o e transmite para os componentes eletrônicos responsáveis pelo controle de carga;
+1. **2RS-Viewer** (2RSystem _View_): Renderiza as informações de performance do atleta, o simulador de atividade ideal e o estado da carga de dificuldade, transmitindo a renderização para a interface de visualização.
 
 <!--
 
