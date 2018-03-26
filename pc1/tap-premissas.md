@@ -28,7 +28,7 @@ Parte do presusposto que o atleta tenha o conhecimneto básico de como funciona 
 ### Premissas de Eletrônica
 
 1. Parte-se do princípio que três estudantes de engenharia _Eletrônica_ estarão designados no grupo ao longo de todo o projeto;
-2. Parte-se do princípio de que será possível obter todos os sinais propostos com os recursos que o grupo possui, tanto de instrumentação como a medida de potência no eixo;
-3. Parte-se do princípio que os materiais descritos como requisitos são suficientes para a montagem de todos os subsistemas de eletrônica;
+2. Parte-se do princípio de que será possível obter todos os sinais propostos com os recursos que o grupo possui, tanto de instrumentação como a medida de potência elétrica gerada pelo remador;
+3. Parte-se do princípio que os componentes principais descritos como requisitos são suficientes para a montagem de todos os subsistemas de eletrônica;
 4. Parte-se do princípio que os integrantes do grupo possuem ao menos 8 horas semanais para trabalhar especificamente para o projeto.
 5. Parte-se do princípio que a estrutura não apresenta vibrações capazes de atrapalhar o sistema de aquisição.
