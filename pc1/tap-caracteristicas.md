@@ -45,7 +45,7 @@ Validações:
 
 A arquitetura do subproduto de _software_ do projeto, de nome **2RSystem**, é definida por um conjunto de subsistemas encapsulados, de tal forma que cada um realize suas tarefas específicas e, quando necessário, troquem dados e informações entre sí.
 
-Levando a arquitetura em conta, foram projetados 5 subsistemas: **Subsistema de Controle** (**2RSC - 2RSystem _Controller_**), **Subsistema de Aquisição de Dados** (**2RSDR - 2RSystem _Data Receiver_), **Subsistema de Processamento** (**2RSP - 2RSystem _Processer_**), **Subsistema de Visualização de Performance** (**2RSV - 2RSystem _View_) e **Subsistema Atuador** (**2RSystem _Data Transmitter_**). A interação entre eles pode ser visualizada na diagramação a seguir:
+Levando a arquitetura em conta, foram projetados 5 subsistemas: **Subsistema de Controle** (**2RSC - 2RSystem _Controller_**), **Subsistema de Aquisição de Dados** (**2RSDR - 2RSystem _Data Receiver_**), **Subsistema de Processamento** (**2RSP - 2RSystem _Processer_**), **Subsistema de Visualização de Performance** (**2RSV - 2RSystem _View_**) e **Subsistema Atuador** (**2RSystem _Data Transmitter_**). A interação entre eles pode ser visualizada na diagramação a seguir:
 
 ![Arquitetura de Software^[Arquitetura de Software]](./imagens/arquitetura_software2.png){#fig:arquiteturasoftware}
 
