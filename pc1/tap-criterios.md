@@ -61,7 +61,8 @@ Validações:
 
 #### Critérios de Aceitação do 2RSDT
 
-* **CA 2RSDT-1**: <!-- TODO -->
+* **CA 2RSDT-1**: O subsistema deve ser capaz de ser integrado com o subsistema **2RSC**, fornecendo um aviso de sucesso ou erro em sua tentativa de conexão;
+* **CA 2RSDT-2**: <!-- TODO -->
 
 <!--
 
