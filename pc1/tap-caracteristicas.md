@@ -34,7 +34,7 @@ Tem-se por objetivo projetar uma estrutura de remo _indoor_. Basicamente a estru
 
 #### 2RB-Primary  
 
-A estrutura física primária do equipamento, composta pela trave que contem os demais subsistemas de todas as áreas. O perfil que receberá a maior parte dos esforços da estrutura está representado pela imagem abaixo.
+A estrutura física primária do equipamento, composta pela trave que contem os demais subsistemas de todas as áreas. O perfil dessa trave, que a maior parte dos esforços da estrutura, está representado pela imagem abaixo.
 ![Perfil Rect](imagens/Perfil_Rect.JPG)
 
 #### 2RB-Seat  
