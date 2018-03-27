@@ -46,7 +46,7 @@ O **2Row Boat**  comporta um subproduto de _eletrônica emabarcada_, **2REletron
 1. **2RE-Suit** - É descrito como a vestimenta de sensores cinemáticos, onde estarão contidos dois sensores IMUs e o sensor de pulso cardíacos. Além de proteger os sensores, traz conforto ao usuário e possibilita que este continue realizando seus movimentos para que haja a coleta de forma segura;
 2. **2RE-Cardio** - Coleta os dados de Batimentos Cardíacos para calcular a frequência cardíaca e realiza o processamento desse sinal e
 o possível condicionamento, esse último, caso seja necessário;
-3. **2RE-Imus** - Está associado à instrumentação biomecânica, que comporta calibração, coleta de dados, condicionamento e processamento do sinal para  a obtenção do âgulo relacionado ao movimento do membro inferior;
+3. **2RE-Imu** - Está associado à instrumentação biomecânica, que comporta calibração, coleta de dados, condicionamento e processamento do sinal para  a obtenção do âgulo relacionado ao movimento do membro inferior;
 4. **2RE-Volt** - Afere a tensão no banco de resistores do subsistema _2RP-Resistance_ e através de um modelo matemático calcula a potência condicionada pelo rendimento do atleta;
 5. **2RE-Relay** - Recebe as informações do  _2RS-Transmitter_(Qual nível de carga o usuário quer exercer seu treinamento), com essa informação o microcontrolador responsável irá acionar os relés para ativar a carga de resistência.
 6. **2RE-Kernel** - É o núcleo de todo sistema embarcado. A atuação dos microcontroladores e microcomputador dar-se-ão nesse subsistema, assim como a integração entre 2RE-Suit_ e  _2RS-Receiver_, para que haja a transmissão de dados. 
