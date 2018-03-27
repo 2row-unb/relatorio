@@ -244,6 +244,12 @@ Suas principais funcionalidades são:
 * **_Feature_ 2RE-CARDIO-2**: Condicionamento do sinal para tratamento de ruídos;
 * **_Feature_ 2RE-CARDIO-3**: Transmissão do sinal para o subsistema **2RE-Kernel**;
 
+
+Detalhando as caracteríticas, os microcontroladores escolhidos para trabalhar foram MSP 430 e o outro será descrito mais abaixo.
+O MSP 430 foi escolhido, porque possue baixo consumo de corrente causado devido a forma de trabalho da CPU, da ordem de 0,1µA. A tensão de operação é baixa, em que permite que operem de 1,8V a 3,6V. Esse microprocessador é utilizado para desenvolver atividades complexas tendo em vista as instruções objetivas em um período de tempo relativamente pequeno. Ele utiliza um barramento de 16  bits, o endereçamento é permito para qualquer operação o que facilita o processo de compilação. Os resgistrados usados para diversas atividades são de R4 a R15.
+ 
+Os seis modos de operação do MSP430 exitentes- do LPM0 a LPM4- auxiliam no controle do consumo de corrente, ou seja, faz com que não haja disperdício de energia quando o mesmo não estiver sendo utilizado. O MSP apresenta um sistema de clock, sendo o Timer_A o mais completo. 
+
 ![MSP430^[Fonte: ]](./imagens/msp430.jpg){#fig:MSP_430}
 
 #### 2RE-IMU - Subsistema de unidade de medidas inerciais
