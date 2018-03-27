@@ -102,7 +102,7 @@ Os níveis do exercício será acionado pelo sub grupo de eletrônica de acordo 
 O armazenamento de energia será realizado por meio da utilização de uma bateria, o qual será feito por um controlador de carga acoplado em paralelo com o módulo de resistores. Dessa forma, o sistema de armazenamento será capaz de alimentar o sistema eletrônico aproveitando a energia gerada pela movimentação do atleta durante o ciclo de remada.
 
 
-### Características de `(Sistema de Eletrônica)`
+### Características de 2REletronic
 
 <!-- Eletrônica 
 
