@@ -137,6 +137,32 @@ O sistema de eletrônica está bem distribuido para ação dos componentes e par
 3. Aferir a potência do sistema através de wattímetro ligado à eletrônica embarcadade informações de sinais e controle de acionamento.
 
 
+#### Critérios de Aceitação do 2RE-Suit 
+
+* **CA 2RE-Suit-1:** O suit deve ser posto no usuário para aquisição dos dados. Para execução de tal tarefa, o suit deverá  posicionar os sensores de forma firme para aquisição dos dados e que não atrapalhe o usuário na execução do movimento de remada.
+
+#### Critérios de Aceitação do 2RE-Cardio
+* **CA 2RE-Cardio-1:** O sensor de frequência cardiaca deverá fornecer dados filtrados e tratados para o microcomputador(Raspberry Pi). 
+
+#### Critérios de Aceitação do 2RE-IMU
+* **CA 2RE-IMU-1:** O sensor de unidade inercial será posicionado nas pernas do usuário e veverá entregar como informação ao microcomputador(Raspberry Pi)
+
+#### Critérios de Aceitação do 2RE-Watt
+O wattimetro apresentará uma variação quando as especificações de tensão e corrente para aferição do atleta.
+
+#### Critérios de Aceitação do 2RE-Relay
+Os relés de acionamento farão parte do sistema de controle. Cada relé implicará em alterações na carga relativa às resistênicas.
+
+#### Critérios de Aceitação do 2RE-Kernel
+
+#### Critérios de Aceitação do 2RE-Cycle
+O ciclo perfeito do movimento do atleta iniciante está ligado aos dados do IMU e do Wattímetro. Esta informação está ligada ao software com informações corretas para o acionamento. Para validação do ciclo, hardware e software deverão ligar à uma comparação de eficiência a ser mostrada em interface.
+
+#### Critérios de Aceitação do 2RE-UI
+
+
+
+
 
 A estrutura será dimensionada para que seja capaz de antender uma vasta gama de pessoas. Foi escolhido como parâmetro um homem americano do percentil 95, que possui 1.86 m de altura e pesa 102 KG. Assim, buscando uma margem de segurança, decidiu-se dimensionar a estrutura para que suporte o uso de um homem de até 2 metros de altura e de até 150 KG. Não há limite mínimo de estatura e de peso para o uso do aparelho. Com isso, foram definidos os critérios de aceitação da estrutura:
 
