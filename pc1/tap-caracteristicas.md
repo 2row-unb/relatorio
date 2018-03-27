@@ -34,21 +34,17 @@ Tem-se por objetivo projetar uma estrutura de remo _indoor_. Basicamente a estru
 
 #### 2RB-Primary  
 
-A estrutura física primária do equipamento, composta pela trave que contem os demais subsistemas de todas as áreas. O perfil dessa trave, que a maior parte dos esforços da estrutura, está representado pela imagem abaixo.
-![Perfil Rect](imagens/Perfil_Rect.JPG)
+A estrutura física primária do equipamento, composta pela trave que contem os demais subsistemas de todas as áreas;
 
 #### 2RB-Seat  
 
-A estrutura de acomodação do usuário, é ligada a estrutura primária por um trilho que permite movimento. A iamgem abaixo mostra a o perfil que será utilizado no trilho para receber o banco. 
-
-![Perfil V Slot](imagens/Perfil_V_Slot.JPG)
+A estrutura de acomodação do usuário, é ligada a estrutura primária por um trilho que permite movimento;
 
 #### 2RB-Row 
 
-Formada por um conjunto de polias e correias que transmitem o movimento da remada e do sistema de restituição feito por cordas elásticas. Abaixo temos uma imagem que ilustra o que tem no mercado de sistema de restituição e a outra imagem mostra o outro componente que será utilizado nesses sistema.  
+Formada por um conjunto de polias e correias que transmitem o movimento da remada e do sistema de restituição feito por cordas elásticas;
 
-![Conjunto para transmissão de força](imagens/Conjunto_Relacao.JPG)
-![Cordas Elasticas](imagens/Corda_Elastica.JPG)
+![Conjunto para transmissão de força](imagens/Conjunto_Relação.JPG){#fig:TRANSMISSÃO}
 
 
 #### 2RB-Case 
@@ -256,9 +252,9 @@ Suas principais funcionalidades são:
 
 
 Detalhando as caracteríticas, os microcontroladores escolhidos para trabalhar foram MSP 430 e o outro será descrito mais abaixo.
-O MSP 430 foi escolhido, porque possue baixo consumo de corrente causado devido a forma de trabalho da CPU, da ordem de 0,1µA. A tensão de operação é baixa, em que permite que operem de 1,8V a 3,6V. Esse microprocessador é utilizado para desenvolver atividades complexas tendo em vista as instruções objetivas em um período de tempo relativamente pequeno. Ele utiliza um barramento de 16  bits, o endereçamento é permito para qualquer operação o que facilita o processo de compilação. Os resgistrados usados para diversas atividades são de R4 a R15.
+O MSP 430 foi escolhido, porque possui baixo consumo de corrente devido a forma de trabalho da CPU, da ordem de 0,1µA. A tensão de operação é baixa, em que permite que operem de 1,8V a 3,6V. Esse microcontrolador é utilizado para desenvolver atividades complexas tendo em vista as instruções objetivas em um período de tempo relativamente pequeno. Ele utiliza um barramento de 16  bits, o endereçamento é permitido para qualquer operação, facilitando o processo de compilação. Os resgistrados usados para diversas atividades são de R4 a R15.
  
-Os seis modos de operação do MSP430 exitentes- do LPM0 a LPM4- auxiliam no controle do consumo de corrente, ou seja, faz com que não haja disperdício de energia quando o mesmo não estiver sendo utilizado. O MSP apresenta um sistema de clock, sendo o Timer_A o mais completo. 
+Os cinco modos de operação do MSP430 existentes- do LPM0 a LPM4- auxiliam no controle do consumo de corrente, ou seja, faz com que não haja disperdício de energia quando o mesmo não estiver sendo utilizado. O MSP apresenta um sistema de clock, sendo o Timer_A o mais completo. 
 
 ![MSP430^[Fonte: ]](./imagens/msp430.jpg){#fig:MSP_430}
 
@@ -268,7 +264,7 @@ Os seis modos de operação do MSP430 exitentes- do LPM0 a LPM4- auxiliam no con
 Suas principais características são:
 
 * **Característica 2RE-IMU-1**: Composto por sensores de unidades de medida inerciais MPU-5091 e um microcontrolador;
-* **Característica 2RE-IMU-2**:  Pode ser necessário condicionar o sinal;
+* **Característica 2RE-IMU-2**: Pode ser necessário condicionar o sinal;
 * **Característica 2RE-IMU-3**: Comunica com o **Subsistema da central de processamento de eletrônica (2RE-Kernel)**;
 * **Característica 2RE-IMU-4**: Transmissão dos sinais é feita com cabos;
 * **Característica 2RE-IMU-5**: Alocado por meio de elásticos com velcro em pontos da coxa e panturrilha;
