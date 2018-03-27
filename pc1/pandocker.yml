@@ -23,7 +23,7 @@ sections:
 
 pandoc:
   source_path:   "pc1/"
-  template_path: "template/tcc.latex"
+  template_path: "template/pi2.latex"
   output:        "pc1.pdf"
   toc:           true
   filters:
