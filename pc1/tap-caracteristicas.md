@@ -27,7 +27,23 @@ Validações:
 
 ### Características de 2Row
 
-Tem-se por objetivo projetar uma estrutura de remo _indoor_. Basicamente a estrutura é composta de um trilho que permite que o banco se mova suavimente e que caiba a perna toda do usuário, por uma alça ergonomica que permite ao usuário uma posicionamento de braços e mãos em um posicionamento confortável, base para o posicionamento dos pés que permite um ajuste fácil e rápido, corda de alta resistencia , assento, e pernas para a sustentarem a estrutura, cabos adequados para transmissão da força.  
+Tem-se por objetivo projetar uma estrutura de remo _indoor_. Basicamente a estrutura é composta de um trilho que permite que o banco se mova suavimente e que caiba a perna toda do usuário, por uma alça ergonomica que permite ao usuário uma posicionamento de braços e mãos em um posicionamento confortável, base para o posicionamento dos pés que permite um ajuste fácil e rápido, corda de alta resistencia , assento para a acomodação do atleta, e pernas para a sustentarem a estrutura, cabos adequados para transmissão da força.  
+
+#### 2RB-Primary  
+
+A estrutura física primária do equipamento, composta pela trave que contem os demais subsistemas de todas as áreas;
+
+#### 2RB-Seat  
+
+A estrutura de acomodação do usuário, é ligada a estrutura primária por um trilho que permite movimento;
+
+#### 2RB-Row 
+
+Formada por um conjunto de polias e correias que transmitem o movimento da remada e do sistema de restituição feito por cordas elásticas;
+
+#### 2RB-Case 
+
+Estrutura que abriga os componentes eletrônicos responsáveis pelo controle dos sistemas embarcados.
 
 ### Características de 2RPower
 
