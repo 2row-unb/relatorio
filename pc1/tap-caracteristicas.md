@@ -293,8 +293,6 @@ Suas principais funcionalidades são:
 
 * **_Feature_ 2RE-Relay-1**:  A partir da requisição do atleta nos botões do **Subsistema de interface de botões (2RE-UI)** e transmitido para o **Subsistema da central de processamento de eletrônica (2RE-Kernel)**, o comando para chavear os relés e mudar a carga presente no gerador **(2RP-Generator)** é recebido;
 * **_Feature_ 2RE-Relay-2**: Cada relé será responsável por acionar a atuação de um nível de carga, ou seja, essa carga a pincípio é controlada.
-* **_Feature_ 2RE-Relay-3**: Ao ser ativado o acionamento do relé, tem de ser enviado um sinal para o **2RE-Kernel** para realizar a comunição informando ao _software_ sobre essa alteração.
-
 
 #### 2RE-Kernel - Subsistema da central de processamento de eletrônica
 
