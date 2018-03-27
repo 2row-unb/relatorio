@@ -244,6 +244,8 @@ Suas principais funcionalidades são:
 * **_Feature_ 2RE-CARDIO-2**: Condicionamento do sinal para tratamento de ruídos;
 * **_Feature_ 2RE-CARDIO-3**: Transmissão do sinal para o subsistema **2RE-Kernel**;
 
+![MSP430^[Fonte: ]](./imagens/msp430.jpg){#fig:MSP_430}
+
 #### 2RE-IMU - Subsistema de unidade de medidas inerciais
 É o subsistema responsável por adquirir medidas por meio dos IMU's alocados nas pernas do atleta para saber a posição exata do movimento e poder comparar com modelos padrões para ajustar a execução da remada.
 
@@ -304,6 +306,12 @@ Suas principais características são:
 * **Característica 2RE-Kernel-2**: Composta por Microcontrolador ESP 8266;
 * **Característica 2RE-Kernel-3**: Processa as informações sem atraso significativo;
 * **Característica 2RE-Kernel-4**: Alocada no **2RB-Case**;
+
+
+As imagens a seguir
+
+![Raspberry Pi 3^[Fonte: ]](./imagens/Raspberry.jpg){#fig:Raspberry_Pi_3}
+![ESP8266^[Fonte: ]](./imagens/esp8266.jpg){#fig:ESP_8266}
 
 Suas principais funcionalidades são:
 
