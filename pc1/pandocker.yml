@@ -22,12 +22,10 @@ sections:
   - bibliografia.md
 
 pandoc:
-  template_path: ""
   source_path:   "pc1/"
+  template_path: "template/tcc.latex"
   output:        "pc1.pdf"
-  tof:           true
   toc:           true
-  tot:           true
   filters:
     - pandoc-crossref
     - pandoc-citeproc
