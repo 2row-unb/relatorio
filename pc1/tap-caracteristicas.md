@@ -104,7 +104,7 @@ O armazenamento de energia será realizado por meio da utilização de uma bater
 
 ### Características de `(Sistema de Eletrônica)`
 
-<!-- Eletrônica -->
+<!-- Eletrônica 
 
 # Solução de eletrônica
 
@@ -221,7 +221,7 @@ SPI, I²C, UART;
 
 Tensão de operação ->3.3V.
 
-
+-->
 
 ### Características do 2RE-Suit
 
