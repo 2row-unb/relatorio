@@ -29,7 +29,7 @@ Validações:
 
 <!-- Estrutura -->
 
-### Características do Sistema de Carga Variável e Geração de Energia
+### Características de 2RPower
 
 O sistema planejado para gerar uma carga variável para a remada do atleta será baseado em um Dinamômetro Eletrônico.
 
@@ -43,7 +43,7 @@ O banco de resistores será útil para regular a corrente e consequentemente a f
 
 O controlador de carga que irá carregar a bateria e alimentar o sistema será acoplado em paralelo com o módulo de resistores.
 
-#### Gerador
+#### 2RP-Generator
 
 Os critérios considerados para escolher os geradores foram:
 
@@ -61,7 +61,7 @@ Considerando esses critério, dois sistemas foram selecionados como soluções p
 ![Motor de Esteira Ergométrica](imagens/motoresteira.jpg){#fig:motorest}
 O motor de esteira pode ser usado no modo gerador, e dentre os critérios de seleção ele foi o mais viável economicamente e tecnicamente. Dessa forma ele é o mais indicado para confecção do sistema.
 
-#### Banco de resistores
+#### 2RP-Resistance
 
 Sabendo a potência máxima possível que pode ser obtida com a remada do atleta, poderemos dimensionar a potência que os resistores e os relés iram ter que suportar.
 
@@ -78,7 +78,7 @@ Os níveis do exercício será acionado pelo sub grupo de eletrônica de acordo 
 
 ![Circuito do Banco de resistores](imagens/circuitobr.png){#fig:circuitobr}
 
-#### Sistema de armazenamento de energia e alimentação do sistema eletrônico
+#### 2RP-Battery
 
 O armazenamento de energia será realizado por meio da utilização de uma bateria, o qual será feito por um controlador de carga acoplado em paralelo com o módulo de resistores. Dessa forma, o sistema de armazenamento será capaz de alimentar o sistema eletrônico aproveitando a energia gerada pela movimentação do atleta durante o ciclo de remada.
 
