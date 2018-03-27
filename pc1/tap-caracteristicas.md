@@ -307,12 +307,6 @@ Suas principais características são:
 * **Característica 2RE-Kernel-3**: Processa as informações sem atraso significativo;
 * **Característica 2RE-Kernel-4**: Alocada no **2RB-Case**;
 
-
-As imagens a seguir
-
-![Raspberry Pi 3^[Fonte: ]](./imagens/Raspberry.jpg){#fig:Raspberry_Pi_3}
-![ESP8266^[Fonte: ]](./imagens/esp8266.jpg){#fig:ESP_8266}
-
 Suas principais funcionalidades são:
 
 * **_Feature_ 2RE-Kernel-1**: Recebe os sinais do **Subsistema monitor de frequência cardíaca (2RE-CARDIO)**;
@@ -321,6 +315,12 @@ Suas principais funcionalidades são:
 * **_Feature_ 2RE-Kernel-4**: Recebe os sinais do **Subsistema de interface de botões (2RE-UI);
 * **_Feature_ 2RE-Kernel-5**: Envia os comandos para chaveamento do **Subsistema controlador dos relés ativadores das cargas no gerador (2RE-Relay)**;
 * **_Feature_ 2RE-Kernel-6**: Envia sinais para o **Subsistema de Aquisição de Dados (2RS-Receiver)**.
+
+
+Detalhando um pouco mais a solução, para atuar na captação e processamento de sinais a Raspberry será fundamental, integrada com outros dispositivos como MSP430, circutos de condicionamento, será possível adquirir sinais analógicos. Visto que a Raspberry não possui conversor A/D pode-se utilizar o conversor do MSP430. Para transmitir os sinais para a Raspberry uma ideia foi utilizar um protocolo de comunicação ou um módulo wi-fi. O ESP8266 é um microcontrolador com um processamento considerável para a aplicação em questão e possui um excelente diferencial, o módulo WI-FI acoplado. Além disso já traz consigo, conversor analógico-digital(ADC) e vários protocolos de comunicações, isso traria ao sistema versatilidade para aquisição e trato de sinais.
+
+![Raspberry Pi 3^[Fonte: ]](./imagens/Raspberry.jpg){#fig:Raspberry_Pi_3}
+![ESP8266^[Fonte: ]](./imagens/esp8266.jpg){#fig:ESP_8266}
 
 #### 2RE-UI - Subsistema de interface de botões
 Subsistema alocado com botões próximos à interface de vídeo com o usuário para que o mesmo possa controlar o aumento e diminuição das cargas no gerador, chaveadas pelo **Subsistema controlador dos relés ativadores das cargas no gerador (2RE-Relay)** e assim poder aumentar e diminuir o esforço na aplicação do movimento do remo.
