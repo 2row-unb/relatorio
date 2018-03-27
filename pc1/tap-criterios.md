@@ -85,6 +85,24 @@ Validações:
 ### Critérios de Aceitação do 2RB-Case
 
 * **CA 2RB-Case-1:** Deve comportar o subsistema **2RE-Kernel** sem interferir em seu funcionamento.
+
+### Critérios de Aceitação do 2RPower
+
+
+
+#### Critérios de Aceitação do 2RP-Generator 
+
+* **CA 2RP-Generator-1:** O gerador irá receber a potência mecânica da remada do atleta e gerar uma corrente elétrica que irá variar de acordo com a carga alimentada pelo gerador.
+
+#### Critérios de Aceitação do 2RP-Resistance
+
+* **CA 2RP-Resistance-1:** A variação dessa corrente irá gerar um conjugado elétrico nas bobinas do estator que se oporá ao conjugado mecânico da remada aplicado no rotor.
+
+#### Critérios de Aceitação do 2RP-Battery 
+
+* **CA 2RP-Battery-1:** A energia excedente gerada será armazenada em uma bateria, que por sua vez irá alimentar o sistema eletrônico. A potência necessária para manter o sistema funcionando ainda será dimensionado.
+
+
 <!--
 
 Serão definidos critérios de aceitação para cada um dos subsistemas do submódulo de _software_, os quais estão listados a seguir em tópicos:
@@ -117,17 +135,6 @@ O sistema de eletrônica está bem distribuido para ação dos componentes e par
 2. A ligação entre o reconhecimento da posição do usuário em conjunto com o funcionamento e acionamento das resistências.
 
 3. Aferir a potência do sistema através de wattímetro ligado à eletrônica embarcadade informações de sinais e controle de acionamento.
-
-
-### Critério de aceitação de energia
-
-Os Stakeholders da disciplina em comum acordo com o subsistema de energia definaram que alguns parâmetros serão aferidos e dimensionados após o Ponto de Controle 1, devido as dificuldades de medir ou encontrar em bibliografias essas variáveis.
-
-1. O gerador irá receber a potência mecânica da remada do atleta e gerar uma corrente elétrica que irá variar de acordo com a carga alimentada pelo gerador.
-
-2. A variação dessa corrente irá gerar um conjugado elétrico nas bobinas do estator que se oporá ao conjugado mecânico da remada aplicado no rotor.
-
-3. A energia excedente gerada será armazenada em uma bateria, que por sua vez irá alimentar o sistema eletrônico. A potência necessária para manter o sistema funcionando ainda será dimensionado.
 
 
 
