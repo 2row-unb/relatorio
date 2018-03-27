@@ -2,10 +2,7 @@
 
 <!--
 Jonathan: [OK]
-Luan: Verificar estranho espaçamento após o item de inclinação (L. 32) no PDF
 -->
-
-
 
 Relatos e informações sobre a origem do remo são pouco precisos. Sabemos que antigos escritos gregos, fenícios e romanos já indicavam a prática do que hoje seria considerado um importante esporte olímpico. Existem indícios sobre eventos de regatas primitivas, que foram provavelmente organizadas na antiguidade por barqueiros egípcios do Nilo. Não se sabe ao certo sobre as honrarias vinculadas à essas competições, supostamente os participantes remavam pela oportunidade de fazer parte das nobres procissões funerárias dos faraós.
 

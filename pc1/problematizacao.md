@@ -2,7 +2,6 @@
 
 <!--
 Jonathan: [OK]
-Luan:
 -->
 
 <!-- Eletrônica -->

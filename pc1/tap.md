@@ -1,27 +1,7 @@
 # Termo de Abertura do Projeto
 
 <!--
-Está na estrutura do pandoc?
-- [NÃO]
-
-Validações:
-
-[OK]: Tudo certo!
-[TODO]: Falta alguma coisa! Nesse caso, informe o que está faltando
-
-- Software []
-> Jonathan [OK]
-
----------------
-- Eletrônica []
-
----------------
-- Energia []
-
----------------
-- Estrutura []
-
----------------
+Jonathan: [OK]
 -->
 
 O presente termo define os principais requisitos que satisfazem as expectativas para o projeto e seu respectivo contexto. A aceitação de tais definições formaliza o início do projeto.
