@@ -249,7 +249,7 @@ Suas principais funcionalidades são:
 
 Suas principais características são:
 
-* **Característica 2RE-IMU-1**: Composto por sensores de unidades de medida inerciais xx e um microcontrolador;
+* **Característica 2RE-IMU-1**: Composto por sensores de unidades de medida inerciais MPU-5091 e um microcontrolador;
 * **Característica 2RE-IMU-2**:  Pode ser necessário condicionar o sinal;
 * **Característica 2RE-IMU-3**: Comunica com o **Subsistema da central de processamento de eletrônica (2RE-Kernel)**;
 * **Característica 2RE-IMU-4**: Transmissão dos sinais é feita com cabos;
@@ -257,7 +257,7 @@ Suas principais características são:
 
 Suas principais funcionalidades são:
 
-* **_Feature_ 2RE-IMU-1**: Sensor capaz de medir por meio do acelerômetro, magnetômetro e giroscópio a posição em 3D que a parte da perna está ;
+* **_Feature_ 2RE-IMU-1**: Sensor capaz de medir por meio do acelerômetro, magnetômetro e giroscópio a posição e ângulo em que a parte monitorada da perna está;
 * **_Feature_ 2RE-IMU-2**: Medição do ângulo na perna posterior ao joelho;
 * **_Feature_ 2RE-IMU-3**: Transmissão dos dados para o **Subsistema da central de processamento de eletrônica (2RE-Kernel)**;
 * **_Feature_ 2RE-IMU-4**: Cada ciclo de remada possui uma postura adequada, para iniciantes no remo é importante que as devidas correções nesse quesito sejam realizadas para que o rendimento seja garantido.
