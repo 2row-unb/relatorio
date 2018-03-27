@@ -119,8 +119,10 @@ O sistema apresentará uma variação quando as especificações de tensão na c
 Os relés de acionamento farão parte do sistema de controle. Cada relé implicará em alterações na carga relativa às resistênicas.
 
 #### Critérios de Aceitação do 2RE-Kernel
+Este é o núcleo de todo o sistema embarcado, pois vai receber todos os sinais do cárdio e do IMU. Assim como também acionar os relés para controle das cargas. Este sistema conterá módulo para comunicação WI-FI para trabalhar com os dispositivos de controle de acionamento. Os critérios para esse módulo é que os dados sejam processados e entregues para interfaceamento em software e o controle seja feito sobre a energia. 
 
 #### Critérios de Aceitação do 2RE-UI
+Esta seção é composta de três botões trabalhados com debounce para acionamento das funções relativas ao funcionamento das cargas. Um dos botões deve funcionar como uma chave de acionamento deixando o aparelho ligado ou desligado, já os outros dois botões vão aumentar e diminuir a carga. Esse funcionamento terá plena comunicação com o sistema de software e de geração e controle de energia.
 
 <!--
 
