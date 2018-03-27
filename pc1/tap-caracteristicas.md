@@ -229,6 +229,9 @@ SPI, I²C, UART;
 Tensão de operação ->3.3V.
 
 -->
+#### Características do 2REletronic
+
+![Diagrama_Eletrônica^[Fonte: ]](./imagens/diagrama_eletronica.png){#fig:Diagrama_Eletrônica}
 
 #### Características do 2RE-Suit
 
@@ -237,7 +240,7 @@ O 2RE-Suit é um subproduto de _eletrônica_ e sua aplicação se baseia em medi
 #### 2RE-Cardio -  Subsistema monitor de frequência cardíaca
 É o subsistema responsável pela aquisição dos dados de frequência cardíaca do atleta que está utilizando o aparelho de remo.
 
-![Carsiaco^[Fonte: ]](./imagens/sensor_cardiaco.jpg){#fig:Sensor_cardiaco}
+![Sensor_Cardiaco^[Fonte: ]](./imagens/sensor_cardiaco.jpg){#fig:Sensor_cardiaco}
 
 Suas principais características são:
 
