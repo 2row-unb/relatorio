@@ -28,7 +28,14 @@ O objetivo do projeto é desenvolver um sistema integrado de treinamento para o 
 
 ### Definição do Produto
 
-O aparelho de remo _indoor_, de nome **2Row** (pronuncia-se "_to row_", do inglês: para remar) é um `(DESCRIÇÃO DA ESTRUTURA)` com os seguintes subsistemas acoplados:
+O aparelho de remo _indoor_, de nome **2Row Boat** (pronuncia-se "_to row_", do inglês: para remar) é uma maquina de alta durabilidade e que oferece conforto e segurança para o treinamento. A estrutura é composta por 4 subsistemas mecânicos:
+
+1. **2RB-Primary** - A estrutura física primária do equipamento, composta pela trave que contem os demais subsistemas de todas as áreas;
+2. **2RB-Seat** - A estrutura de acomodação do usuário, é ligada a estrutura primária por um trilho que permite movimento;
+3. **2RB-Row** - Formada por um conjunto de polias e correias que transmitem o movimento da remada e do sistema de restituição feito por cordas elásticas;
+4. **2RB-Case** - Estrutura que abriga os componentes eletrônicos responsáveis pelo controle dos sistemas embarcados.
+
+Serão acoplados à estrutura do **2Row Boat**  os seguintes subsistemas:
 
 * `(Definição de subsistema #1 de energia)`;
 * `(Definição de subsistema #n de energia)`;
