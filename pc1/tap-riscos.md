@@ -2,7 +2,7 @@
 
 > TODO: Introduzir o contexto de risco
 ### Rsicos de estrutura
-Um levantamento foi feito dos possiveis riscos estruturais, a tabela abaixo ilustra isso.
+Um levantamento foi realizado dos possíveis riscos estruturais, a tabela abaixo ilustra isso.
 
 |Risco|Consequência   |Probabilidade| Impacto | Ação estratégica                  |
 |:-----:|:----------:|:--------------:|:-----------:|:---------:|
