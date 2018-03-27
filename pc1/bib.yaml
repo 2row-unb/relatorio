@@ -74,4 +74,24 @@ references:
     DOI: 10.18617/liinc.v13i1.3895
     URL: http://revista.ibict.br/liinc/article/view/3895/3221
     language: pt-BR
+
+ - type: book
+    id: fmea
+    author:
+    - family: Dyadem Press
+      given: []
+    issued:
+      date-parts:
+      - - 2003
+        - 5
+        - 12
+    title: 'Guidelines for Failure Mode and Effects Analysis (FMEA), for Automotive, Aerospace, and General Manufacturing Industries'
+    container-title: 'Liinc em Revista'
+    publisher: "Dyadem Press"
+    volume: 13
+    issue: 1
+    page: 38-39
+    DOI: 10.18617/liinc.v13i1.3895
+    URL: http://gen.lib.rus.ec/book/index.php?md5=8241F0EA994546E3F115569BDD766BC7
+    language: en-US
 ...

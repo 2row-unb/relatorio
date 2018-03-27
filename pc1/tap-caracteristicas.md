@@ -25,23 +25,30 @@ Validações:
 ---------------
 -->
 
-### Características de 2Row
+### Características de 2Row Boat
 
-Tem-se por objetivo projetar uma estrutura de remo _indoor_. Basicamente a estrutura é composta de um trilho que permite que o banco se mova suavimente e que caiba a perna toda do usuário, por uma alça ergonomica que permite ao usuário uma posicionamento de braços e mãos em um posicionamento confortável, base para o posicionamento dos pés que permite um ajuste fácil e rápido, corda de alta resistencia , assento para a acomodação do atleta, e pernas para a sustentarem a estrutura, cabos adequados para transmissão da força.  
+Tem-se por objetivo projetar uma estrutura de remo _indoor_. Basicamente a estrutura é composta por um trilho que permite que o banco se mova suavimente e que caiba a perna toda do usuário, por uma alça ergonômica, que permite ao usuário uma posicionamento de braços e mãos de forma confortável, base para o posicionamento dos pés que permite um ajuste fácil e rápido, corda de alta resistência, assento para a acomodação do atleta, suportes para a sustentarem a estrutura e cabos adequados para transmissão da força.  
+
+![CAD_V1](imagens/cad_v1.JPG){Estrutura do **2Row Boat**} 
+![CAD_V1.1](imagens/vistas.JPG){Vistas Isométricas da Estrutura} 
 
 #### 2RB-Primary  
 
-A estrutura física primária do equipamento, composta pela trave que contem os demais subsistemas de todas as áreas;
+A estrutura física primária do equipamento, composta pela trave que contem os demais subsistemas de todas as áreas. O perfil dessa trave, que a maior parte dos esforços da estrutura, está representado pela imagem abaixo.
+![Perfil Rect](imagens/Perfil_Rect.JPG)
 
 #### 2RB-Seat  
 
-A estrutura de acomodação do usuário, é ligada a estrutura primária por um trilho que permite movimento;
+A estrutura de acomodação do usuário, é ligada a estrutura primária por um trilho que permite movimento. A iamgem abaixo mostra a o perfil que será utilizado no trilho para receber o banco. 
+
+![Perfil V Slot](imagens/Perfil_V_Slot.JPG)
 
 #### 2RB-Row 
 
-Formada por um conjunto de polias e correias que transmitem o movimento da remada e do sistema de restituição feito por cordas elásticas;
+Formada por um conjunto de polias e correias que transmitem o movimento da remada e do sistema de restituição feito por cordas elásticas. Abaixo temos uma imagem que ilustra o que tem no mercado de sistema de restituição e a outra imagem mostra o outro componente que será utilizado nesses sistema.  
 
-![Conjunto para transmissão de força](imagens/Conjunto_Relação.JPG){#fig:TRANSMISSÃO}
+![Conjunto para transmissão de força^[http://www.riffel.com.br/kit-relacao-transmissao-suzuki-gsr-150i-13-42z-x-15z-c-corrente-428h-x-116l-premium/p]](imagens/Conjunto_Relacao.JPG)
+![Cordas Elasticas](imagens/Corda_Elastica.JPG)
 
 
 #### 2RB-Case 
@@ -222,29 +229,41 @@ SPI, I²C, UART;
 Tensão de operação ->3.3V.
 
 -->
+#### Características do 2REletronic
+
+![Diagrama_Eletrônica^[Fonte: do autor]](./imagens/diagrama_eletronica.png){#fig:Diagrama_Eletrônica}
 
 #### Características do 2RE-Suit
 
 O 2RE-Suit é um subproduto de _eletrônica_ e sua aplicação se baseia em medições de posição das pernas através do 2RE-IMU e do 2RE-CARDIO, respectivamente sendo os produtos de **Subsistema de unidade de medidas inerciais** e **Subsistema monitor de frequência cardíaca**.
 
-#### 2RE-CARDIO -  Subsistema monitor de frequência cardíaca
+#### 2RE-Cardio -  Subsistema monitor de frequência cardíaca
 É o subsistema responsável pela aquisição dos dados de frequência cardíaca do atleta que está utilizando o aparelho de remo.
+
+![Sensor_Cardiaco^[Fonte:https://www.filipeflop.com/produto/sensor-de-frequencia-cardiaca/ ]](./imagens/sensor_cardiaco.jpg){#fig:Sensor_cardiaco}
 
 Suas principais características são:
 
-* **Característica 2RE-CARDIO-1**: É composto pelo sensor  de frequência cardíaca 4MD69 e por um microcontrolador;
-* **Característica 2RE-CARDIO-2**: Pode necessitar de condicionamento de sinal;
-* **Característica 2RE-CARDIO-3**: O sensor utilizado apresenta baixo consumo de energia (cerca de 4 mA) e tensão de operação de 3 a 5 V;
-* **Característica 2RE-CARDIO-4**:  A transmissão dos dados pode ser feita via cabos ou wifi;
-* **Característica 2RE-CARDIO-5**: Tem comunicação com o **2RE-Kernel**.
+* **Característica 2RE-Cardio-1**: É composto pelo sensor  de frequência cardíaca 4MD69 e por um microcontrolador;
+* **Característica 2RE-Cardio-2**: Pode necessitar de condicionamento de sinal;
+* **Característica 2RE-Cardio-3**: O sensor utilizado apresenta baixo consumo de energia (cerca de 4 mA) e tensão de operação de 3 a 5 V;
+* **Característica 2RE-Cardio-4**:  A transmissão dos dados pode ser feita via cabos ou wifi;
+* **Característica 2RE-Cardio-5**: Tem comunicação com o **2RE-Kernel**.
 
 Suas principais funcionalidades são:
 
-* **_Feature_ 2RE-CARDIO-1**: Aquisição dos sinais cardíacos do usuário do remo;
-* **_Feature_ 2RE-CARDIO-2**: Condicionamento do sinal para tratamento de ruídos;
-* **_Feature_ 2RE-CARDIO-3**: Transmissão do sinal para o subsistema **2RE-Kernel**;
+* **_Feature_ 2RE-Cardio-1**: Aquisição dos sinais cardíacos do usuário do remo;
+* **_Feature_ 2RE-Cardio-2**: Condicionamento do sinal para tratamento de ruídos;
+* **_Feature_ 2RE-Cardio-3**: Transmissão do sinal para o subsistema **2RE-Kernel**;
 
-![MSP430^[Fonte: ]](./imagens/msp430.jpg){#fig:MSP_430}
+
+
+Detalhando as caracteríticas, os microcontroladores escolhidos para trabalhar foram MSP 430 e o outro será descrito mais abaixo.
+O MSP 430 foi escolhido, porque possue baixo consumo de corrente causado devido a forma de trabalho da CPU, da ordem de 0,1µA. A tensão de operação é baixa, em que permite que operem de 1,8V a 3,6V. Esse microprocessador é utilizado para desenvolver atividades complexas tendo em vista as instruções objetivas em um período de tempo relativamente pequeno. Ele utiliza um barramento de 16  bits, o endereçamento é permito para qualquer operação o que facilita o processo de compilação. Os resgistrados usados para diversas atividades são de R4 a R15.
+ 
+Os seis modos de operação do MSP430 exitentes- do LPM0 a LPM4- auxiliam no controle do consumo de corrente, ou seja, faz com que não haja disperdício de energia quando o mesmo não estiver sendo utilizado. O MSP apresenta um sistema de clock, sendo o Timer_A o mais completo. 
+
+![MSP430^[Fonte: https://www.embarcados.com.br/msp430-com-iar/]](./imagens/msp430.jpg){#fig:MSP_430}
 
 #### 2RE-IMU - Subsistema de unidade de medidas inerciais
 É o subsistema responsável por adquirir medidas por meio dos IMU's alocados nas pernas do atleta para saber a posição exata do movimento e poder comparar com modelos padrões para ajustar a execução da remada.
@@ -307,12 +326,6 @@ Suas principais características são:
 * **Característica 2RE-Kernel-3**: Processa as informações sem atraso significativo;
 * **Característica 2RE-Kernel-4**: Alocada no **2RB-Case**;
 
-
-As imagens a seguir
-
-![Raspberry Pi 3^[Fonte: ]](./imagens/Raspberry.jpg){#fig:Raspberry_Pi_3}
-![ESP8266^[Fonte: ]](./imagens/esp8266.jpg){#fig:ESP_8266}
-
 Suas principais funcionalidades são:
 
 * **_Feature_ 2RE-Kernel-1**: Recebe os sinais do **Subsistema monitor de frequência cardíaca (2RE-CARDIO)**;
@@ -321,6 +334,12 @@ Suas principais funcionalidades são:
 * **_Feature_ 2RE-Kernel-4**: Recebe os sinais do **Subsistema de interface de botões (2RE-UI);
 * **_Feature_ 2RE-Kernel-5**: Envia os comandos para chaveamento do **Subsistema controlador dos relés ativadores das cargas no gerador (2RE-Relay)**;
 * **_Feature_ 2RE-Kernel-6**: Envia sinais para o **Subsistema de Aquisição de Dados (2RS-Receiver)**.
+
+
+Detalhando um pouco mais a solução, para atuar na captação e processamento de sinais a Raspberry será fundamental, integrada com outros dispositivos como MSP430, circutos de condicionamento, será possível adquirir sinais analógicos. Visto que a Raspberry não possui conversor A/D pode-se utilizar o conversor do MSP430. Para transmitir os sinais para a Raspberry uma ideia foi utilizar um protocolo de comunicação ou um módulo wi-fi. O ESP8266 é um microcontrolador com um processamento considerável para a aplicação em questão e possui um excelente diferencial, o módulo WI-FI acoplado. Além disso já traz consigo, conversor analógico-digital(ADC) e vários protocolos de comunicações, isso traria ao sistema versatilidade para aquisição e trato de sinais.
+
+![Raspberry Pi 3^[Fonte: https://www.raspberrypi.org/products/raspberry-pi-3-model-b/]](./imagens/Raspberry.jpg){#fig:Raspberry_Pi_3}
+![ESP8266^[Fonte: https://www.robocore.net/loja/produtos/nodemcu-esp8266-12-v2.html]](./imagens/esp8266.jpg){#fig:ESP_8266}
 
 #### 2RE-UI - Subsistema de interface de botões
 Subsistema alocado com botões próximos à interface de vídeo com o usuário para que o mesmo possa controlar o aumento e diminuição das cargas no gerador, chaveadas pelo **Subsistema controlador dos relés ativadores das cargas no gerador (2RE-Relay)** e assim poder aumentar e diminuir o esforço na aplicação do movimento do remo.

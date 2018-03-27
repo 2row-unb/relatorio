@@ -1,27 +1,8 @@
 # Problematização
 
 <!--
-Está na estrutura do pandoc?
-- [NÃO]
-
-Validações:
-
-[OK]: Tudo certo!
-[TODO]: Falta alguma coisa! Nesse caso, informe o que está faltando
-
-- Software []
-> Jonathan [OK]
-
----------------
-- Eletrônica []
-
----------------
-- Energia []
-
----------------
-- Estrutura []
-
----------------
+Jonathan: [OK]
+Luan:
 -->
 
 <!-- Eletrônica -->

@@ -46,7 +46,7 @@ O **2Row Boat**  comporta um subproduto de _eletrônica emabarcada_, **2REletron
 1. **2RE-Suit** - É descrito como a vestimenta de sensores cinemáticos, onde estarão contidos dois sensores IMUs e o sensor de pulso cardíacos. Além de proteger os sensores, traz conforto ao usuário e possibilita que este continue realizando seus movimentos para que haja a coleta de forma segura;
 2. **2RE-Cardio** - Coleta os dados de Batimentos Cardíacos para calcular a frequência cardíaca e realiza o processamento desse sinal e
 o possível condicionamento, esse último, caso seja necessário;
-3. **2RE-Imu** - Está associado à instrumentação biomecânica, que comporta calibração, coleta de dados, condicionamento e processamento do sinal para  a obtenção do âgulo relacionado ao movimento do membro inferior;
+3. **2RE-IMU** - Está associado à instrumentação biomecânica, que comporta calibração, coleta de dados, condicionamento e processamento do sinal para  a obtenção do âgulo relacionado ao movimento do membro inferior;
 4. **2RE-Volt** - Afere a tensão no banco de resistores do subsistema _2RP-Resistance_ e através de um modelo matemático calcula a potência condicionada pelo rendimento do atleta;
 5. **2RE-Relay** - Recebe as informações do  _2RS-Transmitter_(Qual nível de carga o usuário quer exercer seu treinamento), com essa informação o microcontrolador responsável irá acionar os relés para ativar a carga de resistência.
 6. **2RE-Kernel** - É o núcleo de todo sistema embarcado. A atuação dos microcontroladores e microcomputador dar-se-ão nesse subsistema, assim como a integração entre 2RE-Suit_ e  _2RS-Receiver_, para que haja a transmissão de dados. 
@@ -54,11 +54,11 @@ o possível condicionamento, esse último, caso seja necessário;
 
 Adicionalmente, um sistema de _software_ de nome **2RSystem** é um subproduto integrado ao **2Row** responsável pela inovação do simulador virtual e pelo controle do sistema de carga. Seus subsistemas são:
 
-1. **2RS-Receiver** (2RSystem _Data Receiver_): Desserializa as informações dos sensores eletrônicos, as converte em modelo de dados do sistema e as transmite para a controladora (2RS-Controller);
-1. **2RS-Controller** (2RSystem _Controller_): Recebe informações e as direciona para o subsistema responsável por lidar com aquele tipo de informação;
-1. **2RS-Processer** (2RSystem _Processer_): Recebe os dados dos sensores cinéticos e aplica algoritmos matemáticos para definição da performance do atleta, retornando tais resultados para a controladora (2RS-Controller);
-1. **2RS-Transmitter** (2RSystem _Data Transmitter_): Recebe o fator de mudança de carga de dificuldade, serializa-o e transmite para os componentes eletrônicos responsáveis pelo controle de carga;
-1. **2RS-Viewer** (2RSystem _View_): Renderiza as informações de performance do atleta, o simulador de atividade ideal e o estado da carga de dificuldade, transmitindo a renderização para a interface de visualização.
+1. **2RS-Receiver** - Desserializa as informações dos sensores eletrônicos, as converte em modelo de dados do sistema e as transmite para a controladora (2RS-Controller);
+1. **2RS-Controller** - Recebe informações e as direciona para o subsistema responsável por lidar com aquele tipo de informação;
+1. **2RS-Processer** - Recebe os dados dos sensores cinéticos e aplica algoritmos matemáticos para definição da performance do atleta, retornando tais resultados para a controladora (2RS-Controller);
+1. **2RS-Transmitter** - Recebe o fator de mudança de carga de dificuldade, serializa-o e transmite para os componentes eletrônicos responsáveis pelo controle de carga;
+1. **2RS-Viewer** - Renderiza as informações de performance do atleta, o simulador de atividade ideal e o estado da carga de dificuldade, transmitindo a renderização para a interface de visualização.
 
 <!--
 

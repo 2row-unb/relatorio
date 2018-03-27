@@ -1,27 +1,8 @@
 # Introdução
 
 <!--
-Está na estrutura do pandoc?
-- [SIM]
-
-Validações:
-
-[OK]: Tudo certo!
-[TODO]: Falta alguma coisa! Nesse caso, informe o que está faltando
-
-- Software []
-> Jonathan [OK]
-
----------------
-- Eletrônica []
-
----------------
-- Energia []
-
----------------
-- Estrutura []
-
----------------
+Jonathan: [OK]
+Luan: Verificar estranho espaçamento após o item de inclinação (L. 32) no PDF
 -->
 
 
