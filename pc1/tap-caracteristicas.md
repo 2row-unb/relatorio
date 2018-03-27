@@ -240,7 +240,7 @@ O 2RE-Suit é um subproduto de _eletrônica_ e sua aplicação se baseia em medi
 #### 2RE-Cardio -  Subsistema monitor de frequência cardíaca
 É o subsistema responsável pela aquisição dos dados de frequência cardíaca do atleta que está utilizando o aparelho de remo.
 
-![Sensor_Cardiaco^[Fonte: ]](./imagens/sensor_cardiaco.jpg){#fig:Sensor_cardiaco}
+![Sensor_Cardiaco^[Fonte:https://www.filipeflop.com/produto/sensor-de-frequencia-cardiaca/ ]](./imagens/sensor_cardiaco.jpg){#fig:Sensor_cardiaco}
 
 Suas principais características são:
 
@@ -263,7 +263,7 @@ O MSP 430 foi escolhido, porque possue baixo consumo de corrente causado devido 
  
 Os seis modos de operação do MSP430 exitentes- do LPM0 a LPM4- auxiliam no controle do consumo de corrente, ou seja, faz com que não haja disperdício de energia quando o mesmo não estiver sendo utilizado. O MSP apresenta um sistema de clock, sendo o Timer_A o mais completo. 
 
-![MSP430^[Fonte: ]](./imagens/msp430.jpg){#fig:MSP_430}
+![MSP430^[Fonte: https://www.embarcados.com.br/msp430-com-iar/]](./imagens/msp430.jpg){#fig:MSP_430}
 
 #### 2RE-IMU - Subsistema de unidade de medidas inerciais
 É o subsistema responsável por adquirir medidas por meio dos IMU's alocados nas pernas do atleta para saber a posição exata do movimento e poder comparar com modelos padrões para ajustar a execução da remada.
@@ -338,7 +338,7 @@ Suas principais funcionalidades são:
 
 Detalhando um pouco mais a solução, para atuar na captação e processamento de sinais a Raspberry será fundamental, integrada com outros dispositivos como MSP430, circutos de condicionamento, será possível adquirir sinais analógicos. Visto que a Raspberry não possui conversor A/D pode-se utilizar o conversor do MSP430. Para transmitir os sinais para a Raspberry uma ideia foi utilizar um protocolo de comunicação ou um módulo wi-fi. O ESP8266 é um microcontrolador com um processamento considerável para a aplicação em questão e possui um excelente diferencial, o módulo WI-FI acoplado. Além disso já traz consigo, conversor analógico-digital(ADC) e vários protocolos de comunicações, isso traria ao sistema versatilidade para aquisição e trato de sinais.
 
-![Raspberry Pi 3^[Fonte: ]](./imagens/Raspberry.jpg){#fig:Raspberry_Pi_3}
+![Raspberry Pi 3^[Fonte: https://www.raspberrypi.org/products/raspberry-pi-3-model-b/]](./imagens/Raspberry.jpg){#fig:Raspberry_Pi_3}
 ![ESP8266^[Fonte: ]](./imagens/esp8266.jpg){#fig:ESP_8266}
 
 #### 2RE-UI - Subsistema de interface de botões
