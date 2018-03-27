@@ -34,17 +34,21 @@ Tem-se por objetivo projetar uma estrutura de remo _indoor_. Basicamente a estru
 
 #### 2RB-Primary  
 
-A estrutura física primária do equipamento, composta pela trave que contem os demais subsistemas de todas as áreas;
+A estrutura física primária do equipamento, composta pela trave que contem os demais subsistemas de todas as áreas. O perfil que receberá a maior parte dos esforços da estrutura está representado pela imagem abaixo.
+![Perfil Rect](imagens/Perfil_Rect.JPG)
 
 #### 2RB-Seat  
 
-A estrutura de acomodação do usuário, é ligada a estrutura primária por um trilho que permite movimento;
+A estrutura de acomodação do usuário, é ligada a estrutura primária por um trilho que permite movimento. A iamgem abaixo mostra a o perfil que será utilizado no trilho para receber o banco. 
+
+![Perfil V Slot](imagens/Perfil_V_Slot.JPG)
 
 #### 2RB-Row 
 
-Formada por um conjunto de polias e correias que transmitem o movimento da remada e do sistema de restituição feito por cordas elásticas;
+Formada por um conjunto de polias e correias que transmitem o movimento da remada e do sistema de restituição feito por cordas elásticas. Abaixo temos uma imagem que ilustra o que tem no mercado de sistema de restituição e a outra imagem mostra o outro componente que será utilizado nesses sistema.  
 
-![Conjunto para transmissão de força](imagens/Conjunto_Relação.JPG){#fig:TRANSMISSÃO}
+![Conjunto para transmissão de força](imagens/Conjunto_Relacao.JPG)
+![Cordas Elasticas](imagens/Corda_Elastica.JPG)
 
 
 #### 2RB-Case 
