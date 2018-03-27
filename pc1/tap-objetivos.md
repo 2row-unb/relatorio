@@ -41,7 +41,7 @@ Serão acoplados à estrutura do **2Row Boat**  os seguintes subsistemas:
 2. **2RP-Resistance** - O banco de resistências auxilia no controle de carga do gerador, que por sua vez atuará no sistema através do conjugado elétrico;
 3. **2RP-Battery** - A bateria é responsável por armazenar a energia elétrica proveniente dos ciclos de remada, transformada pelo gerador. O 2RP-battery também tem a função de alimentar, ou seja, fornecer energia para o 2Row Boat.
 
-O **2Row Boat**  comporta um sistema de _eletrônica emabarcada_, **2REletronic** (2RE), o qual é responsável pela instrumentação biomecância e biomédica, seus condionamentos e  controle do acionamento do subsistema **2RP-Resistance**. Seus subsistemas são:
+O **2Row Boat**  comporta um subproduto de _eletrônica emabarcada_, **2REletronic** (2RE), o qual é responsável pela instrumentação biomecância e biomédica, seus condionamentos e  controle do acionamento do subsistema **2RP-Resistance**. Seus subsistemas são:
 
 1. **2RE-Suit** - É descrito como a vestimenta de sensores cinemáticos, onde estarão contidos dois sensores IMUs e o sensor de pulso cardíacos. Além de proteger os sensores, traz conforto ao usuário e possibilita que este continue realizando seus movimentos para que haja a coleta de forma segura;
 2. **2RE-Cardio** - Coleta os dados de Batimentos Cardíacos para calcular a frequência cardíaca e realiza o processamento desse sinal e
