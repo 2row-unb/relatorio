@@ -85,7 +85,7 @@ Os _stakeholders_ da disciplina em comum acordo com o subsistema de energia defi
 * **CA 2RSystem-4**: O sistema deve ser capaz de realizar o _pipeline_ de fim de treino (definido em características) na íntegra;
 * **CA 2RSystem-5**: O sistema deve ser capaz de realizar o _pipeline_ de processamento de dados da 2RE-Suit (definido em características) na íntegra;
 * **CA 2RSystem-6**: O sistema deve ser capaz de realizar o _pipeline_ de processamento de potência do atleta (definido em características) na íntegra;
-* **CA 2RSystem-7**: O sistema deve ser capaz de realizar o _pipeline_ de controle de dificuldade (definido em características) na íntegra;
+* **CA 2RSystem-7**: O sistema deve ser capaz de realizar o _pipeline_ de controle de dificuldade (definido em características) na íntegra.
 
 #### Critérios de Aceitação do 2RS-Controller
 
@@ -97,23 +97,24 @@ Os _stakeholders_ da disciplina em comum acordo com o subsistema de energia defi
 * **CA 2RS-Receiver-1**: O subsistema deve ser capaz de ser integrado com o 2RE-Suit, fornecendo um aviso de sucesso ou erro em sua tentativa de conexão;
 * **CA 2RS-Receiver-2**: O subsistema deve ser capaz de ser integrado com o 2RE-Kernel, fornecendo um aviso de sucesso ou erro em sua tentativa de conexão;
 * **CA 2RS-Receiver-3**: O subsistema deve ser capaz de ser integrado com o subsistema 2RS-Controller, fornecendo um aviso de sucesso ou erro em sua tentativa de conexão;
-* **CA 2RS-Receiver-4**: O subsistema deve ser capaz de desserializar os dados e convertê-las em variáveis/objetos modelos;
+* **CA 2RS-Receiver-4**: O subsistema deve ser capaz de desserializar os dados e convertê-las em variáveis/objetos modelos.
 
 #### Critérios de Aceitação do 2RS-Processer
 
-> [TODO: Software]
-
 * **CA 2RS-Processer-1**: O subsistema deve ser capaz de ser integrado com o subsistema 2RS-Controller, fornecendo um aviso de sucesso ou erro em sua tentativa de conexão;
+* **CA 2RS-Processer-2**: O subsistema deve ser capaz de fazer todo o processamento e cálculos (criação dos modelos, determinação de ciclos por minuto etc) em, no máximo, $ 400 ms $, para que o atraso máximo de $ 600 ms $ para a visualização seja obedecido.
 
 #### Critérios de Aceitação do 2RS-Viewer
 
-> [TODO: Software]
-
 * **CA 2RS-Viewer-1**: O subsistema deve ser capaz de ser integrado com o subsistema 2RS-Controller, fornecendo um aviso de sucesso ou erro em sua tentativa de conexão;
-* **CA 2RS-Viewer-2**: O subsistema deve ser capaz de fornecer as animações do atleta e do modelo ideal com taxa média de $ 20 fps $ (_frames per second_);
+* **CA 2RS-Viewer-2**: O subsistema deve ser capaz de mostrar as animações do atleta e do modelo ideal com taxa média de $ 20 fps $ (_frames per second_);
+* **CA 2RS-Viewer-3**: O subsistema deve ser capaz de mostrar a frequência cardíaca do atleta;
+* **CA 2RS-Viewer-4**: O subsistema deve ser capaz de mostrar a quantidade de tempo que passou desde o início do treino;
+* **CA 2RS-Viewer-5**: O subsistema deve ser capaz de mostrar o nível de potência da estrutura selecionado (1 - mínimo possível, 2 - médio ou 3 - máximo possível);
+* **CA 2RS-Viewer-6**: O subsistema deve ser capaz de mostrar a quantidade de ciclos (de treinamento) por minuto que o atleta está realizando.
 
 #### Critérios de Aceitação do 2RS-Transmitter
 
-> [TODO: Software]
-
 * **CA 2RS-Transmitter-1**: O subsistema deve ser capaz de ser integrado com o subsistema 2RS-Controller, fornecendo um aviso de sucesso ou erro em sua tentativa de conexão;
+* **CA 2RS-Transmitter-2**: O subsistema deve ser capaz de ser integrado com o subsistema 2RE-Kernel, fornecendo um aviso de sucesso ou erro em sua tentativa de conexão;
+* **CA 2RS-Transmitter-3**: O subsistema deve ser capaz de enviar 4 tipos de requisições para o 2RE-Kernel: 0% de potência, 33% de potência, 66% de potência e 100% de potência;
