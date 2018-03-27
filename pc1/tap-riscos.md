@@ -1,8 +1,11 @@
 ## Análise de Risco
 
 > TODO: Introduzir o contexto de risco
-### Rsicos de estrutura
+
+### Riscos de estrutura
+
 Um levantamento foi realizado dos possíveis riscos estruturais, a tabela abaixo ilustra isso.
+
 
 -------------------------------------------------------------------------------------
 Risco                   Consequência           Chance Impacto Ação estratégica
