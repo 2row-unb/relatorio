@@ -88,7 +88,7 @@ Validações:
 
 ### Critérios de Aceitação do 2RPower
 
-
+Os Stakeholders da disciplina em comum acordo com o subsistema de energia definiram que alguns parâmetros serão aferidos e dimensionados após o Ponto de Controle 1, devido as dificuldades de medir ou encontrar em bibliografias essas variáveis.
 
 #### Critérios de Aceitação do 2RP-Generator 
 
