@@ -229,7 +229,7 @@ SPI, I²C, UART;
 Tensão de operação ->3.3V.
 
 -->
-#### Características do 2REletronic
+#### Características do 2RElectronic
 
 ![Diagrama_Eletrônica^[Fonte: do autor]](./imagens/diagrama_eletronica.png){#fig:Diagrama_Eletrônica}
 
