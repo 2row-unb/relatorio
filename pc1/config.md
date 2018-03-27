@@ -20,23 +20,23 @@ classoption:
 toc-depth: 2
 
 #TCC information
-title:      'Empurrando Juntos: Machine Learning'
+title:      'Projeto Integrador 2: Ponto de Controle 1'
 date:     '2018'
-author:     'Luan Guimarães Lacerda'
+author:     'Vários'
 place:      'Brasília, DF'
 institution:  'Universidade de Brasília -- UnB'
 section:        'Faculdade UnB Gama -- FGA'
-course:         'Engenharia de Software'
+course:         'Engenharias'
 preamble:   'ver documentação do abntex2 (\preambulo{})'
-abstract:   'texto do resumo'
-tag1:           'democracia'
-tag2:           'clusterização'
+abstract:   'resumo'
+tag1:           'row'
+tag2:       'imu'
 cover:      'true'
 cdu:            '02:141:005.6'
-approvaldate:   '25 de Março de 2018'
-guestmember1:   'Carla Rocha'
-guestmember2:   'Paulo Meireles'
-advisor:        'Fábio Mendes'
+approvaldate:   '29 de Março de 2018'
+guestmember1:   'Retirar'
+guestmember2:   'Retirar'
+advisor:        'Retirar'
 
 #crossref configurations
 linkReferences: true
