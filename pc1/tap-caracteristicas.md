@@ -227,22 +227,22 @@ Tensão de operação ->3.3V.
 
 O 2RE-Suit é um subproduto de _eletrônica_ e sua aplicação se baseia em medições de posição das pernas através do 2RE-IMU e do 2RE-CARDIO, respectivamente sendo os produtos de **Subsistema de unidade de medidas inerciais** e **Subsistema monitor de frequência cardíaca**.
 
-#### 2RE-CARDIO -  Subsistema monitor de frequência cardíaca
+#### 2RE-Cardio -  Subsistema monitor de frequência cardíaca
 É o subsistema responsável pela aquisição dos dados de frequência cardíaca do atleta que está utilizando o aparelho de remo.
 
 Suas principais características são:
 
-* **Característica 2RE-CARDIO-1**: É composto pelo sensor  de frequência cardíaca 4MD69 e por um microcontrolador;
-* **Característica 2RE-CARDIO-2**: Pode necessitar de condicionamento de sinal;
-* **Característica 2RE-CARDIO-3**: O sensor utilizado apresenta baixo consumo de energia (cerca de 4 mA) e tensão de operação de 3 a 5 V;
-* **Característica 2RE-CARDIO-4**:  A transmissão dos dados pode ser feita via cabos ou wifi;
-* **Característica 2RE-CARDIO-5**: Tem comunicação com o **2RE-Kernel**.
+* **Característica 2RE-Cardio-1**: É composto pelo sensor  de frequência cardíaca 4MD69 e por um microcontrolador;
+* **Característica 2RE-Cardio-2**: Pode necessitar de condicionamento de sinal;
+* **Característica 2RE-Cardio-3**: O sensor utilizado apresenta baixo consumo de energia (cerca de 4 mA) e tensão de operação de 3 a 5 V;
+* **Característica 2RE-Cardio-4**:  A transmissão dos dados pode ser feita via cabos ou wifi;
+* **Característica 2RE-Cardio-5**: Tem comunicação com o **2RE-Kernel**.
 
 Suas principais funcionalidades são:
 
-* **_Feature_ 2RE-CARDIO-1**: Aquisição dos sinais cardíacos do usuário do remo;
-* **_Feature_ 2RE-CARDIO-2**: Condicionamento do sinal para tratamento de ruídos;
-* **_Feature_ 2RE-CARDIO-3**: Transmissão do sinal para o subsistema **2RE-Kernel**;
+* **_Feature_ 2RE-Cardio-1**: Aquisição dos sinais cardíacos do usuário do remo;
+* **_Feature_ 2RE-Cardio-2**: Condicionamento do sinal para tratamento de ruídos;
+* **_Feature_ 2RE-Cardio-3**: Transmissão do sinal para o subsistema **2RE-Kernel**;
 
 
 Detalhando as caracteríticas, os microcontroladores escolhidos para trabalhar foram MSP 430 e o outro será descrito mais abaixo.
