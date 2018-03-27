@@ -4,12 +4,22 @@
 ### Rsicos de estrutura
 Um levantamento foi feito dos possiveis riscos estruturais, a tabela abaixo ilustra isso.
 
-|Risco|Consequência   |Probabilidade| Impacto | Ação estratégica                  |
-|:-----:|:----------:|:--------------:|:-----------:|:---------:|
-|Falha mecânica do equipamento|O eixo de transmissão não funcionar|Média|Alto|Fazer cálculos e simulações corretos 
-|Atraso na fabricação da estrutura|Entrega atrasada do projeto|Média|Alto|Seguir o cronograma corretamente|
-|Não comportar outros subsistemas|A integração não funcionar|Baixa|Médio|Ter uma boa comunicação com as outras áreas|
-|Estrutura dimensionada incorretamente|O aparelho não funcinar|Baixa|Alto|Realização de dimensionamento detalhado
+-------------------------------------------------------------------------------------
+Risco                   Consequência           Chance Impacto Ação estratégica
+----------------------- ---------------------- ------ ------- -----------------------
+Falha mecânica do       O eixo de transmissão  Média  Alto    Fazer cálculos e
+equipamento             não funcionar                         simulações corretas
+
+Atraso na fabricação    Atraso na entrega do   Média  Alto    Seguir o cronograma
+da estrutura            projeto                               corretamente
+
+Não comportar outros    A integração não       Baixa  Médio   Ter uma boa comunicação
+sistemas                funcionar                             com outras áreas
+
+Estrutura dimensionada  O aparelho não         Baixa  Alto    Realização de dimensionamento
+incorretamente          funcionar                             detalhado
+-------------------------------------------------------------------------------------
+
 ### Riscos de Energia 
 
 Uma análise dos possíveis riscos que podem afetar o sucesso do projeto foi realizada com o intuito de definir ações estratégicas caso algum desses aconteça. Dessa forma, todos os riscos inicialmente identificados foram descritos, categorizados, e uma ou mais ações estratégicas foram definidas para amenizar ao máximo o impacto que o risco em questão possa causar ao desenvolvimento do projeto.
