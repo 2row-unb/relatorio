@@ -34,12 +34,12 @@ Validações:
 * **CA 2RSystem-4**: O sistema deve ser capaz de realizar o _pipeline_ de fim de treino, conforme `{figura}`, na íntegra;
 * **CA 2RSystem-5**: O sistema deve ser capaz de realizar o _pipeline_ de processamento de dados da **2RSuit**, conforme `{figura}`, na íntegra;
 * **CA 2RSystem-6**: O sistema deve ser capaz de realizar o _pipeline_ de processamento de potência do atleta, conforme `{figura}`, na íntegra;
-* **CA 2RSystem-7**: O sistema deve ser capaz de realizar o _pipeline_ de controle de dificuldade, conforme `{figura}`, na íntegra.
+* **CA 2RSystem-7**: O sistema deve ser capaz de realizar o _pipeline_ de controle de dificuldade, conforme `{figura}`, na íntegra;
 
 #### Critérios de Aceitação do 2RS-Controller
 
 * **CA 2RS-Controller-1**: O subsistema deve ser capaz de ser integrado com todos os outros subsistemas do **2RSystem**, fornecendo um aviso de sucesso ou erro em sua tentativa de conexão;
-* **CA 2RS-Controller-2**: O subsistema não deve, em hipótese alguma, modificar as informações recebidas pelos outros subsistemas.
+* **CA 2RS-Controller-2**: O subsistema não deve, em hipótese alguma, modificar as informações recebidas pelos outros subsistemas;
 
 #### Critérios de Aceitação do 2RS-Receiver
 
@@ -47,21 +47,44 @@ Validações:
 * **CA 2RS-Receiver-2**: O subsistema deve ser capaz de ser integrado com o microcontrolador de controle de dificuldade do **2Row**, fornecendo um aviso de sucesso ou erro em sua tentativa de conexão;
 * **CA 2RS-Receiver-3**: O subsistema deve ser capaz de ser integrado com os botões da interface de usuário do **2Row**, fornecendo um aviso de sucesso ou erro em sua tentativa de conexão;
 * **CA 2RS-Receiver-4**: O subsistema deve ser capaz de ser integrado com o subsistema **2RS-Controller**, fornecendo um aviso de sucesso ou erro em sua tentativa de conexão;
-* **CA 2RS-Receiver-5**: O subsistema deve ser capaz de desserializar os dados e convertê-las em variáveis/objetos modelos.
+* **CA 2RS-Receiver-5**: O subsistema deve ser capaz de desserializar os dados e convertê-las em variáveis/objetos modelos;
 
 #### Critérios de Aceitação do 2RS-Processer
 
-* **CA 2RS-Processer-1**: O subsistema deve ser capaz de ser integrado com o subsistema **2RS-Controller**, fornecendo um aviso de sucesso ou erro em sua tentativa de conexão.
+* **CA 2RS-Processer-1**: O subsistema deve ser capaz de ser integrado com o subsistema **2RS-Controller**, fornecendo um aviso de sucesso ou erro em sua tentativa de conexão;
+* **CA 2RS-Processer-2**: O subsistema deve ser capaz processar os dados dos sensores fornecidos por X, <!-- TODO -->
 
 #### Critérios de Aceitação do 2RS-Viewer
 
 * **CA 2RS-Viewer-1**: O subsistema deve ser capaz de ser integrado com o subsistema **2RS-Controller**, fornecendo um aviso de sucesso ou erro em sua tentativa de conexão;
-* **CA 2RS-Viewer-2**: O subsistema deve ser capaz de fornecer as animações do atleta e do modelo ideal com taxa média de $ 20 fps $ (_frames per second_).
+* **CA 2RS-Viewer-2**: O subsistema deve ser capaz de fornecer as animações do atleta e do modelo ideal com taxa média de $ 20 fps $ (_frames per second_);
 
 #### Critérios de Aceitação do 2RS-Transmitter
 
-* **CA 2RS-Transmitter-1**: O subsistema deve ser capaz de ser integrado com o subsistema **2RS-Controller**, fornecendo um aviso de sucesso ou erro em sua tentativa de conexão.
+* **CA 2RS-Transmitter-1**: O subsistema deve ser capaz de ser integrado com o subsistema **2RS-Controller**, fornecendo um aviso de sucesso ou erro em sua tentativa de conexão;
+* **CA 2RS-Transmitter-2**: <!-- TODO -->
 
+### Critérios de Aceitação do 2RB-Primary
+
+* **CA 2RB-Primary-1:** A estrutura não deve falhar (quebrar ou deformar plasticamente) em sua faixa de operação, limitada ao peso do usuário de até 150kg.
+* **CA 2RB-Primary-2:** A estrutura deve comportar confortavelmente usuários que estejam  dentro do espectro de estatura compreendido até o percentil masculino $95^{th}$ americano.
+* **CA 2RB-Primary-3:** A estrutura deve acomodar todos os demais subsistemas e suas necessidades.
+
+### Critérios de Aceitação do 2RB-Seat
+
+* **CA 2RB-Seat-1:** Deve deslizar de maneira suave sobre o trilho.
+* **CA 2RB-Seat-2:** O atleta não deve deslizar sobre o banco ao realizar o movimento de remada.
+
+### Critérios de Aceitação do 2RB-Row
+
+* **CA 2RB-Row-1:** A restituição do movimento deve ser realizada de tal forma que o atleta realize  o movimento completamente.
+* **CA 2RB-Row-2:** A resistência criada pelo gerador deve ser transmitida integralmente ao movimento da remada.
+* **CA 2RB-Row-3:** A estrutura deve suportar sem falhar (quebrar ou deformar plasticamente) as cargas dinâmicas a que será submetida em seu uso natural.
+* **CA 2RB-Row-4:** O manete não deve escorregar da mão do usuário durante a utilização do equipamento.
+
+### Critérios de Aceitação do 2RB-Case
+
+* **CA 2RB-Case-1:** Deve comportar o subsistema **2RE-Kernel** sem interferir em seu funcionamento.
 <!--
 
 Serão definidos critérios de aceitação para cada um dos subsistemas do submódulo de _software_, os quais estão listados a seguir em tópicos:
@@ -106,7 +129,7 @@ Os Stakeholders da disciplina em comum acordo com o subsistema de energia defina
 
 3. A energia excedente gerada será armazenada em uma bateria, que por sua vez irá alimentar o sistema eletrônico. A potência necessária para manter o sistema funcionando ainda será dimensionado.
 
-### Critérios de Aceitação da _Estrutura_
+
 
 A estrutura será dimensionada para que seja capaz de antender uma vasta gama de pessoas. Foi escolhido como parâmetro um homem americano do percentil 95, que possui 1.86 m de altura e pesa 102 KG. Assim, buscando uma margem de segurança, decidiu-se dimensionar a estrutura para que suporte o uso de um homem de até 2 metros de altura e de até 150 KG. Não há limite mínimo de estatura e de peso para o uso do aparelho. Com isso, foram definidos os critérios de aceitação da estrutura:
 
