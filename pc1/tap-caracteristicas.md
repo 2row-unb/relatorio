@@ -27,7 +27,7 @@ Validações:
 
 ### Características de 2Row Boat
 
-Tem-se por objetivo projetar uma estrutura de remo _indoor_. Basicamente a estrutura é composta por um trilho que permite que o banco se mova suavimente e que caiba a perna toda do usuário, por uma alça ergonômica, que permite ao usuário uma posicionamento de braços e mãos de forma confortável, base para o posicionamento dos pés que permite um ajuste fácil e rápido, corda de alta resistência, assento para a acomodação do atleta, suportes para a sustentarem a estrutura e cabos adequados para transmissão da força.  
+Tem-se por objetivo projetar uma estrutura de remo _indoor_. Basicamente a estrutura é um cavalete composto por um trilho que permite que o banco se mova suavimente e que caiba a perna toda do usuário, por um assento ergonômico que permite ao usuário uma posicionamento de braços e mãos de forma confortável, de uma base para o posicionamento dos pés que permite um ajuste fácil e rápido, corda de alta resistência, suportes para receber os componentes de outras das outras áreas e cabos adequados para transmissão da força.  
 
 ![CAD_V1](imagens/cad_v1.JPG){Estrutura do **2Row Boat**} 
 ![CAD_V1.1](imagens/vistas.JPG){Vistas Isométricas da Estrutura} 
