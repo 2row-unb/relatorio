@@ -34,12 +34,12 @@ Validações:
 * **CA 2RSystem-4**: O sistema deve ser capaz de realizar o _pipeline_ de fim de treino, conforme `{figura}`, na íntegra;
 * **CA 2RSystem-5**: O sistema deve ser capaz de realizar o _pipeline_ de processamento de dados da **2RSuit**, conforme `{figura}`, na íntegra;
 * **CA 2RSystem-6**: O sistema deve ser capaz de realizar o _pipeline_ de processamento de potência do atleta, conforme `{figura}`, na íntegra;
-* **CA 2RSystem-7**: O sistema deve ser capaz de realizar o _pipeline_ de controle de dificuldade, conforme `{figura}`, na íntegra;
+* **CA 2RSystem-7**: O sistema deve ser capaz de realizar o _pipeline_ de controle de dificuldade, conforme `{figura}`, na íntegra.
 
 #### Critérios de Aceitação do 2RS-Controller
 
 * **CA 2RS-Controller-1**: O subsistema deve ser capaz de ser integrado com todos os outros subsistemas do **2RSystem**, fornecendo um aviso de sucesso ou erro em sua tentativa de conexão;
-* **CA 2RS-Controller-2**: O subsistema não deve, em hipótese alguma, modificar as informações recebidas pelos outros subsistemas;
+* **CA 2RS-Controller-2**: O subsistema não deve, em hipótese alguma, modificar as informações recebidas pelos outros subsistemas.
 
 #### Critérios de Aceitação do 2RS-Receiver
 
@@ -47,20 +47,20 @@ Validações:
 * **CA 2RS-Receiver-2**: O subsistema deve ser capaz de ser integrado com o microcontrolador de controle de dificuldade do **2Row**, fornecendo um aviso de sucesso ou erro em sua tentativa de conexão;
 * **CA 2RS-Receiver-3**: O subsistema deve ser capaz de ser integrado com os botões da interface de usuário do **2Row**, fornecendo um aviso de sucesso ou erro em sua tentativa de conexão;
 * **CA 2RS-Receiver-4**: O subsistema deve ser capaz de ser integrado com o subsistema **2RS-Controller**, fornecendo um aviso de sucesso ou erro em sua tentativa de conexão;
-* **CA 2RS-Receiver-5**: O subsistema deve ser capaz de desserializar os dados e convertê-las em variáveis/objetos modelos;
+* **CA 2RS-Receiver-5**: O subsistema deve ser capaz de desserializar os dados e convertê-las em variáveis/objetos modelos.
 
 #### Critérios de Aceitação do 2RS-Processer
 
-* **CA 2RS-Processer-1**: O subsistema deve ser capaz de ser integrado com o subsistema **2RS-Controller**, fornecendo um aviso de sucesso ou erro em sua tentativa de conexão;
+* **CA 2RS-Processer-1**: O subsistema deve ser capaz de ser integrado com o subsistema **2RS-Controller**, fornecendo um aviso de sucesso ou erro em sua tentativa de conexão.
 
 #### Critérios de Aceitação do 2RS-Viewer
 
 * **CA 2RS-Viewer-1**: O subsistema deve ser capaz de ser integrado com o subsistema **2RS-Controller**, fornecendo um aviso de sucesso ou erro em sua tentativa de conexão;
-* **CA 2RS-Viewer-2**: O subsistema deve ser capaz de fornecer as animações do atleta e do modelo ideal com taxa média de $ 20 fps $ (_frames per second_);
+* **CA 2RS-Viewer-2**: O subsistema deve ser capaz de fornecer as animações do atleta e do modelo ideal com taxa média de $ 20 fps $ (_frames per second_).
 
 #### Critérios de Aceitação do 2RS-Transmitter
 
-* **CA 2RS-Transmitter-1**: O subsistema deve ser capaz de ser integrado com o subsistema **2RS-Controller**, fornecendo um aviso de sucesso ou erro em sua tentativa de conexão;
+* **CA 2RS-Transmitter-1**: O subsistema deve ser capaz de ser integrado com o subsistema **2RS-Controller**, fornecendo um aviso de sucesso ou erro em sua tentativa de conexão.
 
 <!--
 
