@@ -275,7 +275,7 @@ Suas principais características são:
 
 Suas principais funcionalidades são:
 
-* **_Feature_ 2RE-Volt-1**: Quando o **gerador (2RP-Generator)** é ativado, a medida da tensão nas cargas começa a ser realizada e a conversão para binários;
+* **_Feature_ 2RE-Volt-1**: Quando o **gerador (2RP-Generator)** é ativado, a medida da tensão nas cargas começa a ser realizada e a ocorre a conversão para binário;
 * **_Feature_ 2RE-Volt-2**: A transmissão para o **Subsistema da central de processamento de eletrônica (2RE-Kernel)** é feita por meio de cabos;
 
 
@@ -291,8 +291,8 @@ Suas principais características são:
 
 Suas principais funcionalidades são:
 
-* **_Feature_ 2RE-Relay-1**:  A partir da requisição do atleta nos botões do **Subsistema de interface de botões (2RE-UI)** e transmitido para o **Subsistema da central de processamento de eletrônica (2RE-Kernel)**, recebe o comando para chavear os relés e mudar a carga presente no gerador **(2RP-Generator)**;
-* **_Feature_ 2RE-Relay-2**: 
+* **_Feature_ 2RE-Relay-1**:  A partir da requisição do atleta nos botões do **Subsistema de interface de botões (2RE-UI)** e transmitido para o **Subsistema da central de processamento de eletrônica (2RE-Kernel)**, o comando para chavear os relés e mudar a carga presente no gerador **(2RP-Generator)** é recebido;
+* **_Feature_ 2RE-Relay-2**: Existem três níveis de cargas 
 * **_Feature_ 2RE-Relay-3**:  
 * **_Feature_ 2RE-Relay-4**:  
 
@@ -303,6 +303,7 @@ Subsistema que processa todas as informações de sensores do **Subsistema monit
 Suas principais características são:
 
 * **Característica 2RE-Kernel-1**: Composta por uma Raspberry Pi 3 e os cabos de entrada e saída para os diversos sensores e atuadores;
+* **Característica 2RE-Kernel-2**: Composta por Microcontroladores MSP 430 e ESP 8266;
 * **Característica 2RE-Kernel-2**: Processa as informações sem atraso significativo;
 * **Característica 2RE-Kernel-3**: Alocada no **2RB-Case**;
 
@@ -326,7 +327,7 @@ Suas principais características são:
 Suas principais funcionalidades são:
 
 * **_Feature_ 2RE-UI-1**:  Receber a informação do usuário do desejo de mudar o peso nas cargas;
-* **_Feature_ 2RE-UI-2**: Tratar o sinal com _debouncer_ para que não haja duplo aperto tanto quanto falha na recepção do sinal ao clicar no _push-button_;
+* **_Feature_ 2RE-UI-2**: Tratar o sinal com _debouncer_ para que não haja duplo aperto tanto na falha de leitura, quanto na recepção do sinal ao clicar no _push-button_;
 * **_Feature_ 2RE-UI-3**: Transmitir o sinal do usuário para o **Subsistema da central de processamento de eletrônica (2RE-Kernel)**;
 
 
