@@ -231,7 +231,7 @@ Tensão de operação ->3.3V.
 -->
 #### Características do 2REletronic
 
-![Diagrama_Eletrônica^[Fonte: ]](./imagens/diagrama_eletronica.png){#fig:Diagrama_Eletrônica}
+![Diagrama_Eletrônica^[Fonte: do autor]](./imagens/diagrama_eletronica.png){#fig:Diagrama_Eletrônica}
 
 #### Características do 2RE-Suit
 
@@ -339,7 +339,7 @@ Suas principais funcionalidades são:
 Detalhando um pouco mais a solução, para atuar na captação e processamento de sinais a Raspberry será fundamental, integrada com outros dispositivos como MSP430, circutos de condicionamento, será possível adquirir sinais analógicos. Visto que a Raspberry não possui conversor A/D pode-se utilizar o conversor do MSP430. Para transmitir os sinais para a Raspberry uma ideia foi utilizar um protocolo de comunicação ou um módulo wi-fi. O ESP8266 é um microcontrolador com um processamento considerável para a aplicação em questão e possui um excelente diferencial, o módulo WI-FI acoplado. Além disso já traz consigo, conversor analógico-digital(ADC) e vários protocolos de comunicações, isso traria ao sistema versatilidade para aquisição e trato de sinais.
 
 ![Raspberry Pi 3^[Fonte: https://www.raspberrypi.org/products/raspberry-pi-3-model-b/]](./imagens/Raspberry.jpg){#fig:Raspberry_Pi_3}
-![ESP8266^[Fonte: ]](./imagens/esp8266.jpg){#fig:ESP_8266}
+![ESP8266^[Fonte: https://www.robocore.net/loja/produtos/nodemcu-esp8266-12-v2.html]](./imagens/esp8266.jpg){#fig:ESP_8266}
 
 #### 2RE-UI - Subsistema de interface de botões
 Subsistema alocado com botões próximos à interface de vídeo com o usuário para que o mesmo possa controlar o aumento e diminuição das cargas no gerador, chaveadas pelo **Subsistema controlador dos relés ativadores das cargas no gerador (2RE-Relay)** e assim poder aumentar e diminuir o esforço na aplicação do movimento do remo.
