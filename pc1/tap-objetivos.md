@@ -39,7 +39,7 @@ Serão acoplados à estrutura do **2Row Boat**  os seguintes subsistemas:
 
 1. **2RP-Generator** - O gerador elétrico fornece resistência mecânica à remada do atleta;
 2. **2RP-Resistance** - O banco de resistências auxilia no controle de carga do gerador, que por sua vez atuará no sistema através do conjugado elétrico;
-3. **2RP-Battery** - A bateria é responsável por armazenar a energia elétrica proveniente dos ciclos de remada, transformada pelo gerador. O 2RP-battery também tem a função de alimentar,ou seja, fornecer energia para o 2Row Boat.
+3. **2RP-Battery** - A bateria é responsável por armazenar a energia elétrica proveniente dos ciclos de remada, transformada pelo gerador. O 2RP-battery também tem a função de alimentar, ou seja, fornecer energia para o 2Row Boat.
 
 * `(Definição de subsistema #n de energia)`;
 * `(Definição de subsistema #1 de eletrônica)`;
