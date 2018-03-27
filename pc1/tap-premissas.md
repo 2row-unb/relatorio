@@ -20,7 +20,7 @@ Parte do presusposto que o atleta tenha o conhecimneto básico de como funciona 
 
 ### Premissas de Energia
 
-1. Parte-se do principio que para treinamento no remo o atleta deve entender que o “remarema” é um produto desenvolvido para simular a força necessária que ele deve realizar, mas não substitui o treinamento convencional;
+1. Parte-se do principio que para treinamento no remo o atleta deve entender que o 2Row é um produto desenvolvido para simular a força necessária que ele deve realizar, mas não substitui o treinamento convencional;
 2.  Todos os recursos necessários para o desenvolvimento da área de energia estarão satisfeitos. Tais como: ferramentas para elaboração e manutenção do banco de resistores, gerador, bateria, controle de carga, entre outros;
 3. Será possível gerar uma potência para ser dissipada no banco de resistores e assim, regular a corrente e consequentemente a força necessária para que o atleta realize o exercício;
 4. Será possível carregar a bateria e alimentar o sistema acoplado em paralelo com o módulo de resistores.

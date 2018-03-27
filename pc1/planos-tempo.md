@@ -37,15 +37,13 @@ O cronograma foi dividido de acordo com as frentes de atuação: Eletrônica, En
 |              | Aquisição de Material                          | Estrutura       | 11/04/18 | 18/04/18 |
 |              | Início  e Finalização da construção            | Estrutura       | 25/04/18 | 15/04/18 |
 |              | Entrega da estrutura                           | Estrutura       | 28/03/18 | 16/05/18 |
-|              |                                                | Software        |          |          |
-|              |                                                | Software        |          |          |
-|              |                                                | Software        |          |          |
-|              |                                                | Software        |          |          |
 |              |                                                |                 |          |          |
-| Integração   | Integrar subsistemas                           | Todas           |          |          |
-|              | Testar o sistema integrado                     | Todas           |          |          |
-|              | Identificar possíveis falhas                   | Todas           |          |          |
-|              | Aplicar ações corretivas                       | Todas           |          |          |
+|              |                                                |                 |          |          |
+|              |                                                |                 |          |          |
+| Integração   | Integrar subsistemas                           | Todas           | 16/05/18 | 28/05/18 |
+|              | Testar o sistema integrado                     | Todas           | 28/05/18 | 11/06/18 |
+|              | Identificar possíveis falhas                   | Todas           | 11/06/18 | 18/06/18 |
+|              | Aplicar ações corretivas                       | Todas           | 18/06/18 | 25/06/18 |
 | Encerramento | Apresentação e entrega do produto              | Todas           | 25/06/18 | 06/07/18 |
 
 

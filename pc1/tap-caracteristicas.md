@@ -27,9 +27,28 @@ Validações:
 
 ### Características de 2Row
 
-<!-- Estrutura -->
+Tem-se por objetivo projetar uma estrutura de remo _indoor_. Basicamente a estrutura é composta de um trilho que permite que o banco se mova suavimente e que caiba a perna toda do usuário, por uma alça ergonomica que permite ao usuário uma posicionamento de braços e mãos em um posicionamento confortável, base para o posicionamento dos pés que permite um ajuste fácil e rápido, corda de alta resistencia , assento para a acomodação do atleta, e pernas para a sustentarem a estrutura, cabos adequados para transmissão da força.  
 
-### Características do Sistema de Carga Variável e Geração de Energia
+#### 2RB-Primary  
+
+A estrutura física primária do equipamento, composta pela trave que contem os demais subsistemas de todas as áreas;
+
+#### 2RB-Seat  
+
+A estrutura de acomodação do usuário, é ligada a estrutura primária por um trilho que permite movimento;
+
+#### 2RB-Row 
+
+Formada por um conjunto de polias e correias que transmitem o movimento da remada e do sistema de restituição feito por cordas elásticas;
+
+![Conjunto para transmissão de força](imagens/Conjunto_Relação.JPG){#fig:TRANSMISSÃO}
+
+
+#### 2RB-Case 
+
+Estrutura que abriga os componentes eletrônicos responsáveis pelo controle dos sistemas embarcados.
+
+### Características de 2RPower
 
 O sistema planejado para gerar uma carga variável para a remada do atleta será baseado em um Dinamômetro Eletrônico.
 
@@ -43,7 +62,7 @@ O banco de resistores será útil para regular a corrente e consequentemente a f
 
 O controlador de carga que irá carregar a bateria e alimentar o sistema será acoplado em paralelo com o módulo de resistores.
 
-#### Gerador
+#### 2RP-Generator
 
 Os critérios considerados para escolher os geradores foram:
 
@@ -61,7 +80,7 @@ Considerando esses critério, dois sistemas foram selecionados como soluções p
 ![Motor de Esteira Ergométrica](imagens/motoresteira.jpg){#fig:motorest}
 O motor de esteira pode ser usado no modo gerador, e dentre os critérios de seleção ele foi o mais viável economicamente e tecnicamente. Dessa forma ele é o mais indicado para confecção do sistema.
 
-#### Banco de resistores
+#### 2RP-Resistance
 
 Sabendo a potência máxima possível que pode ser obtida com a remada do atleta, poderemos dimensionar a potência que os resistores e os relés iram ter que suportar.
 
@@ -78,14 +97,14 @@ Os níveis do exercício será acionado pelo sub grupo de eletrônica de acordo 
 
 ![Circuito do Banco de resistores](imagens/circuitobr.png){#fig:circuitobr}
 
-#### Sistema de armazenamento de energia e alimentação do sistema eletrônico
+#### 2RP-Battery
 
 O armazenamento de energia será realizado por meio da utilização de uma bateria, o qual será feito por um controlador de carga acoplado em paralelo com o módulo de resistores. Dessa forma, o sistema de armazenamento será capaz de alimentar o sistema eletrônico aproveitando a energia gerada pela movimentação do atleta durante o ciclo de remada.
 
 
-### Características de `(Sistema de Eletrônica)`
+### Características de 2REletronic
 
-<!-- Eletrônica -->
+<!-- Eletrônica 
 
 # Solução de eletrônica
 
@@ -202,10 +221,127 @@ SPI, I²C, UART;
 
 Tensão de operação ->3.3V.
 
+-->
 
-### Características de 2RSuit
+#### Características do 2RE-Suit
 
-<!-- Eletrônica / Software -->
+O 2RE-Suit é um subproduto de _eletrônica_ e sua aplicação se baseia em medições de posição das pernas através do 2RE-IMU e do 2RE-CARDIO, respectivamente sendo os produtos de **Subsistema de unidade de medidas inerciais** e **Subsistema monitor de frequência cardíaca**.
+
+#### 2RE-CARDIO -  Subsistema monitor de frequência cardíaca
+É o subsistema responsável pela aquisição dos dados de frequência cardíaca do atleta que está utilizando o aparelho de remo.
+
+Suas principais características são:
+
+* **Característica 2RE-CARDIO-1**: É composto pelo sensor  de frequência cardíaca 4MD69 e por um microcontrolador;
+* **Característica 2RE-CARDIO-2**: Pode necessitar de condicionamento de sinal;
+* **Característica 2RE-CARDIO-3**: O sensor utilizado apresenta baixo consumo de energia (cerca de 4 mA) e tensão de operação de 3 a 5 V;
+* **Característica 2RE-CARDIO-4**:  A transmissão dos dados pode ser feita via cabos ou wifi;
+* **Característica 2RE-CARDIO-5**: Tem comunicação com o **2RE-Kernel**.
+
+Suas principais funcionalidades são:
+
+* **_Feature_ 2RE-CARDIO-1**: Aquisição dos sinais cardíacos do usuário do remo;
+* **_Feature_ 2RE-CARDIO-2**: Condicionamento do sinal para tratamento de ruídos;
+* **_Feature_ 2RE-CARDIO-3**: Transmissão do sinal para o subsistema **2RE-Kernel**;
+
+![MSP430^[Fonte: ]](./imagens/msp430.jpg){#fig:MSP_430}
+
+#### 2RE-IMU - Subsistema de unidade de medidas inerciais
+É o subsistema responsável por adquirir medidas por meio dos IMU's alocados nas pernas do atleta para saber a posição exata do movimento e poder comparar com modelos padrões para ajustar a execução da remada.
+
+Suas principais características são:
+
+* **Característica 2RE-IMU-1**: Composto por sensores de unidades de medida inerciais MPU-5091 e um microcontrolador;
+* **Característica 2RE-IMU-2**:  Pode ser necessário condicionar o sinal;
+* **Característica 2RE-IMU-3**: Comunica com o **Subsistema da central de processamento de eletrônica (2RE-Kernel)**;
+* **Característica 2RE-IMU-4**: Transmissão dos sinais é feita com cabos;
+* **Característica 2RE-IMU-5**: Alocado por meio de elásticos com velcro em pontos da coxa e panturrilha;
+
+Suas principais funcionalidades são:
+
+* **_Feature_ 2RE-IMU-1**: Sensor capaz de medir por meio do acelerômetro, magnetômetro e giroscópio a posição e ângulo em que a parte monitorada da perna está;
+* **_Feature_ 2RE-IMU-2**: Medição do ângulo na perna posterior ao joelho;
+* **_Feature_ 2RE-IMU-3**: Transmissão dos dados para o **Subsistema da central de processamento de eletrônica (2RE-Kernel)**;
+* **_Feature_ 2RE-IMU-4**: Cada ciclo de remada possui uma postura adequada, para iniciantes no remo é importante que as devidas correções nesse quesito sejam realizadas para que o rendimento seja garantido.
+
+#### 2RE-Volt - Subsistema medidor de tensão na cargas do gerador
+
+Subsistema responsável por obter a tensão nas cargas do gerador e transmitir a informação para o **Subsistema da central de processamento de eletrônica (2RE-Kernel)** para obtenção da potência elétrica e tratamento para obtenção do valor de potência mecânica realizada durante o ciclo de remada.
+
+Suas principais características são:
+
+* **Característica 2RE-Volt-1**: Composto por um conversor analógico-digital, um circuito e um microcontrolador;
+* **Característica 2RE-Volt-2**: Comunica com o **Subsistema da central de processamento de eletrônica (2RE-Kernel)**;
+* **Característica 2RE-Volt-3**: Mínima interferência no valor das cargas presentes no gerador;
+* **Característica 2RE-Volt-4**: Resolução da conversão binária feita conforme a necessidade de exatidão.
+
+Suas principais funcionalidades são:
+
+* **_Feature_ 2RE-Volt-1**: Quando o **gerador (2RP-Generator)** é ativado, a medida da tensão nas cargas começa a ser realizada e a ocorre a conversão para binário;
+* **_Feature_ 2RE-Volt-2**: A transmissão para o **Subsistema da central de processamento de eletrônica (2RE-Kernel)** é feita por meio de cabos;
+
+
+#### 2RE-Relay - Subsistema controlador dos relés ativadores das cargas no gerador
+
+Subsistema que controla, a partir da escolha realizada pelo **Subsistema de interface de botões (2RE-UI)**, os relés chaveados nas resistências dos geradores para aumentar e diminuir o esforço a ser realizado pelo atleta durante o movimento de remo.
+
+Suas principais características são:
+* **Característica 2RE-Relay-1**: Composto por um circuito de conversão de sinal analógico para digital e um microcontrolador;
+* **Característica 2RE-Relay-2**: Utiliza componentes eletrônicos para o funcionamento;
+* **Característica 2RE-Relay-3**: Transmissão por meio de fios;
+* **Característica 2RE-Relay-4**: **Comunica com o Subsistema da central de processamento de eletrônica (2RE-Kernel)**
+
+Suas principais funcionalidades são:
+
+* **_Feature_ 2RE-Relay-1**:  A partir da requisição do atleta nos botões do **Subsistema de interface de botões (2RE-UI)** e transmitido para o **Subsistema da central de processamento de eletrônica (2RE-Kernel)**, o comando para chavear os relés e mudar a carga presente no gerador **(2RP-Generator)** é recebido;
+* **_Feature_ 2RE-Relay-2**: Cada relé será responsável por acionar a atuação de um nível de carga, ou seja, essa carga a pincípio é controlada.
+
+#### 2RE-Kernel - Subsistema da central de processamento de eletrônica
+
+Subsistema que processa todas as informações de sensores do **Subsistema monitor de frequência cardíaca (2RE-CARDIO)**, do **Subsistema de unidade de medidas inerciais (2RE-IMU)**, dos botões do **Subsistema de interface de botões (2RE-UI)** e do **Subsistema medidor de tensão na cargas do gerador (2RE-Volt)**, processa e transmite os sinais para os atuadores do **Subsistema controlador dos relés ativadores das cargas no gerador (2RE-Relay)** e para o **Subsistema de Aquisição de Dados (2RS-Receiver)**.
+
+Suas principais características são:
+
+* **Característica 2RE-Kernel-1**: Composta por uma Raspberry Pi 3 e os cabos de entrada e saída para os diversos sensores e atuadores;
+* **Característica 2RE-Kernel-2**: Composta por Microcontrolador ESP 8266;
+* **Característica 2RE-Kernel-3**: Processa as informações sem atraso significativo;
+* **Característica 2RE-Kernel-4**: Alocada no **2RB-Case**;
+
+
+As imagens a seguir
+
+![Raspberry Pi 3^[Fonte: ]](./imagens/Raspberry.jpg){#fig:Raspberry_Pi_3}
+![ESP8266^[Fonte: ]](./imagens/esp8266.jpg){#fig:ESP_8266}
+
+Suas principais funcionalidades são:
+
+* **_Feature_ 2RE-Kernel-1**: Recebe os sinais do **Subsistema monitor de frequência cardíaca (2RE-CARDIO)**;
+* **_Feature_ 2RE-Kernel-2**: Recebe os sinais do **Subsistema de unidade de medidas inerciais (2RE-IMU)**;
+* **_Feature_ 2RE-Kernel-3**: Recebe os sinais do **Subsistema medidor de tensão na cargas do gerador (2RE-Volt)**;
+* **_Feature_ 2RE-Kernel-4**: Recebe os sinais do **Subsistema de interface de botões (2RE-UI);
+* **_Feature_ 2RE-Kernel-5**: Envia os comandos para chaveamento do **Subsistema controlador dos relés ativadores das cargas no gerador (2RE-Relay)**;
+* **_Feature_ 2RE-Kernel-6**: Envia sinais para o **Subsistema de Aquisição de Dados (2RS-Receiver)**.
+
+#### 2RE-UI - Subsistema de interface de botões
+Subsistema alocado com botões próximos à interface de vídeo com o usuário para que o mesmo possa controlar o aumento e diminuição das cargas no gerador, chaveadas pelo **Subsistema controlador dos relés ativadores das cargas no gerador (2RE-Relay)** e assim poder aumentar e diminuir o esforço na aplicação do movimento do remo.
+
+Suas principais características são:
+* **Característica 2RE-UI-1**:  Composta por botões e um circuito para _debouncer_;
+* **Característica 2RE-UI-2**: Transmissão do sinal via cabos;
+* **Característica 2RE-UI-3**: Comunicação com o **Subsistema da central de processamento de eletrônica (2RE-Kernel)**;
+
+Suas principais funcionalidades são:
+
+* **_Feature_ 2RE-UI-1**:  Receber a informação do usuário do desejo de mudar o peso nas cargas;
+* **_Feature_ 2RE-UI-2**: Tratar o sinal com _debouncer_ para que não haja duplo aperto tanto na falha de leitura, quanto na recepção do sinal ao clicar no _push-button_;
+* **_Feature_ 2RE-UI-3**: Transmitir o sinal do usuário para o **Subsistema da central de processamento de eletrônica (2RE-Kernel)**;
+
+
+
+
+
+
+
 
 ### Características de 2RSystem
 
