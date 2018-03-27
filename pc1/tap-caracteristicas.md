@@ -41,7 +41,7 @@ A estrutura de acomodação do usuário, é ligada a estrutura primária por um 
 
 Formada por um conjunto de polias e correias que transmitem o movimento da remada e do sistema de restituição feito por cordas elásticas;
 
-![Conjunto para transmissão de força^[Fonte: http://www.sportsister.com/2013/10/24/row-your-way-to-fitness-2/]](imagens/Conjunto_Relação.JPG)
+![Conjunto para transmissão de força(imagens/Conjunto_Relação.JPG)
 
 
 #### 2RB-Case 
