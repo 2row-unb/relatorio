@@ -102,6 +102,28 @@ Os Stakeholders da disciplina em comum acordo com o subsistema de energia defini
 
 * **CA 2RP-Battery-1:** A energia excedente gerada será armazenada em uma bateria, que por sua vez irá alimentar o sistema eletrônico. A potência necessária para manter o sistema funcionando ainda será dimensionado.
 
+#### Critérios de Aceitação do 2RE-Suit 
+
+* **CA 2RE-Suit-1:** O suit deve ser posto no usuário para aquisição dos dados. Para execução de tal tarefa, o suit deverá  posicionar os sensores de forma firme para aquisição dos dados e que não atrapalhe o usuário na execução do movimento de remada.
+
+#### Critérios de Aceitação do 2RE-Cardio
+* **CA 2RE-Cardio-1:** O sensor de frequência cardiaca deverá fornecer dados filtrados e tratados para o microcomputador(Raspberry Pi). 
+
+#### Critérios de Aceitação do 2RE-IMU
+* **CA 2RE-IMU-1:** O sensor de unidade inercial será posicionado nas pernas do usuário e veverá entregar como informação ao microcomputador(Raspberry Pi)
+
+#### Critérios de Aceitação do 2RE-Watt
+O wattimetro apresentará uma variação quando as especificações de tensão e corrente para aferição do atleta.
+
+#### Critérios de Aceitação do 2RE-Relay
+Os relés de acionamento farão parte do sistema de controle. Cada relé implicará em alterações na carga relativa às resistênicas.
+
+#### Critérios de Aceitação do 2RE-Kernel
+
+#### Critérios de Aceitação do 2RE-Cycle
+O ciclo perfeito do movimento do atleta iniciante está ligado aos dados do IMU e do Wattímetro. Esta informação está ligada ao software com informações corretas para o acionamento. Para validação do ciclo, hardware e software deverão ligar à uma comparação de eficiência a ser mostrada em interface.
+
+#### Critérios de Aceitação do 2RE-UI
 
 <!--
 
