@@ -52,7 +52,6 @@ Validações:
 #### Critérios de Aceitação do 2RS-Processer
 
 * **CA 2RS-Processer-1**: O subsistema deve ser capaz de ser integrado com o subsistema **2RS-Controller**, fornecendo um aviso de sucesso ou erro em sua tentativa de conexão;
-* **CA 2RS-Processer-2**: O subsistema deve ser capaz processar os dados dos sensores fornecidos por X, <!-- TODO -->
 
 #### Critérios de Aceitação do 2RS-Viewer
 
@@ -62,7 +61,6 @@ Validações:
 #### Critérios de Aceitação do 2RS-Transmitter
 
 * **CA 2RS-Transmitter-1**: O subsistema deve ser capaz de ser integrado com o subsistema **2RS-Controller**, fornecendo um aviso de sucesso ou erro em sua tentativa de conexão;
-* **CA 2RS-Transmitter-2**: <!-- TODO -->
 
 <!--
 
