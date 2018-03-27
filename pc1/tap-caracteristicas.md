@@ -203,9 +203,92 @@ SPI, I²C, UART;
 Tensão de operação ->3.3V.
 
 
-### Características de 2RSuit
 
-<!-- Eletrônica / Software -->
+### Características do 2RE-Suit
+
+O 2RE-Suit é um subproduto de _eletrônica_ e sua aplicação se baseia em medições de posição das pernas através do 2RE-IMU e do 2RE-CARDIO, respectivamente sendo os produtos de **Subsistema de unidade de medidas inerciais** e **Subsistema monitor de frequência cardíaca**.
+
+### 2RE-CARDIO -  Subsistema monitor de frequência cardíaca
+É o subsistema responsável pela aquisição dos dados de frequência cardíaca do atleta que está utilizando o aparelho de remo.
+
+Suas principais características são:
+
+* **Característica 2RE-CARDIO-1**: É composto pelo sensor  de frequência cardíaca 4MD69 e por um microcontrolador;
+* **Característica 2RE-CARDIO-2**: Pode necessitar de condicionamento de sinal;
+* **Característica 2RE-CARDIO-3**: O sensor utilizado apresenta baixo consumo de energia (cerca de 4 mA) e tensão de operação de 3 a 5 V;
+* **Característica 2RE-CARDIO-4**:  A transmissão dos dados pode ser feita via cabos ou wifi;
+* **Característica 2RE-CARDIO-5**: Tem comunicação com o **2RE-Kernel**.
+
+Suas principais funcionalidades são:
+
+* **_Feature_ 2RE-CARDIO-1**: Aquisição dos sinais cardíacos do usuário do remo;
+* **_Feature_ 2RE-CARDIO-2**: Condicionamento do sinal para tratamento de ruídos;
+* **_Feature_ 2RE-CARDIO-3**: Transmissão do sinal para o subsistema **2RE-Kernel**;
+
+
+
+### 2RE-IMU - Subsistema de unidade de medidas inerciais
+É o subsistema responsável por adquirir medidas por meio dos IMU's alocados nas pernas do atleta para saber a posição exata do movimento e poder comparar com modelos padrões para ajustar a execução da remada.
+
+Suas principais características são:
+
+Suas principais funcionalidades são:
+
+
+### 2RE-Volt - Subsistema medidor de tensão na cargas do gerador
+
+Subsistema responsável por obter a tensão nas cargas do gerador e transmitir a informação para o **Subsistema da central de processamento de eletrônica (2RE-Kernel)** para obtenção da potência elétrica e tratamento para obtenção do valor de potência mecânica realizada durante o ciclo de remada.
+
+Suas principais características são:
+
+Suas principais funcionalidades são:
+
+
+### 2RE-Relay - Subsistema controlador dos relés ativadores das cargas no gerador
+
+Subsistema que controla, a partir da escolha realizada pelo **Subsistema de interface de botões (2RE-UI)**, os relés chaveados nas resistências dos geradores para aumentar e diminuir o esforço a ser realizado pelo atleta durante o movimento de remo.
+
+Suas principais características são:
+* **Característica 2RE-Relay-1**: Composto por um circuito de conversão de sinal analógico para digital e um microcontrolador;
+* **Característica 2RE-Relay-2**: Utiliza componentes eletrônicos para o funcionamento;
+* **Característica 2RE-Relay-3**: Transmissão por meio de fios;
+* **Característica 2RE-Relay-4**: **Comunica com o Subsistema da central de processamento de eletrônica (2RE-Kernel)**
+
+Suas principais funcionalidades são:
+
+* **_Feature_ 2RE-Relay-1**:  
+* **_Feature_ 2RE-Relay-2**:  
+* **_Feature_ 2RE-Relay-3**:  
+* **_Feature_ 2RE-Relay-4**:  
+
+### 2RE-Kernel - Subsistema da central de processamento de eletrônica
+
+Subsistema que processa todas as informações de sensores do **Subsistema monitor de frequência cardíaca (2RE-CARDIO)**, do **Subsistema de unidade de medidas inerciais (2RE-IMU)**, dos botões do **Subsistema de interface de botões (2RE-UI)** e do **Subsistema medidor de tensão na cargas do gerador (2RE-Volt)**, processa e transmite os sinais para os atuadores do **Subsistema controlador dos relés ativadores das cargas no gerador (2RE-Relay)** e para o **Subsistema de Aquisição de Dados (2RS-Receiver)**.
+
+Suas principais características são:
+
+Suas principais funcionalidades são:
+
+### 2RE-UI - Subsistema de interface de botões
+Subsistema alocado com botões próximos à interface de vídeo com o usuário para que o mesmo possa controlar o aumento e diminuição das cargas no gerador, chaveadas pelo **Subsistema controlador dos relés ativadores das cargas no gerador (2RE-Relay)** e assim poder aumentar e diminuir o esforço na aplicação do movimento do remo.
+
+Suas principais características são:
+* **Característica 2RE-UI-1**:  Composta por botões e um circuito para _debouncer_;
+* **Característica 2RE-UI-2**: Transmissão do sinal via cabos;
+* **Característica 2RE-UI-3**: Comunicação com o **Subsistema da central de processamento de eletrônica (2RE-Kernel)**;
+
+Suas principais funcionalidades são:
+
+* **_Feature_ 2RE-UI-1**:  Receber a informação do usuário do desejo de mudar o peso nas cargas;
+* **_Feature_ 2RE-UI-2**: Tratar o sinal com _debouncer_ para que não haja duplo aperto tanto quanto falha na recepção do sinal ao clicar no _push-button_;
+* **_Feature_ 2RE-UI-3**: Transmitir o sinal do usuário para o **Subsistema da central de processamento de eletrônica (2RE-Kernel)**;
+
+
+
+
+
+
+
 
 ### Características de 2RSystem
 
