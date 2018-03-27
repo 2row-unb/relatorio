@@ -230,6 +230,8 @@ O 2RE-Suit é um subproduto de _eletrônica_ e sua aplicação se baseia em medi
 #### 2RE-Cardio -  Subsistema monitor de frequência cardíaca
 É o subsistema responsável pela aquisição dos dados de frequência cardíaca do atleta que está utilizando o aparelho de remo.
 
+![Carsiaco^[Fonte: ]](./imagens/sensor_cardiaco.jpg){#fig:Sensor_cardiaco}
+
 Suas principais características são:
 
 * **Característica 2RE-Cardio-1**: É composto pelo sensor  de frequência cardíaca 4MD69 e por um microcontrolador;
@@ -243,6 +245,7 @@ Suas principais funcionalidades são:
 * **_Feature_ 2RE-Cardio-1**: Aquisição dos sinais cardíacos do usuário do remo;
 * **_Feature_ 2RE-Cardio-2**: Condicionamento do sinal para tratamento de ruídos;
 * **_Feature_ 2RE-Cardio-3**: Transmissão do sinal para o subsistema **2RE-Kernel**;
+
 
 
 Detalhando as caracteríticas, os microcontroladores escolhidos para trabalhar foram MSP 430 e o outro será descrito mais abaixo.
