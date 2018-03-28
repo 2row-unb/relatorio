@@ -1,4 +1,4 @@
-# test.yml
+# pandocker.yml
 sections:
   - config.md
   - introducao.md

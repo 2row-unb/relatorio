@@ -12,7 +12,7 @@ Em pouco tempo essa prática esportiva se popularizou em todo o mundo. Associaç
 
 O remo _indoor_, também conhecido como remo ergométrico ([@fig:remoindoor]), surgiu como um complemento para quem já praticava a modalidade. É nesse estilo de simulador que os atletas faziam o aquecimento antes de ir para a água ou reforçavam seu condicionamento físico. A atividade acabou ganhando contornos importantes para os resultados obtidos nas provas reais. Novos métodos de treinamento cada vez mais sofisticados utilizam esses mecanismos _indoor_ para extrair informações sobre a performance dos atletas que podem ser enviadas e analisadas pelos treinadores e especialistas.
 
-![Remo ergométrico^[Fonte: http://www.sportsister.com/2013/10/24/row-your-way-to-fitness-2/]](imagens/remoindoor.png){#fig:remoindoor}
+![Remo ergométrico^[Fonte: http://www.sportsister.com/2013/10/24/row-your-way-to-fitness-2/]](imagens/remoindoor.png){#fig:remoindoor width=400px height=300px}
 
 Na maioria dos lugares, essa sistematização do treinamento ainda possui diversas etapas burocráticas e manuais que dependem de profissionais, o que encarece os processos e assim inviabiliza tanto o aperfeiçoamento de atletas que já praticam o esporte quanto a iniciação de pessoas interessadas. Neste contexto, diversos equipamentos de baixo custo são disponibilizados pela indústria. Esses produtos nem sempre respondem a uma experiência de treinamento efetiva e envolvem poucas tecnologias de auxílio de treinamento ao esportista.
 
@@ -29,6 +29,6 @@ Os mais prejudicados são os praticantes iniciantes, que encontram uma grande ba
 
 Este movimento na água é simplificado na maioria dos mecanismos _indoor_, já que estes não possuem remos. Observe a [@fig:movimentosremo]. No primeiro movimento, as pernas se esticam enquanto os braços permanecem estendidos. No segundo, os braços começam a puxar as alças enquanto o tronco se inclina para trás. Note que as pernas ainda não estarão completamente estendidas no início do segundo movimento. No terceiro, o atleta puxa as alças até que alcancem seu abdômen. Então, se inicia o retorno, para o qual há um processo de inverso. Os braços se alongam enquanto as costas continuam inclinadas para trás; o atleta inclina o tronco para frente e então flexiona as pernas até que as panturrilhas fiquem em posição vertical.
 
-![Movimentos do Remo^[Fonte: https://fitseven.com.br/vida/artigos-esportivos/maquina-de-remo-tecnica]](./imagens/movimentos_remo.png){#fig:movimentosremo}
+![Movimentos do Remo^[Fonte: https://fitseven.com.br/vida/artigos-esportivos/maquina-de-remo-tecnica]](./imagens/movimentos_remo.png){#fig:movimentosremo width=600 height=350}
 
 O aprendizado desse processo é lento e necessita auxílio. É difícil dizer sem a chancela de um especialista se determinado praticante está executando os movimentos adequadamente. Estatísticas mais precisas sobre os treinos, como uma análise cinemática ou cinética, são realidade apenas em contextos específicos para atletas de alta performance, e geralmente fornecem um conjunto de informações que ainda precisam ser interpretadas por especialistas. Mecanismos dessa classe, repensados para uma abordagem de contato inicial com o esporte, podem favorecer uma menor curva de aprendizado, com segurança e qualidade, de forma que o esporte ganhe a aderência de novos atletas.

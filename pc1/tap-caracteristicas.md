@@ -16,29 +16,29 @@ Jonathan: [OK]
 * Suportes para os sistemas;
 * Cabos de transmissão de força.
 
-![Estrutura do 2RBoat](imagens/cad_v1.JPG){#fig:2rboat}
+![Estrutura do 2RBoat](imagens/cad_v1.JPG){#fig:2rboat width=400px height=300px}
 
-![Vistas Isométricas do 2RBoat](imagens/vistas.JPG){#fig:2rboat_iso}
+![Vistas Isométricas do 2RBoat](imagens/vistas.JPG){#fig:2rboat_iso width=400 height=300}
 
 #### 2RB-Primary  
 
 A estrutura física primária do equipamento composta pela trave que contem os demais subsistemas. O perfil dessa trave, que é a maior parte dos esforços da estrutura, está representado na [@fig:2rb-primary].
 
-![Perfil do 2RB-Primary](imagens/Perfil_Rect.JPG){#fig:2rb-primary}
+![Perfil do 2RB-Primary](imagens/Perfil_Rect.JPG){#fig:2rb-primary width=400px height=300px}
 
 #### 2RB-Seat  
 
 A estrutura de acomodação do usuário, é ligada a estrutura primária por um trilho que permite movimento. A [@fig:2rb-seat] descreve o perfil que será utilizado no trilho para receber o banco.
 
-![Perfil do 2RB-Seat](imagens/Perfil_V_Slot.JPG){#fig:2rb-seat}
+![Perfil do 2RB-Seat](imagens/Perfil_V_Slot.JPG){#fig:2rb-seat width=400px height=300px}
 
 #### 2RB-Row
 
 Formada por um conjunto de polias e correias que transmitem o movimento da remada e do sistema de restituição feito por cordas elásticas. A [@fig:2rb-row] ilustra o que tem no mercado no que tange sistemas de restituição. A [@fig:2rb-row_2] descreve o outro componente que será utilizado nesse sistema.
 
-![Conjunto para transmissão de força^[Fonte: http://www.riffel.com.br/kit-relacao-transmissao-suzuki-gsr-150i-13-42z-x-15z-c-corrente-428h-x-116l-premium/p]](imagens/Conjunto_Relacao.JPG){#fig:2rb-row}
+![Conjunto para transmissão de força^[Fonte: http://www.riffel.com.br/kit-relacao-transmissao-suzuki-gsr-150i-13-42z-x-15z-c-corrente-428h-x-116l-premium/p]](imagens/Conjunto_Relacao.JPG){#fig:2rb-row width=400px height=300px}
 
-![Cordas elásticas](imagens/Corda_Elastica.JPG){#fig:2rb-row_2}
+![Cordas elásticas](imagens/Corda_Elastica.JPG){#fig:2rb-row_2 width=400px height=300px}
 
 #### 2RB-Case
 
@@ -69,9 +69,9 @@ Os critérios considerados para escolher os geradores foram:
 
 Considerando esses critério, dois sistemas foram selecionados como soluções para a geração de energia: o alternador automotivo ([@fig:alter]) e um motor de esteira ergométrica ([@fig:motorest]).
 
-![Alternador de Carro](imagens/alternador.png){#fig:alter}
+![Alternador de Carro](imagens/alternador.png){#fig:alter width=400px height=300px}
 
-![Motor de Esteira Ergométrica](imagens/motoresteira.jpg){#fig:motorest}
+![Motor de Esteira Ergométrica](imagens/motoresteira.jpg){#fig:motorest width=400px height=300px}
 
 O motor de esteira pode ser usado no modo gerador, e dentre os critérios de seleção ele foi o mais viável economicamente e tecnicamente. Dessa forma ele é o mais indicado para confecção do sistema.
 
@@ -98,7 +98,7 @@ O armazenamento de energia será realizado por meio da utilização de uma bater
 
 ### Características de 2REletronic
 
-![Diagrama_Eletrônica^[Fonte: do autor]](./imagens/diagrama_eletronica.png){#fig:Diagrama_Eletrônica}
+![Diagrama_Eletrônica](./imagens/diagrama_eletronica.png){#fig:Diagrama_Eletrônica}
 
 #### Características do 2RE-Suit
 
@@ -108,7 +108,7 @@ O 2RE-Suit é um subproduto de eletrônica e sua aplicação se baseia em mediç
 
 É o subsistema responsável pela aquisição dos dados de frequência cardíaca do atleta que está utilizando o aparelho de remo.
 
-![Sensor_Cardiaco^[Fonte:https://www.filipeflop.com/produto/sensor-de-frequencia-cardiaca/ ]](./imagens/sensor_cardiaco.jpg){#fig:Sensor_cardiaco}
+![Sensor_Cardiaco^[Fonte:https://www.filipeflop.com/produto/sensor-de-frequencia-cardiaca/ ]](./imagens/sensor_cardiaco.jpg){#fig:Sensor_cardiaco width=400px height=300px}
 
 Suas principais características são:
 
@@ -128,7 +128,7 @@ O MSP 430, será um dos microcontroladores utilizados, isso porque comporta um c
 
 O MSP apresenta um sistema de clock, sendo o Timer_A o mais completo e mais usado.
 
-![MSP430^[Fonte: https://www.embarcados.com.br/msp430-com-iar/]](./imagens/msp430.jpg){#fig:MSP_430}
+![MSP430^[Fonte: https://www.embarcados.com.br/msp430-com-iar/]](./imagens/msp430.jpg){#fig:MSP_430 width=400px height=300px}
 
 #### 2RE-IMU - Subsistema de Unidade de Medidas Inerciais
 
@@ -203,9 +203,9 @@ Suas principais funcionalidades são:
 
 Detalhando um pouco mais a solução, para atuar na captação e processamento de sinais a Raspberry será fundamental, integrada com outros dispositivos como MSP430, circutos de condicionamento, será possível adquirir sinais analógicos. Visto que a Raspberry não possui conversor A/D pode-se utilizar o conversor do MSP430. Para transmitir os sinais para a Raspberry uma ideia foi utilizar um protocolo de comunicação ou um módulo _wi-fi_. O ESP8266 é um microcontrolador com um processamento considerável para a aplicação em questão e possui um excelente diferencial, o módulo _wi-fi_ acoplado. Além disso já traz consigo, conversor analógico-digital (ADC) e vários protocolos de comunicações, isso traria ao sistema versatilidade para aquisição e trato de sinais.
 
-![Raspberry Pi 3^[Fonte: https://www.raspberrypi.org/products/raspberry-pi-3-model-b/]](./imagens/Raspberry.jpg){#fig:Raspberry_Pi_3}
+![Raspberry Pi 3^[Fonte: https://www.raspberrypi.org/products/raspberry-pi-3-model-b/]](./imagens/Raspberry.jpg){#fig:Raspberry_Pi_3 width=400px height=300px}
 
-![ESP8266^[Fonte: https://www.robocore.net/loja/produtos/nodemcu-esp8266-12-v2.html]](./imagens/esp8266.jpg){#fig:ESP_8266}
+![ESP8266^[Fonte: https://www.robocore.net/loja/produtos/nodemcu-esp8266-12-v2.html]](./imagens/esp8266.jpg){#fig:ESP_8266 width=400px height=300px}
 
 #### 2RE-UI - Subsistema de Interface de Botões
 

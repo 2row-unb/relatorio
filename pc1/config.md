@@ -20,15 +20,17 @@ classoption:
 toc-depth: 2
 
 #PI2 template information
-title:      'Projeto Integrador 2: Ponto de Controle 1'
+title:      'Projeto 2Row: Sistema de Monitoramento para Remo Indoor'
 date:     '2018'
-author:     'Vários'
-place:      'Brasília, DF'
+
+team:     'Guilherme Pontilho Ribeiro, Kleiton Nunes Silva, Pedro Jorge Soares Correa, Gabriel de Araujo A. de Oliveira, Tainara da Silva Costa, Thayane de Oliveira Vieira Figueiredo, Victor Miguel Cunha de Sousa, Jonathan Henrique Maia de Moraes, Luan Guimarães Lacerda, Lucas Vasconcelos Mattioli, Luciana Alves Fernandes, Paulo Henrique Gomes Machado, Vitor Meirelles Oliveira'
+
+place:      'Gama, DF'
 institution:  'Universidade de Brasília -- UnB'
 section:        'Faculdade UnB Gama -- FGA'
-course:         'Engenharias'
+course:         'Projeto Integrador II'
 cover:      'true'
-advisor:        'Retirar'
+teachers:     'Alex Reis, Guillermo Alvarez Bestard, Ricardo Matos Chaim, Rhander Viana, Sebastien R. M. J. Rondineau'
 
 #citeproc configurations
 nocite: |
