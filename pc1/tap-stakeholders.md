@@ -1,5 +1,9 @@
 ## _Stakeholders_
 
+<!--
+Jonathan: [OK]
+-->
+
 _Stakeholders_ são pessoas que possuem interesse no projeto e estabelecem algum vínculo com seu planejamento, execução e/ou com o produto a ser desenvolvido. São eles:
 
 * **_Stakeholders_ da Disciplina**: Composto por professores que integram a mesa avaliadora da disciplina Projeto Integrador 2. São responsáveis por orientar e avaliar a concepção e execução do projeto proposto.
