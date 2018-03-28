@@ -15,7 +15,7 @@ A descrição mais detalhada dos materiais está conforme tabela subsequente.
 | Barra perfil retangular 20x20 #14                  |        2  |   35  |     Ferro e Aço       |
 | Barra  perfil retangular 30x90     |        1   |    60   |    Gravia      |
 | Barra perfil retangular 30x50      |       1    |    45   |    Gravia |
-|     Barra perfil  U|        1   |    55  |    Ferro e Aço        |
+| Barra perfil  U           |        1   |    55  |    Ferro e Aço        |
 | Kit de redução de moto | 1  | 90 / 500 | Riffel |
 | Parafusos, Porcas e Arruelas     |        x   |  50,00    |  POPA, porcas e parafusos          |
 | Polia Aluminio |       1   |  20    |       Leroy Merlin    |
@@ -39,7 +39,7 @@ A descrição mais detalhada dos materiais está conforme tabela subsequente.
 | Cabos                    |        x   |    10,00   |      Contato      |
 | ESP                      |        1   |    20,00   |     Mercado Livre       |
 | Sensor Monitor cardíaco         |        1   |    29,90   |     TD TEC       |
-| Monitor Raspberry        |        1   |    566,00  |    FilipeFlop        |
+| Monitor Raspberry        |        1   |    240,00  |    FilipeFlop        |
 | MSP-430                  |        1   |   90,00    |     Mercado Livre       |
 | Peças para Wattímetro    |        x   |   40,00    |            |
 | Placa de circuito impresso|       5   |   25,00    |       HU Infinito     |
@@ -73,4 +73,4 @@ Os gastos com relação a aplicação da Engenharia de Energia diz respeito, em 
 
 ### Custos Totais
 
-Os custos gerais de todas as partes do projetos ficam em R$ [TODO] ?????. Como o grupo possui 13 integrantes o valor gasto esperado, por pessoa é de R$ [TODO] ??????.
+Os custos gerais de todas as partes do projetos ficam em R$ 1921,39. Como o grupo possui 13 integrantes o valor gasto esperado, por pessoa é de R$ 147,80.
