@@ -73,14 +73,13 @@ Os _stakeholders_ da disciplina em comum acordo com o subsistema de energia defi
 * **CA 2RE-Kernel-1**: Receber e processar os sinais recebidos pelos sensores(IMU e Cardíaco).
 * **CA 2RE-Kernel-2**: Este é o sistema núcleo da eletrônica embarcada e deverá controlar e acionar os sistemas de relé.  
 
-#### Critérios de Aceitação do 2RE-UI
-
-* **CA 2RE-UI-1**: O acionamento do funcionamento das cargas deve ser feito utilizando três botões que estão presentes nesta seção. O controle e debounce dos botões será uma ação da interface física para o funcionamento do aparelho
-* **CA 2RE-UI-2**: Esse sistema deverá trabalhar de acordo com os dados de análise de software.
-
 #### Critérios de Aceitação do 2RE-IMU
 
 * **CA 2RE-IMU-1**: Os sensores de unidades inerciais serão posicionados nas pernas do usuário e deverão entregar como informação o movimento realizado ao longo do tempo, utilizando ferramentas do IMU como acelerômetro, magnetômetro e giroscópio.
+
+#### Critérios de Aceitação do 2RE-UI
+
+* **CA 2RE-UI-1**: O acionamento do funcionamento das cargas deve ser feito utilizando três botões que estão presentes nesta seção. O controle e debounce dos botões será uma ação da interface física para o funcionamento do aparelho.
 
 ### Critérios de Aceitação do 2RSystem
 
