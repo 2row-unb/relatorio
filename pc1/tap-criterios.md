@@ -50,7 +50,7 @@ Os _stakeholders_ da disciplina em comum acordo com o subsistema de energia defi
 
 #### Critérios de Aceitação do 2RE-Suit
 
-* **CA 2RE-Suit-1**: A vestimenta deve ser posto no usuário para aquisição dos dados. Para execução de tal tarefa, a vestimenta deverá posicionar os sensores de forma firme para aquisição dos dados e que não atrapalhe o usuário na execução do movimento de remada.
+* **CA 2RE-Suit-1**: A vestimenta deve ser posta no usuário para aquisição dos dados. Para execução de tal tarefa, a vestimenta deverá posicionar os sensores de forma firme para aquisição dos dados e que não atrapalhe o usuário na execução do movimento de remada.
 
 #### Critérios de Aceitação do 2RE-Cardio
 
@@ -58,7 +58,7 @@ Os _stakeholders_ da disciplina em comum acordo com o subsistema de energia defi
 
 #### Critérios de Aceitação do 2RE-IMU
 
-* **CA 2RE-IMU-1**: O sensor de unidade inercial será posicionado nas pernas do usuário e deverá entregar como informação ao microcomputador (Raspberry Pi).
+* **CA 2RE-IMU-1**: Os sensores de unidades inerciais serão posicionados nas pernas do usuário e deverão entregar como informação o movimento realizado ao longo do tempo, utilizando ferramentas do IMU como acelerômetro, magnetômetro e giroscópio.
 
 #### Critérios de Aceitação do 2RE-Volt
 
@@ -75,12 +75,7 @@ Os _stakeholders_ da disciplina em comum acordo com o subsistema de energia defi
 
 #### Critérios de Aceitação do 2RE-UI
 
-* **CA 2RE-UI-1**: O acionamento do funcionamento das cargas deve ser feito utilizando três botões que estão presentes nesta seção. O controle e debounce dos botões será uma ação da interface física para o funcionamento do aparelho
-* **CA 2RE-UI-2**: Esse sistema deverá trabalhar de acordo com os dados de análise de software.
-
-#### Critérios de Aceitação do 2RE-IMU
-
-* **CA 2RE-IMU-1**: Os sensores de unidades inerciais serão posicionados nas pernas do usuário e deverão entregar como informação o movimento realizado ao longo do tempo, utilizando ferramentas do IMU como acelerômetro, magnetômetro e giroscópio.
+* **CA 2RE-UI-1**: O acionamento do funcionamento das cargas deve ser feito utilizando três botões que estão presentes nesta seção. O controle e debounce dos botões será uma ação da interface física para o funcionamento do aparelho.
 
 ### Critérios de Aceitação do 2RSystem
 
