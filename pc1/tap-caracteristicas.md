@@ -86,7 +86,7 @@ O sistema será composto por:
 
 Usaremos relés de caminhão (80A) ou de carro (40A). Estamos considerando usar resistores de chuveiro elétrico ou de fornos elétricos. A determinação da corrente suportada pelos relés e da potência suportada pelos resistores dependerá da determinação da potência da remada do atleta.
 
-Usaremos uma margem de erro de 100% para dimensionar os resistores e relés.
+Usaremos uma margem de segurança de 100% para dimensionar os resistores e relés.
 
 Os níveis do exercício será acionado pelo 2RElectronic de acordo com a figura [@fig:circuitobr].
 
