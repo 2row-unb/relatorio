@@ -23,12 +23,12 @@ O aparelho de remo _indoor_, de nome **2RBoat**, é uma máquina de alta durabil
 
 Outro subproduto do 2Row é o sistema eletrônico embarcado de nome **2RElectronic**, este responsável pela instrumentação biomecância e biomédica, seus condionamentos e controle do acionamento do subsistema 2RP-Resistance. Seus subsistemas são:
 
-1. **2RSuit**: É descrito como a vestimenta de sensores cinemáticos, onde estarão contidos dois sensores IMUs e o sensor de pulso cardíacos. Além de proteger os sensores, traz conforto ao usuário e possibilita que este continue realizando seus movimentos para que haja a coleta de forma segura;
-2. **2RE-Cardio**: Subcomponente do 2RSuit, coleta os dados de batimentos cardíacos para calcular a frequência cardíaca e realiza o processamento desse sinal e o possível condicionamento, esse último, caso seja necessário;
-3. **2RE-IMU**: Subcomponente do 2RSuit, está associado à instrumentação biomecânica, que comporta calibração, coleta de dados, condicionamento e processamento do sinal para  a obtenção do âgulo relacionado ao movimento do membro inferior do atleta;
+1. **2RE-Suit**: É descrito como a vestimenta de sensores cinemáticos, onde estarão contidos dois sensores IMUs e o sensor de pulso cardíacos. Além de proteger os sensores, traz conforto ao usuário e possibilita que este continue realizando seus movimentos para que haja a coleta de forma segura;
+2. **2RE-Cardio**: Subcomponente do 2RE-Suit, coleta os dados de batimentos cardíacos para calcular a frequência cardíaca e realiza o processamento desse sinal e o possível condicionamento, esse último, caso seja necessário;
+3. **2RE-IMU**: Subcomponente do 2RE-Suit, está associado à instrumentação biomecânica, que comporta calibração, coleta de dados, condicionamento e processamento do sinal para  a obtenção do âgulo relacionado ao movimento do membro inferior do atleta;
 4. **2RE-Volt**: Afere a tensão no banco de resistores do subsistema 2RP-Resistance e através de um modelo matemático calcula a potência condicionada pelo rendimento do atleta;
 5. **2RE-Relay**: Recebe as informações do 2RS-Transmitter sobre a necessidade de mudança de nível de carga de dificuldade, com essa informação o microcontrolador responsável irá acionar os relés para ativar/desativar a carga de resistência;
-6. **2RE-Kernel**: É o núcleo de todo o sistema embarcado. A atuação dos microcontroladores e microcomputador dar-se-ão nesse subsistema, assim como a integração entre 2RSuit e 2RS-Receiver, para que haja a transmissão de dados;
+6. **2RE-Kernel**: É o núcleo de todo o sistema embarcado. A atuação dos microcontroladores e microcomputador dar-se-ão nesse subsistema, assim como a integração entre 2RE-Suit e 2RS-Receiver, para que haja a transmissão de dados;
 7. **2RE-UI**: O usuário ao apertar botões físicos determinam o nível de dificuldade da carga, e esse subsistema o remete ao subsistema 2RS-Transmitter. Essa aplicação é submetida a um tratamento de _debounce_ dos botões, para prevenir possíveis falhas de leitura.
 
 Por fim, um sistema de _software_ de nome **2RSystem** é um subproduto integrado ao 2Row responsável pela inovação do simulador virtual e pelo controle do sistema de carga. Seus subsistemas são:
