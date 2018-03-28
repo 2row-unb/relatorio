@@ -50,7 +50,7 @@ Os _stakeholders_ da disciplina em comum acordo com o subsistema de energia defi
 
 #### Critérios de Aceitação do 2RE-Suit
 
-* **CA 2RE-Suit-1**: A vestimenta deve ser posto no usuário para aquisição dos dados. Para execução de tal tarefa, a vestimenta deverá posicionar os sensores de forma firme para aquisição dos dados e que não atrapalhe o usuário na execução do movimento de remada.
+* **CA 2RE-Suit-1**: A vestimenta deve ser posta no usuário para aquisição dos dados. Para execução de tal tarefa, a vestimenta deverá posicionar os sensores de forma firme para aquisição dos dados e que não atrapalhe o usuário na execução do movimento de remada.
 
 #### Critérios de Aceitação do 2RE-Cardio
 
