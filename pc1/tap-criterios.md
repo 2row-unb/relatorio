@@ -4,6 +4,8 @@
 Jonathan: [OK]
 -->
 
+Definir critérios de aceitação é uma atividade essencial para a validação do produto à ser desenvolvido em um projeto. Tais critérios aqui definidos são elementos _sine qua non_ que devem ser satisfeitos ao longo do desenvolvimento do produto.
+
 ### Critérios de Aceitação do 2RBoat
 
 #### Critérios de Aceitação do 2RB-Primary
