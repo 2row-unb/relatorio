@@ -39,7 +39,7 @@ A descrição mais detalhada dos materiais está conforme tabela subsequente.
 | Cabos                    |        x   |    10,00   |      Contato      |
 | ESP                      |        1   |    20,00   |     Mercado Livre       |
 | Sensor Monitor cardíaco         |        1   |    29,90   |     TD TEC       |
-| Monitor Raspberry        |        1   |    240,00  |    FilipeFlop        |
+| Monitor Raspberry        |        1   |    240,00  |    Mercado Livre        |
 | MSP-430                  |        1   |   90,00    |     Mercado Livre       |
 | Peças para Wattímetro    |        x   |   40,00    |            |
 | Placa de circuito impresso|       5   |   25,00    |       HU Infinito     |
