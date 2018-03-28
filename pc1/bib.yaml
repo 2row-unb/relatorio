@@ -52,46 +52,60 @@
 #    language: en-US
 
 references:
-  - type: article-journal
-    id: icd17
-    author:
-    - family: Parra Filho
-      given: [Henrique, C., P.]
-    - family: Poppi
-      given: [Ricardo, A.]
-    issued:
-      date-parts:
-      - - 2017
-        - 5
-        - 12
-    title: 'Governança digital como vetor para uma nova geração de tecnologias
-      de participação social no Brasil'
-    container-title: 'Liinc em Revista'
-    publisher: "Ibict"
-    volume: 13
-    issue: 1
-    page: 223-236
-    DOI: 10.18617/liinc.v13i1.3895
-    URL: http://revista.ibict.br/liinc/article/view/3895/3221
-    language: pt-BR
-
- - type: book
-    id: fmea
+  - type: book
+    id: pres03
     author:
     - family: Dyadem Press
-      given: []
+      given: [Oi]
     issued:
       date-parts:
       - - 2003
-        - 5
-        - 12
     title: 'Guidelines for Failure Mode and Effects Analysis (FMEA), for Automotive, Aerospace, and General Manufacturing Industries'
-    container-title: 'Liinc em Revista'
     publisher: "Dyadem Press"
-    volume: 13
-    issue: 1
+    edition: 1
+    ISBN: 978-0849319105
     page: 38-39
-    DOI: 10.18617/liinc.v13i1.3895
     URL: http://gen.lib.rus.ec/book/index.php?md5=8241F0EA994546E3F115569BDD766BC7
     language: en-US
+  
+  - type: article-journal
+    id: mendes16
+    author:
+    - family: Mendes
+      given: [Júnior]
+    - family: Alves
+      given: [José, J.]
+    issued:
+      date-parts:
+      - - 2016
+    title: 'Desenvolvimento de uma armband para captura de sinais eletromiográficos para reconhecimento de movimentos'
+    publisher: "Universidade Tecnológica Federal do Paraná"
+    issue: 1
+    language: pt-BR
+
+  - type: article-journal
+    id: layla14
+    author:
+    - family: Souza
+      given: [Layla Claire, M.]
+    issued:
+      date-parts:
+      - - 2014
+    title: 'Biomecânica Aplicada aos Esportes Náuticos Olímpicos: uma revisão sistemática da literatura'
+    publisher: "Centro de Educação Física e Desportos, Universidade Federal do Espírito Santo"
+    issue: 1
+    language: pt-BR
+
+  - type: article-journal
+    id: anacarolina14
+    author:
+    - family: Borges
+      given: [Ana Carolina, S.]
+    issued:
+      date-parts:
+      - - 2013
+    title: 'Instrumentação Para Remo Olímpico'
+    publisher: "Engenharia Biomédica, COPPE, Universidade Federal do Rio de Janeiro"
+    issue: 1
+    language: pt-BR
 ...

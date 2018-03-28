@@ -19,7 +19,7 @@ classoption:
 
 toc-depth: 2
 
-#TCC information
+#PI2 template information
 title:      'Projeto Integrador 2: Ponto de Controle 1'
 date:     '2018'
 author:     'Vários'
@@ -27,38 +27,34 @@ place:      'Brasília, DF'
 institution:  'Universidade de Brasília -- UnB'
 section:        'Faculdade UnB Gama -- FGA'
 course:         'Engenharias'
-preamble:   'ver documentação do abntex2 (\preambulo{})'
-abstract:   'resumo'
-tag1:           'row'
-tag2:       'imu'
 cover:      'true'
-cdu:            '02:141:005.6'
-approvaldate:   '29 de Março de 2018'
-guestmember1:   'Retirar'
-guestmember2:   'Retirar'
 advisor:        'Retirar'
+
+#citeproc configurations
+nocite: |
+  @*
 
 #crossref configurations
 linkReferences: true
 codeBlockCaptions: true
 
 figPrefix:
-  - "Figure"
-  - "Figures"
+  - "Figura"
+  - "Figuras"
 
 eqnPrefix:
-  - "Equation"
-  - "Equations"
+  - "Equação"
+  - "Equações"
 
 tblPrefix:
-  - "Table"
-  - "Tables"
+  - "Tabela"
+  - "Tabelas"
 
 lstPrefix:
-  - "List"
-  - "Lists"
+  - "Lista"
+  - "Listas"
 
 secPrefix:
-  - "Section"
-  - "Sections"
+  - "Seção"
+  - "Seções"
 ...
