@@ -70,11 +70,12 @@ Os _stakeholders_ da disciplina em comum acordo com o subsistema de energia defi
 
 #### Critérios de Aceitação do 2RE-Kernel
 
-> [TODO: Eletrônica]
-
-Este é o núcleo de todo o sistema embarcado, pois vai receber todos os sinais do cárdio e do IMU. Assim como também acionar os relés para controle das cargas. Este sistema conterá módulo para comunicação WI-FI para trabalhar com os dispositivos de controle de acionamento. Os critérios para esse módulo é que os dados sejam processados e entregues para interfaceamento em software e o controle seja feito sobre a energia.
+* **CA 2RE-Kernel-1**: Receber e processar os sinais recebidos pelos sensores(IMU e Cardíaco).
+* **CA 2RE-Kernel-2**: Este é o sistema núcleo da eletrônica embarcada e deverá controlar e acionar os sistemas de relé.  
 
 #### Critérios de Aceitação do 2RE-UI
+
+* **CA 2RE-UI-1**: O acionamento do funcionamento das cargas deve ser feito utilizando três botões que estão presentes nesta seção. O controle e debounce dos botões será uma ação da interface física para o funcionamento do aparelho. 
 
 > [TODO: Eletrônica]
 
