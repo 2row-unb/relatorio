@@ -66,7 +66,7 @@ A aquisição de pessoas foi realizada através dos critérios definidos pelos _
 Até a presente data de confecção deste termo, a equipe consolidada constitui de 13 integrantes, onde:
 
 * Três estudantes de engenharia aeroespacial serão atribuídos aos papéis de especialista em dinâmica, especialista em estrutura e _project tracker_;
-* Um estudante de engenharia atribuído será atribuído aos papéis de especialista em dinâmica, especialista em estrutura e _project tracker_;
+* Um estudante de engenharia automotiva será atribuído aos papéis de especialista em dinâmica, especialista em estrutura e _project tracker_;
 * Três estudantes de engenharia de energia serão atribuídos aos papéis de especialista em elétrica, especialista em energia e _project tracker_;
 * Três estudantes de engenharia de _software_ serão atribuídos aos papéis de especialista em _software_ e _project tracker_.
 
