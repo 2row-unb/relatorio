@@ -50,7 +50,7 @@ Os _stakeholders_ da disciplina em comum acordo com o subsistema de energia defi
 
 #### Critérios de Aceitação do 2RE-Suit
 
-* **CA 2RE-Suit-1**: A vestimenta deve ser posto no usuário para aquisição dos dados. Para execução de tal tarefa, a vestimenta deverá posicionar os sensores de forma firme para aquisição dos dados e que não atrapalhe o usuário na execução do movimento de remada.
+* **CA 2RE-Suit-1**: A vestimenta deve ser posta no usuário para aquisição dos dados. Para execução de tal tarefa, a vestimenta deverá posicionar os sensores de forma firme para aquisição dos dados e que não atrapalhe o usuário na execução do movimento de remada.
 
 #### Critérios de Aceitação do 2RE-Cardio
 
@@ -58,7 +58,7 @@ Os _stakeholders_ da disciplina em comum acordo com o subsistema de energia defi
 
 #### Critérios de Aceitação do 2RE-IMU
 
-* **CA 2RE-IMU-1**: O sensor de unidade inercial será posicionado nas pernas do usuário e deverá entregar como informação ao microcomputador (Raspberry Pi).
+* **CA 2RE-IMU-1**: Os sensores de unidades inerciais serão posicionados nas pernas do usuário e deverão entregar como informação o movimento realizado ao longo do tempo, utilizando ferramentas do IMU como acelerômetro, magnetômetro e giroscópio.
 
 #### Critérios de Aceitação do 2RE-Volt
 
@@ -70,15 +70,12 @@ Os _stakeholders_ da disciplina em comum acordo com o subsistema de energia defi
 
 #### Critérios de Aceitação do 2RE-Kernel
 
-> [TODO: Eletrônica]
-
-Este é o núcleo de todo o sistema embarcado, pois vai receber todos os sinais do cárdio e do IMU. Assim como também acionar os relés para controle das cargas. Este sistema conterá módulo para comunicação WI-FI para trabalhar com os dispositivos de controle de acionamento. Os critérios para esse módulo é que os dados sejam processados e entregues para interfaceamento em software e o controle seja feito sobre a energia.
+* **CA 2RE-Kernel-1**: Receber e processar os sinais recebidos pelos sensores(IMU e Cardíaco).
+* **CA 2RE-Kernel-2**: Este é o sistema núcleo da eletrônica embarcada e deverá controlar e acionar os sistemas de relé.  
 
 #### Critérios de Aceitação do 2RE-UI
 
-> [TODO: Eletrônica]
-
-Esta seção é composta de três botões trabalhados com debounce para acionamento das funções relativas ao funcionamento das cargas. Um dos botões deve funcionar como uma chave de acionamento deixando o aparelho ligado ou desligado, já os outros dois botões vão aumentar e diminuir a carga, ou seja, esse funcionamento terá plena comunicação com o sistema de software e de geração e controle de energia.
+* **CA 2RE-UI-1**: O acionamento do funcionamento das cargas deve ser feito utilizando três botões que estão presentes nesta seção. O controle e debounce dos botões será uma ação da interface física para o funcionamento do aparelho.
 
 ### Critérios de Aceitação do 2RSystem
 

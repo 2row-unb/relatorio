@@ -6,11 +6,11 @@ Jonathan: [OK]
 
 <!-- Eletrônica -->
 
-As pesquisas científicas relacionadas aos parâmetros biomecânicos são escassas quando se trata de esportes náuticos no Brasil. Isso não infere apenas em atletas de alto rendimento, mas também, em iniciantes no esporte. Os parâmetros que implicam no rendimento e desempenho para esse tipo de esporte são a potência, condições cardíacas e a postura relacionada aos movimentos do atleta/usuário.
+As pesquisas científicas relacionadas aos parâmetros biomecânicos são escassas quando se trata de esportes náuticos no Brasil [@layla14]. Isso não infere apenas em atletas de alto rendimento, mas também, em iniciantes no esporte. Os parâmetros que implicam no rendimento e desempenho para esse tipo de esporte são a potência, condições cardíacas e a postura relacionada aos movimentos do atleta/usuário.
 
 Um dos maiores problemas relacionados a esse esporte é a postura do praticante. Existe uma técnica de movimentos ciclícos, em que cada um determina uma remada e esses movimentos requerem uma postura adequeda. Atualmente, a postura é analisada através da observação em vídeo, possuindo total dependência de um instrutor. As modificações prospostas nesse trabalho apresenta como dificuldade inicial analisar o movimento corporal realizado pelo iniciante, ou seja, determinar os ângulos normalizados de uma das pernas e consequentemente a calibração dos sensores biomecânicos.
 
-Outro ponto importante é a escassez de mecanismos para integração do sensoreamento biomecânico acoplado ao sistema. Os estudos científicos apresentam a análise dos parâmetros de potência, postura, ciclo cardíacos e seus comportamentos aplicados separadamente, o que dificulta exergar o desempenho do iniciante como um todo.
+Outro ponto importante é a escassez de mecanismos para integração do sensoreamento biomecânico acoplado ao sistema. Os estudos científicos de [@anacarolina13] apresenta a análise dos parâmetros de potência, postura, ciclo cardíacos e seus comportamentos aplicados separadamente, o que dificulta exergar o desempenho do iniciante como um todo.
 
 <!-- Energia -->
 

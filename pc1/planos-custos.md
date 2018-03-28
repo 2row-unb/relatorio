@@ -1,10 +1,6 @@
 ## Plano de Gerenciamento de Custo
 
 
-> Definição do gerenciamento de custo do projeto.
-
-### Frequência e responsável pelo gereciamento de custos
-
 Os custos do projeto serão controlados em cada _sprint_, de acordo com a necessidade do projeto. O integrante do grupo responsável por receber e controlar todos os recursos será o _Project_ _Tracker_. 
 
 ### Procedimentos de gerenciamento de custos
