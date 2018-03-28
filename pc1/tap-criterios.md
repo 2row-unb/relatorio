@@ -78,6 +78,10 @@ Os _stakeholders_ da disciplina em comum acordo com o subsistema de energia defi
 * **CA 2RE-UI-1**: O acionamento do funcionamento das cargas deve ser feito utilizando três botões que estão presentes nesta seção. O controle e debounce dos botões será uma ação da interface física para o funcionamento do aparelho
 * **CA 2RE-UI-2**: Esse sistema deverá trabalhar de acordo com os dados de análise de software.
 
+#### Critérios de Aceitação do 2RE-IMU
+
+* **CA 2RE-IMU-1**: Os sensores de unidades inerciais serão posicionados nas pernas do usuário e deverão entregar como informação o movimento realizado ao longo do tempo, utilizando ferramentas do IMU como acelerômetro, magnetômetro e giroscópio.
+
 ### Critérios de Aceitação do 2RSystem
 
 * **CA 2RSystem-1**: O sistema deve possuir uma função _failsafe_ onde requisita a anulação da carga de dificuldade em caso de erro;
