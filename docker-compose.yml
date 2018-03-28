@@ -2,9 +2,8 @@ version: '3.1'
 
 services:
   pandocker:
-    image: luanguimaraesla/pandocker:0.1.0
+    image: luanguimaraesla/pandocker:0.1.1
     volumes:
       - .:/code
     environment:
       PANDOCKER_CONFIG_YAML: '/code/pc1/pandocker.yml'
-#    command: sleep infinity
