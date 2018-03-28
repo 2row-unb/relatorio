@@ -15,5 +15,4 @@ O termo é composto pelas seguintes seções:
 1. **Premissas**: Descreve os principais fatores do projeto que são garantidos como verdadeiros;
 1. **Restrições**: Descreve os principais limites definidos para o projeto;
 1. **Riscos**: Descreve os principais riscos identificados e suas respectivas ações estratégicas;
-1. **Marcos**: Descreve os principais eventos que ocorrerão ao longo do projeto;
 1. **Custos**: Descreve os principais custos identificados para o projeto.

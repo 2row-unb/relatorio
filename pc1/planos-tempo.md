@@ -8,7 +8,7 @@ O cronograma foi dividido de acordo com as frentes de atuação: Eletrônica, En
 
 --------------------------------------------------------------------------------------------------------
   Fase                Atividade                                        Área de atuação   Início     Fim     
--------------------- ------------------------------------------------ ----------------- ---------- ---------- 
+-------------------- ------------------------------------------------ ----------------- ---------- ----------
   Pré-projeto         Definir projeto                                  Todas             07/03/18   16/03/18
 
   Pré-projeto         Definir solução                                  Todas             07/03/18   16/03/18
@@ -29,6 +29,10 @@ O cronograma foi dividido de acordo com as frentes de atuação: Eletrônica, En
 
   Planejamento        Levantamento de materiais                        Todas             16/03/18   23/03/18
 
+  Planejamento        Elaborar o Termo de Abertura do Projeto (TAP)    Todas             16/03/18   28/03/18
+
+  Planejamento        Elaborar Estrutura Analítica do Projeto (EAP)    Todas             16/03/18   28/03/18
+
   Planejamento        Definir cronograma de atividades                 Energia           16/03/18   23/03/18
 
   Planejamento        Levantamento de custos                           Eletrônica        16/03/18   28/03/18
@@ -36,10 +40,6 @@ O cronograma foi dividido de acordo com as frentes de atuação: Eletrônica, En
   Planejamento        Alocação de recursos humanos                     Software          16/03/18   28/03/18
 
   Planejamento        Levantamento de Riscos                           Estrutura         16/03/18   28/03/18
-
-  Planejamento        Elaborar o Termo de Abertura do Projeto (TAP)    Software          16/03/18   28/03/18
-
-  Planejamento        Elaborar Estrutura Analítica do Projeto (EAP)    Software          16/03/18   28/03/18
 
   Execução            Dimensionar Gerador Elétrico                     Energia           28/03/18   04/04/18
 
@@ -70,6 +70,18 @@ O cronograma foi dividido de acordo com as frentes de atuação: Eletrônica, En
   Execução            Início  e Finalização da construção              Estrutura         25/04/18   15/04/18
 
   Execução            Entrega da estrutura                             Estrutura         28/03/18   16/05/18
+
+  Execução            Protótipo do 2RS-Viewer                          Software          28/03/18   13/04/18
+
+  Execução            Protótipo do 2RSystem                            Software          13/04/18   27/04/18
+
+  Execução            Otimizações no 2RS-Viewer                        Software          13/04/18   27/04/18
+
+  Execução            Finalização do 2RS-Viewer                        Software          27/04/18   11/05/18
+
+  Execução            Finalização do 2RS-Processer                     Software          27/04/18   11/05/18
+
+  Execução            Finalização do 2RSystem                          Software          11/05/18   16/05/18
 
   Integração          Integrar subsistemas                             Todas             16/05/18   28/05/18
 
