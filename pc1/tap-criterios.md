@@ -75,11 +75,8 @@ Os _stakeholders_ da disciplina em comum acordo com o subsistema de energia defi
 
 #### Critérios de Aceitação do 2RE-UI
 
-* **CA 2RE-UI-1**: O acionamento do funcionamento das cargas deve ser feito utilizando três botões que estão presentes nesta seção. O controle e debounce dos botões será uma ação da interface física para o funcionamento do aparelho. 
-
-> [TODO: Eletrônica]
-
-Esta seção é composta de três botões trabalhados com debounce para acionamento das funções relativas ao funcionamento das cargas. Um dos botões deve funcionar como uma chave de acionamento deixando o aparelho ligado ou desligado, já os outros dois botões vão aumentar e diminuir a carga, ou seja, esse funcionamento terá plena comunicação com o sistema de software e de geração e controle de energia.
+* **CA 2RE-UI-1**: O acionamento do funcionamento das cargas deve ser feito utilizando três botões que estão presentes nesta seção. O controle e debounce dos botões será uma ação da interface física para o funcionamento do aparelho
+* **CA 2RE-UI-2**: Esse sistema deverá trabalhar de acordo com os dados de análise de software.
 
 ### Critérios de Aceitação do 2RSystem
 
