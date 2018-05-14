@@ -47,12 +47,13 @@ O espaço para o enrolamento das bobinas é limitado pelas dimensões do “E”
 
 Quando decidiu-se trabalhar com eletroímã, foi proposto variar a corrente aplicada ao eletroímã para variar a força de atração, mas devido às dificuldades de trabalhar com um uma corrente variável, optou-se por modular as bobinas do eletroímã em 4 níveis. Como a relação entre o número de espiras e a força de atração não é linear, foi necessário primeiro estabelecer o nível máximo e mínimo de força de atração, encontrar dois valores de força entre esses dois níveis pré-definidos, e estabelecer o número de voltas de cada uma das quatro bobinas.
 
-| Nível | Número de espiras em cada nível |
-|-------|---------------------------------|
-| 1     | 191                             |
-| 2     | 268                             |
-| 3     | 307                             |
-| 4     | 380                             |
+-----------------------------------------
+Nível     Número de espiras em cada nível 
+-----     ------------------------------- 
+1          191   
+2          268
+3          307
+4          380
 
 ![Eletroímã montado](imagens/eletroima.png){#fig:eletroima}
 
