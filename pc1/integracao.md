@@ -5,4 +5,11 @@
 
 ## Integração – 2RBoat/2RElectronic
 ## Integração - 2RElectronic/2RPower
+
+![Testes do código para acionamento dos níveis de carga do eletroímã](imagens/IMG_5696.JPG){#fig:estrutura-e-eletronica-1}
+
+![Testes do código para acionamento dos níveis de carga do eletroímã](imagens/IMG_5698.JPG){#fig:estrutura-e-eletronica-2}
+
+![Testes do código para acionamento dos níveis de carga do eletroímã](imagens/IMG_5699.JPG){#fig:estrutura-e-eletronica-3}
+
 ## Integração – 2RElectronic/2RSystem
