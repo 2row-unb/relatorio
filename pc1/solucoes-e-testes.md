@@ -2,14 +2,6 @@
 
 ## 2RBoat
 
-![Estrutura1](imagens/photo5116225061324433385.jpg){#fig:estrutura-1}
-
-![Estrutura2](imagens/photo5172469053929924584.jpg){#fig:estrutura-2}
-
-![Estrtura3](imagens/photo5172469053929924585.jpg){#fig:estrutura-3}
-
-![Estrtura4](imagens/photo5172469053929924586.jpg){#fig:estrutura-4}
-
 
 ## 2RPower
 
@@ -23,7 +15,7 @@ Durante os testes o alternador não correspondeu a validação de projeto a qual
 
 O uso do efeito de correntes parasitas na frenagem eletromagnética já é bastante difundido, tanto em meios acadêmicos, quanto industriais, um exemplo clássico é o freio de Foucault ou também como é conhecido, freio eletromagnético. Nele, utiliza-se um disco de alumínio ou cobre para interpor uma resistência ao torque de máquinas rotativas no intuito de reduzir a sua velocidade, simular uma variação da carga mecânica acoplada ao seu eixo ou até mesmo abreviar a sua frenagem no momento de seu desligamento, dissipando sua energia inercial na forma de efeito Joule, pela ação das correntes parasitas circulantes no disco.
 
-![Ilustração conceitual de um freio eletromagnético (MEDEIROS, 1980)](imagens/ilustracao-conceitual-do-freio.png){#fig:freio_eletromag}
+![Ilustração conceitual de um freio eletromagnético](imagens/ilustracao-conceitual-do-freio.png){#fig:freio_eletromag}
 
 O surgimento das correntes parasitas, é uma consequência direta do efeito da indução eletromagnética descrito por Faraday. As tensões elétricas são induzidas em um condutor sempre que este atravessar as linhas de fluxo de campo magnético constante ou quando este condutor for submetido a um campo magnético variável no tempo. Seja qual for o modo, as correntes induzidas percorrem caminhos a fim de manter oposição ao movimento relativo do condutor ou oposição à variação do campo magnético (PEREIRA, 2006).
 Em outras palavras, o efeito eletromagnético que caracteriza esse sistema, pode ser explicado a partir da lei de Ampère, que descreve que uma corrente elétrica circulando em um meio condutor induz um campo magnético cujas linhas de fluxo se posicionam em direção tangencial ao caminho de circulação da corrente. Como dito anteriormente, pela lei da indução de Faraday, sabe-se que uma variação de fluxo magnético resulta na indução de um campo elétrico, consequentemente, se um campo elétrico confinado a um meio condutor na forma de um circuito fechado produz a circulação de uma corrente neste circuito, tem-se que a variação de fluxo magnético concatenado a um circuito fechado leva analogamente à indução de um campo elétrico, e uma corrente proporcional à variação de fluxo que a gerou.
@@ -95,11 +87,11 @@ Mas um dos objetivos do trabalho é a construção de uma fonte de corrente cons
 
 ### Disco
 
-O disco que estará localizado entre os eletroímãs e acoplado ao eixo, é composto por aço-carbono 1010, tal determinação foi pensada com base em um das características que o elemento carbono confere aos metais, como por exemplo, quanto maior seu teor na composição destes, menor é a permeabilidade. Assim, foi escolhido o material comercial com o menor teor de carbono, nesse caso a presença é de 10%. 
+O disco que estará localizado entre os eletroímãs e acoplado ao eixo, é composto por aço-carbono 1010, tal determinação foi pensada com base em um das características que o elemento carbono confere aos metais, como por exemplo, quanto maior seu teor na composição destes, menor é a permeabilidade. Assim, foi escolhido o material comercial com o menor teor de carbono, nesse caso a presença é de 0,10%. 
 
 Já a sua espessura é de 1/2 polegada, o que corresponde a aproximadamente 1,27 centímetros e seu diâmetro é de 27 centímetros, medida estabelecida com base na construção da estrutura e considerando a maior área superficial que estará exposta aos efeitos do eletroímã.
 
-![Disco de aço-carbono 1010](imagens/disco.png){#fig:disco}
+![Disco de aço-carbono 1010](imagens/disco.jpg){#fig:disco}
 
 
 ## 2RElectronic
