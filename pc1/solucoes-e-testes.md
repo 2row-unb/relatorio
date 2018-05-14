@@ -83,7 +83,7 @@ Para a energização do eletroímã durante os testes, foi utilizada uma fonte d
 
 Mas um dos objetivos do trabalho é a construção de uma fonte de corrente constante para a excitação dos eletroímãs...
 
-(Falta completar - Thayane)
+(Falta completar)
 
 ### Disco
 
