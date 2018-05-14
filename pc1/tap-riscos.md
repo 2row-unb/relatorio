@@ -6,7 +6,7 @@ Jonathan: [OK]
 
 Riscos são fatores externos e internos que podem afetar positivamente ou negativamente o andamento do projeto. Entender quais riscos circundam o projeto é uma atividade essencial que permite definir ações estratégicas para mitigar os riscos negativos e/ou promover os riscos positivos.
 
-A tabela [@tbl:riscos_estrutura] ilustra o levantamento realizado dos possíveis riscos para o projeto.
+A [@tbl:riscos] ilustra o levantamento realizado dos possíveis riscos para o projeto.
 
 ----------------------------------------------------------------------------------------------------------
  Risco                     Consequência                 Probabilidade      Impacto   Ação estratégica
