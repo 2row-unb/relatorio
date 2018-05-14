@@ -1,11 +1,12 @@
 # Plano de Integração
 ## Integração – 2RBoat/2RPower
 
-![Simulação estática da força para o apoio do pé.](imagens/simuforca.JPG){#fig:simuforca}
+![Local da estrutura para acoplamento do eletroímã e disco](imagens/IMG_5119.JPG){#fig:estrutura-e-energia}
+
 
 ## Integração – 2RBoat/2RElectronic
 
-![Testes do código para acionamento dos níveis de carga do eletroímã](imagens/IMG_5696.JPG){#fig:estrutura-e-eletronica-1}
+![Simulação estática da força para o apoio do pé.](imagens/simuforca.JPG){#fig:simuforca}
 
 ## Integração - 2RElectronic/2RPower
 
