@@ -66,9 +66,9 @@ O movimento ideal de remada de um atleta obedece ciclos de 1 segundo, o moviment
 ![banco](imagens/Banco_ADAMS.jpg){#fig:Movimento do Banco}
 ![trilho](imagens/Forca_Trilho.jpg){#fig:Força Exercida pelo Banco na Estrutura}
 
-A análise harmônica foi realizada na estrutura com a amplitude de força encontrada através da modelagem do movimento do banco. O espectro de frequências estudado foi de 0 à 150 \textit{Hertz}. A análise da figura \ref{harmonica} mostra os picos de ressonâncias nas frequências de aproximadamente 52.242$Hz$ e 106.52$Hz$.
+A análise harmônica foi realizada na estrutura com a amplitude de força encontrada através da modelagem do movimento do banco. O espectro de frequências estudado foi de 0 à 150 _Hertz_. A análise da figura [@harm] mostra os picos de ressonâncias nas frequências de aproximadamente 52.242_Hz_ e 106.52_Hz_.
 
-![harmonica](imagens/Resposta_Harmonica.jpg){#fig:Resposta Harmônica do Banco sobre Estrutura}
+![harmonica[@harm]](imagens/Resposta_Harmonica.jpg){#fig:Resposta Harmônica do Banco sobre Estrutura}
 
 ![Estrutura1](imagens/photo5116225061324433385.jpg){#fig:estrutura-1}
 
