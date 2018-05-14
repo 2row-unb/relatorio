@@ -142,8 +142,6 @@ O algoritmo foi implementado utilizando a linguagem de programação Python em c
 
 ### 2RS-Viewer
 
-## Ferramentas
-
 ## Testes
 
 ### 2RS-Processer
