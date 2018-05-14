@@ -2,6 +2,12 @@
 
 ## 2RBoat
 
+![Estrutura1](imagens/teste-com-alternador.jpg){#fig:estrutura-1}
+
+![Estrutura2](imagens/teste-com-alternador.jpg){#fig:estrutura-2}
+
+![Estrtura3](imagens/teste-com-alternador.jpg){#fig:estrutura-3}
+
 
 ## 2RPower
 
