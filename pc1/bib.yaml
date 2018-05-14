@@ -108,4 +108,45 @@ references:
     publisher: "Engenharia Biomédica, COPPE, Universidade Federal do Rio de Janeiro"
     issue: 1
     language: pt-BR
+    
+      - type: article-journal
+    id: pinheiro14
+    author:
+    - family: Pinheiro
+      given: [Ricardo F.]
+    issued:
+      date-parts:
+      - - 2014
+    title: 'Estudo de um Sistema de Frenagem Eletromagnética Empregando Correntes Parasitas'
+    publisher: "Universidade Federal do Rio Grande do Norte"
+    issue: 1
+    language: pt-BR
+    
+     - type: article-journal
+    id: medeiros80
+    author:
+    - family: Medeiros
+      given: [Sólon de]
+    issued:
+      date-parts:
+      - - 1980
+    title: 'Medição de Energia Elétrica'
+    publisher: "2a edição, Editora Universitária – UFPE"
+    issue: 1
+    language: pt-BR
+    
+    - type: article-journal
+    id: pereira06
+    author:
+    - family: Pereira
+      given: [Adriano Holanda]
+    issued:
+      date-parts:
+      - - 2006
+    title: 'Freio Eletromagnético para Ensaios de Motores Elétricos de Indução'
+    publisher: "Universidade Federal do Ceará"
+    issue: 1
+    language: pt-BR
+    
 ...
+
