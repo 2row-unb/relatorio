@@ -38,18 +38,18 @@ O espaço para o enrolamento das bobinas é limitado pelas dimensões do “E”
 
 ![Enrolamento da bobina na base do eletroímã](imagens/bobina.png){#fig:bobina}
 
-Quando decidiu-se trabalhar com eletroímã, foi proposto variar a corrente aplicada ao eletroímã para variar a força de atração, mas devido às dificuldades de trabalhar com um uma corrente variável, optou-se por modular as bobinas do eletroímã em 4 níveis. Como a relação entre o número de espiras e a força de atração não é linear, foi necessário primeiro estabelecer o nível máximo e mínimo de força de atração, encontrar dois valores de força entre esses dois níveis pré-definidos, e estabelecer o número de voltas de cada uma das quatro bobinas.
+Quando decidiu-se trabalhar com eletroímã, foi proposto variar a corrente aplicada ao mesmo, com o intuito de variar a força de atração, mas devido às dificuldades de trabalhar com uma corrente variável, optou-se por modular as bobinas do eletroímã em 4 níveis. Como a relação entre o número de espiras e a força de atração não é linear, foi necessário primeiro estabelecer o nível máximo e mínimo dessa força, encontrar dois valores entre esses dois níveis pré-definidos, e por fim, estabelecer o número de voltas de cada uma das quatro bobinas.
 
 -----------------------------------------
 Nível     Número de espiras em cada nível
 ------    -------------------------------
-1         191 
+  1                  191 
 
-2         268
+  2                  268
 
-3         307
+  3                  307
 
-4         380
+  4                  380
 -----------------------------------------
 
 ![Eletroímã montado](imagens/eletroima.png){#fig:eletroima}
@@ -61,11 +61,11 @@ Em seguida, o mesmo foi testado com uma chapa de metal grossa, de material desco
 -----------------------------------------------------------------------------
 Corrente [A]    Teste 1 [Kg]     Teste 2 [Kg]         Teste 3 [Kg]
 -------------   --------------   ---------------      -----------------------
-4               19,8             21,2                 22,4               
+     4               19,8             21,2                 22,4               
 
-4,5             27,6             25,5                 29,8
+   4,5               27,6             25,5                 29,8
 
-5               36,4             36,9                 35,8
+   5                 36,4             36,9                 35,8
 -----------------------------------------------------------------------------
 :Relação de corrente elétrica e massa{#tbl:corrente_massa}
 
@@ -76,13 +76,13 @@ Tendo estabelecido o nível máximo de corrente que irá percorrer as bobinas, f
 -----------------------------------------------------------------------------
 Nível           Teste 1 [Kg]     Teste 2 [Kg]         Teste 3 [Kg]
 -------------   --------------   ---------------      -----------------------
-4               32,4             29,16                32,33               
+   4               32,4             29,16                32,33               
 
-3               17,41            17,3                 17,44
+   3               17,41            17,3                 17,44
 
-2               12,32            13,43                13,73
+   2               12,32            13,43                13,73
 
-1               6,78             7,04                 7,06
+   1               6,78             7,04                 7,06
 -----------------------------------------------------------------------------
 :Relação nível de operação e massa{#tbl:nivel_massa}
 
@@ -92,15 +92,17 @@ Dessa maneira, foi possível determinar qual peso o atleta terá que puxar em ca
 
 ### Fonte de Corrente Constante
 
-Para a energização do eletroímã durante os testes, foi utilizada a fonte do laboratório de eletrônica da FGA. A mesma foi dimensionada para uma corrente de 4,5 amperes e até 12 volts. Uma fonte de corrente chaveada do tipo colméia, que na sua saída fornece 12 volts e 5 amperes, também pode ser aplicada nesse processo e é a que será utilizada no protótipo. 
+Para a energização do eletroímã durante os testes, foram utilizadas as fontes de alimentação do laboratório de eletrônica da FGA. A mesma foi configurada para operar nos testes com uma corrente igual a 4,5 amperes e uma tensão que variou até 12 volts. 
 
-A ideia da fonte de corrente é empregada quando se deseja manter constante a corrente circulante por uma carga mesmo quando a tensão varia e a carga muda, como no nosso caso. Os valores vão mudar de acordo com os níveis de carga do atleta, mas a corrente vai continuar a mesma. 
+Uma fonte de corrente chaveada do tipo colméia, que na sua saída fornece 12 volts e 5 amperes, também pode ser aplicada nesse processo e é a que será utilizada no protótipo para energizar os eletroímãs. 
+
+A ideia da fonte de corrente é empregada quando se deseja manter constante a corrente circulante por uma carga mesmo quando a tensão e resistência variam, como no caso desse projeto. Os valores irão mudar de acordo com os níveis de carga do atleta, mas a corrente continuará a mesma. 
 
 ![Fonte de corrente constante do tipo colméia](imagens/fonte-tipo-colmeia.jpg){#fig:fonte-de-corrente-constante}
 
 ### Disco
 
-O disco que estará localizado entre os eletroímãs e acoplado ao eixo, é composto por aço-carbono 1010, tal determinação foi pensada com base em um das características que o elemento carbono confere aos metais, como por exemplo, quanto maior seu teor na composição destes, menor é a permeabilidade. Assim, foi escolhido o material comercial com o menor teor de carbono, nesse caso a presença é de 10%.
+O disco que estará localizado entre os eletroímãs e acoplado ao eixo, é composto por aço-carbono 1010, tal determinação foi pensada com base em um das características que o elemento carbono confere aos metais, como por exemplo, quanto maior seu teor na composição destes, menor é a permeabilidade. Assim, foi escolhido o material comercial com o menor teor de carbono, nesse caso a presença é de 0,10%.
 
 Já a sua espessura é de 1/2 polegada, o que corresponde a aproximadamente 1,27 centímetros e seu diâmetro é de 27 centímetros, medida estabelecida com base na construção da estrutura e considerando a maior área superficial que estará exposta aos efeitos do eletroímã.
 
