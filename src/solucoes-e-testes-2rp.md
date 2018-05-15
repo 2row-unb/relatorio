@@ -84,7 +84,7 @@ Tendo estabelecido o nível máximo de corrente que irá percorrer as bobinas, f
 
          1                   6,78             7,04               7,06
 -----------------------------------------------------------------------------
-:Relação nível de operação e massa{#tbl:nivel_massa}
+:Relação nível de operação e massa
 
 Dessa maneira, foi possível determinar qual peso o atleta terá que puxar em cada nível de operação do eletroímã.
 
