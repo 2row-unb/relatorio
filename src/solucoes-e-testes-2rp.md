@@ -51,6 +51,7 @@ Quando decidiu-se trabalhar com eletroímã, foi proposto variar a corrente apli
 
       4                             380
 --------------------------------------------------------
+:Relação do nível e número de espiras.
 
 ![Eletroímã montado.](imagens/eletroima.png){#fig:eletroima}
 
@@ -67,7 +68,7 @@ Em seguida, o mesmo foi testado com uma chapa de metal grossa, de material desco
 
          5                  36,4              36,9                35,8
 ------------------------------------------------------------------------------
-:Relação de corrente elétrica e massa{#tbl:corrente_massa}
+:Relação de corrente elétrica e massa.
 
 Analisando os dados colhidos, considerando as especificações do fio de cobre AWG 18 e a premissa que o eletroímã irá trabalhar com uma corrente fixa, foi então escolhido o valor de 4,5 amperes.
 
@@ -84,7 +85,7 @@ Tendo estabelecido o nível máximo de corrente que irá percorrer as bobinas, f
 
          1                   6,78             7,04               7,06
 -----------------------------------------------------------------------------
-:Relação nível de operação e massa
+:Relação nível de operação e massa.
 
 Dessa maneira, foi possível determinar qual peso o atleta terá que puxar em cada nível de operação do eletroímã.
 
