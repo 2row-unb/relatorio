@@ -6,8 +6,6 @@ Durante os testes o alternador não correspondeu a validação de projeto a qual
 
 ![Realização do teste com o alternador automotivo.](imagens/teste-com-alternador.jpg){#fig:teste_alternador}
 
-[width=0.5\textwidth]{imagens/teste-com-alternador.jpg}
-
 ### Freio Eletromagnético
 
 O uso do efeito de correntes parasitas na frenagem eletromagnética já é bastante difundido, tanto em meios acadêmicos, quanto industriais, um exemplo clássico é o freio de Foucault ou também como é conhecido, freio eletromagnético. Nele, utiliza-se um disco de alumínio ou cobre para interpor uma resistência ao torque de máquinas rotativas no intuito de reduzir a sua velocidade, simular uma variação da carga mecânica acoplada ao seu eixo ou até mesmo abreviar a sua frenagem no momento de seu desligamento, dissipando sua energia inercial na forma de efeito Joule, pela ação das correntes parasitas circulantes no disco [@pinheiro14].
@@ -54,37 +52,37 @@ Quando decidiu-se trabalhar com eletroímã, foi proposto variar a corrente apli
       4                             380
 --------------------------------------------------------
 
-![Eletroímã montado.](imagens/eletroima.png){#fig:eletroima}{ width=25% }
+![Eletroímã montado.](imagens/eletroima.png){#fig:eletroima}
 
 Os testes foram realizados após a construção do primeiro eletroímã. O mesmo foi excitado com a utilização de fonte de corrente contínua para observar a possível existência de curtos circuitos no enrolamento e se o efeito eletromagnético realmente estava ocorrendo, dessa forma foi consolidado seu funcionamento.
 
 Em seguida, o mesmo foi testado com uma chapa de metal grossa, de material desconhecido, com o intuito de analisar o quanto de força o eletroímã estava exercendo no material, para tal empregou-se uma balança portátil e observou-se o quanto suportava em relação a massa para cada intensidade de corrente estabelecida pela fonte. Os resultados podem ser observados na tabela a seguir.
 
------------------------------------------------------------------------------
-Corrente [A]    Teste 1 [Kg]     Teste 2 [Kg]         Teste 3 [Kg]
--------------   --------------   ---------------      -----------------------
-     4               19,8             21,2                 22,4               
+------------------------------------------------------------------------------
+     Corrente [A]        Teste 1 [Kg]      Teste 2 [Kg]       Teste 3 [Kg]
+---------------------  ----------------  ----------------  -------------------
+         4                  19,8              21,2                22,4               
 
-   4,5               27,6             25,5                 29,8
+        4,5                 27,6              25,5                29,8
 
-   5                 36,4             36,9                 35,8
------------------------------------------------------------------------------
+         5                  36,4              36,9                35,8
+------------------------------------------------------------------------------
 :Relação de corrente elétrica e massa{#tbl:corrente_massa}
 
 Analisando os dados colhidos, considerando as especificações do fio de cobre AWG 18 e a premissa que o eletroímã irá trabalhar com uma corrente fixa, foi então escolhido o valor de 4,5 amperes.
 
 Tendo estabelecido o nível máximo de corrente que irá percorrer as bobinas, foram então realizados os testes para cada nível de operação do eletroímã. Na tabela a seguir estão dispostos os resultados desses testes.
 
------------------------------------------------------------------------------
-Nível           Teste 1 [Kg]     Teste 2 [Kg]         Teste 3 [Kg]
--------------   --------------   ---------------      -----------------------
-   4               32,4             29,16                32,33               
+------------------------------------------------------------------------------
+        Nível            Teste 1 [Kg]      Teste 2 [Kg]       Teste 3 [Kg]
+---------------------  ----------------  ----------------  -------------------
+         4                   32,4             29,16              32,33               
 
-   3               17,41            17,3                 17,44
+         3                   17,41            17,3               17,44
 
-   2               12,32            13,43                13,73
+         2                   12,32            13,43              13,73
 
-   1               6,78             7,04                 7,06
+         1                   6,78             7,04               7,06
 -----------------------------------------------------------------------------
 :Relação nível de operação e massa{#tbl:nivel_massa}
 
