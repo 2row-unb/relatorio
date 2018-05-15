@@ -5,12 +5,12 @@ numbersections: true
 
 #TCC configurations
 lang: pt-BR
-documentclass: abntex2 
+documentclass: abntex2
 classoption:
   - article
   - 12pt
   - openright
-  - twoside
+  - oneside
   - a4paper
   - english
   - french

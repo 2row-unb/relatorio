@@ -48,7 +48,7 @@ O modelo tridimensional foi desenvolvido por Exocortex e disponibilizado em form
 
 Os dados atuais da atividade do atleta são requisitados para a 2RS-Controller 10 vezes por segundo através do protocolo HTTP via _socket_ TCP/IP, no formato JSON, conforme exemplo:
 
-```json
+~~~~ {#viewerjson .json .numberLines}
 {
   "power": 100,
   "speed": 33,
@@ -99,8 +99,8 @@ Os dados atuais da atividade do atleta são requisitados para a 2RS-Controller 1
     ]
   }
 }
-```
+~~~~
 
 Cada requisição é feita de forma assíncrona. Caso aconteça de entrelaçar as requisições (por atraso de processamento ou atraso de entrega), a de maior _timer_ prevalece e as outras requisições são descartadas.
 
-> TODO: Detalhes dos algoritmos, detalhes da armadura, imagens, testes
+<!-- TODO: Detalhes dos algoritmos, detalhes da armadura, imagens, testes -->
