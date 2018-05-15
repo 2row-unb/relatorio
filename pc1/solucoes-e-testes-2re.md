@@ -151,7 +151,7 @@ A taxa de envio no kernel é de 34.4kbps. Essa é uma informação tida como bas
 Os dados gerados pelos sensores já estão chegando até o kernel, colocando a ESP como cliente e a Raspberry Pi como broker. O código que executa a tarefa inicia o cliente através de uma função padrão do protocolo MQTT, logo após isso as informações sobre a rede local e o IP do kernel são setados para realizar a conexão, também através de outra função padrão do MQTT, nessa situação uma função de reconexão garante que o existe a conexão entre o broker e o determinado cliente. Logo que todas essas etapas são estabelecidas todo o trabalho do cliente ESP8266 será realizado em relação aos dados da IMU por funções e determinadas em um setup, por fim um loop infinito vai garantir que as funções sejam devidamente invocadas para envio das mensagens ao kernel.
 A imagem [@fig:Envio_IMU_ESP8266_MQTT] retrata o recebimento de dados pelo terminal da Raspberry Pi, como kernel. Os dados apresentados na imagem são de um vetor de 9 posições com a seguinte ordem dos dados da IMU: acelerômetro x, y e z, depois o giroscópio x, y e z, por fim o magnetômetro x, y , z.
 
-![Celula_s^[Fonte: ]](imagens/teste_mqtt.png){#fig:Envio_IMU_ESP8266_MQTT}
+!Teste de envio/recebimento de dados para o kernel.^[Fonte:do Autor]](imagens/teste_mqtt.png){#fig:Envio_IMU_ESP8266_MQTT}
 
 ### 2RE - Relay
 
@@ -163,14 +163,14 @@ Quando o atleta vai começar o movimento, ele deve apertar o botão 1 para que o
 
 Para validar oo funcionamento dos relés, foi montado um circuito com botões e relés e este circuito foi conectado nas bobinas do freio eletromagnético, o resultado dos testes foi positivo, sendo possível controlar a ativação das bobinas 2 a cada vez, uma de cada um dos 2 freios eletromagnéticos.
 
-![reles^[Fonte: Do_autor]](imagens/rele.jpeg){#fig:Rele}
+!Módulo relé de 4 canais para o acionamento das cargas.^[Fonte: Do_autor]](imagens/rele.jpeg){#fig:Rele}
 
 
 ### 2RE-UI
 
 Para que o usuário solicite a mudança de carga e a inicialização/reset do equipamento 2Row é necessário uma interação usuário-máquina. Foram pesquisados alguns modelos de botões para inserir no sistema, em que foram observados as seguintes características: resistência, durabilidade, praticidade e tamanho suficiente para facilitar a visualização e o pressionamento do mesmo. Desse modo, foi escolhido o botão de acrílico, o qual pode ser alimentado com uma tensão de 3,3 V da própria raspberry pi 3, a Figura [@fig:botao] mostra o botão que será utilizado,. Ademais, como ele atende as necessidades do projeto outro ponto para a escolha desse botão foi devido ao fato de um integrante do grupo possuir esse mesmo modelo, o que proporciona economia ao custo do projeto.
 
- ![botao^[Fonte:Autor]](imagens/botao.jpg){#fig:botao}
+ ![Botão de acrílico usado na escolha de níveiis de carga.^[Fonte:do Autor]](imagens/botao.jpg){#fig:botao}
 
  Para testar esse subsistema foi criado um código em Python e utilizou-se o microprocessador raspberry Pi 3. Foram setados os pinos 11,15 e 18 como entradas, para receber os valores do estado do botão. Foi setado resistor pull-down no código, isso para certificar que quando o botão não for pressionado, ele não será ativado. O código permite realizar a leitura dos botões acionados pelo usuário, tanto quanto, realizar um tratamento do sinal recebido, pois as chaves mecânicas possui um erro conhecido como bouncing, que pode ser entendido como uma trepidação que causa oscilações no sinal, e necessita de um algoritmo de debounce.
  O código desenvolvido possui um delay de 0.5 segundo até a próxima leitura, desprezando assim qualquer acionamento do botão que poderia ser feito dentro desse tempo. Um evento é criado sempre que o botão pressionada durante o intervalo de tempo, ou seja, há a utilização da função detecção de eventos, chamado de event_detect, em qualquer borda de descida. Esse evento é responsável por armazena o estado do botão, e coloca como prioridade, para quando se der o início do próximo loop, baseados na função callback, retornar o evento que ocorreu. Para o tratamento de bounce, podemos aproveitar o parâmetro callback e requisitar que este ignore os primeiros 100 milisegundos da leitura, usando o parâmetro bouncetime.
@@ -280,4 +280,4 @@ $$|F| = \sqrt{F_{x}^{2} + F_{y}^{2}}$${#eq:modulof}
   Para realizar a leitura da força exercida nas células de carga e realizar testes para futura integração foi criado um programa em Python para que a leitura pudesse acontecer usando o microprocessador Raspberry Pi, os pinos 8 e 13 foram colocados no modo BOARD,além do VCC e GND para conezão om o HX711. A leitura pode ser vista na imagem a seguir:
 
 
-  ![carga^[Fonte: Autor]](imagens/monitor_carga.png){#fig:monitor_carga}
+  ![Teste realizado para adquirir o peso.^[Fonte: do Autor]](imagens/monitor_carga.png){#fig:monitor_carga}
