@@ -61,19 +61,25 @@ O último perfil verificado apresenta baixo deslocamento e tensão máxima muito
 *Analise Estática Estrutural*
 
 O software Ansys Workbench foi utilizado, que faz a sua análise pelo método de elementos finitos, para auxiliar a análise computacional da estrutura e teve um papel importante no processo de construção da estrutura, pois auxiliou nas tomadas de decisões durante todo o processo de construção e também serviu para realizar a validação do dimensionamento e validação do 2RowBolt. 
+
 As vantagens de se utilizar esse software para a validação de projetos é que de maneira geral programas como essas características permitem a redução do custo e do tempo, pois o resultado da análise é rápida. Ele também serve de orientação na escolha do materiais a serem utilizados nos projetos. E uma vantagem primordial é a redução da probabilidade de falha de componentes e também possibilita a identificação de partes que sofrem os maiores esforços estruturais. Além de ser um software que fornecem resultados gráficos na tela permitindo visualizar a geometria e o resultado, deste modo, a análise e a interpretação dos resultados é facilitada. 
-As vantagens de se utilizar a análise pelo método dos elementos finitos são diversas mas as principais são:
-Co mponente s  com  geo metr ia  compl exa  podem  ser  analisados, 
-*	A complexidade geométrica não influencia na análise diferente do que acontece com os cálculos analíticos que é limitado a geometrias mais simples. 
+As vantagens de se utilizar a análise pelo método dos elementos finitos são diversas, mas as principais são:
+
+*Componentes  com  geometria  complexa  podem  ser  analisados, 
+*A complexidade geométrica não influencia na análise diferente do que acontece com os cálculos analíticos que é limitado a geometrias mais simples. 
 *	O método pode ser formulado matricialmente, facilitando a análise computacional. 
 *	Pode-se aprimorar a geometria dos componentes reduzindo a quantidade de material e peso. 
 *	A vida útil de um componente, quando submetido a carcas cíclicas que podem causar fadiga, podem ser previstas. 
-A análise estrutural feitas para o 2RowBolt, utilizando o workbent, foi a análise estática para validar o perfil da estrutura no Ansys APDL. A análise estrutural estática calcula os efeitos dos carregamentos estáticos na estrutura, ignorado os efeitos de inércia e amortecimento. A análise estática foi feita para observar os deslocamentos e as deformações estruturais que os componentes do 2RowBolt sofrem. Assume-se que estáticos e a resposta são aplicados lentamente em relação ao tempo (Figura XX). O carregamento que foi aplicado é o de força externa e a análise estática é linear. 
-A parte da estrutura do 2RowBolt que foi analisada é a primary porque é a parte da estrutura que irá receber os esforços de carregamento e também era essa parte da estrutura que precisava-se verificar a validação da perfil escolhido.  A figura (xx) abaixo mostra qual o CAD foi realizado a análise estrutural.
-Para esse estrutura foi aplicado uma força de 1500N ou 1,5KN no sentido negativo do eixo y, considerando que o usuário possa chegar a pesar até 150Kg e considerando a gravidade igual a 10m/s^2, essa força pode ser verificada na Figura XX.  A estrutura foi considerada engastada, ou seja, não existe movimentação em nenhum sentidos dos eixos x, y ou z.  A deformação máxima  e o estresse equivalente de Vomises, para a estrutura, podem ser observados nas tabelas a seguir:
 
-As figuras a seguir mostram a deformação máxima que a estrutura sofreu e o máximo do equivalente estresse que a estrutura suporta.
-Como pode ser observado por esses dados as estrutura se deforma muito pouco e suporta um grande estresse com isso concluísse que a estrutura projetada suportará as cargas estruturais para as quais foram projetadas e a o perfil escolhido se mostrou satisfatório. Para observar com mais detalhes as como o processo de análise foi feito no software Ansys segue o anexo xx que contém todos os resultados e valores de entrada. Não foi escolhido uma malha muito refinada pois devido à complexidade da estrutura analisada a memória RAM do computador era excedida, mas todos os dados da malha se encontram também nesse mesmo anexo.  
+A análise estrutural feitas para o 2RowBolt, utilizando o workbent, foi a análise estática para validar o perfil da estrutura no Ansys APDL. A análise estrutural estática calcula os efeitos dos carregamentos estáticos na estrutura, ignorado os efeitos de inércia e amortecimento. A análise estática foi feita para observar os deslocamentos e as deformações estruturais que os componentes do 2RowBolt sofrem. Assume-se que estáticos e a resposta são aplicados lentamente em relação ao tempo [@fig:forca]. O carregamento que foi aplicado é o de força externa e a análise estática é linear. 
+
+![Força aplicada](imagens/PI2_PC2_Forcadistribuida.png){#fig:forca}
+
+A parte da estrutura do 2RowBolt que foi analisada é a primary porque é a parte da estrutura que irá receber os esforços de carregamento e também era essa parte da estrutura que precisava-se verificar a validação da perfil escolhido.  A figura (xx) abaixo mostra qual o CAD foi realizado a análise estrutural.
+
+
+
+Para esse estrutura foi aplicado uma força de 1500N ou 1,5KN no sentido negativo do eixo y, considerando que o usuário possa chegar a pesar até 150Kg e considerando a gravidade igual a 10m/s^2, essa força pode ser verificada na Figura XX.  A estrutura foi considerada engastada, ou seja, não existe movimentação em nenhum sentidos dos eixos x, y ou z.  A deformação máxima  e o estresse equivalente de Vomises, para a estrutura, podem ser observados nas tabelas a seguir:
 
 |Time (s)|Deslocamento mínimo (m)| Deslocamento máximo (m)|
 |:-------|:----------------------|:-----------------------|
@@ -83,6 +89,11 @@ Como pode ser observado por esses dados as estrutura se deforma muito pouco e su
 |Time (s)| mínimo (Pa) | máximo (Pa)|
 |:-------|:----------------------|:-----------------------|
 |1       | 0                     | 1.8144e+7|        
+
+
+As figuras a seguir mostram a deformação máxima que a estrutura sofreu e o máximo do equivalente estresse que a estrutura suporta.
+Como pode ser observado por esses dados as estrutura se deforma muito pouco e suporta um grande estresse com isso concluísse que a estrutura projetada suportará as cargas estruturais para as quais foram projetadas e a o perfil escolhido se mostrou satisfatório. Para observar com mais detalhes as como o processo de análise foi feito no software Ansys segue o anexo xx que contém todos os resultados e valores de entrada. Não foi escolhido uma malha muito refinada pois devido à complexidade da estrutura analisada a memória RAM do computador era excedida, mas todos os dados da malha se encontram também nesse mesmo anexo.  
+
 
 
 A estrutura construída estará em contato com uma série de cargas dinâmicas, como o eixo de transmissão que apresentará movimento rotacional ou o movimento de remada realizado pelo usuário da maquina, obter as frequências naturais da estrutura é necessário para se averiguar a ocorrência de ressonância ou a necessidade de adicionar amortecimento a estrutura.
