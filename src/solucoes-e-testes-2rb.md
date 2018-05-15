@@ -78,7 +78,7 @@ A análise estrutural feitas para o 2RowBolt, utilizando o workbent, foi a anál
 A parte da estrutura do 2RowBolt que foi analisada é a primary porque é a parte da estrutura que irá receber os esforços de carregamento e também era essa parte da estrutura que precisava-se verificar a validação da perfil escolhido.  A figura [@fig:estrutura]  abaixo mostra qual o CAD foi realizado a análise estrutural.
 
 
-![Estrutura](imagens/PI2_PC2_estrutur.png){#fig:estrutura}
+![Estrutura](imagens/P12_PC2_estrutura.png){#fig:estrutura}
 
 Para esse estrutura foi aplicado uma força de 1500N ou 1,5KN no sentido negativo do eixo y, considerando que o usuário possa chegar a pesar até 150Kg e considerando a gravidade igual a 10m/s^2, essa força pode ser verificada na Figura XX.  A estrutura foi considerada engastada, ou seja, não existe movimentação em nenhum sentidos dos eixos x, y ou z.  A deformação máxima  e o estresse equivalente de Vomises, para a estrutura, podem ser observados nas tabelas a seguir:
 
