@@ -11,7 +11,7 @@ Durante os testes o alternador não correspondeu a validação de projeto a qual
 
 O uso do efeito de correntes parasitas na frenagem eletromagnética já é bastante difundido, tanto em meios acadêmicos, quanto industriais, um exemplo clássico é o freio de Foucault ou também como é conhecido, freio eletromagnético. Nele, utiliza-se um disco de alumínio ou cobre para interpor uma resistência ao torque de máquinas rotativas no intuito de reduzir a sua velocidade, simular uma variação da carga mecânica acoplada ao seu eixo ou até mesmo abreviar a sua frenagem no momento de seu desligamento, dissipando sua energia inercial na forma de efeito Joule, pela ação das correntes parasitas circulantes no disco [@pinheiro14].
 
-![Ilustração conceitual de um freio eletromagnético [@medeiros80].](imagens/ilustracao-conceitual-do-freio.png){#id .class width=290 height=235px}
+![Ilustração conceitual de um freio eletromagnético [@medeiros80].](imagens/ilustracao-conceitual-do-freio.png){#id .class width=310 height=235px}
 
 O surgimento das correntes parasitas, é uma consequência direta do efeito da indução eletromagnética descrito por Faraday. As tensões elétricas são induzidas em um condutor sempre que este atravessar as linhas de fluxo de campo magnético constante ou quando este condutor for submetido a um campo magnético variável no tempo. Seja qual for o modo, as correntes induzidas percorrem caminhos a fim de manter oposição ao movimento relativo do condutor ou oposição à variação do campo magnético [@pereira06].
 
@@ -33,11 +33,11 @@ A primeira etapa de montagem do eletroímã consistiu na procura de transformado
 
 Para a montagem do segundo eletroímã, foi modelada a base de acordo com as dimensões do primeiro eletroímã, e sua construção foi realizada por meio de impressão 3D utilizando material PLA, termoplástico biodegradável. Após essa etapa, foram seguidos os mesmos passos da construção citados anteriormente.
 
-![Construção da base do eletroímã.](imagens/base_eletroima.png){#id .class width=250 height=295px}
+![Construção da base do eletroímã.](imagens/base_eletroima.png){#id .class width=320 height=295px}
 
 O espaço para o enrolamento das bobinas é limitado pelas dimensões do “E”, com a tabela de espessura dos fios de cobre medidos em AWG, foi possível dimensionar o número de voltas para cada espessura de fio de cobre, e relacionar com a força de atração estática teórica que a corrente suportada por aquele fio gerava. Com esses cálculos, concluiu-se que o melhor espessura de fio era a AWG 18.
 
-![Enrolamento da bobina na base do eletroímã.](imagens/bobina.png){#id .class width=290 height=235px}
+![Enrolamento da bobina na base do eletroímã.](imagens/bobina.png){#id .class width=290 height=295px}
 
 Quando decidiu-se trabalhar com eletroímã, foi proposto variar a corrente aplicada ao mesmo, com o intuito de variar a força de atração, mas devido às dificuldades de trabalhar com uma corrente variável, optou-se por modular as bobinas do eletroímã em 4 níveis. Como a relação entre o número de espiras e a força de atração não é linear, foi necessário primeiro estabelecer o nível máximo e mínimo dessa força, encontrar dois valores entre esses dois níveis pré-definidos, e por fim, estabelecer o número de voltas de cada uma das quatro bobinas.
 
@@ -54,7 +54,7 @@ Quando decidiu-se trabalhar com eletroímã, foi proposto variar a corrente apli
 --------------------------------------------------------
 :Relação do nível e número de espiras.
 
-![Eletroímã montado.](imagens/eletroima.png){#id .class width=290 height=235px}
+![Eletroímã montado.](imagens/eletroima.png){#id .class width=320 height=235px}
 
 Os testes foram realizados após a construção do primeiro eletroímã. O mesmo foi excitado com a utilização de fonte de corrente contínua para observar a possível existência de curtos circuitos no enrolamento e se o efeito eletromagnético realmente estava ocorrendo, dessa forma foi consolidado seu funcionamento.
 
