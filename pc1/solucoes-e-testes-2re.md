@@ -137,9 +137,10 @@ Entretando a parte do Kernel funciona de maneira mais interessante pelo fato de 
 O padrão publish/subscribe é uma alternativa ao tradicional modelo cliente-servidor, mas o cliente comunica diretamente com o endpoint. Todavia, Pub/Sub desacopla um cliente que envia uma mensagem particular(chamado publisher) de outro cliente(ou mais clientes), os quais estão recebendo a mensagem(chamado subscriber). Isso significa que tanto o publisher quanto o subscriber, não sabem da existência um do outro. O terceiro componente existente nesse protocolo é o broker(no projeto será o kernel). Já o broker é conhecido tanto pelo publisher quanto pelo subscriber. O broker é crucial pois é o responsável por filtrar todas as mensagens chegadas e distribui cada uma delas.
 
 #### Aplicação no projeto
+
 O kernel farrá boa parte da comunicação com a parte de software. Serão enviadas informações recebidas das IMU's, também as recebidas acerca dos dados de potência. Todas essa informações vão ser passadas ao software para que a análise seja feita e a decisão seja tomada pelo kernel.
 A escolha pelo MQTT foi com base na facilidade em utilizar um protocolo da camada de aplicação cuja velocidade de envio das mensagens serão sufientes em uma rede local. O projeto fica robusto ao utilizar um protocolo confiável e com uma certa mobilidade para o envio ordenado de mensagens. Além disso o protocolo MQTT possui um buffer suficiente para organizar as mensagens em termos de um tempo no kernel do projeto e transparecer a transição de dados em tempo real.  
-O projeto envolve uma topogia ideal para o uso do protocolo, pois o kernel necessita julgar informações e divisão correta do envio das mensagens[@fig:Modelo_broker_MQTT], algo que um servidor poderia trazer complicações. Além da base do MQTT é ser usado para comunicação entre máquinas e não por envio à base de solicitações de clientes, como ocorre no servidor. A aplicação também é bem colocada por se tratar de clientes mandando informaçẽos de sensores, o que traz a ideia de IoT, o que não deixa de ser parte do projeto.
+O projeto envolve uma topogia ideal para o uso do protocolo, pois o kernel necessita julgar informações e divisão correta do envio das mensagens[@fig:Modelo_broker_MQTT], algo que um servidor poderia trazer complicações. Além da base do MQTT é ser usado para comunicação entre máquinas e não por envio à base de solicitações de clientes, como ocorre no servidor. A aplicação também é bem colocada por se tratar de clientes mandando informações de sensores, o que traz a ideia de IoT, o que não deixa de ser parte do projeto.
 
 A taxa de envio no kernel é de 34.4kbps. Essa é uma informação tida como base a taxa de transmissão do módulo Wifi, ESP8266.
 
@@ -152,7 +153,10 @@ A imagem [@fig:Envio_IMU_ESP8266_MQTT] retrata o recebimento de dados pelo termi
 
 ![Celula_s^[Fonte: ]](imagens/teste_mqtt.png){#fig:Envio_IMU_ESP8266_MQTT}
 
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 ### 2RE - Relay
 
 O subsistema 2RE-Relay era o responsável por controlar as cargas de resistência do gerador inicialmente, porém após mudanças para adequação do freio eletromagnético construído pelo 2R-Power o subsistema passou a fazer o controle do número de bobinas acionadas em cada vez.
@@ -188,7 +192,7 @@ Para que o usuário solicite a mudança de carga e a inicialização/reset do eq
 | Encoder                      |        1   |    120,00   |     São Paulo       |
 | Wattímetro digital         |        1   |    2.000,00   |     São Paulo       |
 
-**Colocar as imagens de todos os subcomponentes pensados para escolha
+**Colocar as imagens de todos os subcomponentes pensados para escolha**
 
 ![Torquímetro_digital^[Fonte: https://produto.mercadolivre.com.br/MLB-703889366-torquimetro-digital-12-de-4-a-20-kgf-m-waft-_JM]](imagens/torquimetro.png){#fig:torquimetro}
 
@@ -230,7 +234,7 @@ Para que o usuário solicite a mudança de carga e a inicialização/reset do eq
 
   Por analogia, sabe-se que o Watts pode ser representado por $N\ast m/s$, ou seja, é a mesma unidade de torque por segundo, desse modo, considerou-se que a potência seria o argumento da integral do impulso, tendo em vista que o corpo deixou de ficar em repouso. O cálculo foi realizado nesse momento, dessa forma, para título de comparação com a simulação da estrutura, localizada no plano de integração entre estrutura/eletrônica. Como foi dito anteriormente, considerou-se a potência máxima como 600 W. A partir da equação [@eq:velocidadeang], encontrou-se a velocidade angular para realizar o cálculo da força. O intervalo de tempo definido foi o tempo de ciclo da remada especificado em 1 segundo pelos autores para a potência descrita.
 
-  $$$I_{0}w = \int_{0}^{1}600dt$$${#eq:velocidadeang}
+  $$I_{0}w = \int_{0}^{1}600dt$${#eq:velocidadeang}
 
   $w = 600 (N \times m/s) /(|I_{0}|(kg\times m^{2}))$
 
@@ -238,9 +242,9 @@ Para que o usuário solicite a mudança de carga e a inicialização/reset do eq
 O módulo da força é dado pela equação [@eq:modulof], mas para isso precisou calcular a força referente ao eixo x e ao eixo y, as quais foram aplicadas pela equação [@eq:forca].
 
 
-$$$|F| = \sqrt{F_{x}^{2} + F_{y}^{2}}$$${#eq:modulof}
+$$|F| = \sqrt{F_{x}^{2} + F_{y}^{2}}$${#eq:modulof}
 
-  $$$\sum F_{n}= mw^{2}r_{0}$$${#eq:forca}
+  $$\sum F_{n}= mw^{2}r_{0}$${#eq:forca}
 
   $F_{x}= m(600/I_{0})\times r_{0}$
 
