@@ -149,9 +149,9 @@ A taxa de envio no kernel é de 34.4kbps. Essa é uma informação tida como bas
 ##### Integração dos sensores do projeto
 
 Os dados gerados pelos sensores já estão chegando até o kernel, colocando a ESP como cliente e a Raspberry Pi como broker. O código que executa a tarefa inicia o cliente através de uma função padrão do protocolo MQTT, logo após isso as informações sobre a rede local e o IP do kernel são setados para realizar a conexão, também através de outra função padrão do MQTT, nessa situação uma função de reconexão garante que o existe a conexão entre o broker e o determinado cliente. Logo que todas essas etapas são estabelecidas todo o trabalho do cliente ESP8266 será realizado em relação aos dados da IMU por funções e determinadas em um setup, por fim um loop infinito vai garantir que as funções sejam devidamente invocadas para envio das mensagens ao kernel.
-A imagem [@fig:teste_mqtt] retrata o recebimento de dados pelo terminal da Raspberry Pi, como kernel. Os dados apresentados na imagem são de um vetor de 9 posições com a seguinte ordem dos dados da IMU: acelerômetro x, y e z, depois o giroscópio x, y e z, por fim o magnetômetro x, y , z.
+A imagem [@fig:teste_esp_mqtt] retrata o recebimento de dados pelo terminal da Raspberry Pi, como kernel. Os dados apresentados na imagem são de um vetor de 9 posições com a seguinte ordem dos dados da IMU: acelerômetro x, y e z, depois o giroscópio x, y e z, por fim o magnetômetro x, y , z.
 
-!Teste de envio/recebimento de dados para o kernel.^[Fonte:do Autor]](imagens/teste_mqtt.png){#fig:teste_mqtt}
+!Teste de envio/recebimento de dados para o kernel.^[Fonte:do Autor]](imagens/teste_mqtt.png){#fig:teste_esp_mqtt}
 
 ### 2RE - Relay
 
