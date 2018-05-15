@@ -94,7 +94,7 @@ Para esse estrutura foi aplicado uma força de 1500N ou 1,5KN no sentido negativ
 
 As figuras ([@fig:deformacao] e [@fig:stress]  ) a seguir mostram a deformação máxima que a estrutura sofreu e o máximo do equivalente estresse que a estrutura suporta. Como pode ser observado por esses dados as estrutura se deforma muito pouco e suporta um grande estresse com isso concluísse que a estrutura projetada suportará as cargas estruturais para as quais foram projetadas e a o perfil escolhido se mostrou satisfatório. Para observar com mais detalhes as como o processo de análise foi feito no software Ansys segue o anexo xx que contém todos os resultados e valores de entrada. Não foi escolhido uma malha muito refinada pois devido à complexidade da estrutura analisada a memória RAM do computador era excedida, mas todos os dados da malha se encontram também nesse mesmo anexo.  
 
-![Deformação](imagens/PI2_PC2_deformação.png){#fig:deformacao}
+![Deformação](imagens/PI2_PC2_deformacao.png){#fig:deformacao}
 ![Equivalente Stress](imagens/PI2_PC2_Equivalente_Stress.png){#fig:stress}
 
 A estrutura construída estará em contato com uma série de cargas dinâmicas, como o eixo de transmissão que apresentará movimento rotacional ou o movimento de remada realizado pelo usuário da maquina, obter as frequências naturais da estrutura é necessário para se averiguar a ocorrência de ressonância ou a necessidade de adicionar amortecimento a estrutura.
