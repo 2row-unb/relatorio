@@ -193,11 +193,11 @@ Para que o usuário solicite a mudança de carga e a inicialização/reset do eq
 
 **Colocar as imagens de todos os subcomponentes pensados para escolha**
 
-![Torquímetro_digital^[Fonte: https://www.lojadoprofissional.com.br/torquimetro-digital-encaixe-38-capacidade-de-27-135-nm-insize]](imagens/torquimetro_novo.jpg){#id .class width=240 height240px}{#fig:torquimetro}
+![Torquímetro_digital^[Fonte: https://www.lojadoprofissional.com.br/torquimetro-digital-encaixe-38-capacidade-de-27-135-nm-insize]](imagens/torquimetro_novo.jpg){#id .class width=120 height=120px}{#fig:torquimetro}
 
-![Encoder^[Fonte: https://produto.mercadolivre.com.br/MLB-882483511-encoder-incremental-rotativo-600-pulsos-eixo-6mm-5-24v--_JM]](imagens/encoder.png){#id .class width=240 height240px}{#fig:encoder}
+![Encoder^[Fonte: https://produto.mercadolivre.com.br/MLB-882483511-encoder-incremental-rotativo-600-pulsos-eixo-6mm-5-24v--_JM]](imagens/encoder.png){#id .class width=120 height=120px}{#fig:encoder}
 
-![Wattímetro^[Fonte: https://produto.mercadolivre.com.br/MLB-945963390-medidor-de-potncia-stages-bluetooth-modelo-spm1-175mm-_JM]](imagens/wattimetro.png){#id .class width=240 height240px}{#fig:wattimetro}
+![Wattímetro^[Fonte: https://produto.mercadolivre.com.br/MLB-945963390-medidor-de-potncia-stages-bluetooth-modelo-spm1-175mm-_JM]](imagens/wattimetro.png){#id .class width=120 height=120px}{#fig:wattimetro}
 
 | Compontes da Célula de Carga | Quantidade | Média de Preço (R$) | Localização do Fornecedor |
 |--------------------------|------------|-------|------------|
