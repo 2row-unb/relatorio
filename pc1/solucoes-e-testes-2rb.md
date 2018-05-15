@@ -8,9 +8,9 @@ Para se definir o perfil a ser utilizado para construção da estrutura se const
 * Parametrização da Estrutura: A princípio o principal objetivo das simulações era a escolha do perfil a ser utilizado, o _Mechanical APDL_ permite mudar o perfil estrutural escolhido com a alteração de apenas uma linha de comando. Eliminando o processo de alterar o CAD, exportar geometria, importar no _ANSYS_ e realizar a simulação.
 
 
-![PERFIL1](imagens/Secao20x20.jpg){#fig:Perfil Quadrado 20x20x1.2mm}
-![PERFIL2](imagens/Secao30x30.jpg){#fig:Perfil Quadrado 30x30x1.5mm}
-![PERFIL3](imagens/Secao50x50.jpg){#fig:Perfil Quadrado 50x50x2mm}
+![PERFIL1](imagens/Secao20x20.JPG){#fig:Perfil Quadrado 20x20x1.2mm}
+![PERFIL2](imagens/Secao30x30.JPG){#fig:Perfil Quadrado 30x30x1.5mm}
+![PERFIL3](imagens/Secao50x50.JPG){#fig:Perfil Quadrado 50x50x2mm}
 
 O _ANSYS MAPDL_ requer que o usuário alimente o programa com as informações referentes ao material utilizado nas simulações, para tal utilizamos as informações para o Aço 1020 retiradas do Apêndice B da referência.
 
@@ -24,27 +24,27 @@ O Elemento linear utilizado foi o _BEAM188_, apesar das vantagens mecionas ao se
 
 As condições de contorno utilizadas para a simulação foram as de deslocamento restrito nos pés da estrutura e a aplicação de um força distribuída sobre o comprimento que se encontrará o trilho, simulando o peso que o usuário fará na estrutura principal, além disso o peso próprio da estrutura foi contabilizado ao se inserir na simulação uma aceleração na direção vertical de valor equivalente a 1 gravidade.
 
-![BC1](imagens/BC_2.jpg){#fig:Condições de Contorno (a)}
-![BC2](imagens/BC_3.jpg){#fig:Condições de Contorno (b)}
+![BC1](imagens/BC_2.JPG){#fig:Condições de Contorno (a)}
+![BC2](imagens/BC_3.JPG){#fig:Condições de Contorno (b)}
 
 Todos os perfis simulados são de formato quadrado, o primeiro a ser simulado possui dimensões de 20x20x1.2mm. O deslocamento máximo da estrutura foi de 12,9mm e a tensão máxima foi de 184 _MPa_.
 
-![20201](imagens/20X20X12_Displacement.jpg){#fig:Resultante de Deslocamento}
-![20202](imagens/20X20X12_Stress_1.jpg){#fig:Tensão Resultante na Seção Transversal (1)}
-![20203](imagens/20X20X12_Stress_2.jpg){#fig:Tensão Resultante na Seção Transversal (2)}
+![20201](imagens/20X20X12_Displacement.JPG){#fig:Resultante de Deslocamento}
+![20202](imagens/20X20X12_Stress_1.JPG){#fig:Tensão Resultante na Seção Transversal (1)}
+![20203](imagens/20X20X12_Stress_2.JPG){#fig:Tensão Resultante na Seção Transversal (2)}
 
 
 O segundo perfil simulado tinha dimensões de 30x30x1.5mm. O deslocamento máximo encontrado foi de aproximadamente 3mm. A tensão máxima causada por flexão foi de 64.3 _MPa_.
 
-![30301](imagens/30X30X15_Displacement.jpg){#fig:Resultante de Deslocamento}
-![30302](imagens/30X30X15_Stress_1.jpg){#fig:Tensão Resultante na Seção Transversal (1)}
-![30303](imagens/30X30X15_Stress_2.jpg){#fig:Tensão Resultante na Seção Transversal (2)}
+![30301](imagens/30X30X15_Displacement.JPG){#fig:Resultante de Deslocamento}
+![30302](imagens/30X30X15_Stress_1.JPG){#fig:Tensão Resultante na Seção Transversal (1)}
+![30303](imagens/30X30X15_Stress_2.JPG){#fig:Tensão Resultante na Seção Transversal (2)}
 
 O último perfil escolhido tinha dimensões 50x50x2mm. O deslocamento máximo encontrado foi de 0.508mm, e a tensão máxima 17.4 _MPa_.
 
-![50501](imagens/50X50X2_Displacement.jpg){#fig:Resultante de Deslocamento}
-![50502](imagens/50X50X2_Stress_1.jpg){#fig:Tensão Resultante na Seção Transversal (1)}
-![50503](imagens/50X50X2_Stress_2.jpg){#fig:Tensão Resultante na Seção Transversal (2)}
+![50501](imagens/50X50X2_Displacement.JPG){#fig:Resultante de Deslocamento}
+![50502](imagens/50X50X2_Stress_1.JPG){#fig:Tensão Resultante na Seção Transversal (1)}
+![50503](imagens/50X50X2_Stress_2.JPG){#fig:Tensão Resultante na Seção Transversal (2)}
 
 O último perfil verificado apresenta baixo deslocamento e tensão máxima muito abaixo do limite de escoamento, foi decidido utilizar tal perfil principalmente pelo fato dos dois perfis anteriores apresentarem deslocamentos muito grandes e o limite de escoamento estar muito distante, uma vez que se utilizou um aço não certificado (Methalon), que possui propriedades mecânicas desconhecidas.
 
@@ -54,19 +54,19 @@ Utilizando as mesmas condições de contorno para se obter as frequências natur
 
 ![modos](imagens/Modos_APDL.jpg){#fig:20 Primeiros Modos de Vibração da Estrutura}
 
-![modo1](imagens/FREQ_MODO_1.jpg){#fig:Primeiro Modo de Vibração}
-![modo2](imagens/FREQ_MODO_2.jpg){#fig:Segundo Modo de Vibração}
-![modo3](imagens/FREQ_MODO_3.jpg){#fig:Terceiro Modo de Vibração}
-![modo4](imagens/FREQ_MODO_4.jpg){#fig:Quarto Modo de Vibração}
+![modo1](imagens/FREQ_MODO_1.JPG){#fig:Primeiro Modo de Vibração}
+![modo2](imagens/FREQ_MODO_2.JPG){#fig:Segundo Modo de Vibração}
+![modo3](imagens/FREQ_MODO_3.JPG){#fig:Terceiro Modo de Vibração}
+![modo4](imagens/FREQ_MODO_4.JPG){#fig:Quarto Modo de Vibração}
 
 O movimento ideal de remada de um atleta obedece ciclos de 1 segundo, o movimento foi modelado utilizando o software _MSC ADAMS_ para que se determine a amplitude da força que será exercida na estrutura com ciclos de frequência igual a 1 _Hertz_.
 
-![banco](imagens/Banco_ADAMS.jpg){#fig:Movimento do Banco}
-![trilho](imagens/Forca_Trilho.jpg){#fig:Força Exercida pelo Banco na Estrutura}
+![banco](imagens/Banco_ADAMS.JPG){#fig:Movimento do Banco}
+![trilho](imagens/Forca_Trilho.JPG){#fig:Força Exercida pelo Banco na Estrutura}
 
-A análise harmônica foi realizada na estrutura com a amplitude de força encontrada através da modelagem do movimento do banco. O espectro de frequências estudado foi de 0 à 150 _Hertz_. A análise da figura [@harm] mostra os picos de ressonâncias nas frequências de aproximadamente 52.242 _Hz_ e 106.52 _Hz_.
+A análise harmônica foi realizada na estrutura com a amplitude de força encontrada através da modelagem do movimento do banco. O espectro de frequências estudado foi de 0 à 150 _Hertz_. A análise da figura abaixo mostra os picos de ressonâncias nas frequências de aproximadamente 52.242 _Hz_ e 106.52 _Hz_.
 
-![harmonica[@harm]](imagens/Resposta_Harmonica.jpg){#fig:Resposta Harmônica do Banco sobre Estrutura}
+![harmonica](imagens/Resposta_Harmonica.JPG){#fig:Resposta Harmônica do Banco sobre Estrutura}
 
 ![Estrutura1](imagens/photo5116225061324433385.jpg){#fig:estrutura-1}
 

@@ -21,10 +21,10 @@ A integração do sistema de eletrônica com energia se baseia em fazer as conex
 ![reles^[Fonte: Do_autor]](imagens/reles.png){#fig:Reles}
 
 
-![Testes do código para acionamento dos níveis de carga do eletroímã](imagens/IMG_5696.JPG){#fig:estrutura-e-eletronica-1}
+![Testes do código para acionamento dos níveis de carga do eletroímã](imagens/integracao_elec_pow1.png){#fig:integracao_electronic_power1}
 
-![Testes do código para acionamento dos níveis de carga do eletroímã](imagens/IMG_5698.JPG){#fig:estrutura-e-eletronica-2}
+![Testes do código para acionamento dos níveis de carga do eletroímã](imagens/IMG_5698.JPG){#fig:integracao_electronic_power2}
 
-![Testes do código para acionamento dos níveis de carga do eletroímã](imagens/IMG_5699.JPG){#fig:estrutura-e-eletronica-3}
+![Testes do código para acionamento dos níveis de carga do eletroímã](imagens/integracao_elec_pow3.png){#fig:integracao_electronic_power3}
 
 ## Integração – 2RElectronic/2RSystem
