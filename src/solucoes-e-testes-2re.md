@@ -193,7 +193,7 @@ Para que o usuário solicite a mudança de carga e a inicialização/reset do eq
 
 **Colocar as imagens de todos os subcomponentes pensados para escolha**
 
-![Torquímetro_digital^[Fonte: https://produto.mercadolivre.com.br/MLB-703889366-torquimetro-digital-12-de-4-a-20-kgf-m-waft-_JM]](imagens/torquimetro.png){#fig:torquimetro}
+![Torquímetro_digital^[Fonte: https://www.lojadoprofissional.com.br/torquimetro-digital-encaixe-38-capacidade-de-27-135-nm-insize]](imagens/torquimetro_novo.jpg){#fig:torquimetro}
 
 ![Encoder^[Fonte: https://produto.mercadolivre.com.br/MLB-882483511-encoder-incremental-rotativo-600-pulsos-eixo-6mm-5-24v--_JM]](imagens/encoder.png){#fig:encoder}
 
