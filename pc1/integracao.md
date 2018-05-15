@@ -1,7 +1,7 @@
 # Plano de Integração
 ## Integração – 2RBoat/2RPower
 
-A integração do sistema de estrutura com energia consiste em realizar vinculos da estrutura primária com o disco do freio eletromagnético e os eletroímas. O atleta ira puxar uma barra ligada a um sistema de catracas e coroas por uma corrente de bicicleta. Esse sistema tem o intuito de reduzir a força aplicada pelo atleta no freio eletromagnético. Além disso o acoplamento entre as duas áreas mostrou-se afinado durante todo o ponto de ocntrole 2, justifiicado pela modelagem do sistema de energia com a ajuda da parte de estrutura. 
+A integração do sistema de estrutura com energia baseou-se nos vinculos da estrutura primária com o disco do freio eletromagnético e os eletroímas. O atleta ira puxar uma barra ligada a um sistema de catracas e coroas por uma corrente de bicicleta. Esse sistema tem o intuito de reduzir a força aplicada pelo atleta no freio eletromagnético. Além disso o acoplamento entre as duas áreas mostrou-se afinado durante todo o ponto de controle 2, justifiicado pela modelagem do sistema de energia com a ajuda da parte de estrutura. 
 
 ![Local da estrutura para acoplamento do eletroímã e disco](imagens/IMG_5119.JPG){#fig:estrutura-e-energia}
 
