@@ -14,7 +14,7 @@
 
 ## Integração - 2RElectronic/2RPower
 
-A integração com energia se baseia em fazer as conexões necessárias para chavear as bobinas utilizando o circuito com relés já mencionados anteriormente, testes já foram feitos para o acionamento de cada bobina separadamente e eles se mostraram nem executados.
+A integração do sistema de eletrônica com energia se baseia em fazer as conexões necessárias para chavear as bobinas utilizando o circuito com relés já mencionados anteriormente, testes já foram feitos para o acionamento de cada bobina separadamente e eles se mostraram nem executados.
 
 ![reles^[Fonte: Do_autor]](imagens/reles.png){#fig:Reles}
 
