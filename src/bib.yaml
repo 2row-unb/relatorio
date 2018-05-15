@@ -258,5 +258,18 @@ references:
     publisher: "John Wiley & Sons"
     issue: 1
     language: en-US
+    
+  - type: book
+    id: wainer
+    author:
+    - family: wainer
+      given: [Wainer Emilio]
+    issued:
+      date-parts:
+      - - 1992
+    title: 'Soldagem: processos e metalurgia'
+    publisher: "Edgard Blücher Ltda, São Paulo"
+    issue: 1
+    language: pt-BR
 
 ...
