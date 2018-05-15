@@ -6,6 +6,8 @@ Durante os testes o alternador não correspondeu a validação de projeto a qual
 
 ![Realização do teste com o alternador automotivo.](imagens/teste-com-alternador.jpg){#fig:teste_alternador}
 
+includegraphics[width=0.5\textwidth]{imagens/teste-com-alternador.jpg}
+
 ### Freio Eletromagnético
 
 O uso do efeito de correntes parasitas na frenagem eletromagnética já é bastante difundido, tanto em meios acadêmicos, quanto industriais, um exemplo clássico é o freio de Foucault ou também como é conhecido, freio eletromagnético. Nele, utiliza-se um disco de alumínio ou cobre para interpor uma resistência ao torque de máquinas rotativas no intuito de reduzir a sua velocidade, simular uma variação da carga mecânica acoplada ao seu eixo ou até mesmo abreviar a sua frenagem no momento de seu desligamento, dissipando sua energia inercial na forma de efeito Joule, pela ação das correntes parasitas circulantes no disco [@pinheiro14].
