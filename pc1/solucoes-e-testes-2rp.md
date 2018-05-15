@@ -47,6 +47,7 @@ Nível     Número de espiras em cada nível
 2          268
 3          307
 4          380
+-----------------------------------------
 
 ![Eletroímã montado](imagens/eletroima.png){#fig:eletroima}
 
