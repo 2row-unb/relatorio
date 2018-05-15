@@ -26,7 +26,7 @@ Portanto, após avaliar as prioridades para execução do projeto, foi decidido 
   A Unidade de Medida Inercial (IMU) é um sistema microeletromecânico (MEM), que permite identificar a posição  ou o deslocamento de um corpo rígido em um espaço tridimensional. Neste trabalho, a IMU será responsável em determinar a posição do membro inferior direito para a criação de exoesqueleto autónomo para a identificação e correção da postura do praticante de remo indoor. Desse modo, este trabalho sugere implementar uma IMU em dois centros de gravidades, pois nesses pontos a massa está distribuída de forma uniforme,  localizados no membro inferior do exoesqueleto como pode ser visto na Figura [@fig:exoesqueleto], para estimar a orientação desses pontos onde há equilíbrio de forças [@vaughan99].
 
 
-  ![Exoesqueleto com pontos de equilíbrio de forças.^[Fonte:Adaptado de [@vaughan99]]](imagens/exoesqueleto.png){#fig:exoesqueleto}
+  ![Exoesqueleto com pontos de equilíbrio de forças.^[Fonte:Adaptado de [@vaughan99].]](imagens/exoesqueleto.png){#fig:exoesqueleto}
 
   A IMU é composta de três sensores principais, os quais são acelerômetro, giroscópio e magnetômetro, o que possibilita obter continuamente  a variação de velocidade, posição e direção de um corpo rígido  [@araujo13] . Esses sensores podem realizar medições nos eixos de referência x,y e z. A Tabela 1.0 apresenta uma comparação entre IMUs de baixo custo e parâmetros relevantes para a escolha da tecnologia, como: quantidade de sensores embarcados, graus de liberdade, custo.
 
@@ -42,9 +42,9 @@ Tabela 1.0 Tabela de comparação de parâmetros das IMUs de baixo custo.
 | Custo                 |   R$ 13,90   |   R$ 25,00    |       R$ 80,00     |
 
 
-  Em observância com a Tabela 1.0, a IMU selecionada como solução foi a MPU9250, pois a mesma possui um custo baixo e magnetômetro, contemplando 9 graus de liberdade, três graus de liberdade a mais do que a MPU6050. A GY80 possui um custo mais alto comparado aos demais. A Figura [@fig:orientacoes] apresenta a orientação dos eixos dos sensores (a) acelerômetro, (b) giroscópio e (c) magnetômetro, esses dados são essenciais para realização do código para aquisição dos sinais (INVENSENSE, 2016). A Tabela 2.0 apresenta as características do MPU9250. Os três sensores imbutidos na MPU9250 podem obter sinais nos três eixos (x, y, z) e possuem três conversores analógico-digitais (ADCs) de 16 bits, para cada respectivo sensor.
+  Em observância com a Tabela 1.0, a IMU selecionada como solução foi a MPU9250, pois a mesma possui um custo baixo e magnetômetro, contemplando 9 graus de liberdade, três graus de liberdade a mais do que a MPU6050. A GY80 possui um custo mais alto comparado aos demais. A Figura [@fig:orientacoes] apresenta a orientação dos eixos dos sensores (a) acelerômetro, (b) giroscópio e (c) magnetômetro, esses dados são essenciais para realização do código para aquisição dos sinais [@iven16]. A Tabela 2.0 apresenta as características do MPU9250. Os três sensores imbutidos na MPU9250 podem obter sinais nos três eixos (x, y, z) e possuem três conversores analógico-digitais (ADCs) de 16 bits, para cada respectivo sensor.
 
-![Orientaçoes dos sensores. (a) sensores acelerômetro e giroscópio (b) magnetômetro.^[Fonte:Adaptado de (INVENSENSE, 2016).]](imagens/orientacoes.png){#fig:orientacoes}
+![Orientaçoes dos sensores. (a) sensores acelerômetro e giroscópio (b) magnetômetro.^[Fonte:Adaptado de [@iven16].]](imagens/orientacoes.png){#fig:orientacoes}
 
 
  Tabela 2.0 Características da IMU MPU9250
@@ -59,13 +59,7 @@ Tabela 1.0 Tabela de comparação de parâmetros das IMUs de baixo custo.
 | Frequência de operação       |        400 kHz   |  
 
 Essa corrente de operação é com o DPM habilitado. O DPM é o processador utilizado na IMU9250.
-
-Fonte: (INVENSENSE, 2016)
-
-
-
-
- Foi realizado um código para calibrar as IMUs utilizadas, pois como as medidas devem ser enviadas de forma contínua, é necessário que haja uma maior precisão.
+Fonte: [@iven16]
 
 #### Calibração
 
@@ -75,7 +69,7 @@ Fonte: (INVENSENSE, 2016)
 
   ![Celula_s^[Fonte:Autor,2018).]](imagens/plataforma.jpg){#fig:plataforma}
 
-  Vale ressaltar que com essa plataforma a calibração continua a ser manual, como acontece em drones, exoesqueletos [@fabian2018]. Para o desenvolvimento do software de calibração foram definidos o endereço na MPU9250 dos sensores de acelerômetro e giroscópio 0x68 e o do magnetômetro 0x0C (InvenSense, 2016). Esses endereços são os do escravos e eles são necessários para que a comunicação I2C  aconteça entre a ESP8266 e os sensores.  
+  Vale ressaltar que com essa plataforma a calibração continua a ser manual, como acontece em drones, exoesqueletos [@fabian2018]. Para o desenvolvimento do software de calibração foram definidos o endereço na MPU9250 dos sensores de acelerômetro e giroscópio 0x68 e o do magnetômetro 0x0C [@iven16]. Esses endereços são os do escravos e eles são necessários para que a comunicação I2C  aconteça entre a ESP8266 e os sensores.  
 
 Duas funções foram criadas como base para a calibração, a função de escrita e a de leitura. A função de escrita dos dados envia o endereço dos sensores da MPU9250 (8 bits), o endereço do registrador, onde será escrito os valores (8 bits) e o dado a ser escrito (8 bits). A função de leitura dos dados recebe o endereço dos sensores (8 bits), o valor do registrador, onde os dados têm de serem lidos (8 bits), o número de bytes e o dado que foi lido (8 bits). Os intervalos de tempo para a calibração, foram os mesmos utilizados por [@fabian18] em seu estudo, a fim de comparação. Os intervalos utilizados foram de  ±250 graus/seg, ±2g e ±4800µT (nas respectivas unidades de graus, gravidade e Tesla ) e foram utilizados para o giroscópio, acelerômetro e magnetômetro, respectivamente. O valor do magnetômetro é dado em mG e foi feita uma conversão para Tesla partindo de que, (10mG = 1uT). Entretanto, no Matlab usou-se a unidade mG, para validar com o valor real.
 
@@ -119,9 +113,10 @@ Para os cálculos de offset foram analisados 100 amostras em cada eixo para veri
   Para realizar as leituras foi utilizado uma ESP8266 com 2 IMUs multiplexadas, assim, com apenas um microcontrolador seria possível obter os dados das IMUs,
 
   Inicialmente foram setados todos os registradores da MPU9250, que se referem ao acelerômetro e giroscópio, e também do AK8963, que é o registrador do magnetômetro. Em seguida foram definidas as escalas de transformação para os valores práticos de graus/segundo para giroscópio, gravidade para o acelerômetro e tesla para o magnetômetro.
+  
   Para continuar o programa foram colocadas as variáveis de offset de acordo com os dados retirados da calibração para cada IMU, assim como o fator de escala para o magnetômetro. As demais variáveis utilizadas ao longo do código foram definidas e desse modo pode se iniciar as funções: inicialização da comunicação I2C, função de escrita, função para multiplexação dos IMUs e função de leitura dos dados. Foi estudado como trabalhar melhor com a ESP266 para ler mais de uma IMU, somente os pinos D1 e D2 da ESP8266 transmitem comunicação I2C, portanto utilizou-se os pinos digitais D6 e D7 para multiplexar a partir do código e obter os dados das IMUs acopladas ao sistema.
+  
   É necessário frisar que a orientação do magnetômetro é diferente em relação aos demais sensores, como mostrado na imagem [@fig:orientacoes], portanto ao se criar o código, mudou-se a ordem da orientação para que não houvesse erro na futura fusão sensorial.
-
 
 
    Envio de dados via MQTT
@@ -158,8 +153,6 @@ A imagem [@fig:Envio_IMU_ESP8266_MQTT] retrata o recebimento de dados pelo termi
 ![Celula_s^[Fonte: ]](imagens/teste_mqtt.png){#fig:Envio_IMU_ESP8266_MQTT}
 
 
-
-
 ### 2RE - Relay
 
 O subsistema 2RE-Relay era o responsável por controlar as cargas de resistência do gerador inicialmente, porém após mudanças para adequação do freio eletromagnético construído pelo 2R-Power o subsistema passou a fazer o controle do número de bobinas acionadas em cada vez.
@@ -171,7 +164,6 @@ Quando o atleta vai começar o movimento, ele deve apertar o botão 1 para que o
 Para validar oo funcionamento dos relés, foi montado um circuito com botões e relés e este circuito foi conectado nas bobinas do freio eletromagnético, o resultado dos testes foi positivo, sendo possível controlar a ativação das bobinas 2 a cada vez, uma de cada um dos 2 freios eletromagnéticos.
 
 ![reles^[Fonte: Do_autor]](imagens/rele.jpeg){#fig:Rele}
-
 
 
 ### 2RE-UI
@@ -221,13 +213,6 @@ Para que o usuário solicite a mudança de carga e a inicialização/reset do eq
 
   Portanto, analisando valores e disponibilidade rápida para entrega, conclui-se que comprar um wattímetro pronto estaria fora do orçamento do projeto uma vez que seu valor é muito alto, também analisou-se comprar um torquímetro e um encoder, mas seria uma solução relativamente complexa do ponto de vista de integração e também por aumentar o escopo do projeto, uma vez que já há demasiado trabalho a ser realizado. Por isso, optou-se por colocar 2 células de carga na base para os pés para realizar medições de força e transformá-las em potência, como será explicado adiante.  
 
-
-  #### HX711
-
-  HX711 é um preciso conversor analógico-digital de 24 bits feito para converter escalas de peso de células de carga. Suas utilização é vasta pois o mesmo torna a leitura de sinais mais simples pois a saída da célula de carga é analógica e o HX711 transduz a saída para digital, podendo então o sinal ser capturado por dispositivos com entradas digitais, como realizado nesse projeto com a Raspberry Pi.
-
-
-  ![HX711^[Fonte: ]](imagens/diagrama_hx711.png){#fig:diagrama_hx711}
 
   #### Célula de Carga Modelo S
 
@@ -280,14 +265,15 @@ $$$|F| = \sqrt{F_{x}^{2} + F_{y}^{2}}$$${#eq:modulof}
  Em cada pé o peso máximo será de $m = 86,58 kg$
 
 
-
-
   Entre os modelos pesquisados para servir como célula de carga, o modelo S e o modelo de viga de flexão foram os que mais se adaptaram às necessidades do projeto. Pensando na alocação dos sensores no subsistema 2RE-Boat, foi escolhida então a célula de carga modelo S pois a mesma ocuparia menos espaço e tem o limite de força adequado à medição necessária.
 
-  Para realizar a medição da força a partir da célula de carga foi necessário utilizar um componente que converte as saídas analógicas a do strain gage em saídas digitais, o componente em questão é o hx711. Para realizar os testes do subsistema realizou-se a leitura na Raspberry Pi 3 em seus pinos GPIO, um programa em python foi criado e a leitura da força pôde ser realizada, o modelo de célula de carga escolhida suporta o limite de 200 kg, passando do limite estabelicido no projeto, já que uma célula de carga de 100 kg resolveria. No entanto, tendo em vista que CS200, produto do fornecedor da Balança Líder, suporta o peso máximo calculado um dos fatores para se utlilizar esse dispositivo além das especificações apresentadas foi a disponibilidade de empréstimo de 2 células de carga do modelo S por professores da FGA.
+  Para realizar a medição da força a partir da célula de carga foi necessário utilizar um componente que converte as saídas analógicas a do strain gage em saídas digitais, o componente em questão é o hx711. Para realizar os testes do subsistema realizou-se a leitura na Raspberry Pi 3 em seus pinos GPIO, um programa em python foi criado e a leitura da força pôde ser realizada, o modelo de célula de carga escolhida suporta o limite de 200 kg, passando do limite estabelicido no projeto, já que uma célula de carga de 100 kg resolveria. No entanto, tendo em vista que CS200, produto do fornecedor da Balança Líder, suporta o peso máximo calculado um dos fatores para se utlilizar esse dispositivo além das especificações apresentadas foi a disponibilidade de empréstimo de 2 células de carga do modelo S por professores da FGA. Essa célula de carga suporta até 200 kg, a tensão de funcionamento é de 6-10 V, com uma tensão máxima de 15 V e uma sensibilidade de 2 mV/V.
 
+ #### HX711
 
-
+  HX711 é um preciso conversor analógico-digital de 24 bits feito para converter escalas de peso de células de carga. Sua utilização é vasta pois o mesmo torna a leitura de sinais mais simples pois a saída da célula de carga é analógica e o HX711 transduz a saída para digital, podendo então o sinal ser capturado por dispositivos com entradas digitais, como realizado nesse projeto com a Raspberry Pi. Observa-se na figura [@fig:diagrama_hx711] que esse conversor opera com pontes de Winston, que refere-se justamente ao funcionamento da célula de carga.
+  
+  ![HX711^[Fonte: ]](imagens/diagrama_hx711.png){#fig:diagrama_hx711}
 
 #### Cógido para leitura dos valores de força
 
