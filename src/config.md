@@ -23,7 +23,7 @@ toc-depth: 2
 title:      'Projeto 2Row: Sistema de Monitoramento para Remo Indoor'
 date:     '2018'
 
-team:     'Guilherme Pontilho Ribeiro, Kleiton Nunes Silva, Pedro Jorge Soares Correa, Gabriel de Araujo A. de Oliveira, Tainara da Silva Costa, Thayane de Oliveira Vieira Figueiredo, Victor Miguel Cunha de Sousa, Jonathan Henrique Maia de Moraes, Luan Guimarães Lacerda, Lucas Vasconcelos Mattioli, Luciana Alves Fernandes, Paulo Henrique Gomes Machado, Vitor Meirelles Oliveira'
+team:     'Guilherme Portilho Ribeiro, Kleiton Nunes Silva, Pedro Jorge Soares Correa, Gabriel de Araujo A. de Oliveira, Tainara da Silva Costa, Thayane de Oliveira Vieira Figueiredo, Victor Miguel Cunha de Sousa, Jonathan Henrique Maia de Moraes, Luan Guimarães Lacerda, Lucas Vasconcelos Mattioli, Luciana Alves Fernandes, Paulo Henrique Gomes Machado, Vitor Meirelles Oliveira'
 
 place:      'Gama, DF'
 institution:  'Universidade de Brasília -- UnB'
