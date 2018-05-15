@@ -88,11 +88,11 @@ Dessa maneira, foi possível determinar qual peso o atleta terá que puxar em ca
 
 ### Fonte de Corrente Constante
 
-Para a energização do eletroímã durante os testes, foi utilizada uma fonte de corrente chaveada do tipo colméia, que na sua saída fornece 12 volts e 5 amperes,
+Para a energização do eletroímã durante os testes, foi utilizada a fonte do laboratório de eletrônica da FGA. A mesma foi dimensionada para uma corrente de 4,5 amperes e até 12 volts. Uma fonte de corrente chaveada do tipo colméia, que na sua saída fornece 12 volts e 5 amperes, também pode ser aplicada nesse processo e é a que será utilizada no protótipo. 
 
-Mas um dos objetivos do trabalho é a construção de uma fonte de corrente constante para a excitação dos eletroímãs...
+A ideia da fonte de corrente é empregada quando se deseja manter constante a corrente circulante por uma carga mesmo quando a tensão varia e a carga muda, como no nosso caso. Os valores vão mudar de acordo com os níveis de carga do atleta, mas a corrente vai continuar a mesma. 
 
-(Falta completar)
+![Fonte de corrente constante do tipo colméia](imagens/){#fig:fonte-de-corrente-constante}
 
 ### Disco
 
