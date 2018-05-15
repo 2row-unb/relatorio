@@ -6,7 +6,7 @@
   
 
 
-  ![Diagrama do sistema 2RElectronic.^[Fonte:Do autor]](imagens/diag.png){#fig:Diagrama_Geral}
+  ![Diagrama do sistema 2RElectronic.^[Fonte:do Autor]](imagens/diag.png){#fig:Diagrama_Geral}
 
 ### 3.3.1 2RE-Suit
 
@@ -67,7 +67,7 @@ Fonte: [@iven16]
 
    Para realizar a calibração dos três eixos (x,y,z), foi necessário que o sensor ficasse apoiado de forma firme, para isso foi utilizada uma plataforma, a qual foi feita para auxiliar na calibração de IMUs pelo LEIA (Laboratory of Embedded Systems and Integrated Circuits Applications). Essa plataforma foi desenvolvida em um software 3D, e serve apenas como apoio e para facilitar o manuseio  nos processos de calibração da da IMU. Para realizar a calibração foi verificado antes de iniciar que a bancada estava na posição correta  e durante o procedimento não houve movimentos bruscos. Como pode ser visto na Figura [@fig:plataforma], observa-se que é possível manipular os três eixos da IMU manualmente. Essa bancada possui três transferidores, cada um destinado a medida de grau para cada eixo. A resolução da medida de grau da bancada é de 10 graus.
 
-  ![Plataforma para calaibração da IMU.^[Fonte:Autor,2018).]](imagens/plataforma.jpg){#fig:plataforma}
+  ![Plataforma para calaibração da IMU.^[Fonte:do Autor,2018).]](imagens/plataforma.jpg){#fig:plataforma}
 
   Vale ressaltar que com essa plataforma a calibração continua a ser manual, como acontece em drones, exoesqueletos [@fabian18]. Para o desenvolvimento do software de calibração foram definidos o endereço na MPU9250 dos sensores de acelerômetro e giroscópio 0x68 e o do magnetômetro 0x0C [@iven16]. Esses endereços são os do escravos e eles são necessários para que a comunicação I2C  aconteça entre a ESP8266 e os sensores.  
 
@@ -82,17 +82,17 @@ Para os cálculos de offset foram analisados 100 amostras em cada eixo para veri
 
   No software Matlab foram adquiridos os dados sem o ajuste da calibração e com o ajuste da calibração (de offset e fator de escala) para que fosse analisado o resultado da calibração. A Figura [@fig:acel] mostra os valores correspondidos ao acelerômetro antes e depois da calibração, nota-se que os dois apresentam um certo ruído, entretanto, no não calibrado os valores estão um pouco abaixo dos valores reais (0g e 1g), após a calibração esses valores ficaram mais próximos dos reais devido aos ajustes realizados de offset.
 
- ![Celula_s^[Fonte:Autor,2018).]](imagens/acel.png){#fig:acel}
+ ![Calibração do acelerômetro.^[Fonte:do Autor,2018).]](imagens/acel.png){#fig:acel}
 
   A  Figura [@fig:gir], mostra os valores correspondidos ao giroscópio antes e depois da calibração, é possível observar que os gráficos são muito parecidos, isso pode ter acontecido, pois nesse processo em específico, o integrante pode ter refeito a calibração. p calibrado possui os valores mais próximos ao valor (0 graus/s), conforme o esperado.
 
 
-![Celula_s^[Fonte:Autor,2018).]](imagens/gir.png){#fig:gir}
+![Calibração do giroscópio.^[Fonte:do Autor,2018).]](imagens/gir.png){#fig:gir}
 
 
   Na calibração do magnetômetro é necessário enfatizar que cada eixo deve ser calibrado em relação ao mesmo campo magnético, foi por esse motivo que fez-se primeiro nos eixos x e y e depois no z. Na Figura [@fig:mag] é possível verificar que a calibração é primordial para esse sensor, pois sem os ajustes os dados do mesmo não terá valor significativo, o valor da medida dos eixos não está disposto no ponto de referência dos três eixos (0,0,0). Cada eixo está localizado em um ponto diferente. Depois de calibrado, observa-se que os três eixos estão centralizados próximo ao ponto de referência (0,0,0), o que indica que os três eixos (x,y,z) estão calibrados em relação ao mesmo campo magnético.
 
- ![Celula_s^[Fonte:Autor,2018).]](imagens/mag.png){#fig:mag}
+ ![Calibração do magnetômetro.^[Fonte:Autor,2018).]](imagens/mag.png){#fig:mag}
 
 
 #### Protocolo de comunicação I2C
