@@ -101,6 +101,10 @@ Por fim, a lei de Lenz determina que a corrente induzida (ou o campo elétrico d
 
 Diante do exposto, o projeto de solução visa a construção de um sistema composto por dois eletroímãs posicionados nas faces de um disco de aço que estará conectado ao eixo que transmite o movimento de remada do atleta, como podemos observar a seguir.
 
+![Projeto de Solução do 2RPower.](imagens/eletroima_pic2.JPG){#fig:solucao-freio-eletromag}
+
+![Projeto de Solução do 2RPower.](imagens/Eletroima_pic1.JPG){#fig:solucao-freio-eletromag-2}
+
 ### Eletroímã
 
 O eletroímã é composto por um núcleo metálico envolto por bobinas, que por sua vez são excitadas com corrente contínua controlada através de conversores estáticos (fontes de alimentação). A força de um eletroímã pode ser regulada para mais ou menos, ajustando-se a corrente elétrica que percorre suas bobinas.
@@ -263,12 +267,11 @@ Fonte: (INVENSENSE, 2016)
 Duas funções foram criadas como base para a calibração, a função de escrita e a de leitura. A função de escrita dos dados envia o endereço dos sensores da MPU9250 (8 bits), o endereço do registrador, onde será escrito os valores (8 bits) e o dado a ser escrito (8 bits). A função de leitura dos dados recebe o endereço dos sensores (8 bits), o valor do registrador, onde os dados têm de serem lidos (8 bits), o número de bytes e o dado que foi lido (8 bits). Os intervalos de tempo para a calibração, foram os mesmos utilizados por [@fabian18] em seu estudo, a fim de comparação. Os intervalos utilizados foram de  ±250 graus/seg, ±2g e ±4800µT (nas respectivas unidades de graus, gravidade e Tesla ) e foram utilizados para o giroscópio, acelerômetro e magnetômetro, respectivamente. O valor do magnetômetro é dado em mG e foi feita uma conversão para Tesla partindo de que, (10mG = 1uT). Entretanto, no Matlab usou-se a unidade mG, para validar com o valor real. 
 
   As escalas foram definidas conforme o (InvenSense, 2016) apresenta em relação ao acelerômetro e giroscópio para que a conversão analógica/digital fosse feita corretamente. A código de calibração consistiu em satisfazer os seguintes passos. Inicialmente, a MPU9250 ficou na posição inicial, como mostra a Figura XX. Observa-se que o eixo definido como z está perpendicular com o eixo horizontal da plataforma, os sensores acelerômetro e giroscópio ficaram parados e o magnetômetro foi girado de modo a fazer uma volta (360 graus), isso para obter os valores dos offsets do acelerômetro e giroscópio.  O segundo passo foi necessário para calibrar o sensor magnetômetro, o eixo y, definido como a parte externa da base da protoboard (essa está em vermelho na Figura [@plataforma]) foi posicionado em paralelo com o eixo horizontal e girou-se 360 graus, para a obtenção dos offsets do magnetômetro. Esses valores são de extrema importância, pois serão utilizados como parâmetros no código de leitura principal para adequar as leituras feitas. 
-  
-Para os cálculos de offset foram analisados 100 amostras em cada eixo para verificar quais eram os valores máximos e mínimos do deslocamento dos sensores, conforme também foi realizado no estudo de [@fabian18], em que o deslocamento foi definido pela equação [@eq:offset]. Ademais, o cálculo para o fator de escala também foi realizado, apresentado na equação [@eq:fatoresc].
+Para os cálculos de offset foram analisados 100 amostras em cada eixo para verificar quais eram os valores máximos e mínimos do deslocamento dos sensores, conforme também foi realizado no estudo de [@fabian18], em que o deslocamento foi definido pela equação 3.0. Ademais, o cálculo para o fator de escala também foi realizado, apresentado na equação 3.1.
 
- $$offset_{x,y,z} = (valormax_{x,y,z} + valormin_{x,y,z})/2$${#eq:offset}       
+ $offset_{x,y,z} = (valormax_{x,y,z} + valormin_{x,y,z})/2$         Equação 3.0
  
- $$fatoresc_{x,y,z} = (valormax_{x,y,z} - valormin_{x,y,z})/2$${#eq:fatoresc}        
+ $fatoresc_{x,y,z} = (valormax_{x,y,z} - valormin_{x,y,z})/2$       Equação 3.1
 
   No software Matlab foram adquiridos os dados sem o ajuste da calibração e com o ajuste da calibração (de offset e fator de escala) para que fosse analisado o resultado da calibração. A Figura [@fig:acel] mostra os valores correspondidos ao acelerômetro antes e depois da calibração, nota-se que os dois apresentam um certo ruído, entretanto, no não calibrado os valores estão um pouco abaixo dos valores reais (0g e 1g), após a calibração esses valores ficaram mais próximos dos reais devido aos ajustes realizados de offset. 
  
