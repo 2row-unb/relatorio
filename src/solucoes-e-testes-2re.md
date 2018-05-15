@@ -166,7 +166,7 @@ Quando o atleta vai começar o movimento, ele deve apertar o botão 1 para que o
 
 Para validar oo funcionamento dos relés, foi montado um circuito com botões e relés e este circuito foi conectado nas bobinas do freio eletromagnético, o resultado dos testes foi positivo, sendo possível controlar a ativação das bobinas 2 a cada vez, uma de cada um dos 2 freios eletromagnéticos.
 
-![Módulo relé de 4 canais para o acionamento das cargas.^[Fonte: Do_autor]](imagens/rele.jpeg){#id .class width=240 height=120px}{#fig:Rele}
+![Módulo relé de 4 canais para o acionamento das cargas.^[Fonte: Do_autor]](imagens/rele.jpeg){#fig:Rele width=400px height=300px}
 
 
 ### 2RE-UI
