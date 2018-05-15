@@ -6,7 +6,7 @@
   
 
 
-  ![Diagrama do sistema 2RElectronic.^[Fonte:Do_autor]](imagens/diag.png){#fig:Diagrama_Geral}
+  ![Diagrama do sistema 2RElectronic.^[Fonte:Do autor]](imagens/diag.png){#fig:Diagrama_Geral}
 
 ### 3.3.1 2RE-Suit
 
@@ -67,7 +67,7 @@ Fonte: [@iven16]
 
    Para realizar a calibração dos três eixos (x,y,z), foi necessário que o sensor ficasse apoiado de forma firme, para isso foi utilizada uma plataforma, a qual foi feita para auxiliar na calibração de IMUs pelo LEIA (Laboratory of Embedded Systems and Integrated Circuits Applications). Essa plataforma foi desenvolvida em um software 3D, e serve apenas como apoio e para facilitar o manuseio  nos processos de calibração da da IMU. Para realizar a calibração foi verificado antes de iniciar que a bancada estava na posição correta  e durante o procedimento não houve movimentos bruscos. Como pode ser visto na Figura [@plataforma], observa-se que é possível manipular os três eixos da IMU manualmente. Essa bancada possui três transferidores, cada um destinado a medida de grau para cada eixo. A resolução da medida de grau da bancada é de 10 graus.
 
-  ![Celula_s^[Fonte:Autor,2018).]](imagens/plataforma.jpg){#fig:plataforma}
+  ![Plataforma para calaibração da IMU.^[Fonte:Autor,2018).]](imagens/plataforma.jpg){#fig:plataforma}
 
   Vale ressaltar que com essa plataforma a calibração continua a ser manual, como acontece em drones, exoesqueletos [@fabian18]. Para o desenvolvimento do software de calibração foram definidos o endereço na MPU9250 dos sensores de acelerômetro e giroscópio 0x68 e o do magnetômetro 0x0C [@iven16]. Esses endereços são os do escravos e eles são necessários para que a comunicação I2C  aconteça entre a ESP8266 e os sensores.  
 
@@ -84,7 +84,7 @@ Para os cálculos de offset foram analisados 100 amostras em cada eixo para veri
 
  ![Celula_s^[Fonte:Autor,2018).]](imagens/acel.png){#fig:acel}
 
-  A  Figura [@giro], mostra os valores correspondidos ao giroscópio antes e depois da calibração, é possível observar que os gráficos são muito parecidos, isso pode ter acontecido, pois nesse processo em específico, o integrante pode ter refeito a calibração. p calibrado possui os valores mais próximos ao valor (0 graus/s), conforme o esperado.
+  A  Figura [@gir], mostra os valores correspondidos ao giroscópio antes e depois da calibração, é possível observar que os gráficos são muito parecidos, isso pode ter acontecido, pois nesse processo em específico, o integrante pode ter refeito a calibração. p calibrado possui os valores mais próximos ao valor (0 graus/s), conforme o esperado.
 
 
 ![Celula_s^[Fonte:Autor,2018).]](imagens/gir.png){#fig:gir}
@@ -101,7 +101,7 @@ Para os cálculos de offset foram analisados 100 amostras em cada eixo para veri
 
    A Figura [@fig:i2c] apresenta o protocolo de comunicação I2C. A comunicação é iniciada pelo mestre, o início e término da comunicação é determinada pela variação do clock do nível baixo para alto. Por outro lado, para que aconteça o envio de dados o SDA tem de mudar de nível lógico quando o SCL estiver em nível baixo, depois de ter ocorrido a transição desse, de alto para baixo (critério de início) e de baixo para alto (critério de término). Feito isso, o mestre envia 1 byte, em que o bit menos significativo representa a seleção de escrita (‘1’) ou leitura (‘0’) e os demais bits representam o endereço do escravo que ele quer se comunicar. O escravo por sua vez retorna um sinal, Acknowledge (ACK), em que nível baixo indica que ele está pronto para aceitar os dados e nível alto indica um sinal de não reconhecimento,  Not Acknowledge  (NACK). Depois da validação de reconhecimento ocorre a troca de dados pelo pino SDA, até que a condição de término seja satisfeita [@lima12][@fabian18].
 
-   ![Protocolo I2C^[Fonte:Adaptado de (INVENSENSE, 2016).]](imagens/i2c.png){#fig:i2c}
+   ![Protocolo I2C^[Fonte:Adaptado de [@iven16].]](imagens/i2c.png){#fig:i2c}
 
   Ao colocar o segundo MPU9250, segundo escravo, para que não houvesse curto-circuito nas linhas de transmissão foram colocadas resistências de pull-up de 3.3k.
 
