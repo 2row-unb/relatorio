@@ -177,7 +177,7 @@ O disco que estará localizado entre os eletroímãs e acoplado ao eixo, é comp
 
 Já a sua espessura é de 1/2 polegada, o que corresponde a aproximadamente 1,27 centímetros e seu diâmetro é de 27 centímetros, medida estabelecida com base na construção da estrutura e considerando a maior área superficial que estará exposta aos efeitos do eletroímã.
 
-![Disco de aço-carbono 1010](imagens/disco.png){#fig:disco}
+![Disco de aço-carbono 1010](imagens/disco.jpg){#fig:disco}
 
 
 ## 2RElectronic
