@@ -121,15 +121,6 @@ A análise harmônica foi realizada na estrutura com a amplitude de força encon
 
 ![Resposta Harmônica do Banco sobre Estrutura](imagens/Resposta_Harmonica.jpg){#fig:harmonica}
 
-![Estrutura1](imagens/photo5116225061324433385.jpg){#fig:estrutura-1}
-
-![Estrutura2](imagens/photo5172469053929924584.jpg){#fig:estrutura-2}
-
-![Estrtura3](imagens/photo5172469053929924585.jpg){#fig:estrutura-3}
-
-![Estrtura4](imagens/photo5172469053929924586.jpg){#fig:estrutura-4}
-
-![Estrtura5](imagens/CADxEstrutura.png){#fig:estrutura-5}
 
 ### Construção
 
@@ -194,5 +185,23 @@ $$\Phi= \frac{v.A}{f}$$
 Onde A é a seção transversal do eletrodo nu. 
 
 Todas essas equações anteriores são encontradas no livro[@wainer]. Porém, até o momento toda a estrutura encontra-se apenas pontilhada com a solda, pois, ainda falta construir algumas peças para que a soldagem definitiva seja feita. 
+
+O projeto da estrutura passou por algumas mudanças desde o ponto de controle 1. A trave é composta por duas barras principais ao invés de uma. Os apoios para os pés do usuário agora contam com uma célula de carga em cada, soulção desenvolvida pela equipe de eletrônica. Um dos eixos da estrutura foi substituído por um cubo de bicicleta, visando facilitar a construção da estrutura. Foi projetada e usinada uma peça para encaixar a coroa no cubo. O desenho técnico atual pode ser observado na [@fig:desenhotec].
+
+![Desenho técnico atual da estrutura](imagens/DesenhoTec.png){#fig:desenhotec}
+
+Até o momento, a construção da estrutura consistiu no corte dos perfis nos comprimentos especificados, da furação dos perfis que necessitavam de furação e da soldagem pontilhada dos perfis. Os trilhos de alumínio e o cubo contendo a coroa e a catraca também foram montados na estrutura. Uma comparação entre o CAD e a estrutura construída até o momento pode ser observado [@fig:compara]
+
+![Estrutura1](imagens/photo5116225061324433385.jpg){#fig:estrutura-1}
+
+![Estrutura2](imagens/photo5172469053929924584.jpg){#fig:estrutura-2}
+
+![Estrutura3](imagens/photo5172469053929924585.jpg){#fig:estrutura-3}
+
+![Estrutura4](imagens/photo5172469053929924586.jpg){#fig:estrutura-4}
+
+![Comparação do CAD com a estrutura até o momento](imagens/CADxEstrutura.png){#fig:compara}
+
+
 
 
