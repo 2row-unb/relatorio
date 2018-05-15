@@ -119,10 +119,6 @@ Para os cálculos de offset foram analisados 100 amostras em cada eixo para veri
   É necessário frisar que a orientação do magnetômetro é diferente em relação aos demais sensores, como mostrado na [@fig:orientacoes], portanto ao se criar o código, mudou-se a ordem da orientação para que não houvesse erro na futura fusão sensorial.
 
 
-   Envio de dados via MQTT
-
-   Cálculo da taxa de transmissão de dados
-
 ### 2RE-Kernel
 O kernel do projeto será um microprocessador Raspberry-Pi que será intermediador das informações trocas pelo sistema.
 Para que os dados transitem e sejam trabalhados pelo dispositivo kernel, o gerenciamento de todo o processo ocorre com o uso do protocolo de comunicação MQTT. Nesse contexto a título de simplificação o Raspberry-Pi aplicado como kernel será visto dentro do protocolo MQTT, como um Broker e os dispositivos em comunicação poderão fazer publicações e leituras referentes a transmissão de dados pelo Kernel.
@@ -151,7 +147,7 @@ Como a frequencia de envio do mqtt é de 50Hz, então os dados serão enviados a
 
 A taxa de envio no kernel fica em 34.4 kbps. Essa é uma informação tida como base a taxa de transmissão do módulo Wifi, ESP8266, em que a taxa de transmissão da mesma é de 110-460800 bps.
 
-![Teste do código de MQTT.^[Fonte: ]](imagens/testedemqtt.png){#fig:Modelo_broker_MQTT}
+![Diagrama do MQTT.^[Fonte: ]](imagens/testedemqtt.png){#fig:Modelo_broker_MQTT}
 
 ##### Integração dos sensores do projeto
 
@@ -178,7 +174,7 @@ Para validar oo funcionamento dos relés, foi montado um circuito com botões e 
 
 Para que o usuário solicite a mudança de carga e a inicialização/reset do equipamento 2Row é necessário uma interação usuário-máquina. Foram pesquisados alguns modelos de botões para inserir no sistema, em que foram observados as seguintes características: resistência, durabilidade, praticidade e tamanho suficiente para facilitar a visualização e o pressionamento do mesmo. Desse modo, foi escolhido o botão de acrílico, o qual pode ser alimentado com uma tensão de 3,3 V da própria raspberry pi 3, a [@fig:botao] mostra o botão que será utilizado,. Ademais, como ele atende as necessidades do projeto outro ponto para a escolha desse botão foi devido ao fato de um integrante do grupo possuir esse mesmo modelo, o que proporciona economia ao custo do projeto.
 
- ![Botão de acrílico usado na escolha de níveiis de carga.^[Fonte:do Autor]](imagens/botao.jpg){#fig:botao}
+ ![Botão de acrílico usado na escolha de níveiis de carga.^[Fonte:do Autor]](imagens/botao.jpg){#id .class width=20 height=20px}{#fig:botao}
 
  Para testar esse subsistema foi criado um código em Python e utilizou-se o microprocessador raspberry Pi 3. Foram setados os pinos 11,15 e 18 como entradas, para receber os valores do estado do botão. Foi setado resistor pull-down no código, isso para certificar que quando o botão não for pressionado, ele não será ativado. O código permite realizar a leitura dos botões acionados pelo usuário, tanto quanto, realizar um tratamento do sinal recebido, pois as chaves mecânicas possui um erro conhecido como bouncing, que pode ser entendido como uma trepidação que causa oscilações no sinal, e necessita de um algoritmo de debounce.
  O código desenvolvido possui um delay de 0.5 segundo até a próxima leitura, desprezando assim qualquer acionamento do botão que poderia ser feito dentro desse tempo. Um evento é criado sempre que o botão pressionada durante o intervalo de tempo, ou seja, há a utilização da função detecção de eventos, chamado de event_detect, em qualquer borda de descida. Esse evento é responsável por armazena o estado do botão, e coloca como prioridade, para quando se der o início do próximo loop, baseados na função callback, retornar o evento que ocorreu. Para o tratamento de bounce, podemos aproveitar o parâmetro callback e requisitar que este ignore os primeiros 100 milisegundos da leitura, usando o parâmetro bouncetime.
