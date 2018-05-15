@@ -295,7 +295,7 @@ Para os cálculos de offset foram analisados 100 amostras em cada eixo para veri
   
    A Figura [@fig:i2c] apresenta o protocolo de comunicação I2C. A comunicação é iniciada pelo mestre, o início e término da comunicação é determinada pela variação do clock do nível baixo para alto. Por outro lado, para que aconteça o envio de dados o SDA tem de mudar de nível lógico quando o SCL estiver em nível baixo, depois de ter ocorrido a transição desse, de alto para baixo (critério de início) e de baixo para alto (critério de término). Feito isso, o mestre envia 1 byte, em que o bit menos significativo representa a seleção de escrita (‘1’) ou leitura (‘0’) e os demais bits representam o endereço do escravo que ele quer se comunicar. O escravo por sua vez retorna um sinal, Acknowledge (ACK), em que nível baixo indica que ele está pronto para aceitar os dados e nível alto indica um sinal de não reconhecimento,  Not Acknowledge  (NACK). Depois da validação de reconhecimento ocorre a troca de dados pelo pino SDA, até que a condição de término seja satisfeita [@lima12][@fabian18].
   
-   ![Celula_s^[Fonte:Adaptado de (INVENSENSE, 2016).]](imagens/i2c.png){#fig:i2c}
+   ![Protocolo I2C^[Fonte:Adaptado de (INVENSENSE, 2016).]](imagens/i2c.png){#fig:i2c}
   
   Ao colocar o segundo MPU9250, segundo escravo, para que não houvesse curto-circuito nas linhas de transmissão foram colocadas resistências de pull-up de 3.3k.
   
