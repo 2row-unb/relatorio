@@ -77,14 +77,10 @@ As ferramentas de comunicação podem ser divididas em duas categorias:
 1. **Comunicação interpessoal**: Capaz de proporcionar um ambiente virtual de troca de mensagens de texto, aúdio e/ou vídeo;
 1. **Comunicação operacional**: Capaz de proporcionar um meio para compartilhamento de informação e artefatos relevantes para o projeto;
 
-As ferramentas de comunicação interpessoal definidas para uso são:
+As ferramentas de comunicação interpessoal e operacional definidas para uso são:
 
 * **Telegram**: Mensageiro para dispositivos móveis, computadores e _web_, é a ferramenta escolhida para conversações informais e de informes de rápido alcance ao time do projeto;
 * **Slack**: Mensageiro para dispositivos móveis, computadores e _web_, é a ferramenta escolhida para conversações formais gerais e específicas de cada segmento do time do projeto;
 * **Hangouts**: Mensageiro e ferramenta de videoconferência para dispositivos móveis e _web_, é a ferramenta escolhida para videoconferências.
-
-As ferramentas de comunicação operacional definidas para uso são:
-
 * **Google Drive**: Gerenciador de arquivos em nuvem, é a ferramenta escolhida para o gerenciamento de artefatos gerais do projeto;
 * **GitHub**: Versionador de arquivos de texto em nuvem, é a ferramenta escolhida para o gerenciamento de documentos de texto e código-fonte dos sistemas de _software_;
-* **Slack**: Mensageiro para dispositivos móveis, computadores e _web_, é a ferramenta escolhida para o mapeamento e controle de tarefas.
