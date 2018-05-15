@@ -20,6 +20,6 @@ sudo docker run --rm -v `pwd`:/code luanguimaraesla/pandocker -f pandocker.yml
 |Paulo Henrique Gomes Machado||[@phgm](github.com/phgm)|
 |Pedro Jorge Soares Correa||[@pedrojorgecs](github.com/pedrojorgecs)|
 |Tainara da Silva Costa||[@tainaracosta](github.com/tainaracosta)|
-|Thayane de Oliveira Vieira Figueiredo||[@thayanedovf](github.com/thayanedovf)|
+|Thayane de Oliveira Vieira Figueiredo|130041017|[@thayanedovf](github.com/thayanedovf)|
 |Victor Miguel Cunha de Sousa||[@VicotorMCS](github.com/VicotorMCS)|
 |Vitor Meirelles Oliveira||[@VitorMeirelesOliveira](github.com/VitorMeirelesOliveira)|
