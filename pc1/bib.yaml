@@ -67,7 +67,7 @@ references:
     page: 38-39
     URL: http://gen.lib.rus.ec/book/index.php?md5=8241F0EA994546E3F115569BDD766BC7
     language: en-US
-  
+
   - type: article-journal
     id: mendes16
     author:
@@ -108,8 +108,8 @@ references:
     publisher: "Engenharia Biomédica, COPPE, Universidade Federal do Rio de Janeiro"
     issue: 1
     language: pt-BR
-    
-      - type: article-journal
+
+  - type: article-journal
     id: pinheiro14
     author:
     - family: Pinheiro
@@ -121,8 +121,8 @@ references:
     publisher: "Universidade Federal do Rio Grande do Norte"
     issue: 1
     language: pt-BR
-    
-     - type: article-journal
+
+  - type: article-journal
     id: medeiros80
     author:
     - family: Medeiros
@@ -134,8 +134,8 @@ references:
     publisher: "2a edição, Editora Universitária – UFPE"
     issue: 1
     language: pt-BR
-    
-    - type: article-journal
+
+  - type: article-journal
     id: pereira06
     author:
     - family: Pereira
@@ -147,8 +147,8 @@ references:
     publisher: "Universidade Federal do Ceará"
     issue: 1
     language: pt-BR
-    
-     - type: article-journal
+
+  - type: article-journal
     id: lima2012
     author:
     - family: Silva
@@ -160,8 +160,7 @@ references:
     publisher: "VII CONNEPI-Congresso Norte Nordeste de Pesquisa e Inovação"
     issue: 1
     language: pt-BR
-    
-    
+
   - type: article-journal
     id: maia06
     author:
@@ -174,8 +173,7 @@ references:
     publisher: "Universidade Estadual de Campinas"
     issue: 1
     language: pt-BR
-    
-    
+
   - type: article-journal
     id: fabian18
     author:
@@ -188,7 +186,7 @@ references:
     publisher: "Universidade de Brasília"
     issue: 1
     language: pt-BR
-    
+
   - type: article-journal
     id: araujo13
     author:
@@ -203,7 +201,7 @@ references:
     volume: 2
     pages: 43-47
     language: pt-BR
-    
+
   - type: article-journal
     id: vaughan99
     author:
@@ -215,7 +213,7 @@ references:
     title: 'Dynamics of human gait'
     publisher: "Kiboho Publishers"
     language: pt-BR
-    
+
   - type: article-journal
     id: baptista05
     author:
@@ -227,26 +225,24 @@ references:
     title: 'Aspectos fisiológicos da produção de força em remadores'
     publisher: "Universidade Federal do Rio Grande do Sul"
     language: pt-BR
-   
-    
- - type: book
-   id: hibbler10
-   author:
-   - family: Hibbeler
-     given: [Hibbeler, R. C.]
+
+
+  - type: book
+    id: hibbler10
+    author:
+    - family: Hibbeler
+      given: [Hibbeler, R. C.]
     title: 'Engineering Mechanics: Dynamics'
     chapter-number: 17-20
     publisher: 'Pearson'
-    issued:12
+    issued:
       date-parts:
       - - 2010
     edition: 12
     language: en-US
- 
- - type: datasheet
-   id: iven16
-   author:
-   link: https://www.invensense.com/wp-content/uploads/2015/02/PS-MPU-9250A-01-v1.1.pdf
-  
-...
 
+  - type: dataset
+    id: iven16
+    link: https://www.invensense.com/wp-content/uploads/2015/02/PS-MPU-9250A-01-v1.1.pdf
+
+...

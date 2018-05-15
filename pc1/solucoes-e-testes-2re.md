@@ -113,9 +113,9 @@ Para os cálculos de offset foram analisados 100 amostras em cada eixo para veri
   Para realizar as leituras foi utilizado uma ESP8266 com 2 IMUs multiplexadas, assim, com apenas um microcontrolador seria possível obter os dados das IMUs,
 
   Inicialmente foram setados todos os registradores da MPU9250, que se referem ao acelerômetro e giroscópio, e também do AK8963, que é o registrador do magnetômetro. Em seguida foram definidas as escalas de transformação para os valores práticos de graus/segundo para giroscópio, gravidade para o acelerômetro e tesla para o magnetômetro.
-  
+
   Para continuar o programa foram colocadas as variáveis de offset de acordo com os dados retirados da calibração para cada IMU, assim como o fator de escala para o magnetômetro. As demais variáveis utilizadas ao longo do código foram definidas e desse modo pode se iniciar as funções: inicialização da comunicação I2C, função de escrita, função para multiplexação dos IMUs e função de leitura dos dados. Foi estudado como trabalhar melhor com a ESP266 para ler mais de uma IMU, somente os pinos D1 e D2 da ESP8266 transmitem comunicação I2C, portanto utilizou-se os pinos digitais D6 e D7 para multiplexar a partir do código e obter os dados das IMUs acopladas ao sistema.
-  
+
   É necessário frisar que a orientação do magnetômetro é diferente em relação aos demais sensores, como mostrado na imagem [@fig:orientacoes], portanto ao se criar o código, mudou-se a ordem da orientação para que não houvesse erro na futura fusão sensorial.
 
 
@@ -137,9 +137,10 @@ Entretando a parte do Kernel funciona de maneira mais interessante pelo fato de 
 O padrão publish/subscribe é uma alternativa ao tradicional modelo cliente-servidor, mas o cliente comunica diretamente com o endpoint. Todavia, Pub/Sub desacopla um cliente que envia uma mensagem particular(chamado publisher) de outro cliente(ou mais clientes), os quais estão recebendo a mensagem(chamado subscriber). Isso significa que tanto o publisher quanto o subscriber, não sabem da existência um do outro. O terceiro componente existente nesse protocolo é o broker(no projeto será o kernel). Já o broker é conhecido tanto pelo publisher quanto pelo subscriber. O broker é crucial pois é o responsável por filtrar todas as mensagens chegadas e distribui cada uma delas.
 
 #### Aplicação no projeto
+
 O kernel farrá boa parte da comunicação com a parte de software. Serão enviadas informações recebidas das IMU's, também as recebidas acerca dos dados de potência. Todas essa informações vão ser passadas ao software para que a análise seja feita e a decisão seja tomada pelo kernel.
 A escolha pelo MQTT foi com base na facilidade em utilizar um protocolo da camada de aplicação cuja velocidade de envio das mensagens serão sufientes em uma rede local. O projeto fica robusto ao utilizar um protocolo confiável e com uma certa mobilidade para o envio ordenado de mensagens. Além disso o protocolo MQTT possui um buffer suficiente para organizar as mensagens em termos de um tempo no kernel do projeto e transparecer a transição de dados em tempo real.  
-O projeto envolve uma topogia ideal para o uso do protocolo, pois o kernel necessita julgar informações e divisão correta do envio das mensagens[@fig:Modelo_broker_MQTT], algo que um servidor poderia trazer complicações. Além da base do MQTT é ser usado para comunicação entre máquinas e não por envio à base de solicitações de clientes, como ocorre no servidor. A aplicação também é bem colocada por se tratar de clientes mandando informaçẽos de sensores, o que traz a ideia de IoT, o que não deixa de ser parte do projeto.
+O projeto envolve uma topogia ideal para o uso do protocolo, pois o kernel necessita julgar informações e divisão correta do envio das mensagens[@fig:Modelo_broker_MQTT], algo que um servidor poderia trazer complicações. Além da base do MQTT é ser usado para comunicação entre máquinas e não por envio à base de solicitações de clientes, como ocorre no servidor. A aplicação também é bem colocada por se tratar de clientes mandando informações de sensores, o que traz a ideia de IoT, o que não deixa de ser parte do projeto.
 
 A taxa de envio no kernel é de 34.4kbps. Essa é uma informação tida como base a taxa de transmissão do módulo Wifi, ESP8266.
 
@@ -151,7 +152,6 @@ Os dados gerados pelos sensores já estão chegando até o kernel, colocando a E
 A imagem [@fig:Envio_IMU_ESP8266_MQTT] retrata o recebimento de dados pelo terminal da Raspberry Pi, como kernel. Os dados apresentados na imagem são de um vetor de 9 posições com a seguinte ordem dos dados da IMU: acelerômetro x, y e z, depois o giroscópio x, y e z, por fim o magnetômetro x, y , z.
 
 ![Celula_s^[Fonte: ]](imagens/teste_mqtt.png){#fig:Envio_IMU_ESP8266_MQTT}
-
 
 ### 2RE - Relay
 
@@ -188,7 +188,7 @@ Para que o usuário solicite a mudança de carga e a inicialização/reset do eq
 | Encoder                      |        1   |    120,00   |     São Paulo       |
 | Wattímetro digital         |        1   |    2.000,00   |     São Paulo       |
 
-**Colocar as imagens de todos os subcomponentes pensados para escolha
+**Colocar as imagens de todos os subcomponentes pensados para escolha**
 
 ![Torquímetro_digital^[Fonte: https://produto.mercadolivre.com.br/MLB-703889366-torquimetro-digital-12-de-4-a-20-kgf-m-waft-_JM]](imagens/torquimetro.png){#fig:torquimetro}
 
@@ -230,7 +230,7 @@ Para que o usuário solicite a mudança de carga e a inicialização/reset do eq
 
   Por analogia, sabe-se que o Watts pode ser representado por $N\ast m/s$, ou seja, é a mesma unidade de torque por segundo, desse modo, considerou-se que a potência seria o argumento da integral do impulso, tendo em vista que o corpo deixou de ficar em repouso. O cálculo foi realizado nesse momento, dessa forma, para título de comparação com a simulação da estrutura, localizada no plano de integração entre estrutura/eletrônica. Como foi dito anteriormente, considerou-se a potência máxima como 600 W. A partir da equação [@eq:velocidadeang], encontrou-se a velocidade angular para realizar o cálculo da força. O intervalo de tempo definido foi o tempo de ciclo da remada especificado em 1 segundo pelos autores para a potência descrita.
 
-  $$$I_{0}w = \int_{0}^{1}600dt$$${#eq:velocidadeang}
+  $$I_{0}w = \int_{0}^{1}600dt$${#eq:velocidadeang}
 
   $w = 600 (N \times m/s) /(|I_{0}|(kg\times m^{2}))$
 
@@ -238,9 +238,9 @@ Para que o usuário solicite a mudança de carga e a inicialização/reset do eq
 O módulo da força é dado pela equação [@eq:modulof], mas para isso precisou calcular a força referente ao eixo x e ao eixo y, as quais foram aplicadas pela equação [@eq:forca].
 
 
-$$$|F| = \sqrt{F_{x}^{2} + F_{y}^{2}}$$${#eq:modulof}
+$$|F| = \sqrt{F_{x}^{2} + F_{y}^{2}}$${#eq:modulof}
 
-  $$$\sum F_{n}= mw^{2}r_{0}$$${#eq:forca}
+  $$\sum F_{n}= mw^{2}r_{0}$${#eq:forca}
 
   $F_{x}= m(600/I_{0})\times r_{0}$
 
@@ -271,8 +271,8 @@ $$$|F| = \sqrt{F_{x}^{2} + F_{y}^{2}}$$${#eq:modulof}
 
  #### HX711
 
-  HX711 é um preciso conversor analógico-digital de 24 bits feito para converter escalas de peso de células de carga e necessita de uma alimentação de 2,6-5,5 V. Sua utilização é vasta pois o mesmo torna a leitura de sinais mais simples pois a saída da célula de carga é analógica e o HX711 transduz a saída para digital, podendo então o sinal ser capturado por dispositivos com entradas digitais, como realizado nesse projeto com a Raspberry Pi, já que a mesma não possui conversor analógico/digital. Observa-se na figura [@fig:diagrama_hx711] que esse conversor opera com pontes de Winston, que refere-se justamente ao funcionamento da célula de carga. 
-  
+  HX711 é um preciso conversor analógico-digital de 24 bits feito para converter escalas de peso de células de carga. Sua utilização é vasta pois o mesmo torna a leitura de sinais mais simples pois a saída da célula de carga é analógica e o HX711 transduz a saída para digital, podendo então o sinal ser capturado por dispositivos com entradas digitais, como realizado nesse projeto com a Raspberry Pi. Observa-se na figura [@fig:diagrama_hx711] que esse conversor opera com pontes de Winston, que refere-se justamente ao funcionamento da célula de carga.
+
   ![HX711^[Fonte: ]](imagens/diagrama_hx711.png){#fig:diagrama_hx711}
 
 #### Cógido para leitura dos valores de força

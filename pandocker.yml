@@ -18,6 +18,13 @@ sections:
   - planos-custos.md
   - planos-rh.md
   - planos-riscos.md
+  - solucoes-e-testes.md
+  - solucoes-e-testes-2rb.md
+  - solucoes-e-testes-2rp.md
+  - solucoes-e-testes-2re.md
+  - solucoes-e-testes-2rs.md
+  - integracao.md
+  - consideracoes-finais.md
   - bibliografia.md
 
 pandoc:
