@@ -19,8 +19,11 @@ A integração do sistema de estrutura com o sistema energia baseou-se nos vínc
 
 A integração do sistema de eletrônica com energia se baseia em fazer as conexões necessárias para chavear as bobinas utilizando o circuito com relés já mencionados anteriormente, testes já foram feitos para o acionamento de cada bobina separadamente e eles se mostraram bem executados.
 
+O acionamento será realizado conforme demonstrado no diagrama a seguir.
+
 ![reles^[Fonte: Do_autor]](imagens/reles.png){#fig:Reles}
 
+Adiante, podemos observar a realização dos testes de acionamento dos níveis.
 
 ![Testes do código para acionamento dos níveis de carga do eletroímã](imagens/integracao_elec_pow1.png){#fig:integracao_electronic_power1}
 
