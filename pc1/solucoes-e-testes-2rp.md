@@ -92,7 +92,7 @@ Para a energização do eletroímã durante os testes, foi utilizada a fonte do 
 
 A ideia da fonte de corrente é empregada quando se deseja manter constante a corrente circulante por uma carga mesmo quando a tensão varia e a carga muda, como no nosso caso. Os valores vão mudar de acordo com os níveis de carga do atleta, mas a corrente vai continuar a mesma. 
 
-![Fonte de corrente constante do tipo colméia](imagens/fonte-tipo-colmeia.png){#fig:fonte-de-corrente-constante}
+![Fonte de corrente constante do tipo colméia](imagens/fonte-tipo-colmeia.jpg){#fig:fonte-de-corrente-constante}
 
 ### Disco
 
