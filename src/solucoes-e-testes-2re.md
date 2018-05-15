@@ -144,7 +144,7 @@ O projeto envolve uma topogia ideal para o uso do protocolo, pois o kernel neces
 
 A taxa de envio no kernel é de 34.4kbps. Essa é uma informação tida como base a taxa de transmissão do módulo Wifi, ESP8266.
 
-![Celula_s^[Fonte: ]](imagens/mqtt.png){#fig:Modelo_broker_MQTT}
+![Celula_s^[Fonte: ]](imagens/testedemqtt.png){#fig:Modelo_broker_MQTT}
 
 ##### Integração dos sensores do projeto
 
