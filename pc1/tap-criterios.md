@@ -80,7 +80,7 @@ Os _stakeholders_ da disciplina em comum acordo com o subsistema de energia defi
 ### Critérios de Aceitação do 2RSystem
 
 * **CA 2RSystem-1**: O sistema deve possuir uma função _failsafe_ onde requisita a anulação da carga de dificuldade em caso de erro;
-* **CA 2RSystem-2**: O sistema deve ser capaz de fornecer as informações de performance do atleta com atraso máximo de $ 600 ms $ (_milliseconds_);
+* **CA 2RSystem-2**: O sistema deve ser capaz de fornecer as informações de performance do atleta com atraso máximo de 600 ms (_milliseconds_);
 * **CA 2RSystem-3**: O sistema deve ser capaz de realizar o _pipeline_ de início de treino (definido em características) na íntegra;
 * **CA 2RSystem-4**: O sistema deve ser capaz de realizar o _pipeline_ de fim de treino (definido em características) na íntegra;
 * **CA 2RSystem-5**: O sistema deve ser capaz de realizar o _pipeline_ de processamento de dados da 2RE-Suit (definido em características) na íntegra;
@@ -102,12 +102,12 @@ Os _stakeholders_ da disciplina em comum acordo com o subsistema de energia defi
 #### Critérios de Aceitação do 2RS-Processer
 
 * **CA 2RS-Processer-1**: O subsistema deve ser capaz de ser integrado com o subsistema 2RS-Controller, fornecendo um aviso de sucesso ou erro em sua tentativa de conexão;
-* **CA 2RS-Processer-2**: O subsistema deve ser capaz de fazer todo o processamento e cálculos (criação dos modelos, determinação de ciclos por minuto etc) em, no máximo, $ 400 ms $, para que o atraso máximo de $ 600 ms $ para a visualização seja obedecido.
+* **CA 2RS-Processer-2**: O subsistema deve ser capaz de fazer todo o processamento e cálculos (criação dos modelos, determinação de ciclos por minuto etc) em, no máximo, 400 ms, para que o atraso máximo de 600 ms para a visualização seja obedecido.
 
 #### Critérios de Aceitação do 2RS-Viewer
 
 * **CA 2RS-Viewer-1**: O subsistema deve ser capaz de ser integrado com o subsistema 2RS-Controller, fornecendo um aviso de sucesso ou erro em sua tentativa de conexão;
-* **CA 2RS-Viewer-2**: O subsistema deve ser capaz de mostrar as animações do atleta e do modelo ideal com taxa média de $ 20 fps $ (_frames per second_);
+* **CA 2RS-Viewer-2**: O subsistema deve ser capaz de mostrar as animações do atleta e do modelo ideal com taxa média de 20 fps (_frames per second_);
 * **CA 2RS-Viewer-3**: O subsistema deve ser capaz de mostrar a frequência cardíaca do atleta;
 * **CA 2RS-Viewer-4**: O subsistema deve ser capaz de mostrar a quantidade de tempo que passou desde o início do treino;
 * **CA 2RS-Viewer-5**: O subsistema deve ser capaz de mostrar o nível de potência da estrutura selecionado (1 - mínimo possível, 2 - médio ou 3 - máximo possível);

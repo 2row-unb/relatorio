@@ -6,7 +6,7 @@ Gasto total com mão-de-obra: $400,00 \times 3 \times 4 = 20800,00$
 
 ### Custos da Estrutura
 
-O serviço relacionado à estrutura está sob a resposabilidade dos alunos de Engenharia automotiva e Aeroespacial. Quanto à estrutura do projeto, a maior demanda está relacionada com os materiais que serão, em sua grande maioria, de madeira e ferro.
+O serviço relacionado à estrutura está sob a responsabilidade dos alunos de Engenharia Automotiva e Aeroespacial. Quanto à estrutura do projeto, a maior demanda está relacionada com os materiais que serão, em sua grande maioria, de madeira e ferro.
 A descrição mais detalhada dos materiais está conforme tabela subsequente.
 
 | Requisitos de Estrutura | Quantidade | Preço (R$) | Fornecedor |
