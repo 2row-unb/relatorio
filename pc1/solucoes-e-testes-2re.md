@@ -113,9 +113,9 @@ Para os cálculos de offset foram analisados 100 amostras em cada eixo para veri
   Para realizar as leituras foi utilizado uma ESP8266 com 2 IMUs multiplexadas, assim, com apenas um microcontrolador seria possível obter os dados das IMUs,
 
   Inicialmente foram setados todos os registradores da MPU9250, que se referem ao acelerômetro e giroscópio, e também do AK8963, que é o registrador do magnetômetro. Em seguida foram definidas as escalas de transformação para os valores práticos de graus/segundo para giroscópio, gravidade para o acelerômetro e tesla para o magnetômetro.
-  
+
   Para continuar o programa foram colocadas as variáveis de offset de acordo com os dados retirados da calibração para cada IMU, assim como o fator de escala para o magnetômetro. As demais variáveis utilizadas ao longo do código foram definidas e desse modo pode se iniciar as funções: inicialização da comunicação I2C, função de escrita, função para multiplexação dos IMUs e função de leitura dos dados. Foi estudado como trabalhar melhor com a ESP266 para ler mais de uma IMU, somente os pinos D1 e D2 da ESP8266 transmitem comunicação I2C, portanto utilizou-se os pinos digitais D6 e D7 para multiplexar a partir do código e obter os dados das IMUs acopladas ao sistema.
-  
+
   É necessário frisar que a orientação do magnetômetro é diferente em relação aos demais sensores, como mostrado na imagem [@fig:orientacoes], portanto ao se criar o código, mudou-se a ordem da orientação para que não houvesse erro na futura fusão sensorial.
 
 
@@ -153,10 +153,6 @@ A imagem [@fig:Envio_IMU_ESP8266_MQTT] retrata o recebimento de dados pelo termi
 
 ![Celula_s^[Fonte: ]](imagens/teste_mqtt.png){#fig:Envio_IMU_ESP8266_MQTT}
 
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
 ### 2RE - Relay
 
 O subsistema 2RE-Relay era o responsável por controlar as cargas de resistência do gerador inicialmente, porém após mudanças para adequação do freio eletromagnético construído pelo 2R-Power o subsistema passou a fazer o controle do número de bobinas acionadas em cada vez.
@@ -275,8 +271,8 @@ $$|F| = \sqrt{F_{x}^{2} + F_{y}^{2}}$${#eq:modulof}
 
  #### HX711
 
-  HX711 é um preciso conversor analógico-digital de 24 bits feito para converter escalas de peso de células de carga e necessita de uma alimentação de 2,6-5,5 V. Sua utilização é vasta pois o mesmo torna a leitura de sinais mais simples pois a saída da célula de carga é analógica e o HX711 transduz a saída para digital, podendo então o sinal ser capturado por dispositivos com entradas digitais, como realizado nesse projeto com a Raspberry Pi, já que a mesma não possui conversor analógico/digital. Observa-se na figura [@fig:diagrama_hx711] que esse conversor opera com pontes de Winston, que refere-se justamente ao funcionamento da célula de carga. 
-  
+  HX711 é um preciso conversor analógico-digital de 24 bits feito para converter escalas de peso de células de carga. Sua utilização é vasta pois o mesmo torna a leitura de sinais mais simples pois a saída da célula de carga é analógica e o HX711 transduz a saída para digital, podendo então o sinal ser capturado por dispositivos com entradas digitais, como realizado nesse projeto com a Raspberry Pi. Observa-se na figura [@fig:diagrama_hx711] que esse conversor opera com pontes de Winston, que refere-se justamente ao funcionamento da célula de carga.
+
   ![HX711^[Fonte: ]](imagens/diagrama_hx711.png){#fig:diagrama_hx711}
 
 #### Cógido para leitura dos valores de força
