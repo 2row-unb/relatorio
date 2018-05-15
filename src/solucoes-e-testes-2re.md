@@ -143,7 +143,9 @@ A escolha pelo MQTT foi com base na facilidade em utilizar um protocolo da camad
 O projeto envolve uma topogia ideal para o uso do protocolo, pois o kernel necessita julgar informações e divisão correta do envio das mensagens[@fig:Modelo_broker_MQTT], algo que um servidor poderia trazer complicações. Além da base do MQTT é ser usado para comunicação entre máquinas e não por envio à base de solicitações de clientes, como ocorre no servidor. A aplicação também é bem colocada por se tratar de clientes mandando informações de sensores, o que traz a ideia de IoT, o que não deixa de ser parte do projeto.
 
 Para cálculo da taxa de envio das informações do kernel, os dados são limitados pela frequência de envio dos subscribers. Tendo em vista que o seguinte vetor é enviado e recebido, tendo controle através de um buffer no próprio kernel através do gerenciador paho.
+
 O vetor: (accelx1, accely1, accelz1, girox1, giroy1, giroz1, magnx1, magny1, magnz1, accelx2, accely2, accelz2, girox2, giroy2, giroz2, magnx2, magny2, magnz2, pot, t, estado1,estado2,estado3);
+
 Como as informações das duas IMU's estão em float, assim como a potência e o tempo, então são contabilizados 20 variáveis de 4 bytes cada e mais 3 variáveis do tipo inteiro(estados). Portanto a soma em bytes fica em 20*4+3*2, totalizando 86 bytes. Esse valor passado para bits, totalizam 688bits.
 Como a frequencia de envio do mqtt é de 50Hz, então os dados serão enviados a cada 0.02 segundos. Portanto essa taxa de dados em bits por segundo fica em 34.4kbps. É relevante destacar que os dados podem ter acréscimo de informação por conta do protocolo conter cabeçalho.
 
