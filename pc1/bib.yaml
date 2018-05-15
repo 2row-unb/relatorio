@@ -246,3 +246,15 @@ references:
     link: https://www.invensense.com/wp-content/uploads/2015/02/PS-MPU-9250A-01-v1.1.pdf
 
 ...
+- type: book
+    id: callister
+    author:
+    - family: Callister
+      given: [William D. JR.]
+    issued:
+      date-parts:
+      - - 2018
+    title: 'D JR, Callister William. Materials science and engineering: an introduction'
+    publisher: "John Wiley & Sons"
+    issue: 1
+language: EN-US
