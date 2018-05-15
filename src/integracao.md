@@ -2,7 +2,7 @@
 
 ## Integração – 2RBoat/2RPower
 
-A integração do sistema de estrutura com energia baseou-se nos vinculos da estrutura primária com o disco do freio eletromagnético e os eletroímas. O atleta ira puxar uma barra ligada a um sistema de catracas e coroas por uma corrente de bicicleta. Esse sistema tem o intuito de reduzir a força aplicada pelo atleta no freio eletromagnético. Além disso o acoplamento entre as duas áreas mostrou-se afinado durante todo o ponto de controle 2, justifiicado pela modelagem do sistema de energia com a ajuda da parte de estrutura.
+A integração do sistema de estrutura com o sistema energia baseou-se nos vínculos da estrutura primária com o disco que compõem o freio eletromagnético e os eletroímas. O atleta irá puxar uma barra conectada a um sistema de catracas e coroas por uma corrente de bicicleta. Esse sistema tem o intuito de reduzir a força aplicada pelo atleta no freio eletromagnético. Além disso o acoplamento entre as duas áreas mostrou-se afinado durante todo o ponto de controle 2, justificado pela modelagem do sistema de energia com o auxílio da equipe de estrutura.
 
 ![Local da estrutura para acoplamento do eletroímã e disco](imagens/IMG_5119.JPG){#fig:estrutura-e-energia}
 
@@ -17,7 +17,7 @@ A integração do sistema de estrutura com energia baseou-se nos vinculos da est
 
 ## Integração - 2RElectronic/2RPower
 
-A integração do sistema de eletrônica com energia se baseia em fazer as conexões necessárias para chavear as bobinas utilizando o circuito com relés já mencionados anteriormente, testes já foram feitos para o acionamento de cada bobina separadamente e eles se mostraram nem executados.
+A integração do sistema de eletrônica com energia se baseia em fazer as conexões necessárias para chavear as bobinas utilizando o circuito com relés já mencionados anteriormente, testes já foram feitos para o acionamento de cada bobina separadamente e eles se mostraram bem executados.
 
 ![reles^[Fonte: Do_autor]](imagens/reles.png){#fig:Reles}
 
