@@ -4,7 +4,7 @@ O sistema de energia, que tem por objetivo gerar uma carga variável para a rema
 
 Durante os testes o alternador não correspondeu a validação de projeto a qual o grupo estava a procura para satisfazer as necessidades da solução proposta. Sendo assim, a solução escolhida, por fim, para o funcionamento adequado do remo indoor foi a construção de um freio eletromagnético, também conhecido como freio de Foucault.
 
-![Realização do teste com o alternador automotivo.](imagens/teste-com-alternador.jpg){#id .class width=50 height=45px}
+![Realização do teste com o alternador automotivo.](imagens/teste-com-alternador.jpg){#id .class width=150 height=145px}
 
 
 ### Freio Eletromagnético
