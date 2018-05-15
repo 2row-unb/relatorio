@@ -78,6 +78,8 @@ A análise harmônica foi realizada na estrutura com a amplitude de força encon
 
 ![Estrtura4](imagens/photo5172469053929924586.jpg){#fig:estrutura-4}
 
+![Estrtura5](imagens/CADxEstrutura.png){#fig:estrutura-5}
+
 
 ## 2RPower
 
