@@ -1,0 +1,8 @@
+version: '3.5'
+
+services:
+  pandocker:
+    image: arkye/2row:report-pandocker
+    build:
+      context: .
+      dockerfile: Dockerfile
