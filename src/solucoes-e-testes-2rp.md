@@ -6,7 +6,7 @@ Durante os testes o alternador não correspondeu a validação de projeto a qual
 
 ![Realização do teste com o alternador automotivo.](imagens/teste-com-alternador.jpg){#fig:teste_alternador}
 
-includegraphics[width=0.5\textwidth]{imagens/teste-com-alternador.jpg}
+[width=0.5\textwidth]{imagens/teste-com-alternador.jpg}
 
 ### Freio Eletromagnético
 
