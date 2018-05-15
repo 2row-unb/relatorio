@@ -255,8 +255,7 @@ Fonte: (INVENSENSE, 2016)
 
 #### Calibração
 
-  Para que seja realizada a leitura dos dados dos sensores da IMU MPU9250 e os futuros processamentos de dados para o estudo de estimar a orientação do membro inferior direito do praticante de remo indoor, foram realizados testes para calibrar os sensores, pois como a leitura será realizada de forma contínua é necessário que os dados sejam precisos. Os testes foram realizados utilizando o microcontrolador ESP8266 Node MCU e o software Matlab. A conexão desses dispositivos está disposta no diagrama da Figura X.
-  Figura das conexões.
+  Para que seja realizada a leitura dos dados dos sensores da IMU MPU9250 e os futuros processamentos de dados para o estudo de estimar a orientação do membro inferior direito do praticante de remo indoor, foram realizados testes para calibrar os sensores, pois como a leitura será realizada de forma contínua é necessário que os dados sejam precisos. Os testes foram realizados utilizando o microcontrolador ESP8266 Node MCU e o software Matlab.
 
    Para realizar a calibração dos três eixos (x,y,z), foi necessário que o sensor ficasse apoiado de forma firme, para isso foi utilizada uma plataforma, a qual foi feita para auxiliar na calibração de IMUs pelo LEIA (Laboratory of Embedded Systems and Integrated Circuits Applications). Essa plataforma foi desenvolvida em um software 3D, e serve apenas como apoio e para facilitar o manuseio  nos processos de calibração da da IMU. Para realizar a calibração foi verificado antes de iniciar que a bancada estava na posição correta  e durante o procedimento não houve movimentos bruscos. Como pode ser visto na Figura [@plataforma], observa-se que é possível manipular os três eixos da IMU manualmente. Essa bancada possui três transferidores, cada um destinado a medida de grau para cada eixo. A resolução da medida de grau da bancada é de 10 graus.
    
