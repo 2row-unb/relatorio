@@ -173,7 +173,7 @@ Para validar oo funcionamento dos relés, foi montado um circuito com botões e 
 
 Para que o usuário solicite a mudança de carga e a inicialização/reset do equipamento 2Row é necessário uma interação usuário-máquina. Foram pesquisados alguns modelos de botões para inserir no sistema, em que foram observados as seguintes características: resistência, durabilidade, praticidade e tamanho suficiente para facilitar a visualização e o pressionamento do mesmo. Desse modo, foi escolhido o botão de acrílico, o qual pode ser alimentado com uma tensão de 3,3 V da própria raspberry pi 3, a [@fig:botao] mostra o botão que será utilizado,. Ademais, como ele atende as necessidades do projeto outro ponto para a escolha desse botão foi devido ao fato de um integrante do grupo possuir esse mesmo modelo, o que proporciona economia ao custo do projeto.
 
- ![Botão de acrílico usado na escolha de níveis de carga.^[Fonte:do Autor]](imagens/botao.jpg){#id .class width=120 height=120px}{#fig:botao}
+ ![Botão de acrílico usado na escolha de níveis de carga.^[Fonte:do Autor]](imagens/botao.jpg){#fig:botao width=400px height=300px}
 
  Para testar esse subsistema foi criado um código em Python e utilizou-se o microprocessador raspberry Pi 3. Foram setados os pinos 11,15 e 18 como entradas, para receber os valores do estado do botão. Foi setado resistor pull-down no código, isso para certificar que quando o botão não for pressionado, ele não será ativado. O código permite realizar a leitura dos botões acionados pelo usuário, tanto quanto, realizar um tratamento do sinal recebido, pois as chaves mecânicas possui um erro conhecido como bouncing, que pode ser entendido como uma trepidação que causa oscilações no sinal, e necessita de um algoritmo de debounce.
  O código desenvolvido possui um delay de 0.5 segundo até a próxima leitura, desprezando assim qualquer acionamento do botão que poderia ser feito dentro desse tempo. Um evento é criado sempre que o botão pressionada durante o intervalo de tempo, ou seja, há a utilização da função detecção de eventos, chamado de event_detect, em qualquer borda de descida. Esse evento é responsável por armazena o estado do botão, e coloca como prioridade, para quando se der o início do próximo loop, baseados na função callback, retornar o evento que ocorreu. Para o tratamento de bounce, podemos aproveitar o parâmetro callback e requisitar que este ignore os primeiros 100 milisegundos da leitura, usando o parâmetro bouncetime.
@@ -193,11 +193,11 @@ Para que o usuário solicite a mudança de carga e a inicialização/reset do eq
 
 **Colocar as imagens de todos os subcomponentes pensados para escolha**
 
-![Torquímetro_digital^[Fonte: https://www.lojadoprofissional.com.br/torquimetro-digital-encaixe-38-capacidade-de-27-135-nm-insize]](imagens/torquimetro_novo.jpg){#id .class width=120 height=120px}{#fig:torquimetro}
+![Torquímetro_digital^[Fonte: https://www.lojadoprofissional.com.br/torquimetro-digital-encaixe-38-capacidade-de-27-135-nm-insize]](imagens/torquimetro_novo.jpg){#fig:torquimetro width=400px height=300px}
 
-![Encoder^[Fonte: https://produto.mercadolivre.com.br/MLB-882483511-encoder-incremental-rotativo-600-pulsos-eixo-6mm-5-24v--_JM]](imagens/encoder.png){#id .class width=120 height=120px}{#fig:encoder}
+![Encoder^[Fonte: https://produto.mercadolivre.com.br/MLB-882483511-encoder-incremental-rotativo-600-pulsos-eixo-6mm-5-24v--_JM]](imagens/encoder.png){#fig:encoder width=400px height=300px}
 
-![Wattímetro^[Fonte: https://produto.mercadolivre.com.br/MLB-945963390-medidor-de-potncia-stages-bluetooth-modelo-spm1-175mm-_JM]](imagens/wattimetro.png){#id .class width=120 height=120px}{#fig:wattimetro}
+![Wattímetro^[Fonte: https://produto.mercadolivre.com.br/MLB-945963390-medidor-de-potncia-stages-bluetooth-modelo-spm1-175mm-_JM]](imagens/wattimetro.png){#fig:wattimetro width=400px height=300px}
 
 | Compontes da Célula de Carga | Quantidade | Média de Preço (R$) | Localização do Fornecedor |
 |--------------------------|------------|-------|------------|
@@ -205,12 +205,12 @@ Para que o usuário solicite a mudança de carga e a inicialização/reset do eq
 | Strain gage modelo viga de flexão                  |        2   |    130,00   |      São Paulo      |
 | HX711         |        2   |    15,00   |     Brasília       |
 
-![Celula de carga modelo S^[Fonte: ]](imagens/modelo_s.jpeg){#id .class width=120 height=120px}{#fig:modelo_s}
+![Celula de carga modelo S^[Fonte: ]](imagens/modelo_s.jpeg){#fig:modelo_s width=400px height=300px}
 
-![Celula_de_carga^[Fonte: https://produto.mercadolivre.com.br/MLB-931359038-celula-de-carga-sensor-de-peso-200kg-200-kg-0296-_JM]](imagens/celula.png){#id .class width=120 height=120px}{#fig:celula_de_carga}
+![Celula_de_carga^[Fonte: https://produto.mercadolivre.com.br/MLB-931359038-celula-de-carga-sensor-de-peso-200kg-200-kg-0296-_JM]](imagens/celula.png){#fig:celula_de_carga width=400px height=300px}
 
 
-![HX711^[Fonte: https://produto.mercadolivre.com.br/MLB-930850652-modulo-conversor-hx711-para-sensor-de-peso-projeto-arduino-_JM]](imagens/hx711.png){#id .class width=120 height=120px}{#fig:hx711}
+![HX711^[Fonte: https://produto.mercadolivre.com.br/MLB-930850652-modulo-conversor-hx711-para-sensor-de-peso-projeto-arduino-_JM]](imagens/hx711.png){#fig:hx711 width=400px height=300px}
 
 
 
@@ -222,7 +222,7 @@ Para que o usuário solicite a mudança de carga e a inicialização/reset do eq
   A Célula de carga, muito conhecido como "strain gage" é um transdutor responsável por medir a informação de peso ou alguma força a partir da colocação física do objeto a ter a massa descoberta em cima da célula de carga. O strain gage modelo S tem esse nome exatamente por ter o formato de um S, como pode ser observado na [@fig:Testes_célula_de_carga], quando o objeto é colocado em cima do mesmo, o peso do objeto deforma a célula de carga, que conta com resistores internos, sendo um deles variável em relação à deformação. Então há uma saída de tensão que varia conforme a deformação da célula quando o objeto pesa sobre a mesma. Com o auxílio do conversor HX711, mostrado na [@fig:hx711], o valor de tensão que se encontra analógica é convertida para digital e nos pinos GPIO da Raspberry Pi, que atua como o 2RE-Kernel, é possível obter os valores de saída do HX711.
 
 
-![Montagem para o teste do código da célula de carga.^[Fonte: do_Autor]](imagens/carga_montada.jpeg){#id .class width=120 height=120px}{#fig:Testes_célula_de_carga}
+![Montagem para o teste do código da célula de carga.^[Fonte: do_Autor]](imagens/carga_montada.jpeg){#fig:Testes_célula_de_carga width=400px height=300px}
 
 
   Para dimensionar a célula de carga a ser utilizada, foi nessário calcular a força de reação em que a mesma será exposta e concomitantemente a isso, o sistema do 2RBoad fez a simulação de forças para o aparato dos pés, para verificar se a estrutura suportaria a força aplicada, para o valor de potência máxima, no qual um atleta de remo pode realizar. Segundo os autores, [@maia06] [@baptista05], a potência máxima de por ciclo de remada pode ser defina em torno de 600 W. Logo, esse será o valor máximo que o equipamento 2Row irá operar e o valor que será aplicado ao modelo matemático proposto.
@@ -276,7 +276,7 @@ $$|F| = \sqrt{F_{x}^{2} + F_{y}^{2}}$${#eq:modulof}
 
   HX711 é um preciso conversor analógico-digital de 24 bits feito para converter escalas de peso de células de carga. Sua utilização é vasta pois o mesmo torna a leitura de sinais mais simples pois a saída da célula de carga é analógica e o HX711 transduz a saída para digital, podendo então o sinal ser capturado por dispositivos com entradas digitais, como realizado nesse projeto com a Raspberry Pi. Observa-se na [@fig:diagrama_hx711] que esse conversor opera com pontes de Winston, que refere-se justamente ao funcionamento da célula de carga.
 
-  ![HX711^[Fonte: ]](imagens/diagrama_hx711.png){#id .class width=120 height=120px}{#fig:diagrama_hx711}
+  ![HX711^[Fonte: ]](imagens/diagrama_hx711.png){#fig:diagrama_hx711 width=400px height=300px}
 
 #### Cógido para leitura dos valores de força
 
