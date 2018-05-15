@@ -166,14 +166,14 @@ Quando o atleta vai começar o movimento, ele deve apertar o botão 1 para que o
 
 Para validar oo funcionamento dos relés, foi montado um circuito com botões e relés e este circuito foi conectado nas bobinas do freio eletromagnético, o resultado dos testes foi positivo, sendo possível controlar a ativação das bobinas 2 a cada vez, uma de cada um dos 2 freios eletromagnéticos.
 
-![Módulo relé de 4 canais para o acionamento das cargas.^[Fonte: Do_autor]](imagens/rele.jpeg){#fig:Rele}
+![Módulo relé de 4 canais para o acionamento das cargas.^[Fonte: Do_autor]](imagens/rele.jpeg){#id .class width=60 height=60px}{#fig:Rele}
 
 
 ### 2RE-UI
 
 Para que o usuário solicite a mudança de carga e a inicialização/reset do equipamento 2Row é necessário uma interação usuário-máquina. Foram pesquisados alguns modelos de botões para inserir no sistema, em que foram observados as seguintes características: resistência, durabilidade, praticidade e tamanho suficiente para facilitar a visualização e o pressionamento do mesmo. Desse modo, foi escolhido o botão de acrílico, o qual pode ser alimentado com uma tensão de 3,3 V da própria raspberry pi 3, a [@fig:botao] mostra o botão que será utilizado,. Ademais, como ele atende as necessidades do projeto outro ponto para a escolha desse botão foi devido ao fato de um integrante do grupo possuir esse mesmo modelo, o que proporciona economia ao custo do projeto.
 
- ![Botão de acrílico usado na escolha de níveis de carga.^[Fonte:do Autor]](imagens/botao.jpg){#id .class width=20 height=20px}{#fig:botao}
+ ![Botão de acrílico usado na escolha de níveis de carga.^[Fonte:do Autor]](imagens/botao.jpg){#id .class width=60 height=60px}{#fig:botao}
 
  Para testar esse subsistema foi criado um código em Python e utilizou-se o microprocessador raspberry Pi 3. Foram setados os pinos 11,15 e 18 como entradas, para receber os valores do estado do botão. Foi setado resistor pull-down no código, isso para certificar que quando o botão não for pressionado, ele não será ativado. O código permite realizar a leitura dos botões acionados pelo usuário, tanto quanto, realizar um tratamento do sinal recebido, pois as chaves mecânicas possui um erro conhecido como bouncing, que pode ser entendido como uma trepidação que causa oscilações no sinal, e necessita de um algoritmo de debounce.
  O código desenvolvido possui um delay de 0.5 segundo até a próxima leitura, desprezando assim qualquer acionamento do botão que poderia ser feito dentro desse tempo. Um evento é criado sempre que o botão pressionada durante o intervalo de tempo, ou seja, há a utilização da função detecção de eventos, chamado de event_detect, em qualquer borda de descida. Esse evento é responsável por armazena o estado do botão, e coloca como prioridade, para quando se der o início do próximo loop, baseados na função callback, retornar o evento que ocorreu. Para o tratamento de bounce, podemos aproveitar o parâmetro callback e requisitar que este ignore os primeiros 100 milisegundos da leitura, usando o parâmetro bouncetime.
@@ -193,11 +193,11 @@ Para que o usuário solicite a mudança de carga e a inicialização/reset do eq
 
 **Colocar as imagens de todos os subcomponentes pensados para escolha**
 
-![Torquímetro_digital^[Fonte: https://www.lojadoprofissional.com.br/torquimetro-digital-encaixe-38-capacidade-de-27-135-nm-insize]](imagens/torquimetro_novo.jpg){#fig:torquimetro}
+![Torquímetro_digital^[Fonte: https://www.lojadoprofissional.com.br/torquimetro-digital-encaixe-38-capacidade-de-27-135-nm-insize]](imagens/torquimetro_novo.jpg){#id .class width=60 height=60px}{#fig:torquimetro}
 
-![Encoder^[Fonte: https://produto.mercadolivre.com.br/MLB-882483511-encoder-incremental-rotativo-600-pulsos-eixo-6mm-5-24v--_JM]](imagens/encoder.png){#fig:encoder}
+![Encoder^[Fonte: https://produto.mercadolivre.com.br/MLB-882483511-encoder-incremental-rotativo-600-pulsos-eixo-6mm-5-24v--_JM]](imagens/encoder.png){#id .class width=60 height=60px}{#fig:encoder}
 
-![Wattímetro^[Fonte: https://produto.mercadolivre.com.br/MLB-945963390-medidor-de-potncia-stages-bluetooth-modelo-spm1-175mm-_JM]](imagens/wattimetro.png){#fig:wattimetro}
+![Wattímetro^[Fonte: https://produto.mercadolivre.com.br/MLB-945963390-medidor-de-potncia-stages-bluetooth-modelo-spm1-175mm-_JM]](imagens/wattimetro.png){#id .class width=60 height=60px}{#fig:wattimetro}
 
 | Compontes da Célula de Carga | Quantidade | Média de Preço (R$) | Localização do Fornecedor |
 |--------------------------|------------|-------|------------|
@@ -205,12 +205,12 @@ Para que o usuário solicite a mudança de carga e a inicialização/reset do eq
 | Strain gage modelo viga de flexão                  |        2   |    130,00   |      São Paulo      |
 | HX711         |        2   |    15,00   |     Brasília       |
 
-![Celula_s^[Fonte: ]](imagens/modelo_s.jpeg){#fig:modelo_s}
+![Celula de carga modelo S^[Fonte: ]](imagens/modelo_s.jpeg){#id .class width=60 height=60px}{#fig:modelo_s}
 
-![Celula_de_carga^[Fonte: https://produto.mercadolivre.com.br/MLB-931359038-celula-de-carga-sensor-de-peso-200kg-200-kg-0296-_JM]](imagens/celula.png){#fig:celula_de_carga}
+![Celula_de_carga^[Fonte: https://produto.mercadolivre.com.br/MLB-931359038-celula-de-carga-sensor-de-peso-200kg-200-kg-0296-_JM]](imagens/celula.png){#id .class width=60 height=60px}{#fig:celula_de_carga}
 
 
-![HX711^[Fonte: https://produto.mercadolivre.com.br/MLB-930850652-modulo-conversor-hx711-para-sensor-de-peso-projeto-arduino-_JM]](imagens/hx711.png){#fig:hx711}
+![HX711^[Fonte: https://produto.mercadolivre.com.br/MLB-930850652-modulo-conversor-hx711-para-sensor-de-peso-projeto-arduino-_JM]](imagens/hx711.png){#id .class width=60 height=60px}{#fig:hx711}
 
 
 
