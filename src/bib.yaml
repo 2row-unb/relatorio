@@ -158,8 +158,8 @@ references:
       - - 2012
     title: 'Aplicações do protocolo I2C em sistemas microcontrolados'
     language: pt-BR
-    
-   
+
+
 
   - type: article-journal
     id: maia06
@@ -245,8 +245,7 @@ references:
     id: iven16
     link: https://www.invensense.com/wp-content/uploads/2015/02/PS-MPU-9250A-01-v1.1.pdf
 
-...
-- type: book
+  - type: book
     id: callister
     author:
     - family: Callister
@@ -257,4 +256,6 @@ references:
     title: 'D JR, Callister William. Materials science and engineering: an introduction'
     publisher: "John Wiley & Sons"
     issue: 1
-language: EN-US
+    language: en-US
+
+...
