@@ -31,7 +31,7 @@ pandoc:
   custom_flags: "-s"
   source_path:   "pc1/"
   template_file: "template/pi2.latex"
-  output_file:   "doc.pdf"
+  output_file:   "pc2.pdf"
   toc:           true
   filters:
     - pandoc-crossref
