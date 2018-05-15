@@ -21,9 +21,10 @@ sections:
   - bibliografia.md
 
 pandoc:
+  custom_flags: "-s"
   source_path:   "pc1/"
-  template_path: "template/pi2.latex"
-  output:        "pc1.pdf"
+  template_file: "template/pi2.latex"
+  output_file:   "doc.pdf"
   toc:           true
   filters:
     - pandoc-crossref
