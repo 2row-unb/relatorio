@@ -11,7 +11,7 @@ sudo docker run --rm -v `pwd`:/code luanguimaraesla/pandocker -f pandocker.yml
 |Nome|Matrícula|Github|
 |:-:|:-:|:-:|
 |Gabriel de Araujo A. de Oliveira||[@Gabrielmqw](github.com/Gabrielmqw)|
-|Guilherme Portilho Ribeiro||[@Portilho506](github.com/Portilho506)|
+|Guilherme Portilho Ribeiro|140041061|[@Portilho506](github.com/Portilho506)|
 |Jonathan Henrique Maia de Moraes|120122553|[@arkye](github.com/arkye)|
 |Kleiton Nunes Silva||[@kleitonnunes2](github.com/kleitonnunes2)|
 |Luan Guimarães Lacerda||[@luanguimaraesla](github.com/luanguimaraesla)|
