@@ -170,32 +170,26 @@ Para o 2RowBolt a técnica que foi usada se aproxima mais teoricamente da MIG pu
 
 A equação que governa o destacamento de gota é:
 
-\begin{equation}
-I_{p}^{2}.t_{p}=D
-\end{equation}
+$$I_{p}^{2}.t_{p}=D$$
+
 
 Onde Ip é a corrente de pico, tp é o tempo na corrente de pico e Dé constante que depende do material e diâmetro do eletrodo nu e da composição do gás de proteção.
 
 Já o tamanho da gota (d) quando se tem apenas uma gota é regido pela seguinte equação:
 
-\begin{equation}
-d=\frac{v}{f}
-\end{equation}
+$$d=\frac{v}{f}$$
 
 Onde v é a velocidade de alimentação do eletrodo nu e f é a frequência de pulsação. 
 
 A taxa de deposição depende de diversos fatores dentre eles se tem a corrente de soldagem e a distância entre tubo de contato/peça. A corrente média é dada por:
 
 
-\begin{equation}
-\bar{I}= \frac{I_{b}.t_{b}+I_{p}.t_{p}}{t_{p}+t_{b}}
-\end{equation}
+$$\bar{I}= \frac{I_{b}.t_{b}+I_{p}.t_{p}}{t_{p}+t_{b}}$$
+
 
 Já o volume da gota é dado por:
 
-\begin{equation}
-\Phi= \frac{v.A}{f}
-\end{equation}
+$$\Phi= \frac{v.A}{f}$$
 
 Onde A é a seção transversal do eletrodo nu. 
 
