@@ -154,17 +154,15 @@ A variação de translação da prancha de controle `leg_l` impacta em faces esp
 
 Há três telas de visualização que são transmitidas para o atleta:
 
-* **Tela de Espera**: Apresentada logo após a inicialização do sistema ou após o término da atividade do atleta, é composta por um fundo preto com um símbolo centralizado do 2Row e uma mensagem descritiva, conforme `fig:viewer_waiting_screen`;
-* **Tela de Atividade**: Apresentada após o atleta acionar o botão de iniciar atividade, é composta pelas informações de atividade, incluindo o desempenho atual do atleta e o ideal, conforme `fig:viewer_activity_screen`;
-* **Tela de Término de Atividade**: Apresentada após o atleta acionar o botão de encerrar atividade, é composta pelas informações finais da atividade, conforme `fig:viewer_ending_screen`.
+* **Tela de Espera**: Apresentada logo após a inicialização do sistema ou após o término da atividade do atleta, é composta por um fundo preto com um símbolo centralizado do 2Row e uma mensagem descritiva, conforme [@fig:viewer_waiting_screen];
+* **Tela de Atividade**: Apresentada após o atleta acionar o botão de iniciar atividade, é composta pelas informações de atividade, incluindo o desempenho atual do atleta e o ideal, conforme [@fig:viewer_activity_screen];
+* **Tela de Término de Atividade**: Apresentada após o atleta acionar o botão de encerrar atividade, é composta pelas informações finais da atividade, conforme [@fig:viewer_ending_screen].
 
-<!--
 ![Tela de espera do 2RS-Viewer](imagens/viewer_waiting_screen.png){#fig:viewer_waiting_screen width=512px height=300px}
 
 ![Tela de atividade do 2RS-Viewer](imagens/viewer_activity_screen.png){#fig:viewer_activity_screen width=512px height=300px}
 
 ![Tela de término de atividade do 2RS-Viewer](imagens/viewer_ending_screen.png){#fig:viewer_ending_screen width=512px height=300px}
--->
 
 Após a integração do 2RSystem com 2RElectronic, espera-se que seja feita melhorias estéticas visando inteligibilidade e harmonia com as cores e o desenho do produto como um todo.
 
