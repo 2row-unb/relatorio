@@ -243,6 +243,9 @@ references:
 
   - type: article-journal
     id: iven16
+    issued:
+       date-parts:
+       - - 2016
     title: 'Datasheet MPU9250'
     URL: https://www.invensense.com/wp-content/uploads/2015/02/PS-MPU-9250A-01-v1.1.pdf
 
@@ -258,5 +261,18 @@ references:
     publisher: "John Wiley & Sons"
     issue: 1
     language: en-US
+    
+  - type: book
+    id: wainer
+    author:
+    - family: wainer
+      given: [Wainer Emilio]
+    issued:
+      date-parts:
+      - - 1992
+    title: 'Soldagem: processos e metalurgia'
+    publisher: "Edgard Blücher Ltda, São Paulo"
+    issue: 1
+    language: pt-BR
 
 ...
