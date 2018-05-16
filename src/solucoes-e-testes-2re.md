@@ -28,7 +28,7 @@ Portanto, após avaliar as prioridades para execução do projeto, foi decidido 
 
   ![Exoesqueleto com pontos de equilíbrio de forças.^[Fonte:Adaptado de [@vaughan99].]](imagens/exoesqueleto.png){#fig:exoesqueleto}
 
-  A IMU é composta de três sensores principais, os quais são acelerômetro, giroscópio e magnetômetro, o que possibilita obter continuamente  a variação de velocidade, posição e direção de um corpo rígido  [@araujo13] . Esses sensores podem realizar medições nos eixos de referência x,y e z. A Tabela 1.0 apresenta uma comparação entre IMUs de baixo custo e parâmetros relevantes para a escolha da tecnologia, como: quantidade de sensores embarcados, graus de liberdade, custo.
+  A IMU é composta de três sensores principais, os quais são acelerômetro, giroscópio e magnetômetro, o que possibilita obter continuamente  a variação de velocidade, posição e direção de um corpo rígido  [@araujo13] . Esses sensores podem realizar medições nos eixos de referência x,y e z. A Tabela a seguir apresenta uma comparação entre IMUs de baixo custo e parâmetros relevantes para a escolha da tecnologia, como: quantidade de sensores embarcados, graus de liberdade, custo.
 
 Tabela 1.0 Tabela de comparação de parâmetros das IMUs de baixo custo.
 
@@ -40,6 +40,7 @@ Tabela 1.0 Tabela de comparação de parâmetros das IMUs de baixo custo.
 | Magnetômetro          |      -   |    AK8963  |   HMC5883L        |
 | Graus de liberdade    |      6   |   9    |     10       |
 | Custo                 |   R$ 13,90   |   R$ 25,00    |       R$ 80,00     |
+:Comparação de tecnologias dispoíveis e seus parâmetros.
 
 
   Em observância com a Tabela 1.0, a IMU selecionada como solução foi a MPU9250, pois a mesma possui um custo baixo e magnetômetro, contemplando 9 graus de liberdade, três graus de liberdade a mais do que a MPU6050. A GY80 possui um custo mais alto comparado aos demais. A [@fig:orientacoes] apresenta a orientação dos eixos dos sensores (a) acelerômetro, (b) giroscópio e (c) magnetômetro, esses dados são essenciais para realização do código para aquisição dos sinais [@iven16]. A Tabela 2.0 apresenta as características do MPU9250. Os três sensores imbutidos na MPU9250 podem obter sinais nos três eixos (x, y, z) e possuem três conversores analógico-digitais (ADCs) de 16 bits, para cada respectivo sensor.
