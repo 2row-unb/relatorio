@@ -86,12 +86,12 @@ Fonte: [@iven16]
 
   No software Matlab foram adquiridos os dados sem o ajuste da calibração e com o ajuste da calibração (de offset e fator de escala) para que fosse analisado o resultado da calibração. A [@fig:acel] mostra os valores correspondidos ao acelerômetro antes e depois da calibração, nota-se que os dois apresentam um certo ruído, entretanto, no não calibrado os valores estão um pouco abaixo dos valores reais (0g e 1g), após a calibração esses valores ficaram mais próximos dos reais devido aos ajustes realizados de offset.
 
- ![Calibração do acelerômetro.^[Fonte: do Autor,2018).]](imagens/acel.png){#fig:acel}
+ ![Calibração do acelerômetro.^[Fonte: do Autor,2018).]](imagens/acel_novo.png){#fig:acel}
 
-  A [@fig:gir], mostra os valores correspondidos ao giroscópio antes e depois da calibração, é possível observar que os gráficos são muito parecidos, isso pode ter acontecido, pois nesse processo em específico, o integrante pode ter realizado algum movimento incoveniente no processo de calibração. Entretanto, o calibrado possui os valores mais próximos ao valor (0 graus/s), conforme o esperado.
+  A [@fig:gir], mostra os valores correspondidos ao giroscópio antes e depois da calibração, é possível observar que os gráficos são muito parecidos, isso pode ter acontecido, pois nesse processo em específico, o integrante pode ter realizado algum movimento incoveniente no processo de início da calibração. Entretanto, o calibrado possui os valores mais próximos ao valor (0 graus/s), conforme o esperado.
 
 
-![Calibração do giroscópio.^[Fonte: do Autor,2018).]](imagens/gir.png){#fig:gir}
+![Calibração do giroscópio.^[Fonte: do Autor,2018).]](imagens/giro_n.png){#fig:gir}
 
 
   Na calibração do magnetômetro é necessário enfatizar que cada eixo deve ser calibrado em relação ao mesmo campo magnético, foi por esse motivo que fez-se primeiro nos eixos x e y e depois no z. Na [@fig:mag] é possível verificar que a calibração é primordial para esse sensor, pois sem os ajustes, os dados do mesmo não terão valor significativo, o valor da medida dos eixos não está disposto no ponto de referência dos três eixos (0,0,0). Cada eixo está localizado em um ponto diferente. Depois de calibrado, observa-se que os três eixos estão centralizados próximo ao ponto de referência (0,0,0), o que indica que os três eixos (x,y,z) estão calibrados em relação ao mesmo campo magnético.
