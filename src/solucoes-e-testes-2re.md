@@ -6,7 +6,7 @@
   
 
 
-  ![Diagrama do sistema 2RElectronic.^[Fonte:do Autor]](imagens/diag.png){#fig:Diagrama_Geral}
+  ![Diagrama do sistema 2RElectronic.^[Fonte:do Autor]](imagens/diagrama_.png){#fig:Diagrama_Geral}
 
 ### 3.3.1 2RE-Suit
 
