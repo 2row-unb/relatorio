@@ -37,7 +37,12 @@ Como o objetivo deste módulo era receber dados crus das IMUs e dar como _output
 Basicamente, a ferramenta **ahrs-visualizer** recebe uma matriz de rotação (que pode ser derivada do _quaternion_ mantido no Madgwick) e mostra na tela a representação da IMU na tela. Ou seja, uma bateria de dados foi coletada das nossas IMUs, esses dados foram colocados na implementação do Madgwick e as matrizes de rotação de cada momento de tempo foram dadas como _output_. Então, as matrizes de rotação foram dadas como _input_ para o **ahrs-visualizer** e, então, foi checado se as imagens mostradas pelos **ahrs-visualizer** correspondem ao movimentos feitos na IMU.
 
 Algumas imagens do **ahrs-visualizer** podem ser vistas a seguir:
-TODO: adicionar as imagens
+
+![Exemplo 1 do ahrs-visualizer](imagens/ahrs_visualizer-1.jpg){#fig:ahrs_visualizer-1 height=300px}
+
+![Exemplo 2 do ahrs-visualizer](imagens/ahrs_visualizer-2.jpg){#fig:ahrs_visualizer-2}
+
+![Exemplo 3 do ahrs-visualizer](imagens/ahrs_visualizer-3.jpg){#fig:ahrs_visualizer-3}
 
 #### 2RS-Viewer
 
