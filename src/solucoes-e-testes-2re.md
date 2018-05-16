@@ -6,9 +6,9 @@
   
 
 
-  ![Diagrama do sistema 2RElectronic.^[Fonte:do Autor]](imagens/diag.png){#fig:Diagrama_Geral}
+  ![Diagrama do sistema 2RElectronic.^[Fonte:do Autor]](imagens/diagrama_.png){#fig:Diagrama_Geral}
 
-### 3.3.1 2RE-Suit
+### 2RE-Suit
 
   Esse subsistema continha o 2RE-Cardio e o 2RE-IMU. No entanto após a exclusão do 2RE-Cardio, que será explicado o porquê a seguir, o 2RE-Suit passou a ser a vestimenta somente com o 2RE-IMU, dessa forma a confecção ainda está em andamento e será apresentada nas próximas semanas.
 
@@ -143,7 +143,7 @@ Fonte: [@iven16]
  
  A escolha pelo MQTT foi com base na facilidade em utilizar um protocolo da camada de aplicação cuja velocidade de envio das mensagens serão sufientes em uma rede local. O projeto fica robusto ao utilizar um protocolo confiável e com uma certa mobilidade para o envio ordenado de mensagens. Além disso o protocolo MQTT possui um buffer suficiente para organizar as mensagens em termos de um tempo no kernel do projeto e transparecer a transição de dados em tempo real.  
  
- O projeto envolve uma topogia ideal para o uso do protocolo, pois o kernel necessita julgar informações e divisão correta do envio das mensagens[@fig:Modelo_broker_MQTT], algo que um servidor poderia trazer complicações. Além da base do MQTT é ser usado para comunicação entre máquinas e não por envio à base de solicitações de clientes, como ocorre no servidor. A aplicação também é bem colocada por se tratar de clientes mandando informações de sensores, o que traz a ideia de IoT, o que não deixa de ser parte do projeto.
+ O projeto envolve uma topogia ideal para o uso do protocolo, pois o kernel necessita julgar informações e divisão correta do envio das mensagens[@fig:mqtt], algo que um servidor poderia trazer complicações. Além da base do MQTT é ser usado para comunicação entre máquinas e não por envio à base de solicitações de clientes, como ocorre no servidor. A aplicação também é bem colocada por se tratar de clientes mandando informações de sensores, o que traz a ideia de IoT, o que não deixa de ser parte do projeto.
 
  Para cálculo da taxa de envio das informações do kernel, os dados são limitados pela frequência de envio dos subscribers. Tendo em vista que o seguinte vetor é enviado e recebido, tendo controle através de um buffer no próprio kernel através do gerenciador paho.
 

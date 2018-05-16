@@ -1,3 +1,4 @@
+  
 ## 2RSystem
 
 Responsável pela inovação em _software_ do 2Row, 2RSystem é capaz de receber, processar e transmitir dados dos sensores eletrônicos.
@@ -14,8 +15,28 @@ A partir do momento que passamos a lidar com um sistema modular assíncrono, vá
 
 ![Fluxo de dados do 2RSystem](imagens/fluxo_dados_system.png)
 
-
 ### Módulos
+
+#### 2RS-Receiver
+
+O módulo **2RS-Receiver** é o receptor dos dados providos pelo **2RE-Kernel**. Os dados são transmitidos utilizando o protocolo **MQTT** e vêm serializados com base no método **DSM**. Os dados são, então, desserializados e transformados em objetos do tipo **Message**, a qual é uma classe definida internamente, que representa as mensagens que são transmitidas - via **MQTT** - por todos os módulos do **2RSystem**.  Logo após, os dados desserializados são enviados para o módulo **2RS-Controller**, o qual é responsável por delegá-los para os outros módulos.
+Os possíveis dados a serem recebidos pelo **2RS-Receiver** são: 
+
+* $3$ valores númericos que representam os eixos $X$, $Y$ e $Z$ do acelerômetro de cada IMU
+* $3$ valores númericos que representam os eixos $X$, $Y$ e $Z$ do giroscópio de cada IMU
+* $3$ valores númericos que representam os eixos $X$, $Y$ e $Z$ do magnetômetro de cada IMU
+* $1$ valor númerico do conjunto {$0$, $1$, $2$, $3$} que representa a dificuldade requerida pelo atleta
+* $1$ valor númerico que representa a potência do **2RE-Watt**
+* $1$ valor númerico que representa a temporização discreta do ciclo de exercício 
+
+
+#### 2RS-Transmitter
+
+O módulo **2RS-Transmitter** é o transmissor dos dados processados pelo **2RSystem** para o **2RE-Kernel**. Os dados são transmitidos utilizando o protocolo **MQTT** e são serializados com base no método **DSM**.
+Os possíveis dados a serem enviados pelo **2RS-Transmitter** são:
+
+* $1$ valor númerico do conjunto {$0$, $1$, $2$, $3$} que representa a dificuldade requerida pelo atleta
+* $1$ valor númerico que representa a potência do **2RE-Watt**
 
 #### 2RS-Receiver
 
@@ -159,17 +180,15 @@ A variação de translação da prancha de controle `leg_l` impacta em faces esp
 
 Há três telas de visualização que são transmitidas para o atleta:
 
-* **Tela de Espera**: Apresentada logo após a inicialização do sistema ou após o término da atividade do atleta, é composta por um fundo preto com um símbolo centralizado do 2Row e uma mensagem descritiva, conforme `fig:viewer_waiting_screen`;
-* **Tela de Atividade**: Apresentada após o atleta acionar o botão de iniciar atividade, é composta pelas informações de atividade, incluindo o desempenho atual do atleta e o ideal, conforme `fig:viewer_activity_screen`;
-* **Tela de Término de Atividade**: Apresentada após o atleta acionar o botão de encerrar atividade, é composta pelas informações finais da atividade, conforme `fig:viewer_ending_screen`.
+* **Tela de Espera**: Apresentada logo após a inicialização do sistema ou após o término da atividade do atleta, é composta por um fundo preto com um símbolo centralizado do 2Row e uma mensagem descritiva, conforme [@fig:viewer_waiting_screen];
+* **Tela de Atividade**: Apresentada após o atleta acionar o botão de iniciar atividade, é composta pelas informações de atividade, incluindo o desempenho atual do atleta e o ideal, conforme [@fig:viewer_activity_screen];
+* **Tela de Término de Atividade**: Apresentada após o atleta acionar o botão de encerrar atividade, é composta pelas informações finais da atividade, conforme [@fig:viewer_ending_screen].
 
-<!--
 ![Tela de espera do 2RS-Viewer](imagens/viewer_waiting_screen.png){#fig:viewer_waiting_screen width=512px height=300px}
 
 ![Tela de atividade do 2RS-Viewer](imagens/viewer_activity_screen.png){#fig:viewer_activity_screen width=512px height=300px}
 
 ![Tela de término de atividade do 2RS-Viewer](imagens/viewer_ending_screen.png){#fig:viewer_ending_screen width=512px height=300px}
--->
 
 Após a integração do 2RSystem com 2RElectronic, espera-se que seja feita melhorias estéticas visando inteligibilidade e harmonia com as cores e o desenho do produto como um todo.
 
