@@ -152,6 +152,20 @@ A variação de translação da prancha de controle `leg_l` impacta em faces esp
 
 ![Peso de impacto do _bone_ no glúteo esquerdo do modelo tridimensional do atleta](imagens/viewer_weight_leg_5.png){#fig:viewer_leg_5 width=238px height=420px}
 
+Há três telas de visualização que são transmitidas para o atleta:
 
+* **Tela de Espera**: Apresentada logo após a inicialização do sistema ou após o término da atividade do atleta, é composta por um fundo preto com um símbolo centralizado do 2Row e uma mensagem descritiva, conforme `fig:viewer_waiting_screen`;
+* **Tela de Atividade**: Apresentada após o atleta acionar o botão de iniciar atividade, é composta pelas informações de atividade, incluindo o desempenho atual do atleta e o ideal, conforme `fig:viewer_activity_screen`;
+* **Tela de Término de Atividade**: Apresentada após o atleta acionar o botão de encerrar atividade, é composta pelas informações finais da atividade, conforme `fig:viewer_ending_screen`.
 
-<!-- TODO: Detalhes dos algoritmos, detalhes da armadura, imagens, testes -->
+<!--
+![Tela de espera do 2RS-Viewer](imagens/viewer_waiting_screen.png){#fig:viewer_waiting_screen width=512px height=300px}
+
+![Tela de atividade do 2RS-Viewer](imagens/viewer_activity_screen.png){#fig:viewer_activity_screen width=512px height=300px}
+
+![Tela de término de atividade do 2RS-Viewer](imagens/viewer_ending_screen.png){#fig:viewer_ending_screen width=512px height=300px}
+-->
+
+Após a integração do 2RSystem com 2RElectronic, espera-se que seja feita melhorias estéticas visando inteligibilidade e harmonia com as cores e o desenho do produto como um todo.
+
+Ambientes de testes foram criados através da estratégia de _mock_ (simulação). Foi utilizado o JSON Server^[JSON Server é um simulador de servidor REST API de transmissão de dados no formato JSON. Página Oficial: [https://github.com/typicode/json-server](https://github.com/typicode/json-server)] para simular a interação com o 2RS-Controller, este sendo o único componente responsável por transmitir informação para o 2RS-Viewer. Para testar o _deployment_ do sistema, foi criado uma instância do Android Nougat 7.1 utilizando o AVD Manager^[AVD Manager é o sistema de emulação oficial da plataforma Android Studio, mantida pelo Google. Para mais informações: https://developer.android.com/studio/run/emulator] que replica o ambiente RTAndroid do Raspberry Pi 3 que será utilizado no 2Row.
