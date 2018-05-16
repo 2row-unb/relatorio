@@ -10,10 +10,14 @@ O sistema não necessitará de um banco de dados, toda sua execução será em n
 
 Uma aplicação _single core_ e _mono threaded_ subutilizaria os já limitados recursos de processamento da Raspberry Pi 3, 64bit ARMv8 Cortex-A53 Quad-Core com Clock de 1.2 GHz. Optamos, assim, pela expansão dos diferentes módulos em pequenos serviços especializados que possuem seus próprios processos e _threads_, que resultou em fluxo de processamento paralelo e não blocante que otimiza a utilização do processador _Quad-Core_ e multiplica por quatro, escusando outros processos concorrentes e variações dos algorítmos de escalonamento de processos, o tempo de permanência em CPU do _software_.
 
-A partir do momendo que passamos a lidar com um sistema modular assíncrono, vários problemas relacionados com a concorrência de processos foram evidenciados. O mais importante deles foi a necessidade de um sistema de comunicação robusto e veloz entre os diferentes módulos, de forma que o seguinte fluxo de processamento fosse respeitado
+A partir do momento que passamos a lidar com um sistema modular assíncrono, vários problemas relacionados com a concorrência de processos foram evidenciados. O mais importante deles foi a necessidade de um sistema de comunicação robusto e veloz entre os diferentes módulos, de forma que o fluxo de processamento apresentado na [@fig:fluxo_de_processamento] fosse respeitado.
+
+![Fluxo de dados do 2RSystem](imagens/fluxo_dados_system.png)
 
 
 ### Módulos
+
+#### 2RS-Receiver
 
 #### 2RS-Controller
 
