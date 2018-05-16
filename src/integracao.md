@@ -40,6 +40,7 @@ A comunicação entre esses dois submódulos será feita utilizando o protocolo 
 Toda a comunicação entre o **2RE-Kernel** e o **2RSystem** será feita utilizando a biblioteca _open source_ **Paho-MQTT Client**. A mesma provê implementações do **MQTT** já consolidadas pela comunidade em seu _core_, incluindo o protocolo de _publish_ e _subscribe_, além de ter suporte a diversas linguagens de programação, especialmente **C++** e **Python**, as quais são utilizadas pelos módulos **2RElectronic** e **2RSystem**.
 
 Por fim, os dados a serem trocados pelo módulos  são: 
+
 * $3$ valores númericos que representam os eixos $X$, $Y$ e $Z$ do acelerômetro de cada IMU
 * $3$ valores númericos que representam os eixos $X$, $Y$ e $Z$ do giroscópio de cada IMU
 * $3$ valores númericos que representam os eixos $X$, $Y$ e $Z$ do magnetômetro de cada IMU
