@@ -23,6 +23,14 @@ Os possíveis dados a serem recebidos pelo **2RS-Receiver** são:
 * $1$ valor númerico do conjunto {$0$, $1$, $2$, $3$}, que representa a dificuldade requerida pelo atleta
 * $1$ valor númerico, que representa a potência do **2RE-Watt**
 
+
+#### 2RS-Transmitter
+
+O módulo **2RS-Transmitter** é o transmissor dos dados processados pelo **2RSystem** para o **2RE-Kernel**. Os dados são transmitidos utilizando o protocolo **MQTT** e são serializados com base no método **DSM**.
+Os possíveis dados a serem enviados pelo **2RS-Transmitter** são:
+* $1$ valor númerico do conjunto {$0$, $1$, $2$, $3$}, que representa a dificuldade requerida pelo atleta
+* $1$ valor númerico, que representa a potência do **2RE-Watt**
+
 #### 2RS-Controller
 
 #### 2RS-Processer
