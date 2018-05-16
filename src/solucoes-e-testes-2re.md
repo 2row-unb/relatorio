@@ -283,7 +283,7 @@ $$|F| = \sqrt{F_{x}^{2} + F_{y}^{2}}$${#eq:modulof}
 
   HX711 é um preciso conversor analógico-digital de 24 bits feito para converter escalas de peso de células de carga. Sua utilização é vasta pois o mesmo torna a leitura de sinais mais simples pois a saída da célula de carga é analógica e o HX711 transduz a saída para digital, podendo então o sinal ser capturado por dispositivos com entradas digitais, como realizado nesse projeto com a Raspberry Pi. Observa-se na [@fig:diagrama_hx711] que esse conversor opera com pontes de Winston, que refere-se justamente ao funcionamento da célula de carga.
 
-  ![Esquemático do HX711^[Fonte: ]](imagens/diagrama_hx711.png){#fig:diagrama_hx711 width=500px height=300px}
+  ![Esquemático do HX711^[Fonte: https://produto.mercadolivre.com.br/MLB-930850652-modulo-conversor-hx711-para-sensor-de-peso-projeto-arduino-_JM]](imagens/diagrama_hx711.png){#fig:diagrama_hx711 width=500px height=300px}
 
 #### Cógido para leitura dos valores de força
 
