@@ -38,8 +38,6 @@ Os possíveis dados a serem enviados pelo **2RS-Transmitter** são:
 * $1$ valor númerico do conjunto {$0$, $1$, $2$, $3$} que representa a dificuldade requerida pelo atleta
 * $1$ valor númerico que representa a potência do **2RE-Watt**
 
-#### 2RS-Receiver
-
 #### 2RS-Controller
 
 O módulo **2RS-Controller** é responsável por receber e delegar todas os dados e tarefas do **2RSystem** para os respectivos módulos responsáveis. Semanticamente, o papel do módulo **2RS-Controller** se assemelha aos padrões de projeto _Observer_ e _Delegate_.
