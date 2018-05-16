@@ -2,7 +2,7 @@
 
 
 
- O sistema de eletrônica ficou responsável pelo sensoriamento, aquisição de sinais, tratamentos dos sinais e controle do acionamento das cargas. Os sinais obtidos foram das IMUs e dos botões, este último define qual a carga que deverá ser acionada. Este relatório apresenta a evolução do grupo, assim como as alterações realizadas no escopo do ponto de controle 1. O diagrama da [@fig:Diagrama_Geral] representa todo o sistema 2RElectronic, ligações e barramento de dados, assim como a quantidade de fios interligados.
+ O sistema de eletrônica ficou responsável pelo sensoriamento, aquisição de sinais, tratamentos dos sinais e controle do acionamento das cargas. Os sinais obtidos foram das IMUs e dos botões, este último define qual a carga que deverá ser acionada. Este relatório apresenta a evolução do grupo, assim como as alterações realizadas no escopo do ponto de controle 1. O diagrama da [@fig:Diagrama_Geral] representa todo o sistema 2RElectronic, ligações e barramento de dados, assim como a quantidade de fios interligados. Ademais, é possível observar o fluxo de informações e a integração com os outros subsistemas.
   
 
 
