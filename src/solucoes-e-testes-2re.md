@@ -23,7 +23,7 @@ Portanto, após avaliar as prioridades para execução do projeto, foi decidido 
 
 ### 2RE-IMU:
 
-  A Unidade de Medida Inercial (IMU) é um sistema microeletromecânico (MEM), que permite identificar a posição  ou o deslocamento de um corpo rígido em um espaço tridimensional. Neste trabalho, a IMU será responsável em determinar a posição do membro inferior direito para a criação de exoesqueleto autónomo para a identificação e correção da postura do praticante de remo indoor. Desse modo, este trabalho sugere implementar uma IMU em dois centros de gravidades, pois nesses pontos a massa está distribuída de forma uniforme,  localizados no membro inferior do exoesqueleto como pode ser visto na [@fig:exoesqueleto], para estimar a orientação desses pontos onde há equilíbrio de forças [@vaughan99].
+  A Unidade de Medida Inercial (IMU) é um sistema microeletromecânico (MEM), que permite identificar a posição  ou o deslocamento de um corpo rígido em um espaço tridimensional. Neste trabalho, a IMU será responsável em determinar a posição do membro inferior direito para a criação de exoesqueleto autónomo para a identificação e correção da postura do praticante de remo indoor. Desse modo, este trabalho sugere implementar duas IMUs, cada uma em um centro de gravidade, pois nesses pontos a massa está distribuída de forma uniforme, localizados no membro inferior do exoesqueleto, como pode ser visto na [@fig:exoesqueleto], para estimar a orientação desses pontos onde há equilíbrio de forças [@vaughan99].
 
 
   ![Exoesqueleto com pontos de equilíbrio de forças.^[Fonte:Adaptado de [@vaughan99].]](imagens/exoesqueleto.png){#fig:exoesqueleto}
