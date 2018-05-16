@@ -33,11 +33,16 @@ Adiante, podemos observar a realização dos testes de acionamento dos níveis.
 
 ## Integração – 2RElectronic/2RSystem
 
-A troca de informação entre Eletrônica e software é bastante importante para o correto funcionamento do projeto. Essa relevância se dá pelo fato de ocorrer a troca de várias informações referentes ao desenvolvimento do atleta.
-Será entregue a parte de software os dados referêntes as IMU's, um tempo de ciclo, a potência desenvolvida pelo atleta e os estados dos botôes. A interação entre esses dados entregues tratá como retorno as ações que o kernel deverá delegar aos dispositivos as tarefas relacionadas ao movimento.
+A integração entre **2RElectronic** e **2RSystem** será feita com os submódulos **2RE-Kernel** e **2RS-Receiver**. O primeiro é o núcleo do módulo **2RElectronic** e responsável por concentrar e delegar os dados e informações para seus submódulos e submódulos de outras engenharias. O segundo é o submódulo receptor do **2RSystem**, que tem como objetivo receber e desserializar dados providos por outros módulos e repassá-los para a **2RS-Controller**.
 
-O vetor enviado como uma mensagem para software tem o seguinte formato:
-vetor[]=(accelx1, accely1, accelz1, girox1, giroy1, giroz1, magnx1, magny1, magnz1, accelx2, accely2, accelz2, girox2, giroy2, giroz2, magnx2, magny2, magnz2, pot, t, estado 1,estado2,estado3)
+A comunicação entre esses dois submódulos será feita utilizando o protocolo **MQTT**. Basta que os dois submódulos estejam publicando e escutando (n)os tópicos do **MQTT** corretos para que essa comunicação seja feita.
 
-### Paho Client
-Toda a comuniação entre o Kernel e a parte de software será feita usando o paho client. Ele já tem métodos especificos para que essa comunicação eficiente.
+Toda a comunicação entre o **2RE-Kernel** e o **2RSystem** será feita utilizando a biblioteca _open source_ **Paho-MQTT Client**. A mesma provê implementações do **MQTT** já consolidadas pela comunidade em seu _core_, incluindo o protocolo de _publish_ e _subscribe_, além de ter suporte a diversas linguagens de programação, especialmente **C++** e **Python**, as quais são utilizadas pelos módulos **2RElectronic** e **2RSystem**.
+
+Por fim, os dados a serem trocados pelo módulos  são: 
+* $3$ valores númericos que representam os eixos $X$, $Y$ e $Z$ do acelerômetro de cada IMU
+* $3$ valores númericos que representam os eixos $X$, $Y$ e $Z$ do giroscópio de cada IMU
+* $3$ valores númericos que representam os eixos $X$, $Y$ e $Z$ do magnetômetro de cada IMU
+* $1$ valor númerico do conjunto {$0$, $1$, $2$, $3$} que representa a dificuldade requerida pelo atleta
+* $1$ valor númerico que representa a potência do **2RE-Watt**
+* $1$ valor númerico que representa a temporização discreta do ciclo de exercício

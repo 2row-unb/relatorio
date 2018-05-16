@@ -18,11 +18,12 @@ Uma aplicação _single core_ e _mono threaded_ subutilizaria os já limitados r
 O módulo **2RS-Receiver** é o receptor dos dados providos pelo **2RE-Kernel**. Os dados são transmitidos utilizando o protocolo **MQTT** e vêm serializados com base no método **DSM**. Os dados são, então, desserializados e transformados em objetos do tipo **Message**, a qual é uma classe definida internamente, que representa as mensagens que são transmitidas - via **MQTT** - por todos os módulos do **2RSystem**.  Logo após, os dados desserializados são enviados para o módulo **2RS-Controller**, o qual é responsável por delegá-los para os outros módulos.
 Os possíveis dados a serem recebidos pelo **2RS-Receiver** são: 
 
-* $3$ valores númericos, que representam os eixos $X$, $Y$ e $Z$ do acelerômetro de cada IMU
-* $3$ valores númericos, que representam os eixos $X$, $Y$ e $Z$ do giroscópio de cada IMU
-* $3$ valores númericos, que representam os eixos $X$, $Y$ e $Z$ do magnetômetro de cada IMU
-* $1$ valor númerico do conjunto {$0$, $1$, $2$, $3$}, que representa a dificuldade requerida pelo atleta
-* $1$ valor númerico, que representa a potência do **2RE-Watt**
+* $3$ valores númericos que representam os eixos $X$, $Y$ e $Z$ do acelerômetro de cada IMU
+* $3$ valores númericos que representam os eixos $X$, $Y$ e $Z$ do giroscópio de cada IMU
+* $3$ valores númericos que representam os eixos $X$, $Y$ e $Z$ do magnetômetro de cada IMU
+* $1$ valor númerico do conjunto {$0$, $1$, $2$, $3$} que representa a dificuldade requerida pelo atleta
+* $1$ valor númerico que representa a potência do **2RE-Watt**
+* $1$ valor númerico que representa a temporização discreta do ciclo de exercício 
 
 
 #### 2RS-Transmitter
