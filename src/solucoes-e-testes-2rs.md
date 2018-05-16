@@ -1,3 +1,4 @@
+
 ## 2RSystem
 
 Responsável pela inovação em _software_ do 2Row, 2RSystem é capaz de receber, processar e transmitir dados dos sensores eletrônicos.
@@ -10,9 +11,17 @@ O sistema não necessitará de um banco de dados, toda sua execução será em n
 
 Uma aplicação _single core_ e _mono threaded_ subutilizaria os já limitados recursos de processamento da Raspberry Pi 3, 64bit ARMv8 Cortex-A53 Quad-Core com Clock de 1.2 GHz. Optamos, assim, pela expansão dos diferentes módulos em pequenos serviços especializados que possuem seus próprios processos e _threads_, que resultou em fluxo de processamento paralelo e não blocante que otimiza a utilização do processador _Quad-Core_ e multiplica por quatro, escusando outros processos concorrentes e variações dos algorítmos de escalonamento de processos, o tempo de permanência em CPU do _software_.
 
-
-
 ### Módulos
+
+#### 2RS-Receiver
+
+O módulo **2RS-Receiver** é o receptor dos dados providos pelo **2RE-Kernel**. Os dados são transmitidos utilizando o protocolo **MQTT** e vêm serializados com base no método **DSM**. Os dados são, então, desserializados e transformados em objetos do tipo **Message**, a qual é uma classe definida internamente, que representa as mensagens que são transmitidas - via **MQTT** - por todos os módulos do **2RSystem**.  Logo após, os dados desserializados são enviados para o módulo **2RS-Controller**, o qual é responsável por delegá-los para os outros módulos.
+Os possíveis dados a serem recebidos pelo **2RS-Receiver** são: 
+* $3$ valores númericos, que representam os eixos $X$, $Y$ e $Z$ do acelerômetro de cada IMU
+* $3$ valores númericos, que representam os eixos $X$, $Y$ e $Z$ do giroscópio de cada IMU
+* $3$ valores númericos, que representam os eixos $X$, $Y$ e $Z$ do magnetômetro de cada IMU
+* $1$ valor númerico do conjunto {$0$, $1$, $2$, $3$}, que representa a dificuldade requerida pelo atleta
+* $1$ valor númerico, que representa a potência do **2RE-Watt**
 
 #### 2RS-Controller
 
