@@ -40,6 +40,7 @@ Portanto, após avaliar as prioridades para execução do projeto, foi decidido 
 | Magnetômetro          |      -   |    AK8963  |   HMC5883L        |
 | Graus de liberdade    |      6   |   9    |     10       |
 | Custo                 |   R$ 13,90   |   R$ 25,00    |       R$ 80,00     |
+
 :Tabela de comparação de parâmetros das IMUs de baixo custo.
 
 
@@ -56,6 +57,7 @@ Portanto, após avaliar as prioridades para execução do projeto, foi decidido 
 | Interface de comunicação     |     I2C           |   
 | Corrente de operação normal  |        3,5 mA   |  
 | Frequência de operação       |        400 kHz   |  
+
 :Características da IMU MPU9250.
 Essa corrente de operação é com o DPM habilitado. O DPM é o processador utilizado na IMU9250.
 Fonte: [@iven16]
