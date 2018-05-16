@@ -59,14 +59,16 @@ Portanto, após avaliar as prioridades para execução do projeto, foi decidido 
 | Frequência de operação       |        400 kHz   |  
 
 :Características da IMU MPU9250.
+
 Essa corrente de operação é com o DPM habilitado. O DPM é o processador utilizado na IMU9250.
+
 Fonte: [@iven16]
 
 #### Calibração
 
-  Para que seja realizada a leitura dos dados dos sensores da IMU MPU9250 e os futuros processamentos de dados para o estudo de estimar a orientação do membro inferior direito do praticante de remo indoor, foram realizados testes para calibrar os sensores, pois como a leitura será realizada de forma contínua é necessário que os dados sejam precisos. Os testes foram realizados utilizando o microcontrolador ESP8266 Node MCU e o software Matlab.
-
-   Para realizar a calibração dos três eixos (x,y,z), foi necessário que o sensor ficasse apoiado de forma firme, para isso foi utilizada uma plataforma, a qual foi feita para auxiliar na calibração de IMUs pelo LEIA (Laboratory of Embedded Systems and Integrated Circuits Applications). Essa plataforma foi desenvolvida em um software 3D, e serve apenas como apoio e para facilitar o manuseio  nos processos de calibração da da IMU. Para realizar a calibração foi verificado antes de iniciar que a bancada estava na posição correta  e durante o procedimento não houve movimentos bruscos. Como pode ser visto na [@fig:plataforma], observa-se que é possível manipular os três eixos da IMU manualmente. Essa bancada possui três transferidores, cada um destinado a medida de grau para cada eixo. A resolução da medida de grau da bancada é de 10 graus.
+  Para que seja realizada a leitura dos dados dos sensores da IMU MPU9250 e os futuros processamentos de dados para o estudo de estimar a orientação do membro inferior direito do praticante de remo indoor, foram realizados testes para calibrar os sensores, pois como a leitura será realizada de forma contínua é necessário que os dados sejam precisos. Os testes foram realizados utilizando o microcontrolador ESP8266 Node MCU e o software Matlab. O ESP8266 Node MCU foi o microcontrolador escolhido para adquirir os dados, o fator determinante para a escolha foi a taxa de transmissão (o cálculo está descrito na seção do kernel), a dimensão, já que ela ficará alocada no 2RE-Suit (para que não haja desconforto e peso para o praticante), além de possuir um módulo Wi-fi para envio dos dados. O software Matlab foi utilizado para receber os dados e plotar os gráficos para a verificar se a calibração ocorreu conforme esperado.
+  
+   Para realizar a calibração dos três eixos (x,y,z), foi necessário que o sensor ficasse apoiado de forma firme, para isso foi utilizada uma plataforma, a qual foi feita para auxiliar na calibração de IMUs pelo LEIA (Laboratory of Embedded Systems and Integrated Circuits Applications) e emprestada para o grupo 2RElectronic. Essa plataforma foi desenvolvida em um software 3D, serve apenas como apoio e para facilitar o manuseio  nos processos de calibração da IMU. Para realizar a calibração foi verificado antes de iniciar que a bancada estava na posição correta  e durante o procedimento não houve movimentos bruscos, já que um mínimo movimento é capaz de gerar ruído. Como pode ser visto na [@fig:plataforma], observa-se que é possível manipular os três eixos da IMU manualmente. Essa bancada possui três transferidores, cada um destinado a medida de grau para cada eixo. A resolução da medida de grau da bancada é de 10 graus.
 
   ![Plataforma para calaibração da IMU.^[Fonte:do Autor,2018).]](imagens/plataforma.jpg){#fig:plataforma}
 
