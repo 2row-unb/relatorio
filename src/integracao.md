@@ -4,7 +4,7 @@
 
 A integração do sistema de estrutura com o sistema energia baseou-se nos vínculos da estrutura primária com o disco que compõem o freio eletromagnético e os eletroímas. O atleta irá puxar uma barra conectada a um sistema de catracas e coroas por uma corrente de bicicleta. Esse sistema tem o intuito de reduzir a força aplicada pelo atleta no freio eletromagnético. Além disso o acoplamento entre as duas áreas mostrou-se afinado durante todo o ponto de controle 2, justificado pela modelagem do sistema de energia com o auxílio da equipe de estrutura.
 
-![Local da estrutura para acoplamento do eletroímã e disco](imagens/IMG_5119.JPG){#id .class width=290 height=295px}
+![Local da estrutura para acoplamento do eletroímã e disco](imagens/IMG_5119.JPG){#id .class width=330 height=295px}
 
 
 ## Integração – 2RBoat/2RElectronic
@@ -24,8 +24,6 @@ O acionamento será realizado conforme demonstrado no diagrama a seguir.
 ![reles^[Fonte: Do_autor]](imagens/reles.png){#fig:Reles}
 
 Adiante, podemos observar a realização dos testes de acionamento dos níveis.
-
-![Testes do código para acionamento dos níveis de carga do eletroímã](imagens/integracao_elec_pow1.png){#fig:integracao_electronic_power1}
 
 ![Testes do código para acionamento dos níveis de carga do eletroímã](imagens/IMG_5698.JPG){#id .class width=290 height=295px}
 
