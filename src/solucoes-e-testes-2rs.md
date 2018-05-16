@@ -42,6 +42,12 @@ Os possíveis dados a serem enviados pelo **2RS-Transmitter** são:
 
 #### 2RS-Controller
 
+O módulo **2RS-Controller** é responsável por receber e delegar todas os dados e tarefas do **2RSystem** para os respectivos módulos responsáveis. Semanticamente, o papel do módulo **2RS-Controller** se assemelha aos padrões de projeto _Observer_ e _Delegate_.
+
+A delegação de dados e tarefas é feita com o auxílio do protocolo de transmissão **MQTT**. O **MQTT** é baseado em um padrão de _publish_ e _subscribe_, onde vários tópicos (que são semelhantes a filas de mensagem) existem, e módulos podem publicar ou escolher se inscrever nesses tópicos. Por exemplo, um módulo **A** pode querer publicar dados sobre temperatura pra quem quer queira recebê-los; assim, um tópico chamado _**temperature**_ poderia ser criado e todo e qualquer módulo que quisesse receber informações sobre temperatura se inscreveria neste tópico. Assim que **A** publicasse uma mensagem no dito tópico, todos os módulos registrados receberiam a mensagem.
+
+Levando isso em conta, foram criados tópicos de entrada e saída para cada módulo do **2RSystem**, onde o módulo **2RS-Controller** é o principal _publisher_ e, também, o principal _subscriber_. Por exemplo, o módulo **2RS-Processer** está como _subscriber_ do módulo $P_{in}$ (_Processer IN_), que aglomera todos os dados que servem de _input_ para o **2RS-Processer**, e o módulo **2RS-Controller** está como _publisher_, pois o mesmo deve passar informações e dados vindos de outros módulos para a **2RS-Controller**. Analogamente, o módulo **2RS-Processer** está como _publisher_ do módulo $P_{out}$ (_Processer OUT_), que aglomera todos os _outputs_ criados por **2RS-Processer**, e o módulo **2RS-Controller** está como _subscriber_, para poder recebê-los e depois delegá-los para outros módulos.
+
 #### 2RS-Processer
 
 O principal objetivo deste módulo é: receber os dados inferidos pelas IMUs e repassados pela **2RS-Controller** e transformá-los em informações necessárias para a renderização dos modelos do corpo humano.
