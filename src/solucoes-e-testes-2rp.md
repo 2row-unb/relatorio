@@ -33,7 +33,7 @@ A primeira etapa de montagem do eletroímã consistiu na procura de transformado
 
 Para a montagem do segundo eletroímã, foi modelada a base de acordo com as dimensões do primeiro eletroímã, e sua construção foi realizada por meio de impressão 3D utilizando material PLA, termoplástico biodegradável. Após essa etapa, foram seguidos os mesmos passos da construção citados anteriormente.
 
-![Construção da base do eletroímã.](imagens/base_eletroima.png){#id .class width=320 height=295px}
+![Construção da base do eletroímã.](imagens/base_eletroima.png){#id .class width=360 height=275px}
 
 O espaço para o enrolamento das bobinas é limitado pelas dimensões do “E”, com a tabela de espessura dos fios de cobre medidos em AWG, foi possível dimensionar o número de voltas para cada espessura de fio de cobre, e relacionar com a força de atração estática teórica que a corrente suportada por aquele fio gerava. Com esses cálculos, concluiu-se que o melhor espessura de fio era a AWG 18.
 
@@ -54,7 +54,7 @@ Quando decidiu-se trabalhar com eletroímã, foi proposto variar a corrente apli
 --------------------------------------------------------
 :Relação do nível e número de espiras.
 
-![Eletroímã montado.](imagens/eletroima.png){#id .class width=320 height=235px}
+![Eletroímã montado.](imagens/eletroima.png){#id .class width=350 height=235px}
 
 Os testes foram realizados após a construção do primeiro eletroímã. O mesmo foi excitado com a utilização de fonte de corrente contínua para observar a possível existência de curtos circuitos no enrolamento e se o efeito eletromagnético realmente estava ocorrendo, dessa forma foi consolidado seu funcionamento.
 
