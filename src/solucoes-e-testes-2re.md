@@ -145,6 +145,8 @@ Fonte: [@iven16]
  
  O projeto envolve uma topogia ideal para o uso do protocolo, pois o kernel necessita julgar informações e divisão correta do envio das mensagens[@fig:mqtt], algo que um servidor poderia trazer complicações. Além da base do MQTT é ser usado para comunicação entre máquinas e não por envio à base de solicitações de clientes, como ocorre no servidor. A aplicação também é bem colocada por se tratar de clientes mandando informações de sensores, o que traz a ideia de IoT, o que não deixa de ser parte do projeto.
 
+![Teste do código do kernel.^[Fonte: do Autor]](imagens/mqtt.png){#fig:mqtt}
+
  Para cálculo da taxa de envio das informações do kernel, os dados são limitados pela frequência de envio dos subscribers. Tendo em vista que o seguinte vetor é enviado e recebido, tendo controle através de um buffer no próprio kernel através do gerenciador paho.
 
  O vetor: (accelx1, accely1, accelz1, girox1, giroy1, giroz1, magnx1, magny1, magnz1, accelx2, accely2, accelz2, girox2, giroy2, giroz2, magnx2, magny2, magnz2, pot, t, estado1,estado2, estado3);
