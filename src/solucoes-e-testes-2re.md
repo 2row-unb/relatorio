@@ -140,7 +140,9 @@ Fonte: [@iven16]
 #### Aplicação no projeto
 
  O kernel fará a comunicação para integração com a parte de software. Serão enviadas informações recebidas das IMU's, também as recebidas acerca dos dados de potência e sobre os estados dos botões. Todas essa informações vão ser passadas ao software para que a análise seja feita e a decisão seja tomada pelo kernel. 
+ 
  A escolha pelo MQTT foi com base na facilidade em utilizar um protocolo da camada de aplicação cuja velocidade de envio das mensagens serão sufientes em uma rede local. O projeto fica robusto ao utilizar um protocolo confiável e com uma certa mobilidade para o envio ordenado de mensagens. Além disso o protocolo MQTT possui um buffer suficiente para organizar as mensagens em termos de um tempo no kernel do projeto e transparecer a transição de dados em tempo real.  
+ 
  O projeto envolve uma topogia ideal para o uso do protocolo, pois o kernel necessita julgar informações e divisão correta do envio das mensagens[@fig:Modelo_broker_MQTT], algo que um servidor poderia trazer complicações. Além da base do MQTT é ser usado para comunicação entre máquinas e não por envio à base de solicitações de clientes, como ocorre no servidor. A aplicação também é bem colocada por se tratar de clientes mandando informações de sensores, o que traz a ideia de IoT, o que não deixa de ser parte do projeto.
 
  Para cálculo da taxa de envio das informações do kernel, os dados são limitados pela frequência de envio dos subscribers. Tendo em vista que o seguinte vetor é enviado e recebido, tendo controle através de um buffer no próprio kernel através do gerenciador paho.
@@ -148,6 +150,7 @@ Fonte: [@iven16]
  O vetor: (accelx1, accely1, accelz1, girox1, giroy1, giroz1, magnx1, magny1, magnz1, accelx2, accely2, accelz2, girox2, giroy2, giroz2, magnx2, magny2, magnz2, pot, t, estado1,estado2, estado3);
 
  Como as informações das duas IMUs estão em float, assim como a potência e o tempo, então são contabilizados 20 variáveis de 4 bytes cada e mais 3 variáveis do tipo inteiro(estados). Portanto a soma em bytes fica em $20*4+3*2$, totalizando 86 bytes. Esse valor passado para bits, totalizam 688 bits.
+ 
  Como a frequencia de envio do mqtt é de 50 Hz, então os dados serão enviados a cada 0.02 segundos. Portanto, essa taxa de dados em bits por segundo fica em 34.4 kbps. É relevante destacar que os dados podem ter acréscimo de informação por conta do protocolo conter cabeçalho.
 
  A taxa de envio no kernel fica em 34.4 kbps. Essa é uma informação tida como base a taxa de transmissão do módulo Wifi, ESP8266, em que a taxa de transmissão da mesma é de 110-460800 bps.
@@ -156,26 +159,27 @@ Fonte: [@iven16]
 #### Integração dos sensores do projeto
 
  Os dados gerados pelos sensores já estão chegando até o kernel, colocando a ESP como cliente e a Raspberry Pi como broker. O código que executa a tarefa inicia o cliente através de uma função padrão do protocolo MQTT, logo após isso as informações sobre a rede local e o IP do kernel são setados para realizar a conexão, também através de outra função padrão do MQTT, nessa situação uma função de reconexão garante que o existe a conexão entre o broker e o determinado cliente. Logo que todas essas etapas são estabelecidas todo o trabalho do cliente ESP8266 será realizado em relação aos dados da IMU por funções e determinadas em um setup, por fim um loop infinito vai garantir que as funções sejam devidamente invocadas para envio das mensagens ao kernel.
+ 
  A [@fig:teste_esp_mqtt] retrata o recebimento de dados pelo terminal da Raspberry Pi, como kernel. Os dados apresentados na imagem são de um vetor de 9 posições com a seguinte ordem dos dados da IMU: acelerômetro x, y e z, depois o giroscópio x, y e z, por fim o magnetômetro x, y , z.
 
 ![Teste do código do kernel.^[Fonte: do Autor]](imagens/testedemqtt.png){#fig:teste_esp_mqtt}
 
 ### 2RE - Relay
 
-O subsistema 2RE-Relay era o responsável por controlar as cargas de resistência do gerador inicialmente, porém após mudanças para adequação do freio eletromagnético construído pelo 2R-Power o subsistema passou a fazer o controle do número de bobinas acionadas em cada vez.
+ O subsistema 2RE-Relay era o responsável por controlar as cargas de resistência do gerador inicialmente, porém após mudanças para adequação do freio eletromagnético construído pelo 2R-Power o subsistema passou a fazer o controle do número de bobinas acionadas em cada momento.
+ 
+ O freio eletromagnético conta com 2 bobinas, sendo cada uma delas seccionada em 4 sub-bobinas, isso para que haja 4 módulos de força diferentes para freiar o disco durante o movimento de remada do atleta, portanto para controlar as 8 bobinas individuias escolheu-se o módulo relé com 4 canais cada um  com tensão nominal de 30 V (DC) a 10A, portanto 2 módulos conseguem chavear 8 bobinas individualmente.
 
-O freio eletromagnético conta com 2 bobinas, sendo cada uma delas seccionada em 4 sub-bobinas, isso para que haja 4 módulos de força diferentes para freiar o disco durante o movimento de remada do atleta, portanto para controlar as 8 bobinas individuias escolheu-se o módulo relé com 4 canais cada um  com tensão nominal de 30 V (DC) a 10A, portanto 2 módulos conseguem chavear 8 bobinas individualmente.
+ Quando o atleta vai começar o movimento, ele deve apertar o botão 1 para que o sistema seja iniciado ou reiniciado caso algum outro indivíduo estivesse utilizando o equipamento anteriomente. Após ter apertado o primeiro botão o indivíduo então tem que escolher a carga de força para execução da remada, ela vai de 1 a 4, sendo o peso 1 o mais fraco e aumenta proporcionalmente conforme o atleta aperta o botão 2. O botão 3 serve para diminuir a carga de 4 até 1 caso o atleta queira voltar a realizar o movimento com uma carga menor. É importante frisar que o atleta deve parar o movimento antes de mudar a carga, pois as estatísticas estarão sendo contabilizadas a partir da carga escolhida, também é importante presar pela segurança do atleta e como o controle fica na lateral do movimento, não é seguro que o mesmo tente alterar a força da remada durante a realização do esporte.
 
-Quando o atleta vai começar o movimento, ele deve apertar o botão 1 para que o sistema seja iniciado ou reiniciado caso algum outro indivíduo estivesse utilizando o equipamento anteriomente. Após ter apertado o primeiro botão o indivíduo então tem que escolher a carga de força para execução da remada, ela vai de 1 a 4, sendo o peso 1 o mais fraco e aumenta proporcionalmente conforme o atleta aperta o botão 2, o botão 3 serve para diminuir a carga de 4 até 1 caso o atleta queira voltar a realizar o movimento com uma carga menor. É importante frisar que o atleta deve para o movimento antes de mudar a carga, pois as estatísticas estarão sendo contabilizadas a partir da carga escolhida, também é importante presar pela segurança do atleta e como o controle fica na lateral do movimento, não é seguro que o mesmo tente alterar a força da remada durante a realização do esporte.
-
-Para validar oo funcionamento dos relés, foi montado um circuito com botões e relés e este circuito foi conectado nas bobinas do freio eletromagnético, o resultado dos testes foi positivo, sendo possível controlar a ativação das bobinas 2 a cada vez, uma de cada um dos 2 freios eletromagnéticos.
+ Para validar o funcionamento dos relés, foi montado um circuito com botões e relés e este circuito foi conectado nas bobinas do freio eletromagnético, o resultado dos testes foi positivo, sendo possível controlar a ativação das bobinas 2 a cada vez, uma de cada um dos 2 freios eletromagnéticos.
 
 ![Módulo relé de 4 canais para o acionamento das cargas.^[Fonte: Do_autor]](imagens/rele.jpeg){#fig:Rele width=400px height=300px}
 
 
 ### 2RE-UI
 
-Para que o usuário solicite a mudança de carga e a inicialização/reset do equipamento 2Row é necessário uma interação usuário-máquina. Foram pesquisados alguns modelos de botões para inserir no sistema, em que foram observados as seguintes características: resistência, durabilidade, praticidade e tamanho suficiente para facilitar a visualização e o pressionamento do mesmo. Desse modo, foi escolhido o botão de acrílico, o qual pode ser alimentado com uma tensão de 3,3 V da própria raspberry pi 3, a [@fig:botao] mostra o botão que será utilizado,. Ademais, como ele atende as necessidades do projeto outro ponto para a escolha desse botão foi devido ao fato de um integrante do grupo possuir esse mesmo modelo, o que proporciona economia ao custo do projeto.
+ Para que o usuário solicite a mudança de carga e a inicialização/reset do equipamento 2Row é necessário uma interação usuário-máquina. Foram pesquisados alguns modelos de botões para inserir no sistema, em que foram observados as seguintes características: resistência, durabilidade, praticidade e tamanho suficiente para facilitar a visualização e o pressionamento do mesmo. Desse modo, foi escolhido o botão de acrílico, o qual pode ser alimentado com uma tensão de 3,3 V da própria raspberry pi 3, a [@fig:botao] mostra o botão que será utilizado,. Ademais, como ele atende as necessidades do projeto outro ponto para a escolha desse botão foi devido ao fato de um integrante do grupo possuir esse mesmo modelo, o que proporciona economia ao custo do projeto.
 
  ![Botão de acrílico usado na escolha de níveis de carga.^[Fonte:do Autor]](imagens/botao.jpg){#fig:botao width=300px height=400px}
 
