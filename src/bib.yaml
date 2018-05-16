@@ -244,6 +244,8 @@ references:
   - type: article-journal
     id: iven16
     title: 'Datasheet MPU9250'
+       date-parts:
+       - - 2016
     URL: https://www.invensense.com/wp-content/uploads/2015/02/PS-MPU-9250A-01-v1.1.pdf
 
   - type: book
