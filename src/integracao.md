@@ -2,7 +2,7 @@
 
 ## Integração – 2RBoat/2RPower
 
-A integração do sistema de estrutura com o sistema energia baseou-se nos vínculos da estrutura primária com o disco que compõem o freio eletromagnético e os eletroímas. O atleta irá puxar uma barra conectada a um sistema de catracas e coroas por uma corrente de bicicleta. Esse sistema tem o intuito de reduzir a força aplicada pelo atleta no freio eletromagnético. Além disso o acoplamento entre as duas áreas mostrou-se afinado durante todo o ponto de controle 2, justificado pela modelagem do sistema de energia com o auxílio da equipe de estrutura.
+A integração do sistema de estrutura com o sistema energia baseou-se nos vínculos da estrutura primária com o disco que compõem o freio eletromagnético e os eletroímãs. O atleta irá puxar uma barra conectada a um sistema de catracas e coroas por uma corrente de bicicleta. Esse sistema tem o intuito de reduzir a força aplicada pelo atleta no freio eletromagnético. Além disso, o acoplamento entre as duas áreas mostrou-se afinado durante todo o ponto de controle 2, justificado pela modelagem do sistema de energia com o auxílio da equipe de estrutura.
 
 ![Local da estrutura para acoplamento do eletroímã e disco](imagens/IMG_5119.JPG){width=290 height=295px}
 
@@ -18,50 +18,53 @@ Não há uma sequência precisa de passos para qualquer processo de projeto. Por
 
 Tendo em mente as necessidades pertinentes que a natureza do projeto determina, algumas especificações foram levantadas, e a solução proposta deve comportar esses requerimentos:
 
-* Força de entrada é transmitida por corrente.
-* Movimento tracionado somente no sentido da puxada, sentido da restituição livre.
-* Mínimo de dois estágios.
-* As relações de torque e diâmetro das rodas dentadas e disco de freio já determinados.
-* Disco de freio deve ficar a aproximadamente 2 mm dos eletroímãs
-*Geralmente níveis de choque baixos, ocasionalmente choques moderados
-* Vida dos mancais > 12 000 horas
-* Eixo com vida infinita  
+* Força de entrada é transmitida por corrente;
+* Movimento tracionado somente no sentido da puxada, sentido da restituição livre;
+* Mínimo de dois estágios;
+* As relações de torque e diâmetro das rodas dentadas e disco de freio já determinados;
+* Disco de freio deve ficar a aproximadamente 2 mm dos eletroímãs;
+*Geralmente níveis de choque baixos, ocasionalmente choques moderados;
+* Vida dos mancais > 12 000 horas;
+* Eixo com vida infinita;
 
 Baseado no Cap 18 - 1 SEQUENCIA DE PROJETO PARA TRANSMISSÂO DE POTENCIA, foi criado um resumo contendo cada passo crucial do projeto da transmissão.
 
-* Projeto Inicial, escolha do tipo de transmissão
-* Especificação das rodas
-* Disposição do Eixo. Localização axial das rodas dentadas (Coroas) , Cilindro (Disco de freio) e mancais.
-* Analise de forças,  Diagrama de corpo livre, força cortante e momento fletor para os eixos
-* Seleção do material do eixo, desenho de fadiga depende do material
-* Desenho do eixo por tensão, de fadiga e estática, estimativa do diâmetro do eixo
-* Desenho do eixo por deflexão,
-* Seleção de mancais
-* Analise final
+* Projeto inicial, escolha do tipo de transmissão;
+* Especificação das rodas;
+* Disposição do Eixo, localização axial das rodas dentadas (Coroas), Cilindro (Disco de freio) e mancais;
+* Analise de forças, diagrama de corpo livre, força cortante e momento fletor para os eixo;
+* Seleção do material do eixo, desenho de fadiga depende do material;
+* Desenho do eixo por tensão, de fadiga e estática, estimativa do diâmetro do eixo;
+* Desenho do eixo por deflexão;
+* Seleção de mancais;
+* Analise final.
 
 #### Projeto Inicial
 
- A máquina de remo proposta tem como característica o funcionamento cíclico em baixas velocidades por conta da tração humana, por essa questão foi decidido utilizar correntes de rolo como método de transmissão de forças. Segundo MACHADO, Corrente de rolos é um meio altamente eficiente e versátil para transmitir potência mecânica, o método de funcionamento consiste em uma roda dentada motriz e uma roda dentada movida por um lance de correntes.
+ A máquina de remo proposta tem como característica o funcionamento cíclico em baixas velocidades por conta da tração humana, por essa questão foi decidido utilizar correntes de rolo como método de transmissão de forças. Segundo MACHADO, corrente de rolos é um meio altamente eficiênte e versátil para transmitir potência mecânica. O método de funcionamento consiste em uma roda dentada motriz e uma roda dentada movida por um lance de correntes.
 
 ![Conjunto de corrente e rodas dentadas](imagens/TRANSM_CORRENTE_RODA.jpg){width=290 height=295px}
 
-Segundo SHIGLEY, as características básicas das transmissões de corrente incluem razão constante, visto que nenhum deslizamento ou deformação lenta esta envolvido, e vida longa. A corrente é tão flexível como as correias e tão eficiente como as engrenagens, e possuem as seguintes vantagens que foram consideradas para aplicação desse método no produto:
+Segundo SHIGLEY, as características básicas das transmissões de corrente incluem razão constante, visto que nenhum deslizamento ou deformação lenta estão envolvidas, e vida longa. A corrente é tão flexível como as correias e tão eficiênte como as engrenagens, e possuem as seguintes vantagens que foram consideradas para aplicação desse método no produto:
 
-* Versatilidade de operação
-* Absorvem choques, devido a pelicula de oleo entre seus componentes e sua elasticidade
-* Leve e compacta, melhor relação de peso x potencia por Cavalo Vapor transmitido 
-* Maior durabilidade, distribuição de cargas entre os vários dentes da engrenagem, garante longa vida util a corrente
-* Facilidade de manutenção e instalação 
-* Capacidade de comprar o kit de corrente roda dentada com maior facilidade
+* Versatilidade de operação;
+* Absorvem choques devido a película de óleo entre seus componentes e sua elasticidade;
+* Leve e compacta, melhor relação de peso x potência por Cavalo Vapor transmitido;
+* Maior durabilidade, distribuição de cargas entre os vários dentes da engrenagem. Garante longa vida útil a corrente.
+* Facilidade de manutenção e instalação;
+* Possibilidade da compra do kit de corrente roda dentada com maior facilidade.
+
 #### Especificação das rodas dentadas
 
-Para atingir a potencia necessária exigida pelo 2Power, foi especificado os raios e os torques dos elementos que compõem a transmissão, as rodas dentadas foram escolhidas seguindo essas especificações .
+Para atingir a potência necessária exigida pelo 2R-Power, foi especificado os raios e os torques dos elementos que compõem a transmissão. As rodas dentadas foram escolhidas seguindo essas especificações da [@tbl:roda_dentada].
  
 | Elemento    | R1 (Disco)   | R2    | R3      | R4      |
 |-------------|------|------|--------|--------|
 | Raio(mm)    | 135  | 34,5 | 100    | 34,5   |
 | Toque (N.m)      | 43,5 | 43,5 | 130,06 | 130,06 |
 | Massa (kg)  | 6    | 0.5  | 0.75   | 0.5    |
+
+:Especificações da roda dentada. {#tbl:roda_dentada}
 
 Com os diâmetros especificados, foi decidido utilizar rodas dentadas de bicicleta que atendiam as dimensões do projeto e são de fácil aquisição. Duas coroas de 16 dentes e 1 de 52 dentes, mantendo uma relação aproximada de 1:3.
 
@@ -72,6 +75,7 @@ Segundo SHIGLEY, o posicionamento axial de componentes é frequentemente ditado 
 Os eixos de transmissão do 2Row tem como princípio de disposição a posição do pinhão que recebe a tração humana, esta roda dentada foi posicionada mais ao centro possível. A partir dessa posição foi feito um esboço da disposição dos componentes, cada eixo terá 4 componentes sendo duas rodas dentadas e dois mancais com rolamento no primeiro estágio e uma roda dentada, um disco de freio e dois mancais com rolamentos no segundo estágio. O Primeiro estagio será tratado a parte dessa metodologia.
 
 ##### primeiro estagio da transmissão 
+
 Por uma questão de facilidade de compra e custo x beneficio, foi decidido que o primeiro estagio da transmissão seria composta por um cubo traseiro de bicicleta com uma catraca acoplada uma extremidade e na outra ponta do cubo seria instalado a roda dentada de 52 dentes. A escolha do cubo se dá ao fato de ele já vir montado com os rolamentos, fuso e principalmente com o roscado para os padrões de rodas dentadas de bicicleta.
 
 ![Primeiro estagio da transmissão](imagens/TRANSM_CAD_PRIMEIRO_ESTAGIO.JPG){width=290 height=295px}
