@@ -13,6 +13,7 @@ Tendo a natureza interativa do processo de desenho de uma transmissão, foi deci
 Seguindo as necessidades da mudança do projeto, foi necessário criar um sistema de transmissão de potência, utilizando o atleta como fonte. Segundo BUDYNAS, O desenho de um sistema para transmitir potência requer atenção ao desenho e seleção de componentes individuais (engrenagens, mancais, eixo, etc). Contudo, como é frequente no caso do projeto, esses componentes não são independentes.
 
 Não há uma sequência precisa de passos para qualquer processo de projeto. Por natureza, projetar é um processo iterativo, é necessário fazer algumas escolhas de teste, construir um esqueleto de um projeto e determinar quais partes do desenho são críticas. Contudo, bastante tempo pode ser economizado ao entendermos as dependências entre as partes do problema, permitindo ao desenhador saber quais partes serão afetadas por qual mudança dada.
+
 #### Especificação do problema
 
 Tendo em mente as necessidades pertinentes que a natureza do projeto determina, algumas especificações foram levantadas, e a solução proposta deve comportar esses requerimentos:
@@ -78,9 +79,10 @@ Por uma questão de facilidade de compra e custo x beneficio, foi decidido que o
 Para a montagem da roda dentada de 52 dentes, foi fabricado uma flange em poliacetal ,Polióxido de metileno. O poliacetal é um termoplástico de alta rigidez e tem sua utilização na engenharia difundida por suas características, sendo algumas: elevada rigidez, excelente estabilidade dimensional, boa usinabilidade, resistência mecânica, absorção de vibrações e baixa densidade.
 
 O projeto da flange tem como requerimento:
-* Diametro suficiente para parafusar uma extremidade no cubo
-* Escalonamento de diametro igual ao diametro interno da roda dentada
-* Furos internos que permitam a montagem no cubo mas que essa montagem não gere resistência ao giro do conjunto do cubo-roda dentada
+
+* Diametro suficiente para parafusar uma extremidade no cubo;
+* Escalonamento de diametro igual ao diametro interno da roda dentada;
+* Furos internos que permitam a montagem no cubo mas que essa montagem não gere resistência ao giro do conjunto do cubo-roda dentada.
 
 ![Esboço da flange](imagens/TRANSM_ESBOÇO_FLANGE.jpg){width=290 height=295px}
 
