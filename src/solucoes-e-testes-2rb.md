@@ -19,19 +19,11 @@ Para se definir o perfil a ser utilizado para construção da estrutura se const
 * Parametrização da Estrutura: A princípio o principal objetivo das simulações era a escolha do perfil a ser utilizado, o _Mechanical APDL_ permite mudar o perfil estrutural escolhido com a alteração de apenas uma linha de comando. Eliminando o processo de alterar o CAD, exportar geometria, importar no _ANSYS_ e realizar a simulação.
 
 
-<<<<<<< bdd0caa3db963b5e7a7037b287a6438baa9fcc61
 ![Perfil Quadrado 20x20x1.2mm](imagens/Secao20x20.jpg){#fig:PERFIL1 width=450 height=330}
 
 ![Perfil Quadrado 30x30x1.5mm](imagens/Secao30x30.jpg){#fig:PERFIL2 width=450 height=330}
 
 ![Perfil Quadrado 50x50x2mm](imagens/Secao50x50.jpg){#fig:PERFIL3 width=400 height=330}
-=======
-![Perfil Quadrado 20x20x1.2mm](imagens/Secao20x20.jpg){#fig:PERFIL1 width=512px height=256px}
-
-![Perfil Quadrado 30x30x1.5mm](imagens/Secao30x30.jpg){#fig:PERFIL2 width=512px height=256px}
-
-![Perfil Quadrado 50x50x2mm](imagens/Secao50x50.jpg){#fig:PERFIL3 width=512px height=256px}
->>>>>>> vara
 
 O _ANSYS MAPDL_ requer que o usuário alimente o programa com as informações referentes ao material utilizado nas simulações, para tal utilizamos as informações para o Aço 1020 retiradas do Apêndice B da referência [@callister].
 
@@ -45,7 +37,6 @@ O Elemento linear utilizado foi o _BEAM188_, apesar das vantagens mencionas ao s
 
 As condições de contorno utilizadas para a simulação foram as de deslocamento restrito nos pés da estrutura e a aplicação de um força distribuída sobre o comprimento que se encontrará o trilho, simulando o peso que o usuário fará na estrutura principal, além disso o peso próprio da estrutura foi contabilizado ao se inserir na simulação uma aceleração na direção vertical de valor equivalente a 1 gravidade.
 
-<<<<<<< bdd0caa3db963b5e7a7037b287a6438baa9fcc61
 ![Condições de Contorno (a)](imagens/BC_2.jpg){#fig:BC1 width=500 height=360}
 
 ![Condições de Contorno (b)](imagens/BC_3.jpg){#fig:BC2 width=500 height=360}
@@ -57,24 +48,9 @@ Todos os perfis simulados são de formato quadrado, o primeiro a ser simulado po
 ![Tensão Resultante na Seção Transversal (1)](imagens/20X20X12_Stress_1.jpg){#fig:20202 width=500 height=360}
 
 ![Tensão Resultante na Seção Transversal (2)](imagens/20X20X12_Stress_2.jpg){#fig:20203 width=500 height=360}
-=======
-![Condições de Contorno (a)](imagens/BC_2.jpg){#fig:BC1 width=512px height=256px}
-
-![Condições de Contorno (b)](imagens/BC_3.jpg){#fig:BC2 width=512px height=256px}
-
-Todos os perfis simulados são de formato quadrado, o primeiro a ser simulado possui dimensões de 20x20x1.2mm. O deslocamento máximo da estrutura foi de 12,9mm e a tensão máxima foi de 184 _MPa_.
-
-![Resultante de Deslocamento](imagens/20X20X12_Displacement.jpg){#fig:20201 width=512px height=256px}
-
-![Tensão Resultante na Seção Transversal (1)](imagens/20X20X12_Stress_1.jpg){#fig:20202 width=512px height=256px}
-
-![Tensão Resultante na Seção Transversal (2)](imagens/20X20X12_Stress_2.jpg){#fig:20203 width=512px height=256px}
->>>>>>> vara
-
 
 O segundo perfil simulado tinha dimensões de 30x30x1.5mm. O deslocamento máximo encontrado foi de aproximadamente 3mm. A tensão máxima causada por flexão foi de 64.3 _MPa_.
 
-<<<<<<< bdd0caa3db963b5e7a7037b287a6438baa9fcc61
 ![Resultante de Deslocamento](imagens/30X30X15_Displacement.jpg){#fig:30301 width=500 height=360}
 
 ![Tensão Resultante na Seção Transversal (1)](imagens/30X30X15_Stress_1.jpg){#fig:30302 width=500 height=360}
@@ -88,21 +64,6 @@ O último perfil escolhido tinha dimensões 50x50x2mm. O deslocamento máximo en
 ![Tensão Resultante na Seção Transversal (1)](imagens/50X50X2_Stress_1.jpg){#fig:50502 width=500 height=360}
 
 ![Tensão Resultante na Seção Transversal (2)](imagens/50X50X2_Stress_2.jpg){#fig:50503 width=500 height=360}
-=======
-![Resultante de Deslocamento](imagens/30X30X15_Displacement.jpg){#fig:30301 width=512px height=256px}
-
-![Tensão Resultante na Seção Transversal (1)](imagens/30X30X15_Stress_1.jpg){#fig:30302 width=512px height=256px}
-
-![Tensão Resultante na Seção Transversal (2)](imagens/30X30X15_Stress_2.jpg){#fig:30303 width=512px height=256px}
-
-O último perfil escolhido tinha dimensões 50x50x2mm. O deslocamento máximo encontrado foi de 0.508mm, e a tensão máxima 17.4 _MPa_.
-
-![Resultante de Deslocamento](imagens/50X50X2_Displacement.jpg){#fig:50501 width=512px height=256px}
-
-![Tensão Resultante na Seção Transversal (1)](imagens/50X50X2_Stress_1.jpg){#fig:50502 width=512px height=256px}
-
-![Tensão Resultante na Seção Transversal (2)](imagens/50X50X2_Stress_2.jpg){#fig:50503 width=512px height=256px}
->>>>>>> vara
 
 O último perfil verificado apresenta baixo deslocamento e tensão máxima muito abaixo do limite de escoamento, foi decidido utilizar tal perfil principalmente pelo fato dos dois perfis anteriores apresentarem deslocamentos muito grandes e o limite de escoamento estar muito distante, uma vez que se utilizou um aço não certificado (Methalon), que possui propriedades mecânicas desconhecidas.
 
@@ -150,7 +111,6 @@ Utilizando as mesmas condições de contorno para se obter as frequências natur
 
 ![20 Primeiros Modos de Vibração da Estrutura](imagens/Modos_APDL.jpg){#fig:modos}
 
-<<<<<<< bdd0caa3db963b5e7a7037b287a6438baa9fcc61
 ![Primeiro Modo de Vibração](imagens/FREQ_MODO_1.jpg){#fig:modo1 width=500 height=360}
 
 ![Segundo Modo de Vibração](imagens/FREQ_MODO_2.jpg){#fig:modo2 width=500 height=360}
@@ -158,15 +118,6 @@ Utilizando as mesmas condições de contorno para se obter as frequências natur
 ![Terceiro Modo de Vibração](imagens/FREQ_MODO_3.jpg){#fig:modo3 width=500 height=360}
 
 ![Quarto Modo de Vibração](imagens/FREQ_MODO_4.jpg){#fig:modo4 width=500 height=360}
-=======
-![Primeiro Modo de Vibração](imagens/FREQ_MODO_1.jpg){#fig:modo1 width=512px height=256px}
-
-![Segundo Modo de Vibração](imagens/FREQ_MODO_2.jpg){#fig:modo2 width=512px height=256px}
-
-![Terceiro Modo de Vibração](imagens/FREQ_MODO_3.jpg){#fig:modo3 width=512px height=256px}
-
-![Quarto Modo de Vibração](imagens/FREQ_MODO_4.jpg){#fig:modo4 width=512px height=256px}
->>>>>>> vara
 
 O movimento ideal de remada de um atleta obedece ciclos de 1 segundo, o movimento foi modelado utilizando o software _MSC ADAMS_ para que se determine a amplitude da força que será exercida na estrutura com ciclos de frequência igual a 1 _Hertz_.
 
@@ -219,7 +170,6 @@ Para o 2RowBoat a técnica que foi usada se aproxima mais teoricamente da MIG pu
 A equação que governa o destacamento de gota é:
 
 $$I_{p}^{2}.t_{p}=D$$
-
 
 Onde Ip é a corrente de pico, tp é o tempo na corrente de pico e Dé constante que depende do material e diâmetro do eletrodo nu e da composição do gás de proteção.
 
