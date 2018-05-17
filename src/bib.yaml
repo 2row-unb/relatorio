@@ -261,7 +261,7 @@ references:
     publisher: "John Wiley & Sons"
     issue: 1
     language: en-US
-    
+
   - type: book
     id: wainer
     author:
@@ -274,8 +274,8 @@ references:
     publisher: "Edgard Blücher Ltda, São Paulo"
     issue: 1
     language: pt-BR
-    
-    - type: book
+
+  - type: book
     id: Budynas11
     author:
     - family: Budynas
