@@ -4,7 +4,7 @@
 
 A integração do sistema de estrutura com o sistema energia baseou-se nos vínculos da estrutura primária com o disco que compõem o freio eletromagnético e os eletroímas. O atleta irá puxar uma barra conectada a um sistema de catracas e coroas por uma corrente de bicicleta. Esse sistema tem o intuito de reduzir a força aplicada pelo atleta no freio eletromagnético. Além disso o acoplamento entre as duas áreas mostrou-se afinado durante todo o ponto de controle 2, justificado pela modelagem do sistema de energia com o auxílio da equipe de estrutura.
 
-![Local da estrutura para acoplamento do eletroímã e disco](imagens/IMG_5119.JPG){#id .class width=290 height=295px}
+![Local da estrutura para acoplamento do eletroímã e disco](imagens/IMG_5119.JPG){width=290 height=295px}
 
 ### Dimensionamento da transmissão
 
@@ -42,7 +42,7 @@ Baseado no Cap 18 - 1 SEQUENCIA DE PROJETO PARA TRANSMISSÂO DE POTENCIA, foi cr
 
  A máquina de remo proposta tem como característica o funcionamento cíclico em baixas velocidades por conta da tração humana, por essa questão foi decidido utilizar correntes de rolo como método de transmissão de forças. Segundo MACHADO, Corrente de rolos é um meio altamente eficiente e versátil para transmitir potência mecânica, o método de funcionamento consiste em uma roda dentada motriz e uma roda dentada movida por um lance de correntes.
 
-![Conjunto de corrente e rodas dentadas](imagens/TRANSM_CORRENTE_RODA.jpg){#id .class width=290 height=295px}
+![Conjunto de corrente e rodas dentadas](imagens/TRANSM_CORRENTE_RODA.jpg){width=290 height=295px}
 
 Segundo SHIGLEY, as características básicas das transmissões de corrente incluem razão constante, visto que nenhum deslizamento ou deformação lenta esta envolvido, e vida longa. A corrente é tão flexível como as correias e tão eficiente como as engrenagens, e possuem as seguintes vantagens que foram consideradas para aplicação desse método no produto:
 
@@ -73,7 +73,7 @@ Os eixos de transmissão do 2Row tem como princípio de disposição a posição
 ##### primeiro estagio da transmissão 
 Por uma questão de facilidade de compra e custo x beneficio, foi decidido que o primeiro estagio da transmissão seria composta por um cubo traseiro de bicicleta com uma catraca acoplada uma extremidade e na outra ponta do cubo seria instalado a roda dentada de 52 dentes. A escolha do cubo se dá ao fato de ele já vir montado com os rolamentos, fuso e principalmente com o roscado para os padrões de rodas dentadas de bicicleta.
 
-![Primeiro estagio da transmissão](imagens/TRANSM_CAD_PRIMEIRO_ESTAGIO.JPG){#id .class width=290 height=295px}
+![Primeiro estagio da transmissão](imagens/TRANSM_CAD_PRIMEIRO_ESTAGIO.JPG){width=290 height=295px}
 
 Para a montagem da roda dentada de 52 dentes, foi fabricado uma flange em poliacetal ,Polióxido de metileno. O poliacetal é um termoplástico de alta rigidez e tem sua utilização na engenharia difundida por suas características, sendo algumas: elevada rigidez, excelente estabilidade dimensional, boa usinabilidade, resistência mecânica, absorção de vibrações e baixa densidade.
 
@@ -82,20 +82,20 @@ O projeto da flange tem como requerimento:
 * Escalonamento de diametro igual ao diametro interno da roda dentada
 * Furos internos que permitam a montagem no cubo mas que essa montagem não gere resistência ao giro do conjunto do cubo-roda dentada
 
-![Esboço da flange](imagens/TRANSM_ESBOÇO_FLANGE.jpg){#id .class width=290 height=295px}
+![Esboço da flange](imagens/TRANSM_ESBOÇO_FLANGE.jpg){width=290 height=295px}
 
 Partindo desses requerimentos foi feito um esboço de uma flange, dimensões na figura acima, com 5 furos M3.5 para parafuso Allen de cabeça arredondada além do rebaixo. E nesse rebaixo foi desenhado uma rosca métrica fina de passo 1.5, para fixação da roda dentada com uma porca. A fabricação se deu no galpão da FGA, executada pelo técnico Clovis.
 
-![CAD da flange](imagens/TRANSM_CAD_FLANGE.JPG){#id .class width=290 height=295px}
+![CAD da flange](imagens/TRANSM_CAD_FLANGE.JPG){width=290 height=295px}
 
 O cubo de bicicleta foi montado diretamente nas barras verticais de apoio, sendo fixados por um conjunto de porcas e arruelas, foi fabricado um canal para deslizar o conjunto em uma das traves de apoio, na outra foi feito furo.
 
-![Primeiro estagio da transmissão montado nos suportes](imagens/TRANSM_CAD_PRIMEIRO_ESTAGIO_MONTAGEM.JPG){#id .class width=290 height=295px}
+![Primeiro estagio da transmissão montado nos suportes](imagens/TRANSM_CAD_PRIMEIRO_ESTAGIO_MONTAGEM.JPG){width=290 height=295px}
 
 #### Analise de forças
 Prosseguindo com o dimensionamento, agora só olhando para o segundo estágio da transmissão. Conhecido os diâmetros da engrenagem e do disco de freio e suas localizações axiais, foi criado um diagrama de corpo livre e com isso os diagramas de força cortante e momento flexor para o eixo a ser produzido, figura #. Fazendo analogia de roda dentada com engrenagem, onde em geral as forças e momentos tem componentes em dois planos ao longo do eixo, no caso desse eixo foi escolhido trabalhar somente com a magnitude dos dois planos, foram determinadas as cargas axiais e tangenciais transmitida pela roda dentada, utilizando as seguintes formulas para força tangencial e radial em R1 e R2 
 
-![Esboço das Reações](imagens/TRANSM_DCL.jpg){#id .class width=290 height=295px}
+![Esboço das Reações](imagens/TRANSM_DCL.jpg){width=290 height=295px}
 
 $$ W_{t}=m*g $$
 $$ W_{r}= \frac{2*T}{ d_{0} } $$
@@ -108,19 +108,19 @@ $$ W_{r}= \frac{2*T}{ d_{0} } $$
 
 Resolvendo as forças radiais utilizando software disponivel em viga.online. link para a resolução completa da viga (http://viga.online/#L(0.2):P(0)P(0.2):F(0.07,5)F(0.148,60)
 
-![Diagrama de corpo livre](imagens/TRANSM_Radial_DCL.jpg){#id .class width=290 height=295px}
+![Diagrama de corpo livre](imagens/TRANSM_Radial_DCL.jpg){width=290 height=295px}
 
-![Diagrama de esforço cortante](imagens/TRANSM_Radial_Esforço_Cortante.jpg){#id .class width=290 height=295px}
+![Diagrama de esforço cortante](imagens/TRANSM_Radial_Esforço_Cortante.jpg){width=290 height=295px}
 
-![Diagrama de momento fletor](imagens/TRANSM_Radial_Momento_Fletor.jpg){#id .class width=290 height=295px}
+![Diagrama de momento fletor](imagens/TRANSM_Radial_Momento_Fletor.jpg){width=290 height=295px}
 
 Resolvendo as forças tangenciais, link para a resolução completa da viga (http://viga.online/#L(0.2):P(0)P(0.2):F(0.07,3.04)F(0.148,0.87)
 
-![Diagrama de corpo livre](imagens/TRANSM_Tangent_DCL.jpg){#id .class width=290 height=295px}
+![Diagrama de corpo livre](imagens/TRANSM_Tangent_DCL.jpg){width=290 height=295px}
 
-![Diagrama de esforço cortante](imagens/TRANSM_Tangen_Esforço_Cortante.jpg){#id .class width=290 height=295px}
+![Diagrama de esforço cortante](imagens/TRANSM_Tangen_Esforço_Cortante.jpg){width=290 height=295px}
 
-![Diagrama de momento fletor](imagens/TRANSM_Tangen_Momento_Fletor.jpg){#id .class width=290 height=295px}
+![Diagrama de momento fletor](imagens/TRANSM_Tangen_Momento_Fletor.jpg){width=290 height=295px}
 
 
  Com esses dados foi possível obter a combinação dos planos ortogonais, analisando a disposição dos elementos na barra e os gráficos de momento fletor, como o eixo possui somente um diâmetro, foi escolhido o ponto onde o disco se encontra, o momento resultante nele é de Md = 2.55882 N*m e T = 43,5 N.m
@@ -163,14 +163,14 @@ A análise de deflexão requer informações completas, a deflexão do eixo deve
 Foi utilizado o software Ansys Mechanical APDL para calcular as deflexões e angulações nos elementos montados no eixo, 
 
 
-![Maxima Deformação](imagens/TRANSM_max_deformação.PNG){#id .class width=290 height=295px}
+![Maxima Deformação](imagens/TRANSM_max_deformação.PNG){width=290 height=295px}
 
-![Maxima defleccção](imagens/TRANSM_Max_Deflecção.PNG){#id .class width=290 height=295px}
+![Maxima defleccção](imagens/TRANSM_Max_Deflecção.PNG){width=290 height=295px}
 
-![Maxima Rotação](imagens/TRANSM_Max_Rotação.PNG){#id .class width=290 height=295px}
+![Maxima Rotação](imagens/TRANSM_Max_Rotação.PNG){width=290 height=295px}
 
 As deflexões e angulações encontradas ao longo do eixo estão dentro dos limites permitidos segundo a tabela abaixo para rolamentos esféricos.
-![Tabela 7-2, limites para rolamentos](imagens/TRANSM_TAB_72.JPG){#id .class width=290 height=295px}
+![Tabela 7-2, limites para rolamentos](imagens/TRANSM_TAB_72.JPG){width=290 height=295px}
 
 #### Seleção de Mancais
 Para a escolha do mancal apropriado para o eixo determinado, se estipulou uma série de requisitos:
@@ -203,7 +203,7 @@ Com essa carga foi escolhido o mancal flangeado em Y com esferas ovais SKF FYTWK
 
 Com os mancais dimensionados, a transmissão em 2 etapas tem no segundo estágio tolerância de furo e eixo H7/h6, segundo a ANSI B4.2-1978, um tipo de ajuste com folga, que permite ajuste perfeito para a localização de peças estacionarias, mas podem ser livremente montadas e desmontadas. A mesma tolerância será utilizada para o disco e a montagem da roda dentada, uma limitação emposta pelo método de fabricação, ferramental e técnica disponível.
 
-![Transmissão montada](imagens/TRANSM_MONTAGEM_FINAL.JPG){#id .class width=290 height=295px}
+![Transmissão montada](imagens/TRANSM_MONTAGEM_FINAL.JPG){width=290 height=295px}
 
 ## Integração – 2RBoat/2RElectronic
 
@@ -225,9 +225,9 @@ Adiante, podemos observar a realização dos testes de acionamento dos níveis.
 
 ![Testes do código para acionamento dos níveis de carga do eletroímã](imagens/integracao_elec_pow1.png){#fig:integracao_electronic_power1}
 
-![Testes do código para acionamento dos níveis de carga do eletroímã](imagens/IMG_5698.JPG){#id .class width=290 height=295px}
+![Testes do código para acionamento dos níveis de carga do eletroímã](imagens/IMG_5698.JPG){width=290 height=295px}
 
-![Testes do código para acionamento dos níveis de carga do eletroímã](imagens/integracao_elec_pow3.png){#id .class width=290 height=370px}
+![Testes do código para acionamento dos níveis de carga do eletroímã](imagens/integracao_elec_pow3.png){width=290 height=370px}
 
 ## Integração – 2RElectronic/2RSystem
 

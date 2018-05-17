@@ -59,4 +59,4 @@ A [@tbl:riscos] ilustra o levantamento realizado dos possíveis riscos para o pr
  Queima de                 Aumento no tempo de          Média              Alto      Repor componente e refazer
  componentes               entrega dos resultados                                    o circuito necessário
 ----------------------------------------------------------------------------------------------------------
-:Riscos do projeto e respectivas ações estratégicas{#tbl:riscos}
+:Riscos do projeto e respectivas ações estratégicas {#tbl:riscos}

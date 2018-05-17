@@ -81,12 +81,12 @@ As vantagens de se utilizar a análise pelo método dos elementos finitos são d
 * Pode-se aprimorar a geometria dos componentes reduzindo a quantidade de material e peso. 
 * A vida útil de um componente, quando submetido a carcas cíclicas que podem causar fadiga, podem ser previstas. 
 
-![Força aplicada](imagens/PI2_PC2_Forcadistribuida.png){#fig:forca}{#id .class width=290 height=235px}
+![Força aplicada](imagens/PI2_PC2_Forcadistribuida.png){#fig:forca width=290 height=235px}
 
 A parte da estrutura do 2RowBoat que foi analisada é a primary porque é a parte da estrutura que irá receber os esforços de carregamento e também era essa parte da estrutura que precisava-se verificar a validação da perfil escolhido.  A figura [@fig:estrutura]  abaixo mostra qual o CAD foi realizado a análise estrutural.
 
 
-![Estrutura](imagens/P12_PC2_estrutura.png){#fig:estrutura}{#id .class width=290 height=235px}
+![Estrutura](imagens/P12_PC2_estrutura.png){#fig:estrutura width=290 height=235px}
 
 Para esse estrutura foi aplicado uma força de 1500N ou 1,5KN no sentido negativo do eixo y, considerando que o usuário possa chegar a pesar até 150Kg e considerando a gravidade igual a 10m/s^2, essa força pode ser verificada na Figura XX.  A estrutura foi considerada engastada, ou seja, não existe movimentação em nenhum sentidos dos eixos x, y ou z.  A deformação máxima  e o estresse equivalente de Vomises, para a estrutura, podem ser observados nas tabelas a seguir:
 
@@ -100,11 +100,11 @@ Para esse estrutura foi aplicado uma força de 1500N ou 1,5KN no sentido negativ
 |1       | 0                     | 1.8144e+7|        
 
 
-As figuras ([@fig:deformacao] e [@fig:stress]  ) a seguir mostram a deformação máxima que a estrutura sofreu e o máximo do equivalente estresse que a estrutura suporta. Como pode ser observado por esses dados as estrutura se deforma muito pouco e suporta um grande estresse com isso concluísse que a estrutura projetada suportará as cargas estruturais para as quais foram projetadas e a o perfil escolhido se mostrou satisfatório. Não foi escolhido uma malha muito refinada pois devido à complexidade da estrutura analisada a memória RAM do computador era excedida.  
+As [@fig:deformacao;@fig:stress] mostram a deformação máxima que a estrutura sofreu e o máximo do equivalente estresse que a estrutura suporta. Como pode ser observado por esses dados as estrutura se deforma muito pouco e suporta um grande estresse com isso concluísse que a estrutura projetada suportará as cargas estruturais para as quais foram projetadas e a o perfil escolhido se mostrou satisfatório. Não foi escolhido uma malha muito refinada pois devido à complexidade da estrutura analisada a memória RAM do computador era excedida.  
 
-![Deformação](imagens/PI2_PC2_deformacao.png){#fig:deformacao}{#id .class width=290 height=235px}
+![Deformação](imagens/PI2_PC2_deformacao.png){#fig:deformacao width=290 height=235px}
 
-![Equivalente Stress](imagens/PI2_PC2_Equivalente_Stress.png){#fig:stress}{#id .class width=290 height=235px}
+![Equivalente Stress](imagens/PI2_PC2_Equivalente_Stress.png){#fig:stress width=290 height=235px}
 
 A estrutura construída estará em contato com uma série de cargas dinâmicas, como o eixo de transmissão que apresentará movimento rotacional ou o movimento de remada realizado pelo usuário da maquina, obter as frequências naturais da estrutura é necessário para se averiguar a ocorrência de ressonância ou a necessidade de adicionar amortecimento a estrutura.
 
