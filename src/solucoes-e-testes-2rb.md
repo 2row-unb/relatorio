@@ -8,7 +8,7 @@ Para se definir o perfil a ser utilizado para construção da estrutura se const
 * Parametrização da Estrutura: A princípio o principal objetivo das simulações era a escolha do perfil a ser utilizado, o _Mechanical APDL_ permite mudar o perfil estrutural escolhido com a alteração de apenas uma linha de comando. Eliminando o processo de alterar o CAD, exportar geometria, importar no _ANSYS_ e realizar a simulação.
 
 
-![Perfil Quadrado 20x20x1.2mm](imagens/Secao20x20.jpg){#id .class width=290 height=235px
+![Perfil Quadrado 20x20x1.2mm](imagens/Secao20x20.jpg){#id .class width=290 height=235px}
 
 ![Perfil Quadrado 30x30x1.5mm](imagens/Secao30x30.jpg){#fig:PERFIL2}
 
