@@ -1,18 +1,12 @@
 ## 2RElectronic
 
-
-
- O sistema de eletrônica ficou responsável pelo sensoriamento, aquisição de sinais, tratamentos dos sinais e controle do acionamento das cargas. Os sinais obtidos foram das IMUs e dos botões, este último define qual a carga que deverá ser acionada. Este relatório apresenta a evolução do grupo, assim como as alterações realizadas no escopo do ponto de controle 1. O diagrama da [@fig:Diagrama_Geral] representa todo o sistema 2RElectronic, ligações, barramento de dados, assim como a quantidade de fios interligados. Ademais, é possível observar o fluxo de informações e a integração com os outros subsistemas.
+O sistema de eletrônica ficou responsável pelo sensoriamento, aquisição de sinais, tratamentos dos sinais e controle do acionamento das cargas. Os sinais obtidos foram das IMUs e dos botões, este último define qual a carga que deverá ser acionada. Este relatório apresenta a evolução do grupo, assim como as alterações realizadas no escopo do ponto de controle 1. O diagrama da [@fig:Diagrama_Geral] representa todo o sistema 2RElectronic, ligações, barramento de dados, assim como a quantidade de fios interligados. Ademais, é possível observar o fluxo de informações e a integração com os outros subsistemas.
   
-
-
-  ![Diagrama do sistema 2RElectronic.^[Fonte:do Autor]](imagens/diagrama_.png){#fig:Diagrama_Geral}
+![Diagrama do sistema 2RElectronic.^[Fonte:do Autor]](imagens/diagrama_.png){#fig:Diagrama_Geral}
 
 ### 2RE-Suit
 
-  Esse subsistema continha o 2RE-Cardio e o 2RE-IMU. No entanto após a exclusão do 2RE-Cardio, que será explicado o porquê a seguir, o 2RE-Suit passou a ser a vestimenta somente com o 2RE-IMU, dessa forma a confecção ainda está em andamento e será apresentada nas próximas semanas.
-
-
+Esse subsistema continha o 2RE-Cardio e o 2RE-IMU. No entanto após a exclusão do 2RE-Cardio, que será explicado o porquê a seguir, o 2RE-Suit passou a ser a vestimenta somente com o 2RE-IMU, dessa forma a confecção ainda está em andamento e será apresentada nas próximas semanas.
 
 #### 2RE-Cardio
 
@@ -20,17 +14,14 @@ Inicialmente o 2Row contaria com um sensor para medir frequência cardíaca do a
 
 Portanto, após avaliar as prioridades para execução do projeto, foi decidido retirar do escopo o subsistema 2RE-Cardio, isso fez com que o escopo do 2Row ficasse mais enxuto e exequível em relação ao pouco tempo que resta para a entrega do projeto.
 
-
 ### 2RE-IMU:
 
-  A Unidade de Medida Inercial (IMU) é um sistema microeletromecânico (MEM), que permite identificar a posição  ou o deslocamento de um corpo rígido em um espaço tridimensional. Neste trabalho, a IMU será responsável em determinar a posição do membro inferior direito para a criação de exoesqueleto autónomo para a identificação e correção da postura do praticante de remo indoor. Desse modo, este trabalho sugere implementar duas IMUs, cada uma em um centro de gravidade, pois nesses pontos a massa está distribuída de forma uniforme, localizados no membro inferior do exoesqueleto, como pode ser visto na [@fig:exoesqueleto], para estimar a orientação desses pontos onde há equilíbrio de forças [@vaughan99].
+A Unidade de Medida Inercial (IMU) é um sistema microeletromecânico (MEM), que permite identificar a posição  ou o deslocamento de um corpo rígido em um espaço tridimensional. Neste trabalho, a IMU será responsável em determinar a posição do membro inferior direito para a criação de exoesqueleto autónomo para a identificação e correção da postura do praticante de remo indoor. Desse modo, este trabalho sugere implementar duas IMUs, cada uma em um centro de gravidade, pois nesses pontos a massa está distribuída de forma uniforme, localizados no membro inferior do exoesqueleto, como pode ser visto na [@fig:exoesqueleto], para estimar a orientação desses pontos onde há equilíbrio de forças [@vaughan99].
 
 
-  ![Exoesqueleto com pontos de equilíbrio de forças.^[Fonte:Adaptado de [@vaughan99].]](imagens/exoesqueleto.png){#fig:exoesqueleto}
+![Exoesqueleto com pontos de equilíbrio de forças.^[Fonte:Adaptado de [@vaughan99].]](imagens/exoesqueleto.png){#fig:exoesqueleto}
 
-  A IMU é composta de três sensores principais, os quais são acelerômetro, giroscópio e magnetômetro, o que possibilita obter continuamente  a variação de velocidade, posição e direção de um corpo rígido  [@araujo13] . Esses sensores podem realizar medições nos eixos de referência x,y e z. A Tabela a seguir apresenta uma comparação entre IMUs de baixo custo e parâmetros relevantes para a escolha da tecnologia, como: quantidade de sensores embarcados, graus de liberdade, custo.
-
-
+A IMU é composta de três sensores principais, os quais são acelerômetro, giroscópio e magnetômetro, o que possibilita obter continuamente  a variação de velocidade, posição e direção de um corpo rígido  [@araujo13] . Esses sensores podem realizar medições nos eixos de referência x,y e z. A Tabela a seguir apresenta uma comparação entre IMUs de baixo custo e parâmetros relevantes para a escolha da tecnologia, como: quantidade de sensores embarcados, graus de liberdade, custo.
 
 | Parâmetros            | MPU6050 | MPU9250 | GY80 |
 |--------------------   |------------|-------|------------|
@@ -44,7 +35,7 @@ Portanto, após avaliar as prioridades para execução do projeto, foi decidido 
 :Tabela de comparação de parâmetros das IMUs de baixo custo.
 
 
-  Em observância com a Tabela 1.0, a IMU selecionada como solução foi a MPU9250, pois a mesma possui um custo baixo e magnetômetro, contemplando 9 graus de liberdade, três graus de liberdade a mais do que a MPU6050. A GY80 possui um custo mais alto comparado aos demais. A [@fig:orientacoes] apresenta a orientação dos eixos dos sensores (a) acelerômetro e giroscópio,(b) magnetômetro, esses dados são essenciais para realização do código para aquisição dos sinais, conforme [@iven16]. Isso, porque no código de calibração e aquisição de dados a orientação foi determinada a partir dessa imagem, no caso do magnetômetro, se não fosse levado em conta, os dados dos eixos seriam adquiridos errados. A Tabela abaixo apresenta as características do MPU9250. Os três sensores imbutidos na MPU9250 podem obter sinais nos três eixos (x, y, z) e possuem três conversores analógico-digitais (ADCs) de 16 bits, para cada respectivo sensor.
+Em observância com a Tabela 1.0, a IMU selecionada como solução foi a MPU9250, pois a mesma possui um custo baixo e magnetômetro, contemplando 9 graus de liberdade, três graus de liberdade a mais do que a MPU6050. A GY80 possui um custo mais alto comparado aos demais. A [@fig:orientacoes] apresenta a orientação dos eixos dos sensores (a) acelerômetro e giroscópio,(b) magnetômetro, esses dados são essenciais para realização do código para aquisição dos sinais, conforme [@iven16]. Isso, porque no código de calibração e aquisição de dados a orientação foi determinada a partir dessa imagem, no caso do magnetômetro, se não fosse levado em conta, os dados dos eixos seriam adquiridos errados. A Tabela abaixo apresenta as características do MPU9250. Os três sensores imbutidos na MPU9250 podem obter sinais nos três eixos (x, y, z) e possuem três conversores analógico-digitais (ADCs) de 16 bits, para cada respectivo sensor.
 
 ![Orientaçoes dos sensores. (a) sensores acelerômetro e giroscópio (b) magnetômetro.^[Fonte:Adaptado de [@iven16].]](imagens/orientacoes.png){#fig:orientacoes}
 
@@ -67,7 +58,7 @@ Fonte: [@iven16]
 #### Calibração
 
   Para que seja realizada a leitura dos dados dos sensores da IMU MPU9250 e os futuros processamentos de dados para o estudo de estimar a orientação do membro inferior direito do praticante de remo indoor, foram realizados testes para calibrar os sensores, pois como a leitura será realizada de forma contínua é necessário que os dados sejam precisos. Os testes foram realizados utilizando o microcontrolador ESP8266 Node MCU e o software Matlab. O ESP8266 Node MCU foi o microcontrolador escolhido para adquirir os dados, o fator determinante para a escolha foi a taxa de transmissão (o cálculo está descrito na seção do kernel), a dimensão, já que ela ficará alocada no 2RE-Suit (para que não haja desconforto e peso para o praticante), além de possuir um módulo Wi-fi para envio dos dados. O software Matlab foi utilizado para receber os dados e plotar os gráficos para a verificar se a calibração ocorreu conforme esperado.
-  
+
    Para realizar a calibração dos três eixos (x,y,z), foi necessário que o sensor ficasse apoiado de forma firme, para isso foi utilizada uma plataforma, a qual foi feita para auxiliar na calibração de IMUs pelo LEIA (Laboratory of Embedded Systems and Integrated Circuits Applications) e emprestada para o grupo 2RElectronic. Essa plataforma foi desenvolvida em um software 3D, serve apenas como apoio e para facilitar o manuseio  nos processos de calibração da IMU. Para realizar a calibração foi verificado antes de iniciar que a bancada estava na posição correta  e durante o procedimento não houve movimentos bruscos, já que um mínimo movimento é capaz de gerar ruído. Como pode ser visto na [@fig:plataforma], observa-se que é possível manipular os três eixos da IMU manualmente (o sensor utilizado é o localizado na protoboard da plataforma). Essa bancada possui três transferidores, cada um destinado a medida de grau para cada eixo. A resolução da medida de grau da bancada é de 10 graus.
 
   ![Plataforma para calaibração da IMU.^[Fonte:do Autor,2018).]](imagens/plataforma.jpg){#fig:plataforma}
@@ -77,7 +68,7 @@ Fonte: [@iven16]
  Duas funções foram criadas como base para a calibração, a função de escrita e a de leitura. A função de escrita dos dados envia o endereço dos sensores da MPU9250 (8 bits), o endereço do registrador, onde será escrito os valores (8 bits) e o dado a ser escrito (8 bits). A função de leitura dos dados recebe o endereço dos sensores (8 bits), o valor do registrador, onde os dados têm de serem lidos (8 bits), o número de bytes e o dado que foi lido (8 bits). Os intervalos de tempo para a calibração, foram os mesmos utilizados por [@fabian18] em seu estudo, a fim de comparação. Os intervalos utilizados foram de  ±250 graus/seg, ±2g e ±4800µT (nas respectivas unidades de graus, gravidade e Tesla ) e foram utilizados para o giroscópio, acelerômetro e magnetômetro, respectivamente. O valor do magnetômetro é dado em mG e foi feita uma conversão para Tesla partindo de que, (10mG = 1uT). Entretanto, no Matlab usou-se a unidade mG, para validar com o valor real.
 
   As escalas foram definidas conforme o [@iven16] apresenta em relação ao acelerômetro e giroscópio para que a conversão analógica/digital fosse feita corretamente. A código de calibração consistiu em satisfazer os seguintes passos. Inicialmente, a MPU9250 ficou na posição inicial, como mostra a [@fig:plataforma]. Observa-se, que o eixo definido como z está perpendicular com o eixo horizontal da plataforma, os sensores acelerômetro e giroscópio ficaram parados e o magnetômetro foi girado de modo a fazer uma volta (360 graus), isso para obter os valores dos offsets do acelerômetro e giroscópio.  O segundo passo foi necessário para calibrar o sensor magnetômetro, o eixo y, definido como a parte externa da base da protoboard (essa está em vermelho na [@fig:plataforma]) foi posicionado em paralelo com o eixo horizontal e girou-se 360 graus, para a obtenção dos offsets do magnetômetro. Esses valores são de extrema importância, pois serão utilizados como parâmetros no código de leitura principal para adequar as leituras feitas.
-  
+
  Para os cálculos de offset foram analisados 100 amostras em cada eixo para verificar quais eram os valores máximos e mínimos do deslocamento dos sensores, conforme também foi realizado no estudo de [@fabian18], em que o deslocamento foi definido pela [#eq:offset]. Ademais, o cálculo para o fator de escala também foi realizado, apresentado na [#eq:fatoresc].
 
  $$offset_{x,y,z} = (valormax_{x,y,z} + valormin_{x,y,z})/2$${#eq:offset}
@@ -101,7 +92,7 @@ Fonte: [@iven16]
 
 #### Protocolo de comunicação I2C
 
-  O protocolo I2C (Inter- Intergrated Circuit) é um barramento de comunicação serial que utiliza dois fios( Serial Data- DAS e Serial Clock- SCL), ou seja, sinal de dados e de clock. Ele realiza a comunicação de escrita (W) e leitura (R) entre dois ou mais dispositivos, pode-se ocorrer entre um mestre e um ou mais escravos. Para que o mestre envie sinal para determinado escravo ele precisa saber qual o endereço do escravo. Cada escravo tem um endereço específico de identificação, composto de 7 bits [@fabian18]. Neste trabalho, o dispositivo dimensionado como mestre é o microcontrolador ESP8366 Node-MCU, e o escravo é a MPU9250. Tem-se também o escravo do escravo, o qual é o segundo MPU9250. 
+  O protocolo I2C (Inter- Intergrated Circuit) é um barramento de comunicação serial que utiliza dois fios( Serial Data- DAS e Serial Clock- SCL), ou seja, sinal de dados e de clock. Ele realiza a comunicação de escrita (W) e leitura (R) entre dois ou mais dispositivos, pode-se ocorrer entre um mestre e um ou mais escravos. Para que o mestre envie sinal para determinado escravo ele precisa saber qual o endereço do escravo. Cada escravo tem um endereço específico de identificação, composto de 7 bits [@fabian18]. Neste trabalho, o dispositivo dimensionado como mestre é o microcontrolador ESP8366 Node-MCU, e o escravo é a MPU9250. Tem-se também o escravo do escravo, o qual é o segundo MPU9250.
 
    A [@fig:i2c] apresenta o protocolo de comunicação I2C. A comunicação é iniciada pelo mestre, o início e término da comunicação é determinada pela variação do clock do nível baixo para alto. Por outro lado, para que aconteça o envio de dados o SDA tem de mudar de nível lógico quando o SCL estiver em nível baixo, depois de ter ocorrido a transição desse, de alto para baixo (critério de início) e de baixo para alto (critério de término). Feito isso, o mestre envia 1 byte, em que o bit menos significativo representa a seleção de escrita (‘1’) ou leitura (‘0’) e os demais bits representam o endereço do escravo que ele quer se comunicar [@fabian18]. O escravo por sua vez retorna um sinal, Acknowledge (ACK), em que nível baixo indica que ele está pronto para aceitar os dados e nível alto indica um sinal de não reconhecimento,  Not Acknowledge  (NACK). Depois da validação de reconhecimento ocorre a troca de dados pelo pino SDA, até que a condição de término seja satisfeita [@lima12].
 
@@ -139,10 +130,10 @@ Fonte: [@iven16]
 
 #### Aplicação no projeto
 
- O kernel fará a comunicação para integração com a parte de software. Serão enviadas informações recebidas das IMU's, também as recebidas acerca dos dados de potência e sobre os estados dos botões. Todas essa informações vão ser passadas ao software para que a análise seja feita e a decisão seja tomada pelo kernel. 
- 
+ O kernel fará a comunicação para integração com a parte de software. Serão enviadas informações recebidas das IMU's, também as recebidas acerca dos dados de potência e sobre os estados dos botões. Todas essa informações vão ser passadas ao software para que a análise seja feita e a decisão seja tomada pelo kernel.
+
  A escolha pelo MQTT foi com base na facilidade em utilizar um protocolo da camada de aplicação cuja velocidade de envio das mensagens serão sufientes em uma rede local. O projeto fica robusto ao utilizar um protocolo confiável e com uma certa mobilidade para o envio ordenado de mensagens. Além disso o protocolo MQTT possui um buffer suficiente para organizar as mensagens em termos de um tempo no kernel do projeto e transparecer a transição de dados em tempo real.  
- 
+
  O projeto envolve uma topogia ideal para o uso do protocolo, pois o kernel necessita julgar informações e divisão correta do envio das mensagens[@fig:mqtt], algo que um servidor poderia trazer complicações. Além da base do MQTT é ser usado para comunicação entre máquinas e não por envio à base de solicitações de clientes, como ocorre no servidor. A aplicação também é bem colocada por se tratar de clientes mandando informações de sensores, o que traz a ideia de IoT, o que não deixa de ser parte do projeto.
 
 ![Funcionamento MQTT.^[Fonte: do Autor]](imagens/mqtt.png){#fig:mqtt}
@@ -152,7 +143,7 @@ Fonte: [@iven16]
  O vetor: (accelx1, accely1, accelz1, girox1, giroy1, giroz1, magnx1, magny1, magnz1, accelx2, accely2, accelz2, girox2, giroy2, giroz2, magnx2, magny2, magnz2, pot, t, estado1,estado2, estado3);
 
  Como as informações das duas IMUs estão em float, assim como a potência e o tempo, então são contabilizados 20 variáveis de 4 bytes cada e mais 3 variáveis do tipo inteiro(estados). Portanto a soma em bytes fica em $20*4+3*2$, totalizando 86 bytes. Esse valor passado para bits, totalizam 688 bits.
- 
+
  Como a frequência de envio do MQTT para os dados das IMU's passadas pela ESP8266 para rede local é de 50 Hz, então os dados serão enviados a cada 0.02 segundos. Portanto, essa taxa de dados em bits por segundo fica em 34.4 kbps. É relevante destacar que os dados podem ter acréscimo de informação por conta do protocolo conter cabeçalho.
 
  A taxa de envio no kernel fica em 34.4 kbps. Essa é uma informação tida como base a taxa de transmissão do módulo Wifi, ESP8266, em que a taxa de transmissão da mesma é de 110-460800 bps.
@@ -161,7 +152,7 @@ Fonte: [@iven16]
 #### Integração dos sensores do projeto
 
  Os dados gerados pelos sensores já estão chegando até o kernel, colocando a ESP como cliente e a Raspberry Pi como broker. O código que executa a tarefa inicia o cliente através de uma função padrão do protocolo MQTT, logo após isso as informações sobre a rede local e o IP do kernel são setados para realizar a conexão, também através de outra função padrão do MQTT, nessa situação uma função de reconexão garante que o existe a conexão entre o broker e o determinado cliente. Logo que todas essas etapas são estabelecidas todo o trabalho do cliente ESP8266 será realizado em relação aos dados da IMU por funções e determinadas em um setup, por fim um loop infinito vai garantir que as funções sejam devidamente invocadas para envio das mensagens ao kernel.
- 
+
  A [@fig:teste_esp_mqtt] retrata o recebimento de dados pelo terminal da Raspberry Pi, como kernel. Os dados apresentados na imagem são de um vetor de 9 posições com a seguinte ordem dos dados da IMU: acelerômetro x, y e z, depois o giroscópio x, y e z, por fim o magnetômetro x, y , z.
 
 ![Teste do código do kernel.^[Fonte: do Autor]](imagens/testedemqtt.png){#fig:teste_esp_mqtt}
@@ -169,7 +160,7 @@ Fonte: [@iven16]
 ### 2RE - Relay
 
  O subsistema 2RE-Relay era o responsável por controlar as cargas de resistência do gerador inicialmente, porém após mudanças para adequação do freio eletromagnético construído pelo 2R-Power o subsistema passou a fazer o controle do número de bobinas acionadas em cada momento.
- 
+
  O freio eletromagnético conta com 2 bobinas, sendo cada uma delas seccionada em 4 sub-bobinas, isso para que haja 4 módulos de força diferentes para freiar o disco durante o movimento de remada do atleta, portanto para controlar as 8 bobinas individuias escolheu-se o módulo relé com 4 canais cada um  com tensão nominal de 30 V (DC) a 10A, portanto 2 módulos conseguem chavear 8 bobinas individualmente.
 
  Quando o atleta vai começar o movimento, ele deve apertar o botão 1 para que o sistema seja iniciado ou reiniciado caso algum outro indivíduo estivesse utilizando o equipamento anteriomente. Após ter apertado o primeiro botão o indivíduo então tem que escolher a carga de força para execução da remada, ela vai de 1 a 4, sendo o peso 1 o mais fraco e aumenta proporcionalmente conforme o atleta aperta o botão 2. O botão 3 serve para diminuir a carga de 4 até 1 caso o atleta queira voltar a realizar o movimento com uma carga menor. É importante frisar que o atleta deve parar o movimento antes de mudar a carga, pois as estatísticas estarão sendo contabilizadas a partir da carga escolhida, também é importante presar pela segurança do atleta e como o controle fica na lateral do movimento, não é seguro que o mesmo tente alterar a força da remada durante a realização do esporte.
