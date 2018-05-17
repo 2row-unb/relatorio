@@ -13,7 +13,7 @@ Uma aplicação _single core_ e _mono threaded_ subutilizaria os já limitados r
 
 A partir do momento que passamos a lidar com um sistema modular assíncrono, vários problemas relacionados com a concorrência de processos foram evidenciados. O mais importante deles foi a necessidade de um sistema de comunicação robusto e veloz entre os diferentes módulos, de forma que o fluxo de processamento apresentado na [@fig:fluxo_de_processamento] fosse respeitado.
 
-![Fluxo de dados do 2RSystem](imagens/fluxo_dados_system.png)
+![Fluxo de dados do 2RSystem](imagens/fluxo_dados_system.png){#fig:fluxo_de_processamento}
 
 Com exceção do módulo 2RS-Viewer, toda comunicação interna é implementada através do protocolo MQTT. Essa decisão de projeto alcançou dois grandes objetivos. O primeiro foi a solução do gerenciamento da comunicação assíncrona e da execução não blocante. O segundo se baseou no próprio sistema de _buffering_ do Mosquitto, servidor MQTT para comunicação interprocessos. Esse sistema permitiu o armazenamento temporário das mensagens ainda não lidas, proporcionando uma fila de espera das mensagens para serem processadas. Assim, cada processo executa sua função, publica os dados obtidos em uma fila de despacho e em seguida já pode solicitar outra mensagem que espera para ser processada, otimizando o _pipeline_ de execução de cada método observador.
 
