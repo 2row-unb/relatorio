@@ -274,5 +274,21 @@ references:
     publisher: "Edgard Blücher Ltda, São Paulo"
     issue: 1
     language: pt-BR
+    
+    - type: book
+    id: B927e
+    author:
+    - family: Budynas
+      given: [Richard, G.]
+    - family: Nisbett
+      given: [J. Keith,]
+    issued:
+      date-parts:
+      - - 2011
+    title: 'Elementos de Máquinas de Shigley'
+    publisher: "AMGH Editora Ltda."
+    edition: 8
+    ISBN: 978-85-8055-042-9
+    language: pt-BR
 
 ...
