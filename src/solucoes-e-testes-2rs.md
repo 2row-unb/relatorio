@@ -27,7 +27,7 @@ O Eclipse Mosquitto dispõe de uma biblioteca implementada em Python chamada Pah
 
 Todos os módulos, com exceção do 2RS-Viewer, herdam da classe **Rx**, afinal, toda comunicação interprocessos é baseada na recepção de mensagens. Cada um desses módulos passa a ser um processo isolado que não depende dos outros. Esse processo espera por uma mensagem, a processa assim que ela chega, e publica seu resultado em um canal de saída.
 
-Nesse cenário, cada módulo independente pode ser testado e evoluído sem a necessidade dos outros. Utilizamos a biblioteca _Invoke_ do Python para integrar diferentes modelos de execução e a biblioteca _Pytest_ para executar os testes de integração assíncronos. Esse _framework_ facilita a criação de pequenos testes, mas ainda é escalável para suportar testes funcionais complexos para aplicativos e bibliotecas. Possui uma _API_ que permite a utilização de _fixtures_, funções reutilizáveis entre os testes que reduzem drasticamente a rapetição de código.
+Nesse cenário, cada módulo independente pode ser testado e evoluído sem a necessidade dos outros. Utilizou-se a biblioteca _Invoke_ do Python para integrar diferentes modelos de execução e a biblioteca _Pytest_ para executar os testes de integração assíncronos. Esse _framework_ facilita a criação de pequenos testes, mas ainda é escalável para suportar testes funcionais complexos para aplicativos e bibliotecas. Possui uma _API_ que permite a utilização de _fixtures_, funções reutilizáveis entre os testes que reduzem drasticamente a rapetição de código.
 
 ### Módulos
 
