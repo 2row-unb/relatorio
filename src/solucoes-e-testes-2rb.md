@@ -133,11 +133,9 @@ A análise harmônica foi realizada na estrutura com a amplitude de força encon
 
 ### Dimensionamento da transmissão
 
-Tendo a natureza interativa do processo de desenho de uma transmissão, foi decidido utilizar os livros Elementos de Máquina de Shigley 8 ed de BUDYNAS e KEITCH além do Projeto de engenharia mecânica de SHIGLEY, MISCHKE e BUDYNAS.
+Seguindo as necessidades da mudança do projeto, foi necessário criar um sistema de transmissão de potência, utilizando o atleta como fonte. O desenho de um sistema para transmitir potência requer atenção ao desenho e seleção de componentes individuais (engrenagens, mancais, eixo, etc) [@Budynas11]. Contudo, como é frequente no caso do projeto, esses componentes não são independentes.
 
-Seguindo as necessidades da mudança do projeto, foi necessário criar um sistema de transmissão de potência, utilizando o atleta como fonte. Segundo BUDYNAS, O desenho de um sistema para transmitir potência requer atenção ao desenho e seleção de componentes individuais (engrenagens, mancais, eixo, etc). Contudo, como é frequente no caso do projeto, esses componentes não são independentes.
-
-Não há uma sequência precisa de passos para qualquer processo de projeto. Por natureza, projetar é um processo iterativo, é necessário fazer algumas escolhas de teste, construir um esqueleto de um projeto e determinar quais partes do desenho são críticas. Contudo, bastante tempo pode ser economizado ao entendermos as dependências entre as partes do problema, permitindo ao desenhador saber quais partes serão afetadas por qual mudança dada.
+Não há uma sequência precisa de passos para qualquer processo de projeto. Por natureza, projetar é um processo iterativo, é necessário fazer algumas escolhas de teste, construir um esqueleto de um projeto e determinar quais partes do desenho são críticas. Contudo, bastante tempo pode ser economizado ao entendermos as dependências entre as partes do problema, permitindo ao desenhador saber quais partes serão afetadas por qual mudança dada [@Budynas11].
 
 #### Especificação do problema
 
@@ -166,11 +164,11 @@ Baseado no Cap 18 - 1 SEQUENCIA DE PROJETO PARA TRANSMISSÂO DE POTENCIA, foi cr
 
 #### Projeto Inicial
 
- A máquina de remo proposta tem como característica o funcionamento cíclico em baixas velocidades por conta da tração humana, por essa questão foi decidido utilizar correntes de rolo como método de transmissão de forças. Segundo MACHADO, corrente de rolos é um meio altamente eficiênte e versátil para transmitir potência mecânica. O método de funcionamento consiste em uma roda dentada motriz e uma roda dentada movida por um lance de correntes.
+ A máquina de remo proposta tem como característica o funcionamento cíclico em baixas velocidades por conta da tração humana, por essa questão foi decidido utilizar correntes de rolo como método de transmissão de forças. Corrente de rolos é um meio altamente eficiênte e versátil para transmitir potência mecânica. O método de funcionamento consiste em uma roda dentada motriz e uma roda dentada movida por um lance de correntes.
 
 ![Conjunto de corrente e rodas dentadas](imagens/TRANSM_CORRENTE_RODA.jpg){width=290 height=295px}
 
-Segundo SHIGLEY, as características básicas das transmissões de corrente incluem razão constante, visto que nenhum deslizamento ou deformação lenta estão envolvidas, e vida longa. A corrente é tão flexível como as correias e tão eficiênte como as engrenagens, e possuem as seguintes vantagens que foram consideradas para aplicação desse método no produto:
+As características básicas das transmissões de corrente incluem razão constante, visto que nenhum deslizamento ou deformação lenta estão envolvidas, e vida longa [@Budynas11]. A corrente é tão flexível como as correias e tão eficiênte como as engrenagens, e possuem as seguintes vantagens que foram consideradas para aplicação desse método no produto:
 
 * Versatilidade de operação;
 * Absorvem choques devido a película de óleo entre seus componentes e sua elasticidade;
@@ -194,8 +192,7 @@ Para atingir a potência necessária exigida pelo 2R-Power, foi especificado os 
 Com os diâmetros especificados, foi decidido utilizar rodas dentadas de bicicleta que atendiam as dimensões do projeto e são de fácil aquisição. Duas coroas de 16 dentes e 1 de 52 dentes, mantendo uma relação aproximada de 1:3.
 
 #### Disposição dos eixos
-
-Segundo SHIGLEY, o posicionamento axial de componentes é frequentemente ditado pela posição do compartimento e por outros componentes engrenantes. Em geral, é melhor suportar componentes condutores de carga entre mancais, em vez de em balanço fora dos mancais. Os eixos devem ser mantidos curtos para minimizar momentos fletores e deflexões, e seus componentes devem ser situados acuradamente no eixo para alinhar totalmente com outros componentes.
+O posicionamento axial de componentes é frequentemente ditado pela posição do compartimento e por outros componentes engrenantes. Em geral, é melhor suportar componentes condutores de carga entre mancais, em vez de em balanço fora dos mancais. Os eixos devem ser mantidos curtos para minimizar momentos fletores e deflexões, e seus componentes devem ser situados acuradamente no eixo para alinhar totalmente com outros componentes [@Budynas11].
 
 Os eixos de transmissão do 2Row tem como princípio de disposição a posição do pinhão que recebe a tração humana, esta roda dentada foi posicionada mais ao centro possível. A partir dessa posição foi feito um esboço da disposição dos componentes, cada eixo terá 4 componentes sendo duas rodas dentadas e dois mancais com rolamento no primeiro estágio e uma roda dentada, um disco de freio e dois mancais com rolamentos no segundo estágio. O Primeiro estagio será tratado a parte dessa metodologia.
 
@@ -262,9 +259,9 @@ $$T = 43,5 N.m$$
 
 #### Seleção de material
 
-Segundo SHIGLEY, o material para o eixo pode ser selecionado, por tentativa, em qualquer ponto antes do projeto por tensão do eixo. Também pode ser modificado, se necessário, durante o processo de desenho por tensão.
+O material para o eixo pode ser selecionado, por tentativa, em qualquer ponto antes do projeto por tensão do eixo. Também pode ser modificado, se necessário, durante o processo de desenho por tensão.
 
-Foi escolhido o aço 1005-1009 Estirado a frio (CD) laminado, de acordo com a Tabela A-21 do Shigley, possui resistência a tração $Sut = 415 Mpa$. Esse aço foi escolhido por ser próximo ao aço 1010, metalon, já utilizado no projeto.
+Foi escolhido o aço 1005-1009 Estirado a frio (CD) laminado, de acordo com [@Budynas11], possui resistência a tração $Sut = 415 Mpa$. Esse aço foi escolhido por ser próximo ao aço 1010, metalon, já utilizado no projeto.
 
 #### Desenho do eixo por tensão
 
@@ -276,7 +273,7 @@ Sendo $M_n$ e $M_a$ os momentos flexores médio e alternante, $T_m$ e $T_a$ são
 
 $$d =  \big\{ \frac{16n}{ \pi } \big( \frac{2  (K_{f}  M_{a})  }{ S_{e} } + \frac{ [3 (K_{fs}  T_{m})^2  ]^{ \frac{1}{2} } }{ S_{ut} } \big)  \big\} ^{ \frac{1}{3} }$$
 
-Pela tabela 7-1 do Shigley, foi estipulado um filete de ressalto pontudo com a relação de $r/d = 0.02$ tendo $K_t=2,7$ e $K_{ts} = 2.2$. Isso para assegurar a situação mais critica. Para um primeiro passo rápido e conservativo, foi assumido $K_f = K_t$ e $K_{fs} = K_{ts}$.
+Foi estipulado um filete de ressalto pontudo com a relação de $r/d = 0.02$ tendo $K_t=2,7$ e $K_{ts} = 2.2$. Isso para assegurar a situação mais critica. Para um primeiro passo rápido e conservativo, foi assumido $K_f = K_t$ e $K_{fs} = K_{ts}$.
 
 A equação de DE-Goodman utiliza do fator de Marin
 $$S_e = K_a . K_b. K_c . K_d . K_e . K_f . S_{e’}$$ 
