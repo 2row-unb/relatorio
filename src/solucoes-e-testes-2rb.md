@@ -26,9 +26,9 @@ O Elemento linear utilizado foi o _BEAM188_, apesar das vantagens mencionas ao s
 
 As condições de contorno utilizadas para a simulação foram as de deslocamento restrito nos pés da estrutura e a aplicação de um força distribuída sobre o comprimento que se encontrará o trilho, simulando o peso que o usuário fará na estrutura principal, além disso o peso próprio da estrutura foi contabilizado ao se inserir na simulação uma aceleração na direção vertical de valor equivalente a 1 gravidade.
 
-![Condições de Contorno (a)](imagens/BC_2.jpg){#fig:BC1}
+![Condições de Contorno (a)](imagens/BC_2.jpg){#fig:BC1}{#id .class width=290 height=235px}
 
-![Condições de Contorno (b)](imagens/BC_3.jpg){#fig:BC2}
+![Condições de Contorno (b)](imagens/BC_3.jpg){#fig:BC2}{#id .class width=290 height=235px}
 
 Todos os perfis simulados são de formato quadrado, o primeiro a ser simulado possui dimensões de 20x20x1.2mm. O deslocamento máximo da estrutura foi de 12,9mm e a tensão máxima foi de 184 _MPa_.
 
