@@ -88,7 +88,7 @@ O projeto da flange tem como requerimento:
 * Escalonamento de diâmetro igual ao diâmetro interno da roda dentada;
 * Furos internos que permitam a montagem no cubo mas que essa montagem não gere resistência ao giro do conjunto do cubo-roda dentada.
 
-![Esboço da flange](imagens/TRANSM_ESBOÇO_FLANGE.jpg){#fig:flange093 width=290 height=295px}
+![Esboço da flange](imagens/TRANSM_ESBOCO_FLANGE.jpg){#fig:flange093 width=290 height=295px}
 
 Partindo desses requerimentos, foi feito um esboço de uma flange ([@fig:flange093]), com 5 furos M3.5 para parafuso Allen de cabeça arredondada além do rebaixo. E nesse rebaixo foi desenhado uma rosca métrica fina de passo 1.5, para fixação da roda dentada com uma porca. A fabricação se deu no galpão da FGA, executada pelo técnico Clovis.
 
@@ -117,7 +117,7 @@ Resolvendo as forças radiais utilizando _software_ disponível em viga.online^[
 
 ![Diagrama de corpo livre](imagens/TRANSM_Radial_DCL.jpg){width=290 height=295px}
 
-![Diagrama de esforço cortante](imagens/TRANSM_Radial_Esforço_Cortante.jpg){#fig:diagrama_esf_cort width=290 height=295px}
+![Diagrama de esforço cortante](imagens/TRANSM_Radial_Esforco_Cortante.jpg){#fig:diagrama_esf_cort width=290 height=295px}
 
 ![Diagrama de momento fletor](imagens/TRANSM_Radial_Momento_Fletor.jpg){width=290 height=295px}
 
@@ -125,7 +125,7 @@ Resolvendo as forças tangenciais^[Link para a resolução completa: (http://vig
 
 ![Diagrama de corpo livre](imagens/TRANSM_Tangent_DCL.jpg){width=290 height=295px}
 
-![Diagrama de esforço cortante](imagens/TRANSM_Tangen_Esforço_Cortante.jpg){width=290 height=295px}
+![Diagrama de esforço cortante](imagens/TRANSM_Tangen_Esforco_Cortante.jpg){width=290 height=295px}
 
 ![Diagrama de momento fletor](imagens/TRANSM_Tangen_Momento_Fletor.jpg){width=290 height=295px}
 
@@ -145,8 +145,7 @@ Foi escolhido o aço 1005-1009 Estirado a frio (CD) laminado, de acordo com a Ta
 
 O diâmetro do eixo deve ser determinado por análise de tensão nas localidades críticas, onde está montado o disco de freio. Para uma primeira estimativa do diâmetro, foi utilizado o critério de DE-Goodman, [@eq:de_goodman]. Este critério é bom para o desenho inicial, visto que é um cálculo simples e conservativo.
 
-$$d =  \big( \frac{16n}{ \pi } \big\{ \frac{1}{S_{e} }[4( K_{f}  M_{a})^{2} + 3( K_{fs}  T_{m})^{2}]^{ \frac{1}{2}} + \frac{1}{ S_{ut} }[4( K_{f}  M_{m})^{2} + 3( K_{fs}  T_{m})^{2}]^{ \frac{1}{2}}  \big\} \big) ^{ \frac{1}{3} }$$
-: Equação de DE-Goodman {#eq:de_goodman}
+$$d =  \big( \frac{16n}{ \pi } \big\{ \frac{1}{S_{e} }[4( K_{f}  M_{a})^{2} + 3( K_{fs}  T_{m})^{2}]^{ \frac{1}{2}} + \frac{1}{ S_{ut} }[4( K_{f}  M_{m})^{2} + 3( K_{fs}  T_{m})^{2}]^{ \frac{1}{2}}  \big\} \big) ^{ \frac{1}{3} }$$ {#eq:de_goodman}
 
 Sendo $M_n$ e $M_a$ os momentos flexores médio e alternante, $T_m$ e $T_a$ são os torques médios e alternante, e $K_f$ e $K_{fs}$ são os fatores de concentração de fadiga para flexão e torção. Com $M_n = T_a = 0$, a equação reduz a
 
@@ -173,11 +172,11 @@ Foi escolhido um eixo de 25mm de diâmetro, adquirido de refugo do galpão da FG
 Foi utilizado o _software Ansys Mechanical APDL_ para calcular as deflexões e angulações nos elementos montados no eixo.
 
 
-![Maxima Deformação](imagens/TRANSM_max_deformação.PNG){width=290 height=295px}
+![Maxima Deformação](imagens/TRANSM_max_deformacao.PNG){width=290 height=295px}
 
-![Maxima defleccção](imagens/TRANSM_Max_Deflecção.PNG){width=290 height=295px}
+![Maxima defleccção](imagens/TRANSM_Max_Defleccao.PNG){width=290 height=295px}
 
-![Maxima Rotação](imagens/TRANSM_Max_Rotação.PNG){width=290 height=295px}
+![Maxima Rotação](imagens/TRANSM_Max_Rotacao.PNG){width=290 height=295px}
 
 As deflexões e angulações encontradas ao longo do eixo estão dentro dos limites permitidos segundo a tabela abaixo para rolamentos esféricos.
 
