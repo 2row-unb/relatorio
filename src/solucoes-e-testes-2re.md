@@ -125,7 +125,7 @@ Fonte: [@iven16]
 
 ### 2RE-Kernel
 
- O kernel do projeto será um microprocessador Raspberry Pi 3, devido as suas carcterísticas descritas no ponto de controle 1, pelos integrantes do grupo já possuirem. O kernel atuará como um intermediador das informações trocas pelo sistema 2RElectronic e 2RSystem. Para que os dados sejam transmitidos do 2R-IMU e trabalhados pelo dispositivo kernel, o gerenciamento de todo o processo ocorre com o uso do protocolo de comunicação MQTT. Nesse contexto, a título de simplificação, o Raspberry-Pi aplicado como kernel será visto dentro do protocolo MQTT como um Broker e os dispositivos em comunicação poderão fazer publicações e leituras referentes a transmissão de dados pelo Kernel.
+ O kernel do projeto será um microprocessador Raspberry Pi 3, devido as suas características descritas no ponto de controle 1, pelos integrantes do grupo já possuirem. O kernel atuará como um intermediador das informações trocas pelo sistema 2RElectronic e 2RSystem. Para que os dados sejam transmitidos do 2R-IMU e trabalhados pelo dispositivo kernel, o gerenciamento de todo o processo ocorre com o uso do protocolo de comunicação MQTT. Nesse contexto, a título de simplificação, o Raspberry-Pi aplicado como kernel será visto dentro do protocolo MQTT como um Broker e os dispositivos em comunicação poderão fazer publicações e leituras referentes a transmissão de dados pelo Kernel.
 
 #### MQTT
 
