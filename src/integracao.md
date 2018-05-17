@@ -225,7 +225,7 @@ A integração do sistema de eletrônica com energia se baseia em fazer as conex
 
 O acionamento será realizado conforme demonstrado no diagrama a seguir.
 
-![reles^[Fonte: Do_autor]](imagens/reles.png){#fig:Reles}
+![Integração dos sistemas 2R-Eletronic e 2R-Power^[Fonte: Do_autor]](imagens/reles.png){#fig:Reles}
 
 Adiante, podemos observar a realização dos testes de acionamento dos níveis.
 

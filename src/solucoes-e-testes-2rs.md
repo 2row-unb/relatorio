@@ -19,7 +19,7 @@ Com exceção do módulo 2RS-Viewer, toda comunicação interna é implementada 
 
 O Eclipse Mosquitto^[https://mosquitto.org/] é um mensageiro intermediário de código-fonte aberto (licenciado por EPL/EDL) que implementa as versões 3.1 e 3.1.1 do protocolo MQTT. O Mosquitto é leve e adequado para uso em todos os dispositivos, desde computadores de mesa única de baixa potência até servidores completos.
 
-O Eclipse Mosquitto dispõe de uma biblioteca implementada em Python chamada Paho. Essa biblioteca fornece o objeto Client, para gerenciamento das mensagens em tópicos inscritos. A _API_ apresenta limitações de integração para objetos de tipos complexos. Isso significa que uma mensagem com uma lista de valores inteiros correspondentes aos dados das IMUs teria que ser recorrentemente codificada e decodificada no formato de transmissão, _byte strings_. NEsse contexto, buscando um padrão que facilitasse a quantidade de conversões, implementamos o _design pattern adapter_, encapsular todo comportamento do Paho em três classes: Rx, Tx e Message.
+O Eclipse Mosquitto dispõe de uma biblioteca implementada em Python chamada Paho. Essa biblioteca fornece o objeto Client, para gerenciamento das mensagens em tópicos inscritos. A _API_ apresenta limitações de integração para objetos de tipos complexos. Isso significa que uma mensagem com uma lista de valores inteiros correspondentes aos dados das IMUs teria que ser recorrentemente codificada e decodificada no formato de transmissão, _byte strings_. Nesse contexto, buscando um padrão que facilitasse a quantidade de conversões, implementou-se o _design pattern adapter_, encapsular todo comportamento do Paho em três classes: Rx, Tx e Message.
 
 * **Message**: Classe que utiliza a biblioteca Pickle para codificar e decodificar suas próprias instâncias em _byte strings_ complexas. Esses objetos definem um emissor, um receptor e um conteúdo. Podem ser transmitidos via MQTT e reconstruídos com extrema simplicidade pelos receptores.
 * **Rx**: Implementa a MetaClasse **RxMeta**, que define o _design pattern decorator_ para dois métodos: *on_message* e *on_connect*. As classes filhas definem métodos que aplicam esses decoradores e suas instâncias assinam uma lista de tópicos do _broker_ Mosquitto.
@@ -27,7 +27,7 @@ O Eclipse Mosquitto dispõe de uma biblioteca implementada em Python chamada Pah
 
 Todos os módulos, com exceção do 2RS-Viewer, herdam da classe **Rx**, afinal, toda comunicação interprocessos é baseada na recepção de mensagens. Cada um desses módulos passa a ser um processo isolado que não depende dos outros. Esse processo espera por uma mensagem, a processa assim que ela chega, e publica seu resultado em um canal de saída.
 
-Nesse cenário, cada módulo independente pode ser testado e evoluído sem a necessidade dos outros. Utilizamos a biblioteca _Invoke_ do Python para integrar diferentes modelos de execução e a biblioteca _Pytest_ para executar os testes de integração assíncronos. Esse _framework_ facilita a criação de pequenos testes, mas ainda é escalável para suportar testes funcionais complexos para aplicativos e bibliotecas. Possui uma _API_ que permite a utilização de _fixtures_, funções reutilizáveis entre os testes que reduzem drasticamente a rapetição de código.
+Nesse cenário, cada módulo independente pode ser testado e evoluído sem a necessidade dos outros. Utilizou-se a biblioteca _Invoke_ do Python para integrar diferentes modelos de execução e a biblioteca _Pytest_ para executar os testes de integração assíncronos. Esse _framework_ facilita a criação de pequenos testes, mas ainda é escalável para suportar testes funcionais complexos para aplicativos e bibliotecas. Possui uma _API_ que permite a utilização de _fixtures_, funções reutilizáveis entre os testes que reduzem drasticamente a rapetição de código.
 
 ### Módulos
 
@@ -78,15 +78,15 @@ O algoritmo foi implementado utilizando a linguagem de programação Python em c
 
 Como o objetivo deste módulo era receber dados crus das IMUs e dar como _output_ os ângulos de Euler que representam as orientações do corpo, é necessário ter uma forma de testar se os ângulos estão realmente corretos; isto é, se o algoritmo de fusão sensorial está funcionando corretamente. Para tal teste, a ferramenta de visualização **ahrs-visualizer** foi utilizada.
 
-Basicamente, a ferramenta **ahrs-visualizer** recebe uma matriz de rotação (que pode ser derivada do _quaternion_ mantido no Madgwick) e mostra na tela a representação da IMU na tela. Ou seja, uma bateria de dados foi coletada das nossas IMUs, esses dados foram colocados na implementação do Madgwick e as matrizes de rotação de cada momento de tempo foram dadas como _output_. Então, as matrizes de rotação foram dadas como _input_ para o **ahrs-visualizer** e, então, foi checado se as imagens mostradas pelos **ahrs-visualizer** correspondem ao movimentos feitos na IMU.
+Basicamente, a ferramenta **ahrs-visualizer** recebe uma matriz de rotação (que pode ser derivada do _quaternion_ mantido no Madgwick) e mostra na tela a representação da IMU na tela. Ou seja, uma bateria de dados foi coletada das IMUs, esses dados foram colocados na implementação do Madgwick e as matrizes de rotação de cada momento de tempo foram dadas como _output_. Então, as matrizes de rotação foram dadas como _input_ para o **ahrs-visualizer** e, então, foi checado se as imagens mostradas pelos **ahrs-visualizer** correspondem ao movimentos feitos na IMU.
 
 Algumas imagens do **ahrs-visualizer** podem ser vistas a seguir:
 
-![Exemplo 1 do ahrs-visualizer](imagens/ahrs_visualizer-1.jpg){#fig:ahrs_visualizer-1 height=300px}
+![Exemplo 1 do ahrs-visualizer](imagens/ahrs_visualizer-1.jpg){#fig:ahrs_visualizer-1 width=512px height=256px}
 
-![Exemplo 2 do ahrs-visualizer](imagens/ahrs_visualizer-2.jpg){#fig:ahrs_visualizer-2}
+![Exemplo 2 do ahrs-visualizer](imagens/ahrs_visualizer-2.jpg){#fig:ahrs_visualizer-2 width=512px height=256px}
 
-![Exemplo 3 do ahrs-visualizer](imagens/ahrs_visualizer-3.jpg){#fig:ahrs_visualizer-3}
+![Exemplo 3 do ahrs-visualizer](imagens/ahrs_visualizer-3.jpg){#fig:ahrs_visualizer-3 width=512px height=256px}
 
 #### 2RS-Viewer
 
