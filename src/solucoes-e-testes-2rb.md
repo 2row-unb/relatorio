@@ -1,5 +1,16 @@
 ## 2RBoat
 
+### Analise Ergonômica
+ O projeto tem como objetivo, ser utilizado de pessoas de estaturas diferentes, para tanto foi necessário recorrer a tabelas antropométricas. Antropometria é definida como estudo das medidas de tamanho e proporções do corpo humano. Essas medidas englobam dados como peso, altura, circunferência da cintura e circunferência de quadril
+
+![Tabela Antropomorfica SAE percentil 95% e 5% ](imagens/ERGO_Tabela_SAE.jpg)
+
+![Legenda da Tabela Antropomorfica](imagens/ERGO_TABELA_SAE_2.jpg)
+
+Essas medidas foram utilizadas para determinar as dimensões mínimas do equipamento, principalmente o comprimento máximo do trilho do banco. A característica deslizante do banco permite acomodar uma quantidade variável de pessoas no aparelho por isso somente foi utilizado o percentil masculino americano de 95%. A validação desses dados foi executada no pacote Ergonomics Design and Analisys do software CATIA V5.
+
+![Perfil Quadrado 20x20x1.2mm](imagens/ERGO_Percentil_95.JPG)
+
 ### Simulações Estruturais
 
 Para se definir o perfil a ser utilizado para construção da estrutura se construiu um modelo em elementos finitos no software _Ansys  Mechanical APDL_. A escolha da ferramenta utilizado se deu principalmente por dois fatores:

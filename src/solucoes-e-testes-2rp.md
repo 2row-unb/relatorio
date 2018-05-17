@@ -19,7 +19,7 @@ Em outras palavras, o efeito eletromagnético que caracteriza esse sistema, pode
 
 Por fim, a lei de Lenz determina que a corrente induzida (ou o campo elétrico da qual ela resulta) se projeta no sentido de se opor à variação de fluxo que a produziu. Ou, mais especificamente, o sentido da corrente induzida pela variação de um fluxo magnético é tal que ela venha a induzir um novo fluxo magnético (contra-fluxo) que virá a se opor à variação do fluxo que a induziu.
 
-Diante do exposto, o projeto de solução visa a construção de um sistema composto por dois eletroímãs posicionados nas faces de um disco de aço que estará conectado ao eixo que transmite o movimento de remada do atleta, como podemos observar a seguir.
+Diante do exposto, o projeto de solução visa a construção de um sistema composto por dois eletroímãs posicionados na face de um disco de aço que estará conectado ao eixo que transmite o movimento de remada do atleta, como podemos observar a seguir.
 
 ![Estrutura do freio eletromagnético.](imagens/eletroima_pic2.JPG){#id .class width=250 height=295px}
 
