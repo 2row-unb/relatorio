@@ -8,7 +8,7 @@ Para se definir o perfil a ser utilizado para construção da estrutura se const
 * Parametrização da Estrutura: A princípio o principal objetivo das simulações era a escolha do perfil a ser utilizado, o _Mechanical APDL_ permite mudar o perfil estrutural escolhido com a alteração de apenas uma linha de comando. Eliminando o processo de alterar o CAD, exportar geometria, importar no _ANSYS_ e realizar a simulação.
 
 
-![Perfil Quadrado 20x20x1.2mm](imagens/Secao20x20.jpg){#id .class width=290 height=235px}
+![Perfil Quadrado 20x20x1.2mm](imagens/Secao20x20.jpg){#fig:PERFIL1}
 
 ![Perfil Quadrado 30x30x1.5mm](imagens/Secao30x30.jpg){#fig:PERFIL2}
 
@@ -26,9 +26,9 @@ O Elemento linear utilizado foi o _BEAM188_, apesar das vantagens mencionas ao s
 
 As condições de contorno utilizadas para a simulação foram as de deslocamento restrito nos pés da estrutura e a aplicação de um força distribuída sobre o comprimento que se encontrará o trilho, simulando o peso que o usuário fará na estrutura principal, além disso o peso próprio da estrutura foi contabilizado ao se inserir na simulação uma aceleração na direção vertical de valor equivalente a 1 gravidade.
 
-![Condições de Contorno (a)](imagens/BC_2.jpg){#fig:BC1}{#id .class width=290 height=235px}
+![Condições de Contorno (a)](imagens/BC_2.jpg){#fig:BC1}
 
-![Condições de Contorno (b)](imagens/BC_3.jpg){#fig:BC2}{#id .class width=290 height=235px}
+![Condições de Contorno (b)](imagens/BC_3.jpg){#fig:BC2}
 
 Todos os perfis simulados são de formato quadrado, o primeiro a ser simulado possui dimensões de 20x20x1.2mm. O deslocamento máximo da estrutura foi de 12,9mm e a tensão máxima foi de 184 _MPa_.
 
