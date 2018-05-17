@@ -1,7 +1,8 @@
 ## 2RBoat
 
 ### Analise Ergonômica
- O projeto tem como objetivo, ser utilizado de pessoas de estaturas diferentes, para tanto foi necessário recorrer a tabelas antropométricas. Antropometria é definida como estudo das medidas de tamanho e proporções do corpo humano. Essas medidas englobam dados como peso, altura, circunferência da cintura e circunferência de quadril
+
+O projeto tem como objetivo ser utilizado por pessoas de estaturas diferentes, para tanto foi necessário recorrer a tabelas antropométricas. Antropometria é definida como estudo das medidas de tamanho e proporções do corpo humano. Essas medidas englobam dados como peso, altura, circunferência da cintura e circunferência de quadril
 
 ![Tabela Antropomorfica SAE percentil 95% e 5% ](imagens/ERGO_Tabela_SAE.jpg)
 
@@ -19,11 +20,11 @@ Para se definir o perfil a ser utilizado para construção da estrutura se const
 * Parametrização da Estrutura: A princípio o principal objetivo das simulações era a escolha do perfil a ser utilizado, o _Mechanical APDL_ permite mudar o perfil estrutural escolhido com a alteração de apenas uma linha de comando. Eliminando o processo de alterar o CAD, exportar geometria, importar no _ANSYS_ e realizar a simulação.
 
 
-![Perfil Quadrado 20x20x1.2mm](imagens/Secao20x20.jpg){#fig:PERFIL1 width=450 height=330}
+![Perfil Quadrado 20x20x1.2mm](imagens/Secao20x20.jpg){#fig:PERFIL1 width=500 height=360}
 
-![Perfil Quadrado 30x30x1.5mm](imagens/Secao30x30.jpg){#fig:PERFIL2 width=450 height=330}
+![Perfil Quadrado 30x30x1.5mm](imagens/Secao30x30.jpg){#fig:PERFIL2 width=500 height=360}
 
-![Perfil Quadrado 50x50x2mm](imagens/Secao50x50.jpg){#fig:PERFIL3 width=400 height=330}
+![Perfil Quadrado 50x50x2mm](imagens/Secao50x50.jpg){#fig:PERFIL3 width=500 height=360}
 
 O _ANSYS MAPDL_ requer que o usuário alimente o programa com as informações referentes ao material utilizado nas simulações, para tal utilizamos as informações para o Aço 1020 retiradas do Apêndice B da referência [@callister].
 
@@ -48,7 +49,6 @@ Todos os perfis simulados são de formato quadrado, o primeiro a ser simulado po
 ![Tensão Resultante na Seção Transversal (1)](imagens/20X20X12_Stress_1.jpg){#fig:20202 width=500 height=360}
 
 ![Tensão Resultante na Seção Transversal (2)](imagens/20X20X12_Stress_2.jpg){#fig:20203 width=500 height=360}
-
 
 O segundo perfil simulado tinha dimensões de 30x30x1.5mm. O deslocamento máximo encontrado foi de aproximadamente 3mm. A tensão máxima causada por flexão foi de 64.3 _MPa_.
 
@@ -81,12 +81,12 @@ As vantagens de se utilizar a análise pelo método dos elementos finitos são d
 * Pode-se aprimorar a geometria dos componentes reduzindo a quantidade de material e peso.
 * A vida útil de um componente, quando submetido a carcas cíclicas que podem causar fadiga, podem ser previstas.
 
-![Força aplicada](imagens/PI2_PC2_Forcadistribuida.png){#fig:forca width=290 height=235px}
+![Força aplicada](imagens/PI2_PC2_Forcadistribuida.png){#fig:forca width=500px height=360px}
 
 A parte da estrutura do 2RowBoat que foi analisada é a primary porque é a parte da estrutura que irá receber os esforços de carregamento e também era essa parte da estrutura que precisava-se verificar a validação da perfil escolhido.  A figura [@fig:estrutura]  abaixo mostra qual o CAD foi realizado a análise estrutural.
 
 
-![Estrutura](imagens/P12_PC2_estrutura.png){#fig:estrutura width=290 height=235px}
+![Estrutura](imagens/P12_PC2_estrutura.png){#fig:estrutura width=500px height=360px}
 
 Para esse estrutura foi aplicado uma força de 1500N ou 1,5KN no sentido negativo do eixo y, considerando que o usuário possa chegar a pesar até 150Kg e considerando a gravidade igual a 10m/s^2, essa força pode ser verificada na Figura XX.  A estrutura foi considerada engastada, ou seja, não existe movimentação em nenhum sentidos dos eixos x, y ou z.  A deformação máxima  e o estresse equivalente de Vomises, para a estrutura, podem ser observados nas tabelas a seguir:
 
@@ -102,9 +102,9 @@ Para esse estrutura foi aplicado uma força de 1500N ou 1,5KN no sentido negativ
 
 As [@fig:deformacao;@fig:stress] mostram a deformação máxima que a estrutura sofreu e o máximo do equivalente estresse que a estrutura suporta. Como pode ser observado por esses dados as estrutura se deforma muito pouco e suporta um grande estresse com isso concluísse que a estrutura projetada suportará as cargas estruturais para as quais foram projetadas e a o perfil escolhido se mostrou satisfatório. Não foi escolhido uma malha muito refinada pois devido à complexidade da estrutura analisada a memória RAM do computador era excedida.  
 
-![Deformação](imagens/PI2_PC2_deformacao.png){#fig:deformacao width=290 height=235px}
+![Deformação](imagens/PI2_PC2_deformacao.png){#fig:deformacao width=500 height=360px}
 
-![Equivalente Stress](imagens/PI2_PC2_Equivalente_Stress.png){#fig:stress width=290 height=235px}
+![Equivalente Stress](imagens/PI2_PC2_Equivalente_Stress.png){#fig:stress width=500 height=360px}
 
 A estrutura construída estará em contato com uma série de cargas dinâmicas, como o eixo de transmissão que apresentará movimento rotacional ou o movimento de remada realizado pelo usuário da maquina, obter as frequências naturais da estrutura é necessário para se averiguar a ocorrência de ressonância ou a necessidade de adicionar amortecimento a estrutura.
 
@@ -129,7 +129,6 @@ O movimento ideal de remada de um atleta obedece ciclos de 1 segundo, o moviment
 A análise harmônica foi realizada na estrutura com a amplitude de força encontrada através da modelagem do movimento do banco. O espectro de frequências estudado foi de 0 à 150 _Hertz_. A análise da figura [@fig:harmonica] mostra os picos de ressonâncias nas frequências de aproximadamente 52.242 _Hz_ e 106.52 _Hz_.
 
 ![Resposta Harmônica do Banco sobre Estrutura](imagens/Resposta_Harmonica.jpg){#fig:harmonica}
-
 
 ### Construção
 
@@ -172,7 +171,6 @@ A equação que governa o destacamento de gota é:
 
 $$I_{p}^{2}.t_{p}=D$$
 
-
 Onde Ip é a corrente de pico, tp é o tempo na corrente de pico e Dé constante que depende do material e diâmetro do eletrodo nu e da composição do gás de proteção.
 
 Já o tamanho da gota (d) quando se tem apenas uma gota é regido pela seguinte equação:
@@ -201,12 +199,12 @@ O projeto da estrutura passou por algumas mudanças desde o ponto de controle 1.
 
 Até o momento, a construção da estrutura consistiu no corte dos perfis nos comprimentos especificados, da furação dos perfis que necessitavam de furação e da soldagem pontilhada dos perfis. Os trilhos de alumínio e o cubo contendo a coroa e a catraca também foram montados na estrutura. Uma comparação entre o CAD e a estrutura construída até o momento pode ser observado [@fig:compara]
 
-![Fotografia do desenvolvimento da estrutura](imagens/photo5116225061324433385.jpg){#fig:estrutura-1 width=500 height=360}
+![Estrutura1](imagens/photo5116225061324433385.jpg){#fig:estrutura-1 width=500px height=360px}
 
-![Fotografia do desenvolvimento da estrutura](imagens/photo5172469053929924584.jpg){#fig:estrutura-2 width=500 height=360}
+![Estrutura2](imagens/photo5172469053929924584.jpg){#fig:estrutura-2 width=500px height=360px}
 
-![Fotografia do desenvolvimento da estrutura](imagens/photo5172469053929924585.jpg){#fig:estrutura-3 width=500 height=360}
+![Estrutura3](imagens/photo5172469053929924585.jpg){#fig:estrutura-3 width=500px height=360px}
 
-![Fotografia do desenvolvimento da estrutura](imagens/photo5172469053929924586.jpg){#fig:estrutura-4 width=500 height=360}
+![Estrutura4](imagens/photo5172469053929924586.jpg){#fig:estrutura-4 width=500px height=360px}
 
 ![Comparação do CAD com a estrutura até o momento](imagens/CADxEstrutura.png){#fig:compara}

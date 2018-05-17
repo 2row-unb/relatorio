@@ -78,7 +78,7 @@ Fonte: [@iven16]
 
   As escalas foram definidas conforme o [@iven16] apresenta em relação ao acelerômetro e giroscópio para que a conversão analógica/digital fosse feita corretamente. A código de calibração consistiu em satisfazer os seguintes passos. Inicialmente, a MPU9250 ficou na posição inicial, como mostra a [@fig:plataforma]. Observa-se, que o eixo definido como z está perpendicular com o eixo horizontal da plataforma, os sensores acelerômetro e giroscópio ficaram parados e o magnetômetro foi girado de modo a fazer uma volta (360 graus), isso para obter os valores dos offsets do acelerômetro e giroscópio.  O segundo passo foi necessário para calibrar o sensor magnetômetro, o eixo y, definido como a parte externa da base da protoboard (essa está em vermelho na [@fig:plataforma]) foi posicionado em paralelo com o eixo horizontal e girou-se 360 graus, para a obtenção dos offsets do magnetômetro. Esses valores são de extrema importância, pois serão utilizados como parâmetros no código de leitura principal para adequar as leituras feitas.
   
- Para os cálculos de offset foram analisados 100 amostras em cada eixo para verificar quais eram os valores máximos e mínimos do deslocamento dos sensores, conforme também foi realizado no estudo de [@fabian18], em que o deslocamento foi definido pela [#eq:offset]. Ademais, o cálculo para o fator de escala também foi realizado, apresentado na [#eq:fatoresc].
+ Para os cálculos de offset foram analisados 100 amostras em cada eixo para verificar quais eram os valores máximos e mínimos do deslocamento dos sensores, conforme também foi realizado no estudo de [@fabian18], em que o deslocamento foi definido pela [@eq:offset]. Ademais, o cálculo para o fator de escala também foi realizado, apresentado na [@eq:fatoresc].
 
  $$offset_{x,y,z} = (valormax_{x,y,z} + valormin_{x,y,z})/2$${#eq:offset}
 
@@ -125,7 +125,7 @@ Fonte: [@iven16]
 
 ### 2RE-Kernel
 
- O kernel do projeto será um microprocessador Raspberry Pi 3, devido as suas carcterísticas descritas no ponto de controle 1, pelos integrantes do grupo já possuirem. O kernel atuará como um intermediador das informações trocas pelo sistema 2RElectronic e 2RSystem. Para que os dados sejam transmitidos do 2R-IMU e trabalhados pelo dispositivo kernel, o gerenciamento de todo o processo ocorre com o uso do protocolo de comunicação MQTT. Nesse contexto, a título de simplificação, o Raspberry-Pi aplicado como kernel será visto dentro do protocolo MQTT como um Broker e os dispositivos em comunicação poderão fazer publicações e leituras referentes a transmissão de dados pelo Kernel.
+ O kernel do projeto será um microprocessador Raspberry Pi 3, devido as suas características descritas no ponto de controle 1, pelos integrantes do grupo já possuirem. O kernel atuará como um intermediador das informações trocas pelo sistema 2RElectronic e 2RSystem. Para que os dados sejam transmitidos do 2R-IMU e trabalhados pelo dispositivo kernel, o gerenciamento de todo o processo ocorre com o uso do protocolo de comunicação MQTT. Nesse contexto, a título de simplificação, o Raspberry-Pi aplicado como kernel será visto dentro do protocolo MQTT como um Broker e os dispositivos em comunicação poderão fazer publicações e leituras referentes a transmissão de dados pelo Kernel.
 
 #### MQTT
 
@@ -147,13 +147,13 @@ Fonte: [@iven16]
 
 ![Funcionamento MQTT.^[Fonte: do Autor]](imagens/mqtt.png){#fig:mqtt}
 
- Para cálculo da taxa de envio das informações do kernel, os dados são limitados pela frequência de envio dos subscribers. Tendo em vista que o seguinte vetor é enviado e recebido, tendo controle através de um buffer no próprio kernel através do gerenciador paho.
+ Para cálculo da taxa de envio das informações do kernel, os dados são limitados pela frequência de envio dos subscribers. Tendo em vista que o seguinte vetor é enviado e recebido, o controle é realizado através de um buffer no próprio kernel através do gerenciador paho.
 
  O vetor: (accelx1, accely1, accelz1, girox1, giroy1, giroz1, magnx1, magny1, magnz1, accelx2, accely2, accelz2, girox2, giroy2, giroz2, magnx2, magny2, magnz2, pot, t, estado1,estado2, estado3);
 
  Como as informações das duas IMUs estão em float, assim como a potência e o tempo, então são contabilizados 20 variáveis de 4 bytes cada e mais 3 variáveis do tipo inteiro(estados). Portanto a soma em bytes fica em $20*4+3*2$, totalizando 86 bytes. Esse valor passado para bits, totalizam 688 bits.
  
- Como a frequencia de envio do mqtt é de 50 Hz, então os dados serão enviados a cada 0.02 segundos. Portanto, essa taxa de dados em bits por segundo fica em 34.4 kbps. É relevante destacar que os dados podem ter acréscimo de informação por conta do protocolo conter cabeçalho.
+ Como a frequência de envio do MQTT é de 50 Hz, então os dados serão enviados a cada 0.02 segundos. Portanto, essa taxa de dados em bits por segundo fica em 34.4 kbps. É relevante destacar que os dados podem ter acréscimo de informação por conta do protocolo conter cabeçalho.
 
  A taxa de envio no kernel fica em 34.4 kbps. Essa é uma informação tida como base a taxa de transmissão do módulo Wifi, ESP8266, em que a taxa de transmissão da mesma é de 110-460800 bps.
 
@@ -186,6 +186,7 @@ Fonte: [@iven16]
  ![Botão de acrílico usado na escolha de níveis de carga.^[Fonte:do Autor]](imagens/botao.jpg){#fig:botao width=300px height=400px}
 
  Para testar esse subsistema foi criado um código em Python e utilizou-se o microprocessador raspberry Pi 3. Foram setados os pinos 11,15 e 18 como entradas, para receber os valores do estado do botão. Foi setado resistor pull-down no código, isso para certificar que quando o botão não for pressionado, ele não será ativado. O código permite realizar a leitura dos botões acionados pelo usuário, tanto quanto, realizar um tratamento do sinal recebido, pois as chaves mecânicas possui um erro conhecido como bouncing, que pode ser entendido como uma trepidação que causa oscilações no sinal, e necessita de um algoritmo de debounce.
+ 
  O código desenvolvido possui um delay de 0.5 segundo até a próxima leitura, desprezando assim qualquer acionamento do botão que poderia ser feito dentro desse tempo. Um evento é criado sempre que o botão pressionada durante o intervalo de tempo, ou seja, há a utilização da função detecção de eventos, chamado de event_detect, em qualquer borda de descida. Esse evento é responsável por armazena o estado do botão, e coloca como prioridade, para quando se der o início do próximo loop, baseados na função callback, retornar o evento que ocorreu. Para o tratamento de bounce, podemos aproveitar o parâmetro callback e requisitar que este ignore os primeiros 100 milisegundos da leitura, usando o parâmetro bouncetime.
 
 
