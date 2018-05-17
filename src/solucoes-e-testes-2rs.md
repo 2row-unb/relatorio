@@ -82,11 +82,11 @@ Basicamente, a ferramenta **ahrs-visualizer** recebe uma matriz de rotação (qu
 
 Algumas imagens do **ahrs-visualizer** podem ser vistas a seguir:
 
-![Exemplo 1 do ahrs-visualizer](imagens/ahrs_visualizer-1.jpg){#fig:ahrs_visualizer-1 height=300px}
+![Exemplo 1 do ahrs-visualizer](imagens/ahrs_visualizer-1.jpg){#fig:ahrs_visualizer-1 width=512px height=256px}
 
-![Exemplo 2 do ahrs-visualizer](imagens/ahrs_visualizer-2.jpg){#fig:ahrs_visualizer-2}
+![Exemplo 2 do ahrs-visualizer](imagens/ahrs_visualizer-2.jpg){#fig:ahrs_visualizer-2 width=512px height=256px}
 
-![Exemplo 3 do ahrs-visualizer](imagens/ahrs_visualizer-3.jpg){#fig:ahrs_visualizer-3}
+![Exemplo 3 do ahrs-visualizer](imagens/ahrs_visualizer-3.jpg){#fig:ahrs_visualizer-3 width=512px height=256px}
 
 #### 2RS-Viewer
 
