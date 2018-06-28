@@ -8,19 +8,20 @@ A integração do sistema de estrutura com o sistema energia baseou-se nos vínc
 
 ## Integração – 2RBoat/2RElectronic
 
- A integração do sistema de eletrônica com estrutura consiste em duas situações. A primeira trata-se da estrutura, a qual supotará as células de cargas (Estrutura de apoio aos pés), adequada para comportar o sensor e a passagem dos fios do mesmo. A segunda, trata-se do fornecimento da estrutura do case para alocar os sistemas emcados, incluindo os botões, a raspberry Pi 3 e os demais sistemas da parte de software.
+ A integração do sistema de eletrônica com estrutura consiste em duas situações. A primeira trata-se da estrutura, a qual supotará as células de cargas (Estrutura de apoio aos pés), adequada para comportar o sensor e a passagem dos fios do mesmo. A segunda, trata-se do fornecimento da estrutura do case para alocar os sistemas embarcados, incluindo os botões, a raspberry Pi 3 e os demais sistemas da parte de software.
 
  Ademais, para validar o cálculo da força de reação para dimensionar a célula de carga, o sistema 2RBoat fez a simulação estática da força para o aparato dos pés, apresentado na figura [@fig:simuforca], observou-se que essa estrutura, suporta em cada lado uma força de 850 N. A força máxima é de aproximadamente 848 N para, vale ressaltar que o cálculo foi feito para a potência máxima de remada (600 W).
 
 ![Simulação estática da força para o apoio do pé.](imagens/simuforca.JPG){#fig:simuforca}
 
-O sistema 2RE-Watt foi alocado sob os apoios dos pés que o usuário tem na estrutura exatamente para captar a força realizada durante o movimento. Um cabo sai de cada célula de carga e foi dirigido até o case de maneira que não fosse possível notar esse percurso do cabo para que a estética da estrutura ficasse o mais profissional possível. Ao realizar os testes com a célula de carga no local, foi possível calibrá-la pois os apoios dos pés têm um peso e isso deve ser descontado. Todas as leituras são feitas pela Raspberry e então passam para o Kernel as informações de força e são transformadas em potência por meio do software embarcado.
+O sistema 2RE-Watt foi alocado sob os apoios dos pés que o usuário tem na estrutura exatamente para captar a força realizada durante o movimento. foi contruido uma estrutura de apoio em que a célula ficou posicionada com um ângulo de 45 graus em relação a estrutura de perfil. Esse ângulo foi utilizado para o cálculo da força. A lixa 
+que localiza-se na superfície permite que o pé do atleta não deslize, proporcionando maior estabilidade. O velcro localizado penas na parte superior permite que a parte inferior dos pés possa se movimentar para alcançar maior amplitude da remada.
+Um cabo saiu de cada célula de carga e foi dirigido até o case de maneira que não fosse possível notar esse percurso do cabo para que a estética da estrutura ficasse o mais profissional possível. Ao realizar os testes com a célula de carga no local, foi possível calibrá-la pois os apoios dos pés têm um peso e isso deve ser descontado. Todas as leituras são feitas pela Raspberry e então passam para o Kernel as informações de força e são transformadas em potência por meio do software embarcado.
 
 ![Integração da célula de carga na estrutura](imagens/carga_10.jpeg){width=290 height=295px}
 
 
-Para a disposição dos componentes eletrônicos, para que os fios não ficassem espalhados e pudessem ter um bom funcionamento, 
-sem possíveis danos e mal contatos, foi desenvolvido o case, ele dispõe de parteleiras, em que foi possível acoplar todos os fios, módulo relé, placa de conexão, raspberry Pi 3, botões e o visualizador. Desse modo, os componentes ficaram organizados e livremente distribuidos. A Figura XX apresenta  a parte externa do case e a Figura XX mostra o interior com os componentes eletrônicos em seus lugares específicos.
+Para a disposição dos componentes eletrônicos, para que os fios não ficassem espalhados e pudessem ter um bom funcionamento sem possíveis danos e mal contatos, foi desenvolvido o case, ele dispõe de parteleiras, em que foi possível acoplar todos os fios, módulo relé, placa de conexão, raspberry Pi 3, botões e o visualizador. Desse modo, os componentes ficaram organizados e livremente distribuidos. A Figura XX apresenta  a parte externa do case e a Figura XX mostra o interior com os componentes eletrônicos em seus lugares específicos.
 
 Figuras Case externo/interno
 ## Integração - 2RElectronic/2RPower
