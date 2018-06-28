@@ -14,6 +14,10 @@ A integração do sistema de estrutura com o sistema energia baseou-se nos vínc
 
 ![Simulação estática da força para o apoio do pé.](imagens/simuforca.JPG){#fig:simuforca}
 
+O sistema 2RE-Watt foi alocado sob os apoios dos pés que o usuário tem na estrutura exatamente para captar a força realizada durante o movimento. Um cabo sai de cada célula de carga e foi dirigido até o case de maneira que não fosse possível notar esse percurso do cabo para que a estética da estrutura ficasse o mais profissional possível. Ao realizar os testes com a célula de carga no local, foi possível calibrá-la pois os apoios dos pés têm um peso e isso deve ser descontado. Todas as leituras são feitas pela Raspberry e então passam para o Kernel as informações de força e são transformadas em potência por meio do software embarcado.
+
+![Integração da célula de carga na estrutura](imagens/carga_10.JPG){width=290 height=295px}
+
 ## Integração - 2RElectronic/2RPower
 
 A integração do sistema de eletrônica com energia se baseia em fazer as conexões necessárias para chavear as bobinas utilizando o circuito com relés já mencionados anteriormente, testes já foram feitos para o acionamento de cada bobina separadamente e eles se mostraram bem executados.
