@@ -10,6 +10,8 @@ protocolo MQTT-SN (MQTT for Sensor Network), isso porque esse protocolo em espec
 
 Uma das grandes dificuldades que encontramos foi com relação a multiplexação  de mais de uma IMU, no ponto de controle 2 estava funcionando de forma aparentemente correta. Entretanto, ao integrar com software, devido a velocidade alta necessária para envio, o magnetômetro não suportou, o mesmo possui um tempo de leitura mais lento, ele sempre voltava o mesmo valor. Como solução, tentou-se realizar a multiplexação por hardware de forma externa, utilizando o CI CD4047, entretanto o protocolo I2C não permitiu utilizar essa configuração. Feita algumas pesquisas, verificou-se o modo possível de realizar isso seria enviando de forma cruzada os dados de uma IMU para a outra. Devido ao tempo estipulado para o término do projeto e sendo o magnetómetro um sensor importante para os ajustes finos do sistema, decidiu-se utilizar apenas uma IMU.
 
+![Integração da célula de carga na estrutura](imagens/placa_2re.jpeg){width=290 height=295px}
+
 ### 2RE-Suit
 
 Constitui-se da vestimenta que o atleta deve  posicionar no membro inferior para que o movimento seja detectado para comparação e geração de movimento em tempo real. Na imagem, uma parte do Suit constituída do microcontrolador nodemcu  esp8266 ligada a IMU, ambas curturadas em material elástico para fixação por velcros na perna do atleta para que o movimento seja inferido. A bateria para alimentação do sistema está fixada na parte traseira da cintura da pessoa para que não influencie no movimento.
