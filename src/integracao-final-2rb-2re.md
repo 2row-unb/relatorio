@@ -10,5 +10,4 @@ Um cabo saiu de cada célula de carga e foi dirigido até o case de maneira que 
 
 Para a disposição dos componentes eletrônicos, para que os fios não ficassem espalhados e pudessem ter um bom funcionamento sem possíveis danos e mal contatos, foi desenvolvido o case, ele dispõe de parteleiras, em que foi possível acoplar todos os fios, módulo relé, placa de conexão, raspberry Pi 3, botões e o visualizador. Desse modo, os componentes ficaram organizados e livremente distribuidos. A Figura XX apresenta  a parte externa do case e a Figura XX mostra o interior com os componentes eletrônicos em seus lugares específicos.
 
-Figuras Case externo/interno
-![Integração da célula de carga na estrutura](imagens/int_2re_2en.jpeg){width=290 height=295px}
+![Parte interna do case](imagens/int_2re_2en.jpeg){width=290 height=295px}
