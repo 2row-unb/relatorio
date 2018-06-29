@@ -6,6 +6,6 @@ O Sistema de Monitoramento de Remo Indoor (2Row) atingiu o objetivo proposto no 
 Mesmo com todos os subsistemas tendo encontrado êxito, até mesmo no processo de integração é necessário entender que apesar de ser um produto funcional que tem chances no mercado, o 2Row ainda está em fase de protótipo e precisa de alguns ajustes e melhorias.
 Para projetos futuros no 2Row, pode-se destacar:
 
-∙ Aumentar o comprimento do perfil base, para que o banco tenha uma mobilidade maior (tendo em vista que pessoas de percentil maior possa esticar totalmente as penas);
-∙ Acréscimo de mais IMUs, para que haja um alcance maior da correção da postura;
-∙ Proporcionar mais possibilidades de variação de carga;
+* Aumentar o comprimento do perfil base, para que o banco tenha uma mobilidade maior (tendo em vista que pessoas de percentil maior possa esticar totalmente as penas);
+* Acréscimo de mais IMUs, para que haja um alcance maior da correção da postura;
+* Proporcionar mais possibilidades de variação de carga;
