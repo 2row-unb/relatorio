@@ -8,4 +8,3 @@ A Estrutura que suporta todo o 2RPower foi conectada a estrutura do 2RBoat utili
 
 ![Integração 2RBoat com 2RPower.^[Fonte: Do_autor]](imagens/2RBoat2RPower.jpg){#fig:feltro width=350px height=250px}
 
-![Comparação entre freio eletromagnético com freio de carro.^[Fonte: Do_autor]](imagens/2RBoat2RPower.jpg){#fig:feltro width=350px height=250px}
