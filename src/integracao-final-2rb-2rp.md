@@ -7,3 +7,5 @@ O Sistema de transmissão de forças consiste em um cubo de bicicleta montado co
 A Estrutura que suporta todo o 2RPower foi conectada a estrutura do 2RBoat utilizando fusos de rosca triangular e fixado utilizando sistemas de porca e contra-porca, essa fixação permite a regulagem da distância do complexo 2RPower com o 2Rboat, gerando tensão adequada a corrente para seu funcionamento. 
 
 ![Integração 2RBoat com 2RPower.^[Fonte: Do_autor]](imagens/2RBoat2RPower.jpg){#fig:feltro width=350px height=250px}
+
+![Comparação entre freio eletromagnético com freio de carro.^[Fonte: Do_autor]](imagens/2RBoat2RPower.jpg){#fig:feltro width=350px height=250px}
