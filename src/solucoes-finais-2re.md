@@ -1,4 +1,4 @@
-## Solução final 2RElectronic
+## 2RElectronic
 
 Do ponto de controle 2 para o ponto de controle 3, depois de realizados testes de funcionamento e as possíveis integrações, algumas modificações foram necessárias e tomadas como soluções finais. Abaixo serão discutidos essas soluções finais, assim como resultados obtidos e dificuldades encontradas.
 
