@@ -8,6 +8,8 @@ O mesmo consiste em um sistema composto por dois eletroímãs posicionados na fa
 
 ![Vistas superior (dir.) e frontal (esq.) do freio eletromagnético.^[Fonte: Do_autor]](imagens/fe_sup_fron.png){#fig:superior width=500px height=300px}
 
-Vale ressaltar que para aumentar a força da carga para a remada, os eletroímãs foram envoltos com feltro, assim, além do disco sofrer efeito da força eletromagnética, também está sob a ação da força de atrito.
+O funcionamento do sistema de frenagem eletromagnética funciona exatamente com um freio de carro. Cada eletroímã envolto por feltro simula a ação da pastilha do freio de carro, enquanto o disco funciona com disco de freio. Só que em vez de um sistema hidráulico, o freio é acionado por corrente elétrica. 
+Quando variamos os a modulação das bombinhas através dos relés, variamos a quantidade de bobinas que a corrente elétrica transita e consequentemente alteramos a forma que o eletroímãs exercem no disco de freio.    
 
-![Eletroímã envolto com feltro.^[Fonte: Do_autor]](imagens/feltro.png){#fig:feltro width=350px height=250px}
+
+![Eletroímã envolto com feltro.^[Fonte: Do_autor]](imagens/freiocarro.JPG){#fig:feltro width=350px height=250px}
