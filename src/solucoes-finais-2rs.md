@@ -1,7 +1,5 @@
 ## 2RSystem
 
-## 2RS-_Viewer_
-
 Para a aplicação de visualização e _interface_ do 2Row, 2RS-_Viewer_ sofreu diversas modificações, incluindo elementos arquiteturais e de modelagem. São elas:
 
 1. Simplificação de cenas em árvore de nós:
@@ -29,6 +27,7 @@ Para a aplicação de visualização e _interface_ do 2Row, 2RS-_Viewer_ sofreu 
 * _Release_ para Linux ARM7, em uso embarcado no dispositivo Odroid XU4;
 * Programado em GDScript, utilizando a _engine_ Godot;
 * Mantido no GitHub, no endereço [https://github.com/2row-unb/2rs-viewer](https://github.com/2row-unb/2rs-viewer);
+* Mantido no GitHub, no endereço [https://github.com/2row-unb/2r-sys](https://github.com/2row-unb/2r-sys);
 * Licença GPL-3.0;
 * _Interface_ de comunicação HTTP/TCP/IP e dados codificados em JSON;
 * Três telas compostos por 76 nós em uma cena;
