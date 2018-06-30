@@ -11,3 +11,6 @@ A comunicação entre os subsistemas 2RElectronic e 2RSystem, foi feita utilizan
 É válido ressaltar que foi difícil de ser encontado materiais a respeito da biblioteca MQTT-SN e para que pudesse ser utilizada a função de publicação, o submódulo 2RSystem desenvolveu a biblioteca do MQTT-SN para o UDP para que o código de leitura e tratamento dos offsets fosse aplicado.
 
 
+
+
+![Visualizador do modelo real/ideal e parâmetros de desempenho.^[Fonte: Do_autor]](imagens/visu.jpeg){#fig:Visualizador width=350px height=250px}
