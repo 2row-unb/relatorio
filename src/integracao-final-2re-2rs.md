@@ -11,6 +11,6 @@ A comunicação entre os subsistemas 2RElectronic e 2RSystem, foi feita utilizan
 É válido ressaltar que foi difícil de ser encontado materiais a respeito da biblioteca MQTT-SN e para que pudesse ser utilizada a função de publicação, o submódulo 2RSystem desenvolveu a biblioteca do MQTT-SN para o UDP para que o código de leitura e tratamento dos offsets fosse aplicado.
 
 
-Os parâmetros de desempenho do atleta foram calculados e repassados para o 2RS-Viwer para serem apresentados no visualizador, os parâmetros foram: potência, velocidade da remada, tempo de treino, nível de dificuldade, como pode ser visto 
+Os parâmetros de desempenho do atleta foram calculados e repassados para o 2RS-Viwer para serem apresentados no visualizador, os parâmetros foram: potência, velocidade da remada, tempo de treino, nível de dificuldade, como pode ser visto na [@fig:Visualizador].
 
 ![Visualizador do modelo real/ideal e parâmetros de desempenho.^[Fonte: Do_autor]](imagens/visu.jpeg){#fig:Visualizador width=350px height=250px}
